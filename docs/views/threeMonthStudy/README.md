@@ -1,6 +1,6 @@
 ---
 title: Three-Month Study
-date: 2018-10-16
+date: 2021-08-29
 tags:
  - Three-Month
 sidebar: false
