@@ -27,25 +27,23 @@ let server = http.createServer((req, res) => {
       })
     } else {
       const contentTypeConfig = {
-        js: 'application/javascript; charset=UTF-8',
-        html: 'text/html; charset=UTF-8',
+        js: 'application/javascript',
+        html: 'text/html',
         css: 'text/css',
         webm: 'application/octet-stream',
         jpg: 'image/jpeg'
       }
       const result = pathname.match(/^.*\.(.*?)$/)
-      const pref = result? result[1]: ''
+      const pref = result? result[1]: '' // 获得文件后缀
       
       const contentType = contentTypeConfig[pref] || 'text/plain'
-      console.log(pref)
       res.writeHead(200, { "Content-Type": contentType});
       res.write(data,'binary');
     }
-    // 注意，这个end 一定要放在读取文件的内部使用
     res.end()
   })
 })
  
 server.listen(8080, '127.0.0.1', () => {
-  console.log('服务器已经运行，请打开浏览器，输入：http://127.0.0.1:8080/来访问')
+  console.log('服务器已经运行，请打开浏览器，输入：http://127.0.0.1:8080/')
 })
