@@ -94,4 +94,6 @@ jobs:
         password: ${{ secrets.HUAWEI_ACCESS_KEY_SECRET }}
         source: './*'
         target: ../var/www/blog
+      # 失败重试 3 次
+      retry-attempts: 3
  
