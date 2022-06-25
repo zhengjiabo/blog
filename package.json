@@ -9,8 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs && yarn pub",
-    "pub": "scp -r public/blog root@119.3.41.35:/var/www"
+    "build": "vuepress build docs"
   },
   "dependencies": {
     "vuepress": "1.0.3",
