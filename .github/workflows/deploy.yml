@@ -1,0 +1,97 @@
+name: github deploy
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  #打包
+  build:
+    # 指定环境
+    runs-on: ubuntu-latest
+    
+    #执行步骤
+    steps:
+    # 步骤所依赖的操作库 这里引用了官方发布的git操作库 目的是拉取当前库的代码
+    - uses: actions/checkout@v1
+    
+    # 安装指定版本node
+    - name: Use Node.js 10.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
+        
+    # 执行安装/打包语句
+    - name: npm install, build
+      run: |
+        npm install
+        npm run build --if-present
+      env:
+        CI: true
+    # 上传打包后文件, 供其它job使用
+    - name: Upload a Build Artifact
+      if: success()
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        # 唯一标志 下载用
+        name: build
+        # 指定上传文件/文件夹
+        path: public/blog/
+  
+  # 发布到github page
+  github-deploy:
+    # 前提打包完成
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+    # 下载打包后文件
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v3.0.0
+      with:
+        # 唯一标志
+        name: build
+        # 下载至文件夹, 此处能和下方的build_dir对应即可
+        path: public/blog/
+    
+    # 合并到github page指定分支
+    - name: GitHub Pages
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v3.0.0
+      with:
+        # 上传至目标分支
+        target_branch: github-deploy
+        # 打包后文件夹
+        build_dir: public/blog/
+        # commit文本
+        commit_message: deploy
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+  # 发布到华为云服务器
+  huaweiCloud-deploy:
+    # 前提打包完成
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+    # 下载打包后文件
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v3.0.0
+      with:
+        # 唯一标志
+        name: build
+        # 下载至文件夹
+        path: ''
+        
+    - name: send files to a remote server with scp
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.HUAWEI_IP }}
+        username: ${{ secrets.HUAWEI_USER_NAME }}
+        password: ${{ secrets.HUAWEI_ACCESS_KEY_SECRET }}
+        source: './*'
+        target: ../var/www/blog
+ 
