@@ -1,7 +1,7 @@
 const themeConfig = require('./config/theme/')
 
 module.exports = {
-  title: "郑嘉博",
+  title: "Firefly",
   description: 'Enjoy when you can, and endure when you must.',
   dest: 'public/blog',
   head: [

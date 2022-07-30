@@ -22,7 +22,7 @@ sidebar: false
 2. [reco-fetch](https://www.npmjs.com/package/reco-fetch)<br>
    针对fetch的应用型封装 -->
 
-<!-- 个人博客：[**郑嘉博**](https://github.com/zhengjiabo)  -->
+<!-- 个人博客：[**Firefly**](https://github.com/zhengjiabo)  -->
 
 ***
 
