@@ -1,10 +1,10 @@
 {
-  "name": "zhengjiabo_blog",
+  "name": "Firefly_blog",
   "version": "1.0.1",
-  "description": "jiabo Zheng's blog",
+  "description": "Firefly's blog",
   "main": "index.js",
   "repository": "http://zhengjiabo.gitlab.io",
-  "author": "zhengjiabo",
+  "author": "Firefly",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
