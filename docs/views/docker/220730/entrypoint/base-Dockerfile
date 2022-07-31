@@ -1,0 +1,25 @@
+FROM alpine:3.16
+
+COPY base-docker-entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["base-docker-entrypoint.sh"]
+
+CMD ["ls"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
