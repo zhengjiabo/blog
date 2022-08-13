@@ -1,0 +1,5 @@
+FROM demo:A
+
+RUN echo 'B'
+
+CMD ["node", "-v"]

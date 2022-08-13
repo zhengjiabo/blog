@@ -1,0 +1,14 @@
+FROM node:alpine as node
+
+RUN echo 'node'
+# 这里是随便找点文件提交，演示 COPY --from
+ADD nginx.conf /code 
+
+# node 镜像的工作已经结束了。
+# 后续不能使用 node 命令，因为已经被 nginx 镜像替代了。
+FROM nginx:alpine
+COPY --from=node /code /code
+
+RUN echo 'nginx'
+# 如果执行以下指令会报错
+# RUN node -v 
