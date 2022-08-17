@@ -1,0 +1,19 @@
+version: "3"
+services:
+  base:
+    image: base
+    build:
+      context: ./modules/
+      args:
+        ENABLED_MODULES: brotli # 引入 brotli 模块
+
+  brotli:
+    image: brotli
+    build:
+      context: .
+    ports: 
+      - 80:80
+      
+  
+
+  

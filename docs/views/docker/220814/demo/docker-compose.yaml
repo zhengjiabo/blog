@@ -4,21 +4,5 @@ services:
     build:
       context: .
       dockerfile: router.Dockerfile
-      args:
-        ENABLED_MODULES: brotli # 引入 brotli 模块
     ports:
       - 3000:80
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
-
-  brotli:
-    build:
-      context: ./brotli/
-      args:
-        ENABLED_MODULES: brotli # 引入 brotli 模块
-      ports:
-        - "80:80"
-    volumes:
-      - ./brotli-nginx.conf:/etc/nginx/nginx.conf
-      - ./brotli.conf:/etc/nginx/conf.d/default.conf
-      - .:/usr/share/nginx/html
