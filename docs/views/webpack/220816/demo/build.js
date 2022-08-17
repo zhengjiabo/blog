@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 const path = require('path')
-const func = f1
+
 // `webpack-cli` 与 `webpack/cli` 调来调去，逻辑复杂，为了方便，直接使用其 node api 进行示例，方便调试
 
 // 1. webpack 的运行时代码分析
@@ -13,6 +13,7 @@ const func = f1
 // 8. sourcemap 的工作原理是什么样的
 
 // webpack 的运行时代码分析
+const func = f1
 function f1 () {
   return webpack({
     entry: './index.js',
