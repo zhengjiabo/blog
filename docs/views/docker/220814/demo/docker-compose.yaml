@@ -6,3 +6,10 @@ services:
       dockerfile: router.Dockerfile
     ports:
       - 3000:80
+
+  route-brotli:
+    build:
+      context: .
+      dockerfile: router-brotli.Dockerfile
+    ports:
+      - 4000:80
