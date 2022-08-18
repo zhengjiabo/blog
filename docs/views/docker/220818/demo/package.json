@@ -21,10 +21,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "serve build",
-    "oss:cli": "ossutil cp -rf --meta Cache-Control:no-cache build oss://shanyue-cra/ && ossutil cp -rf --meta Cache-Control:max-age=31536000 build/static oss://shanyue-cra/static",
-    "oss:rclone": "rclone copy --exclude 'static/**' --header 'Cache-Control: no-cache' build alioss:/shanyue-cra --progress && rclone copy --header 'Cache-Control: max-age=31536000' build/static alioss:/shanyue-cra/static --progress",
-    "oss:script": "node scripts/uploadOSS.mjs",
-    "oss:prune": "node scripts/deleteOSS.mjs"
+    "obs:cli": "obsutil cp -r --meta Cache-Control:no-cache build obs://fireflymoon-blog/ && obsutil cp -r --meta Cache-Control:max-age=31536000 build/static obs://fireflymoon-blog/static",
+    "obs:rclone": "rclone copy --exclude 'static/**' --header 'Cache-Control: no-cache' build alioss:/shanyue-cra --progress && rclone copy --header 'Cache-Control: max-age=31536000' build/static alioss:/shanyue-cra/static --progress",
+    "obs:script": "node scripts/uploadOSS.mjs",
+    "obs:prune": "node scripts/deleteOSS.mjs"
   },
   "eslintConfig": {
     "extends": [
