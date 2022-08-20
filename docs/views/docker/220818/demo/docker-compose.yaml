@@ -1,0 +1,15 @@
+version: "3"
+services:
+  obs:
+    image: obs
+    build:
+      context: .
+      args:
+        # 此处默认从宿主机(host)环境变量中传参，在宿主机中需要提前配置 ACCESS_KEY_ID/ACCESS_KEY_SECRET 环境变量
+        - ACCESS_KEY_ID
+        - ACCESS_KEY_SECRET
+        # - ENDPOINT=xxxxxxx 也可以直接赋值，但这样会暴露在代码里
+        - ENDPOINT
+        - PUBLIC_URL
+    ports:
+      - 8000:80
