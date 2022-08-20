@@ -7,6 +7,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "ali-oss": "^6.16.0",
+    "esdk-obs-nodejs": "^3.21.6",
     "p-queue": "^7.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -23,7 +24,7 @@
     "serve": "serve build",
     "obs:cli": "obsutil cp -r -f --meta CacheControl:no-cache --flat --exclude \"*build\\static*\" build obs://fireflymoon-blog/ && obsutil cp -r -f --meta CacheControl:max-age=31536000 build/static obs://fireflymoon-blog/",
     "obs:rclone": "rclone copy --exclude 'static/**' --header 'CacheControl: no-cache' build alioss:/shanyue-cra --progress && rclone copy --header 'CacheControl: max-age=31536000' build/static alioss:/shanyue-cra/static --progress",
-    "obs:script": "node scripts/uploadOSS.mjs",
+    "obs:script": "node scripts/uploadOBS.mjs",
     "obs:prune": "node scripts/deleteOSS.mjs"
   },
   "eslintConfig": {
