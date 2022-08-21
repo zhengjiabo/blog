@@ -22,8 +22,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "serve build",
-    "obs:cli": "obsutil cp -r -f --meta CacheControl:no-cache --flat --exclude \"*build\\static*\" build obs://fireflymoon-blog/ && obsutil cp -r -f --meta CacheControl:max-age=31536000 build/static obs://fireflymoon-blog/",
-    "obs:rclone": "rclone copy --exclude 'static/**' --header 'CacheControl: no-cache' build alioss:/shanyue-cra --progress && rclone copy --header 'CacheControl: max-age=31536000' build/static alioss:/shanyue-cra/static --progress",
+    "obs:cli": "obsutil cp -r -f --meta CacheControl:no-cache --flat --exclude '*build/static*' build obs://fireflymoon-blog/ && obsutil cp -r -f --meta CacheControl:max-age=31536000 build/static obs://fireflymoon-blog/",
+    "obs:rclone": "rclone copy --exclude 'static/**' --header 'Cache-Control: no-cache' build obs:/fireflymoon-blog --progress && rclone copy --header 'Cache-Control: max-age=31536000' build/static obs:/fireflymoon-blog/static --progress",
     "obs:script": "node scripts/uploadOBS.mjs",
     "obs:prune": "node scripts/deleteOSS.mjs"
   },
