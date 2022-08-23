@@ -2,6 +2,31 @@ const webpack = require('webpack')
 const path = require('path')
 
 // `webpack-cli` 与 `webpack/cli` 调来调去，逻辑复杂，为了方便，直接使用其 node api 进行示例，方便调试
+// const func = f0
+function f0 () {
+  return webpack([{
+    entry: './index.js',
+    mode: 'production', // 用于生产，移除注释，压缩代码成 1 行
+    output: {
+      filename: 'main.production.js'
+    }
+  },
+  {
+    entry: './index.js',
+    mode: 'development', // 用于代码分析，保留注释
+    output: {
+      filename: 'main.development.js'
+    }
+  },
+  {
+    entry: './index.js', // 
+    output: {
+      filename: 'main.unknown.js'
+    }
+  }])
+}
+
+
 
 // 1. webpack 的运行时代码分析
 // 2. output.filename template
