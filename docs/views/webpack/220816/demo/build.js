@@ -20,7 +20,8 @@ function f1 () {
     mode: 'none',
     output: {
       iife: false,
-      pathinfo: 'verbose'
+      pathinfo: 'verbose',
+      filename: 'hello.js'
     }
   })
 }
