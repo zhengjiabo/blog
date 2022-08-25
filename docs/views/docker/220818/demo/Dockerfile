@@ -1,5 +1,10 @@
-# 使用 node:14-alpine 找不到 obsutil 很奇怪
-FROM node:14 as builder
+# FROM node:14-alpine as builder 找不到 obsutil 很奇怪
+# FROM node:14 as builder 可以找到 obsutil
+
+
+# FROM node:14 as builder
+FROM node:14-alpine as builder
+
 
 # 设置好ARG，构建时
 ARG ACCESS_KEY_ID
@@ -32,7 +37,8 @@ RUN wget https://obs-community.obs.cn-north-1.myhuaweicloud.com/obsutil/current/
     # 文件所有者   同用户组    其它用户组
     # && cat /etc/profile \
     && chmod 755 /usr/local/bin/obsutil \
-    && obsutil config -i $ACCESS_KEY_ID -k $ACCESS_KEY_SECRET -e $ENDPOINT
+    && ls /usr/local/bin/ -lah \
+    && /usr/local/bin/obsutil config -i $ACCESS_KEY_ID -k $ACCESS_KEY_SECRET -e $ENDPOINT
 
 
 # 单独分离 package.json，是为了安装依赖可最大限度利用缓存
