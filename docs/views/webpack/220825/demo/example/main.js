@@ -49,7 +49,7 @@ var __webpack_exports__ = {};
 /*! runtime requirements: __webpack_require__ */
 const sum = __webpack_require__(/*! ./sum */ 1)
 
-console.log(sum(3, 8))
+sum(3, 8)
 
 })();
 
