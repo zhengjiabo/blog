@@ -2,6 +2,31 @@ const webpack = require('webpack')
 const path = require('path')
 
 // `webpack-cli` 与 `webpack/cli` 调来调去，逻辑复杂，为了方便，直接使用其 node api 进行示例，方便调试
+// const func = f0
+function f0 () {
+  return webpack([{
+    entry: './index.js',
+    mode: 'production', // 用于生产，移除注释，压缩代码成 1 行
+    output: {
+      filename: 'main.production.js'
+    }
+  },
+  {
+    entry: './index.js',
+    mode: 'development', // 用于代码分析，保留注释
+    output: {
+      filename: 'main.development.js'
+    }
+  },
+  {
+    entry: './index.js', // 
+    output: {
+      filename: 'main.unknown.js'
+    }
+  }])
+}
+
+
 
 // 1. webpack 的运行时代码分析
 // 2. output.filename template
@@ -13,13 +38,15 @@ const path = require('path')
 // 8. sourcemap 的工作原理是什么样的
 
 // webpack 的运行时代码分析
+const func = f1
 function f1 () {
   return webpack({
     entry: './index.js',
     mode: 'none',
     output: {
       iife: false,
-      pathinfo: 'verbose'
+      pathinfo: 'verbose',
+      filename: 'hello.js'
     }
   })
 }
@@ -181,6 +208,6 @@ function f10 () {
 }
 
 // output.path 如何指定打包目录为 build 目录
-f10().run((err, stat) => {
+func().run((err, stat) => {
   console.log(JSON.stringify(stat.toJson()))
 })
