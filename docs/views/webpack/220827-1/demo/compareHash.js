@@ -21,6 +21,12 @@ function main () {
 
     const SIZE = 1024 * 1024 * 1024  // 1 GB，内存够的勇者可以往上加。
     const buf = Buffer.alloc(SIZE, '1', "utf-8")
+    // let offset = 0
+    // while(offset < SIZE) {
+    //     const str = Math.random().toString(36).slice(-8) // 随机文本
+    //     buf.write(str, offset)
+    //     offset += Math.round(Math.random() * 10) // 随机增加偏移量
+    // }
 
     const hashArr = crypto.getHashes().map(hashName => ({hashName, hash: crypto.createHash(hashName)})) // 取得所有 hash 算法
     hashArr.push({hashName: 'webpack_md4', hash: webpack_md4}, {hashName: 'webpack_xxhash64', hash: webpack_xxhash64}) // 推入 webpack 自带的
@@ -38,7 +44,7 @@ function main () {
     }
 }
 
-main()
+// main()
 
 
 // console 输出的文本扔里面排序
