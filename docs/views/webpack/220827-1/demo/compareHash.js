@@ -44,7 +44,7 @@ function main () {
     }
 }
 
-// main()
+main()
 
 
 // console 输出的文本扔里面排序
