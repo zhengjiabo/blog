@@ -1,0 +1,12 @@
+{"entryPointName":"metrics","level":"error","msg":"entryPoint \"metrics\" doesn't exist","routerName":"prometheus@internal","time":"2022-08-29T10:46:27Z"}
+{"level":"error","msg":"no valid entryPoint for this router","routerName":"prometheus@internal","time":"2022-08-29T10:46:27Z"}
+{"entryPointName":"metrics","level":"error","msg":"entryPoint \"metrics\" doesn't exist","routerName":"prometheus@internal","time":"2022-08-29T10:46:28Z"}
+{"level":"error","msg":"no valid entryPoint for this router","routerName":"prometheus@internal","time":"2022-08-29T10:46:28Z"}
+{"entryPointName":"metrics","level":"error","msg":"entryPoint \"metrics\" doesn't exist","routerName":"prometheus@internal","time":"2022-08-29T10:46:28Z"}
+{"level":"error","msg":"no valid entryPoint for this router","routerName":"prometheus@internal","time":"2022-08-29T10:46:28Z"}
+{"entryPointName":"metrics","level":"error","msg":"entryPoint \"metrics\" doesn't exist","routerName":"prometheus@internal","time":"2022-08-29T10:51:58Z"}
+{"level":"error","msg":"no valid entryPoint for this router","routerName":"prometheus@internal","time":"2022-08-29T10:51:58Z"}
+{"entryPointName":"metrics","level":"error","msg":"entryPoint \"metrics\" doesn't exist","routerName":"prometheus@internal","time":"2022-08-29T11:12:38Z"}
+{"level":"error","msg":"no valid entryPoint for this router","routerName":"prometheus@internal","time":"2022-08-29T11:12:38Z"}
+{"entryPointName":"metrics","level":"error","msg":"entryPoint \"metrics\" doesn't exist","routerName":"prometheus@internal","time":"2022-08-29T11:12:40Z"}
+{"level":"error","msg":"no valid entryPoint for this router","routerName":"prometheus@internal","time":"2022-08-29T11:12:40Z"}
