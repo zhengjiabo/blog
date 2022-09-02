@@ -1,0 +1,33 @@
+{
+  "name": "examples",
+  "version": "2.0.0",
+  "description": "## 目录结构",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "server/*"
+  ],
+  "author": "shfshanyue",
+  "license": "ISC",
+  "dependencies": {
+    "acorn": "^8.8.0",
+    "astring": "^1.8.3",
+    "webpack": "^5.74.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shfshanyue/node-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shfshanyue/node-examples/issues"
+  },
+  "homepage": "https://github.com/shfshanyue/node-examples#readme"
+}
