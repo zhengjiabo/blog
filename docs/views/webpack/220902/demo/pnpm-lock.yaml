@@ -2,12 +2,16 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': ^7.18.10
+  acorn: ^8.8.0
+  astring: ^1.8.3
   webpack: ^5.74.0
   webpack-bundle-analyzer: ^4.5.0
   webpack-cli: ^4.10.0
   webpack-dev-server: ^4.10.0
 
 dependencies:
+  acorn: registry.npmmirror.com/acorn/8.8.0
+  astring: registry.npmmirror.com/astring/1.8.3
   webpack: registry.npmmirror.com/webpack/5.74.0_webpack-cli@4.10.0
   webpack-bundle-analyzer: registry.npmmirror.com/webpack-bundle-analyzer/4.6.0
   webpack-cli: registry.npmmirror.com/webpack-cli/4.10.0_05dd3a94eda7db50dfefdf88a0b22793
@@ -818,6 +822,13 @@ packages:
     resolution: {integrity: sha512-hNfzcOV8W4NdualtqBFPyVO+54DSJuZGY9qT4pRroB6S9e3iiido2ISIC5h9R2sPJ8H3FHCIiEnsv1lPXO3KtQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/array-flatten/-/array-flatten-2.1.2.tgz}
     name: array-flatten
     version: 2.1.2
+    dev: false
+
+  registry.npmmirror.com/astring/1.8.3:
+    resolution: {integrity: sha512-sRpyiNrx2dEYIMmUXprS8nlpRg2Drs8m9ElX9vVEXaCB4XEAJhKfs7IcX0IwShjuOAjLR6wzIrgoptz1n19i1A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/astring/-/astring-1.8.3.tgz}
+    name: astring
+    version: 1.8.3
+    hasBin: true
     dev: false
 
   registry.npmmirror.com/balanced-match/1.0.2:
