@@ -17,3 +17,17 @@ services:
     labels:
       - "traefik.http.routers.api.rule=Host(`traefik.shanyue.local`)"
       - "traefik.http.routers.api.service=api@internal"
+
+
+# 改镜像会暴露出自身的 `header` 信息
+  whoami:
+    image: containous/whoami
+    labels:
+      # 设置Host 为 whoami.docker.localhost 进行域名访问
+      - "traefik.http.routers.whoami.rule=Host(`whoami.shanyue.local`)"
+
+# 使用已存在的 traefik 的 network
+networks:
+  default:
+    external:
+      name: demo_default
