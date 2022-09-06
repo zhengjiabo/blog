@@ -12,10 +12,14 @@ function f1 () {
     entry: './index.js',
     mode: 'none',
     output: {
-      filename: 'main.[id].[contenthash].js',
-      chunkFilename: '[name].[id].chunk.[contenthash].js',
-      path: path.resolve(__dirname, 'dist/contenthash'),
-      clean: true // 每次清除打包文件夹
+      filename: 'main.[contenthash].js',
+      chunkFilename: '[name].chunk.[chunkhash].js',
+      path: path.resolve(__dirname, 'dist/import'),
+      clean: true, // 每次清除打包文件夹
+      // 默认为 `jsonp`
+      chunkLoading: 'import',
+      // 默认为 `array-push`
+      chunkFormat: 'module'
     }
   })
 }
