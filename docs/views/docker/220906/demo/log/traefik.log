@@ -1,0 +1,4 @@
+{"level":"error","msg":"The ACME resolver \"le\" is skipped from the resolvers list because: unable to get ACME account: permissions 666 for acme.json are too open, please use 600","time":"2022-09-06T15:46:10Z"}
+{"level":"error","msg":"Router defined multiple times with different configurations in [reverse-proxy-demo-7826ad1cd008485f724e8221b370c5d4ae22ef0be55164bd7b465f2824d584ff whoami-demo-ae7369d4f4fe9bfc10e4f39767e274d6064d430e926ecf0eac5e136848cc424a]","providerName":"docker","routerName":"cra","time":"2022-09-06T15:46:10Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-06T15:46:11Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-06T15:46:11Z"}
