@@ -4,8 +4,8 @@ services:
   reverse-proxy:
     image: traefik:v2.5
     ports:
-      - "80:80"
-      - "443:443"
+      # - "80:80"
+      - "443:443" # 用于 TLS 即 HTTPS
       - "8080:8080"
     volumes:
       - ./traefik.toml:/etc/traefik/traefik.toml
@@ -19,33 +19,25 @@ services:
       - "traefik.http.routers.api.service=api@internal"
 
       # 配置 TLS
-      - traefik.http.routers.cra.tls=true
-      - traefik.http.routers.cra.tls.certresolver=le
+      - traefik.http.routers.api.tls=true
+      # 设置 https，此时certresolver 为 le，与 traefik.toml certificatesResolvers 配置保持一致
+      - traefik.http.routers.api.tls.certresolver=le
 
 
 # 该镜像会暴露出自身的 `header` 信息
   whoami:
     image: containous/whoami
     labels:
-      # 设置Host 为 whoami.docker.localhost 进行域名访问
+      # 设置Host 为 whoami.firefly.localhost 进行域名访问
       - "traefik.http.routers.whoami.rule=Host(`whoami.firefly.com`)"
 
       # 配置 TLS
-      - traefik.http.routers.cra.tls=true
-      - traefik.http.routers.cra.tls.certresolver=le
+      - traefik.http.routers.whoami.tls=true
+      # 设置 https，此时certresolver 为 le，与 traefik.toml certificatesResolvers 配置保持一致
+      - traefik.http.routers.whoami.tls.certresolver=le
 
-  # domain:
-  #   image: containous/whoami
-  #   labels:
-  #     # 配置域名
-  #      - "traefik.http.routers.cra.rule=Host(`cra.firefly.tech`)"
-
-  #      # 配置 TLS
-  #      - traefik.http.routers.cra.tls=true
-  #      - traefik.http.routers.cra.tls.certresolver=le
 
 # 使用已存在的 traefik 的 network
 networks:
-  default:
-    external:
-      name: demo_default
+  external:
+    name: demo_default

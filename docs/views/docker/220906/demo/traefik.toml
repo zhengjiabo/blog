@@ -150,11 +150,15 @@
 #   buckets = [0.1,0.3,1.2,5.0]
 #   entryPoint = "metrics"
 
+# 证书解析器.name.自动化证书管理环境配置
+# certificatesResolvers.<name>.acme
+# 可以跟路由一样创建多个证书解析器-自动化证书管理，用于不同路由。也可以多个路由公用一个证书解析器
 [certificatesResolvers.le.acme]
   email = "xianger94@qq.com"
-  storage = "acme.json"
+  storage = "acme.json" # 存储文件，默认 acme.json
+  
+  [certificatesResolvers.le.acme.tlsChallenge] # tls 验证，默认 true
+  
+  [certificatesResolvers.le.acme.httpChallenge] # http 验证，默认 false
+    entryPoint = "web" # 入口
 
-  [certificatesResolvers.le.acme.tlsChallenge]
-
-  [certificatesResolvers.le.acme.httpChallenge]
-    entryPoint = "web"

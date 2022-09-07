@@ -1,4 +1,70 @@
-{"level":"error","msg":"The ACME resolver \"le\" is skipped from the resolvers list because: unable to get ACME account: permissions 666 for acme.json are too open, please use 600","time":"2022-09-06T15:46:10Z"}
-{"level":"error","msg":"Router defined multiple times with different configurations in [reverse-proxy-demo-7826ad1cd008485f724e8221b370c5d4ae22ef0be55164bd7b465f2824d584ff whoami-demo-ae7369d4f4fe9bfc10e4f39767e274d6064d430e926ecf0eac5e136848cc424a]","providerName":"docker","routerName":"cra","time":"2022-09-06T15:46:10Z"}
-{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-06T15:46:11Z"}
-{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-06T15:46:11Z"}
+{"entryPointName":"traefik","level":"error","msg":"accept tcp [::]:8080: use of closed network connection","time":"2022-09-07T14:23:34Z"}
+{"entryPointName":"web","level":"error","msg":"accept tcp [::]:80: use of closed network connection","time":"2022-09-07T14:23:34Z"}
+{"entryPointName":"traefik","level":"error","msg":"close tcp [::]:8080: use of closed network connection","time":"2022-09-07T14:23:34Z"}
+{"entryPointName":"websecure","level":"error","msg":"accept tcp [::]:443: use of closed network connection","time":"2022-09-07T14:23:34Z"}
+{"entryPointName":"web","level":"error","msg":"close tcp [::]:80: use of closed network connection","time":"2022-09-07T14:23:34Z"}
+{"entryPointName":"websecure","level":"error","msg":"close tcp [::]:443: use of closed network connection","time":"2022-09-07T14:23:34Z"}
+{"level":"error","msg":"The ACME resolver \"le\" is skipped from the resolvers list because: unable to get ACME account: permissions 666 for acme.json are too open, please use 600","time":"2022-09-07T14:32:25Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T14:32:25Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T14:32:25Z"}
+{"level":"error","msg":"the router whoami@docker uses a non-existent resolver: le","time":"2022-09-07T14:32:25Z"}
+{"level":"error","msg":"the router api@docker uses a non-existent resolver: le","time":"2022-09-07T14:32:25Z"}
+{"entryPointName":"traefik","level":"error","msg":"accept tcp [::]:8080: use of closed network connection","time":"2022-09-07T14:34:19Z"}
+{"entryPointName":"web","level":"error","msg":"accept tcp [::]:80: use of closed network connection","time":"2022-09-07T14:34:19Z"}
+{"entryPointName":"traefik","level":"error","msg":"close tcp [::]:8080: use of closed network connection","time":"2022-09-07T14:34:19Z"}
+{"entryPointName":"websecure","level":"error","msg":"accept tcp [::]:443: use of closed network connection","time":"2022-09-07T14:34:19Z"}
+{"entryPointName":"web","level":"error","msg":"close tcp [::]:80: use of closed network connection","time":"2022-09-07T14:34:19Z"}
+{"entryPointName":"websecure","level":"error","msg":"close tcp [::]:443: use of closed network connection","time":"2022-09-07T14:34:19Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T14:34:20Z"}
+{"level":"error","msg":"the router api@docker uses a non-existent resolver: le","time":"2022-09-07T14:34:20Z"}
+{"level":"error","msg":"The ACME resolver \"le\" is skipped from the resolvers list because: unable to get ACME account: permissions 666 for acme.json are too open, please use 600","time":"2022-09-07T14:34:28Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T14:34:28Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T14:34:28Z"}
+{"level":"error","msg":"the router whoami@docker uses a non-existent resolver: le","time":"2022-09-07T14:34:28Z"}
+{"level":"error","msg":"the router api@docker uses a non-existent resolver: le","time":"2022-09-07T14:34:28Z"}
+{"entryPointName":"web","level":"error","msg":"accept tcp [::]:80: use of closed network connection","time":"2022-09-07T14:58:48Z"}
+{"entryPointName":"websecure","level":"error","msg":"accept tcp [::]:443: use of closed network connection","time":"2022-09-07T14:58:48Z"}
+{"entryPointName":"traefik","level":"error","msg":"accept tcp [::]:8080: use of closed network connection","time":"2022-09-07T14:58:48Z"}
+{"entryPointName":"traefik","level":"error","msg":"close tcp [::]:8080: use of closed network connection","time":"2022-09-07T14:58:48Z"}
+{"entryPointName":"web","level":"error","msg":"close tcp [::]:80: use of closed network connection","time":"2022-09-07T14:58:48Z"}
+{"entryPointName":"websecure","level":"error","msg":"close tcp [::]:443: use of closed network connection","time":"2022-09-07T14:58:48Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T14:58:48Z"}
+{"level":"error","msg":"the router api@docker uses a non-existent resolver: le","time":"2022-09-07T14:58:48Z"}
+{"level":"error","msg":"The ACME resolver \"le\" is skipped from the resolvers list because: unable to get ACME account: permissions 666 for acme.json are too open, please use 600","time":"2022-09-07T14:58:55Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T14:58:55Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T14:58:55Z"}
+{"level":"error","msg":"the router whoami@docker uses a non-existent resolver: le","time":"2022-09-07T14:58:55Z"}
+{"level":"error","msg":"the router api@docker uses a non-existent resolver: le","time":"2022-09-07T14:58:55Z"}
+{"entryPointName":"traefik","level":"error","msg":"accept tcp [::]:8080: use of closed network connection","time":"2022-09-07T15:27:33Z"}
+{"entryPointName":"web","level":"error","msg":"accept tcp [::]:80: use of closed network connection","time":"2022-09-07T15:27:33Z"}
+{"entryPointName":"traefik","level":"error","msg":"close tcp [::]:8080: use of closed network connection","time":"2022-09-07T15:27:33Z"}
+{"entryPointName":"websecure","level":"error","msg":"accept tcp [::]:443: use of closed network connection","time":"2022-09-07T15:27:33Z"}
+{"entryPointName":"web","level":"error","msg":"close tcp [::]:80: use of closed network connection","time":"2022-09-07T15:27:33Z"}
+{"entryPointName":"websecure","level":"error","msg":"close tcp [::]:443: use of closed network connection","time":"2022-09-07T15:27:33Z"}
+{"level":"error","msg":"The ACME resolver \"le\" is skipped from the resolvers list because: unable to get ACME account: permissions 666 for acme.json are too open, please use 600","time":"2022-09-07T15:27:38Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T15:27:39Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T15:27:39Z"}
+{"level":"error","msg":"the router api@docker uses a non-existent resolver: le","time":"2022-09-07T15:27:39Z"}
+{"level":"error","msg":"the router whoami@docker uses a non-existent resolver: le","time":"2022-09-07T15:27:39Z"}
+{"entryPointName":"websecure","level":"error","msg":"accept tcp [::]:443: use of closed network connection","time":"2022-09-07T15:28:33Z"}
+{"entryPointName":"traefik","level":"error","msg":"accept tcp [::]:8080: use of closed network connection","time":"2022-09-07T15:28:33Z"}
+{"entryPointName":"web","level":"error","msg":"accept tcp [::]:80: use of closed network connection","time":"2022-09-07T15:28:33Z"}
+{"entryPointName":"websecure","level":"error","msg":"close tcp [::]:443: use of closed network connection","time":"2022-09-07T15:28:33Z"}
+{"entryPointName":"traefik","level":"error","msg":"close tcp [::]:8080: use of closed network connection","time":"2022-09-07T15:28:33Z"}
+{"entryPointName":"web","level":"error","msg":"close tcp [::]:80: use of closed network connection","time":"2022-09-07T15:28:33Z"}
+{"level":"error","msg":"The ACME resolver \"le\" is skipped from the resolvers list because: unable to get ACME account: permissions 666 for acme.json are too open, please use 600","time":"2022-09-07T15:28:39Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T15:28:39Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T15:28:40Z"}
+{"level":"error","msg":"the router api@docker uses a non-existent resolver: le","time":"2022-09-07T15:28:40Z"}
+{"level":"error","msg":"the router whoami@docker uses a non-existent resolver: le","time":"2022-09-07T15:28:40Z"}
+{"entryPointName":"traefik","level":"error","msg":"accept tcp [::]:8080: use of closed network connection","time":"2022-09-07T16:09:52Z"}
+{"entryPointName":"web","level":"error","msg":"accept tcp [::]:80: use of closed network connection","time":"2022-09-07T16:09:52Z"}
+{"entryPointName":"traefik","level":"error","msg":"close tcp [::]:8080: use of closed network connection","time":"2022-09-07T16:09:52Z"}
+{"entryPointName":"websecure","level":"error","msg":"accept tcp [::]:443: use of closed network connection","time":"2022-09-07T16:09:52Z"}
+{"entryPointName":"websecure","level":"error","msg":"close tcp [::]:443: use of closed network connection","time":"2022-09-07T16:09:52Z"}
+{"entryPointName":"web","level":"error","msg":"close tcp [::]:80: use of closed network connection","time":"2022-09-07T16:09:52Z"}
+{"level":"error","msg":"The ACME resolver \"le\" is skipped from the resolvers list because: unable to get ACME account: permissions 666 for acme.json are too open, please use 600","time":"2022-09-07T16:09:56Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T16:09:57Z"}
+{"entryPointName":"web","level":"error","msg":"HTTP challenge is not enabled","routerName":"acme-http@internal","time":"2022-09-07T16:09:57Z"}
+{"level":"error","msg":"the router api@docker uses a non-existent resolver: le","time":"2022-09-07T16:09:57Z"}
+{"level":"error","msg":"the router whoami@docker uses a non-existent resolver: le","time":"2022-09-07T16:09:57Z"}
