@@ -1,10 +1,10 @@
 version: '3'
 
 services:
-  reverse-proxy:
+  traefik:
     image: traefik:v2.5
     ports:
-      # - "80:80"
+      - "80:80"
       - "443:443" # 用于 TLS 即 HTTPS
       - "8080:8080"
     volumes:
@@ -14,28 +14,24 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     container_name: traefik
     env_file: .env
-    labels:
-      - "traefik.http.routers.api.rule=Host(`traefik.firefly.com`)"
-      - "traefik.http.routers.api.service=api@internal"
+    # labels:
+      # - "traefik.http.routers.api.rule=Host(`traefik.firefly.com`)"
+      # - "traefik.http.routers.api.service=api@internal"
 
       # 配置 TLS
-      - traefik.http.routers.api.tls=true
+      # - traefik.http.routers.api.tls=true
       # 设置 https，此时certresolver 为 le，与 traefik.toml certificatesResolvers 配置保持一致
-      - traefik.http.routers.api.tls.certresolver=le
+      # - traefik.http.routers.api.tls.certresolver=le
 
-
-# 该镜像会暴露出自身的 `header` 信息
-  whoami:
-    image: containous/whoami
+  nuxt:
+    build: 
+      context: ./nuxt
+    restart: always
     labels:
-      # 设置Host 为 whoami.firefly.localhost 进行域名访问
-      - "traefik.http.routers.whoami.rule=Host(`whoami.firefly.com`)"
-
-      # 配置 TLS
-      - traefik.http.routers.whoami.tls=true
-      # 设置 https，此时certresolver 为 le，与 traefik.toml certificatesResolvers 配置保持一致
-      - traefik.http.routers.whoami.tls.certresolver=le
-
+      - traefik.enable=true
+      - traefik.http.routers.nuxt.rule=PathPrefix(`/nuxt`)
+      - traefik.http.routers.nuxt.tls=true
+      - traefik.http.routers.nuxt.tls.certresolver=le
 
 # 使用已存在的 traefik 的 network
 networks:
