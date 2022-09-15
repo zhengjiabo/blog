@@ -1,4 +1,8 @@
-version: '3'
+version: '3.7'
+
+networks:
+  traefik-proxy-network:
+    name: proxy-net
 
 services:
   traefik:
@@ -14,6 +18,11 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     container_name: traefik
     env_file: .env
+    networks:
+      - traefik-proxy-network
+    labels:
+      - "traefik.docker.network:proxy-net"
+      - "traefik.enable=true"
     # labels:
       # - "traefik.http.routers.api.rule=Host(`traefik.firefly.com`)"
       # - "traefik.http.routers.api.service=api@internal"
@@ -22,18 +31,3 @@ services:
       # - traefik.http.routers.api.tls=true
       # 设置 https，此时certresolver 为 le，与 traefik.toml certificatesResolvers 配置保持一致
       # - traefik.http.routers.api.tls.certresolver=le
-
-  nuxt:
-    build: 
-      context: ./nuxt
-    restart: always
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.nuxt.rule=PathPrefix(`/nuxt`)
-      - traefik.http.routers.nuxt.tls=true
-      - traefik.http.routers.nuxt.tls.certresolver=le
-
-# 使用已存在的 traefik 的 network
-networks:
-  external:
-    name: demo_default

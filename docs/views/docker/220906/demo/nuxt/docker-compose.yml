@@ -1,0 +1,24 @@
+version: '3'
+
+# 使用已存在的 traefik 的 network
+networks:
+  traefik-proxy-net:
+    external: true
+    name: proxy-net
+
+
+services:
+  nuxt:
+    build:
+      context: .
+    restart: always
+    networks:
+      - traefik-proxy-net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=proxy-net"
+      - "traefik.http.routers.nuxt.rule=PathPrefix(`/nuxt`)"
+      - "traefik.http.routers.nuxt.tls=true"
+      - "traefik.http.routers.nuxt.tls.certresolver=le"
+
+
