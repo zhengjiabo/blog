@@ -2,32 +2,25 @@ version: '3.7'
 
 networks:
   traefik-proxy-network:
-    name: proxy-net
+    # 此处不用设置 external，因为是由本组合（compose 文件）创建的 network
+    # external: true # 使用已存在、组合（compose 文件）之外的 network，如果不存在则提示 network proxy-net declared as external, but could not be found
+    name: proxy-net # 指定名称
 
 services:
   traefik:
+    container_name: traefik
     image: traefik:v2.5
     ports:
       - "80:80"
       - "443:443" # 用于 TLS 即 HTTPS
       - "8080:8080"
+    networks: # 指定 network 使这个容器成为该网络的一部分
+      - traefik-proxy-network
     volumes:
       - ./traefik.toml:/etc/traefik/traefik.toml
       - ./acme.json:/acme.json
       - ./log:/log
       - /var/run/docker.sock:/var/run/docker.sock
-    container_name: traefik
     env_file: .env
-    networks:
-      - traefik-proxy-network
-    labels:
-      - "traefik.docker.network:proxy-net"
-      - "traefik.enable=true"
     # labels:
-      # - "traefik.http.routers.api.rule=Host(`traefik.firefly.com`)"
-      # - "traefik.http.routers.api.service=api@internal"
-
-      # 配置 TLS
-      # - traefik.http.routers.api.tls=true
-      # 设置 https，此时certresolver 为 le，与 traefik.toml certificatesResolvers 配置保持一致
-      # - traefik.http.routers.api.tls.certresolver=le
+      # - "traefik.enable=true" # 如果要在 面板上看到 traefik 服务，则开启
