@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'jike-nuxt',
+    title: 'nuxt',
     htmlAttrs: {
       lang: 'en'
     },
@@ -18,12 +18,10 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'element-ui/lib/theme-chalk/index.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/element-ui'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,24 +37,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [/^element-ui/],
-    extend(config,ctx){
-      config.node = {
-        fs:"empty"
-      }
-    }
-  },
-  externals: {
-    fs: require('fs')
-  },
-  router: {
-    base: process.env.NODE_ENV === 'production'? '/nuxt/' : '/'
-  },
-  server: {
-    // port: 8000, // default: 3000
-    host: '0.0.0.0', // default: localhost (推荐)
-    // host: '0', // 等于 host: '0.0.0.0' 这样配置，在mac上这么配置没问题，但是在window上这么配置有报错。
-    timing: false
-  },
-  telemetry: false // 不要询问加入
+  }
 }
