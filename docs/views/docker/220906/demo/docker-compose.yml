@@ -1,33 +1,41 @@
 version: '3.7'
 
+# 使用已存在的 traefik 的 network
 networks:
   traefik-proxy-network:
-    name: proxy-net
+    # external: true # 外部，此处都是同个 docker-compose 文件 无需开启
+    name: proxy-net # 指定名称
 
 services:
   traefik:
+    container_name: traefik
     image: traefik:v2.5
     ports:
       - "80:80"
       - "443:443" # 用于 TLS 即 HTTPS
       - "8080:8080"
+    networks: # 指定 network
+      - traefik-proxy-network
     volumes:
       - ./traefik.toml:/etc/traefik/traefik.toml
       - ./acme.json:/acme.json
       - ./log:/log
       - /var/run/docker.sock:/var/run/docker.sock
-    container_name: traefik
     env_file: .env
-    networks:
+    # labels:
+      # - "traefik.enable=true" # 如果要在 面板上看到 traefik 服务，则开启
+
+  nuxt:
+    restart: always
+    container_name: nuxt
+    build:
+      context: ./nuxt/
+    ports:
+      - 3000:3000
+    networks: # 指定 network
       - traefik-proxy-network
     labels:
-      - "traefik.docker.network:proxy-net"
       - "traefik.enable=true"
-    # labels:
-      # - "traefik.http.routers.api.rule=Host(`traefik.firefly.com`)"
-      # - "traefik.http.routers.api.service=api@internal"
-
-      # 配置 TLS
-      # - traefik.http.routers.api.tls=true
-      # 设置 https，此时certresolver 为 le，与 traefik.toml certificatesResolvers 配置保持一致
-      # - traefik.http.routers.api.tls.certresolver=le
+      - "traefik.http.routers.nuxt.rule=PathPrefix(`/`)"
+      # - "traefik.http.routers.nuxt.tls=true" # 开启 https 
+      # - "traefik.http.routers.nuxt.tls.certresolver=le"

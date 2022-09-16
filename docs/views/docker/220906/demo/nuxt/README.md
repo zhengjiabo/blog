@@ -1,4 +1,4 @@
-# jike-nuxt
+# nuxt
 
 ## Build Setup
 
