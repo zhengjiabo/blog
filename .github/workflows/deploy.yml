@@ -68,25 +68,22 @@ jobs:
         # if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: yarn
         
-      # 压缩依赖
-      - name: Archive artifact
+      # 压缩（归档）依赖
+      - name: Archive Artifact
         shell: bash
-        if: runner.os == 'Linux'
-        run: | # $RUNNER_TEMP 临时运行路径，本次任务执行完消除
+        run: | # $RUNNER_TEMP 临时运行路径，本次任务执行完消除  # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式
           tar \
             --dereference --hard-dereference \
-            -cvf "node_modules.tar" \
+            -jcvf "node_modules.bz2" \
             node_modules
-        env:
-          INPUT_PATH: ${{ inputs.path }} # 文件相对路径
         
         
-      # 上传依赖，由于 node_modules 不使用缓存每次都是重新安装，后续读取缓存的步骤变成读取资源，此处上传资源供其他 job 读取
+      # 上传依赖，由于 node_modules 不用缓存，此处上传资源供其他 job 读取
       - name: Upload a Node Modules Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
           name: node-modules
-          path: node_modules.tar
+          path: node_modules.bz2
      
         
   # 校验  
@@ -108,8 +105,16 @@ jobs:
           name: node-modules
           # 下载至文件夹
           path: '' 
+          
+      # 解压依赖
+      - name: Extract Artifact
+        shell: bash
+        run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 占用小
+          tar \
+            --dereference --hard-dereference \
+            -jxvf "node_modules.bz2"
       
-      # 打包
+      # 校验
       - name: Eslint
         run: yarn run lint
           
@@ -132,7 +137,16 @@ jobs:
           # 唯一标志
           name: node-modules
           # 下载至文件夹
-          path: '' 
+          path: ''
+         
+         
+      # 解压依赖
+      - name: Extract Artifact
+        shell: bash
+        run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 占用小
+          tar \
+            --dereference --hard-dereference \
+            -jxvf "node_modules.bz2"
       
       # 打包
       - name: Build Dependencies
