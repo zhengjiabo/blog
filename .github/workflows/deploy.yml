@@ -162,23 +162,28 @@ jobs:
         with:
           node-version: 16.x
           
-      # 下载 node_modules 文件
-      - name: Download a Node Modules Artifact
-        uses: actions/download-artifact@v3.0.0
-        with:
-          # 唯一标志
-          name: node-modules
-          # 下载至文件夹
-          path: ''
+      # # 下载 node_modules 文件
+      # - name: Download a Node Modules Artifact
+      #   uses: actions/download-artifact@v3.0.0
+      #   with:
+      #     # 唯一标志
+      #     name: node-modules
+      #     # 下载至文件夹
+      #     path: ''
          
          
-      # 解压依赖
-      - name: Extract Artifact
-        shell: bash
-        run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 占用小
-          tar \
-            --dereference --hard-dereference \
-            -jxvf "node_modules.bz2"
+      # # 解压依赖
+      # - name: Extract Artifact
+      #   shell: bash
+      #   run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 占用小
+      #     tar \
+      #       --dereference --hard-dereference \
+      #       -jxvf "node_modules.bz2"
+
+      # 安装依赖 不推荐直接缓存 node_modules，自己的项目可以，但企业内依赖变动可能多，缓存 node_modules 有时候会出现问题，但可以缓存 yarn 全局依赖。后续缓存 pnpm 可能速度更快   
+      - name: Install Dependencies
+        # if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: yarn
       
       # 打包
       - name: Build Dependencies
