@@ -71,10 +71,9 @@ jobs:
       # 压缩（归档）依赖
       - name: Archive Artifact
         shell: bash
-        run: | # $RUNNER_TEMP 临时运行路径，本次任务执行完消除  # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式
+        run: | # $RUNNER_TEMP 临时运行路径，本次任务执行完消除  # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 压缩率高
           tar \
-            --dereference --hard-dereference \
-            -cvf "node_modules.bz2" \
+            -jcvf "node_modules.bz2" \
             node_modules
         
         
@@ -109,10 +108,9 @@ jobs:
       # 解压依赖
       - name: Extract Artifact
         shell: bash
-        run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 占用小
+        run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 压缩率高
           tar \
-            --dereference --hard-dereference \
-            -zxvf "node_modules.bz2"
+            -jxvf "node_modules.bz2"
       
       # 校验
       - name: Eslint
@@ -141,10 +139,9 @@ jobs:
       # 解压依赖
       - name: Extract Artifact
         shell: bash
-        run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 占用小
+        run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 压缩率高
           tar \
-            --dereference --hard-dereference \
-            -zxvf "node_modules.bz2"
+            -jxvf "node_modules.bz2"
       
       # 校验
       - name: Test
@@ -175,10 +172,9 @@ jobs:
       # 解压依赖
       - name: Extract Artifact
         shell: bash
-        run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 占用小
+        run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 压缩率高
           tar \
-            --dereference --hard-dereference \
-            -xvf "node_modules.bz2"
+            -jxvf "node_modules.bz2"
 
       
       # 打包
