@@ -76,7 +76,7 @@ jobs:
           tar \
             --dereference --hard-dereference \
             --directory "$INPUT_PATH" \
-            -cvf "$INPUT_PATH/node_modules.tar" \
+            -cvf "$RUNNER_TEMP/node_modules.tar" \
             node_modules
         env:
           INPUT_PATH: ${{ inputs.path }} # 文件相对路径
@@ -87,7 +87,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.0
         with:
           name: node-modules
-          path: node_modules.tar
+          path: $RUNNER_TEMP/node_modules.tar
      
         
   # 校验  
