@@ -1,4 +1,4 @@
-name: Deploy
+name: deploy
 on:
   workflow_dispatch: # 允许手动触发
   push:
@@ -104,21 +104,24 @@ jobs:
       uses: actions/download-artifact@v3.0.0
       with:
         # 唯一标志
-        name: github-pages # actions/upload-pages-artifact 是利用 upload-artifact 上传到 github-pages 标志
+        name: github-pages # actions/upload-pages-artifact 是利用 upload-artifact 上传到 github-pages 标志，文件名为 artifact.tar
         # 下载至文件夹
-        path: ''
-        
+        path: '' 
+    
+    # 此时还是压缩包，可以上传后解压
     - name: Check Build
       run: ls -lah
         
-    #- name: send files to a remote server with scp
-    #  uses: appleboy/scp-action@master
-    #  with:
-    #    host: ${{ secrets.HUAWEI_IP }}
-    #    username: ${{ secrets.HUAWEI_USER_NAME }}
-    #    password: ${{ secrets.HUAWEI_ACCESS_KEY_SECRET }}
-    #    source: './*'
-    #    target: ../var/www/blog
-    #    # 失败重试 3 次
-    #    retry-attempts: 3
+    # 可以使用 rsync，但还是不推荐直连，后续改掉
+    - name: send files to a remote server with scp
+      uses: appleboy/scp-action@master
+      continue-on-error: true
+      with:
+        host: ${{ secrets.HUAWEI_IP }}
+        username: ${{ secrets.HUAWEI_USER_NAME }}
+        password: ${{ secrets.HUAWEI_ACCESS_KEY_SECRET }}
+        source: './*'
+        target: ../var/www/blog
+        # 失败重试 3 次
+        retry-attempts: 3
  
