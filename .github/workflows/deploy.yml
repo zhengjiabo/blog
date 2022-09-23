@@ -32,18 +32,25 @@ jobs:
         with:
           node-version: 16.x
       
+      # 获得 yarn 缓存路径
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      
       # 读取缓存
-      - name: Cache Node Modules
-        id: cache-node-modules # 当前步骤的唯一标记，用于后续判断缓存是否命中
-        uses: actions/cache@v3.0.8
+      - name: Cache Yarn
+        uses: actions/cache@v3
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
         with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('yarn.lock') }}
-          restore-keys: node-modules-
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      
           
-      # 未命中缓存，安装依赖   
+      # 安装依赖 不推荐直接缓存 node_modules，自己的项目可以，但企业内依赖变动可能多，缓存 node_modules 有时候会出现问题，但可以缓存 yarn 全局依赖。后续缓存 pnpm 可能速度更快   
       - name: Install Dependencies
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        # if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: yarn
         
   # 打包
