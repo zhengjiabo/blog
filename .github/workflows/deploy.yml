@@ -74,7 +74,7 @@ jobs:
         run: | # $RUNNER_TEMP 临时运行路径，本次任务执行完消除  # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式
           tar \
             --dereference --hard-dereference \
-            -zcvf "node_modules.bz2" \
+            -cvf "node_modules.bz2" \
             node_modules
         
         
@@ -178,7 +178,7 @@ jobs:
         run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 占用小
           tar \
             --dereference --hard-dereference \
-            -zxvf "node_modules.bz2"
+            -xvf "node_modules.bz2"
 
       
       # 打包
