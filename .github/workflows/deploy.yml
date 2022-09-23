@@ -1,79 +1,108 @@
-name: github deploy
+name: deploy
 on:
-  workflow_dispatch:
+  workflow_dispatch: # 允许手动触发
   push:
     branches: [main]
   pull_request:
     branches: [main]
+    
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  #打包
-  build:
-    # 指定环境
-    runs-on: ubuntu-latest
-    
-    #执行步骤
-    steps:
-    # 步骤所依赖的操作库 这里引用了官方发布的git操作库 目的是拉取当前库的代码
-    - uses: actions/checkout@v1
-    
-    # 安装指定版本node
-    - name: Use Node.js 10.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10.x
+  # 安装依赖
+  install:
+    runs-on: ubuntu-latest # 指定环境
+    steps: #执行步骤
+      # 拉取当前分支代码
+      - uses: actions/checkout@v2.4.2
+      
+      # 安装 Node
+      - name: Setup Node
+        uses: actions/setup-node@v3.4.1
+        with:
+          node-version: 16.x
+      
+      # 获得 yarn 缓存路径
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      
+      # 读取缓存
+      - name: Cache Yarn
+        uses: actions/cache@v3
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      
+          
+      # 安装依赖 不推荐直接缓存 node_modules，自己的项目可以，但企业内依赖变动可能多，缓存 node_modules 有时候会出现问题，但可以缓存 yarn 全局依赖。后续缓存 pnpm 可能速度更快   
+      - name: Install Dependencies
+        # if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: yarn
         
-    # 执行安装/打包语句
-    - name: npm install, build
-      run: |
-        npm install
-        npm run build --if-present
-      env:
-        CI: true
-    # 上传打包后文件, 供其它job使用
-    - name: Upload a Build Artifact
-      if: success()
-      uses: actions/upload-artifact@v3.1.0
-      with:
-        # 唯一标志 下载用
-        name: build
-        # 指定上传文件/文件夹
-        path: public/blog/
+  # 打包
+  build:
+    runs-on: ubuntu-latest # 指定环境
+    needs: [install] # 前置任务
+    steps: #执行步骤
+      - uses: actions/checkout@v2.4.2
+      - name: Setup Node
+        uses: actions/setup-node@v3.4.1
+        with:
+          node-version: 16.x
+          
+      # 读取缓存
+      - name: Cache Node Modules
+        id: cache-node-modules # 当前步骤的唯一标记，用于后续判断缓存是否命中
+        uses: actions/cache@v3.0.8
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('yarn.lock') }}
+          restore-keys: node-modules-
+      
+      # 打包
+      - name: Build Dependencies
+        run: yarn build
+       
+      # 上传用于 Github Page 发布
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: public/blog/
+      
   
   # 发布到github page
   github-deploy:
-    # 前提打包完成
-    needs: build
+    needs: [build]
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    
     steps:
-    # 下载打包后文件
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v3.0.0
-      with:
-        # 唯一标志
-        name: build
-        # 下载至文件夹, 此处能和下方的build_dir对应即可
-        path: public/blog/
-    
-    # 合并到github page指定分支
-    - name: GitHub Pages
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v3.0.0
-      with:
-        # 上传至目标分支
-        target_branch: github-deploy
-        # 打包后文件夹
-        build_dir: public/blog/
-        # commit文本
-        commit_message: deploy
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+      
+      
       
   # 发布到华为云服务器
   huaweiCloud-deploy:
     # 前提打包完成
-    needs: build
+    needs: [build]
     runs-on: ubuntu-latest
     
     steps:
@@ -82,12 +111,18 @@ jobs:
       uses: actions/download-artifact@v3.0.0
       with:
         # 唯一标志
-        name: build
+        name: github-pages # actions/upload-pages-artifact 是利用 upload-artifact 上传到 github-pages 标志，文件名为 artifact.tar
         # 下载至文件夹
-        path: ''
+        path: '' 
+    
+    # 此时还是压缩包，可以上传后解压
+    - name: Check Build
+      run: ls -lah
         
+    # 可以使用 rsync，但还是不推荐直连，后续改掉
     - name: send files to a remote server with scp
       uses: appleboy/scp-action@master
+      continue-on-error: true
       with:
         host: ${{ secrets.HUAWEI_IP }}
         username: ${{ secrets.HUAWEI_USER_NAME }}
