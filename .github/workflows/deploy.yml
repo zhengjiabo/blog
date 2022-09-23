@@ -75,7 +75,7 @@ jobs:
         run: | # $RUNNER_TEMP 临时运行路径，本次任务执行完消除
           tar \
             --dereference --hard-dereference \
-            -cvf "$RUNNER_TEMP/node_modules.tar" \
+            -cvf "node_modules.tar" \
             node_modules
         env:
           INPUT_PATH: ${{ inputs.path }} # 文件相对路径
@@ -86,7 +86,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.0
         with:
           name: node-modules
-          path: "$RUNNER_TEMP/node_modules.tar"
+          path: node_modules.tar
      
         
   # 校验  
