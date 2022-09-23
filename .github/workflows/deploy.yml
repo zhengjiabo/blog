@@ -1,4 +1,4 @@
-name: github deploy
+name: Deploy
 on:
   workflow_dispatch: # 允许手动触发
   push:
@@ -69,19 +69,9 @@ jobs:
       # 打包
       - name: Build Dependencies
         run: yarn build
-        
-      # 上传打包结果，用于其他 job 上传各平台或 ssh 上传服务器，后续改为 docker
-      #- name: Upload a Build Artifact
-      #  if: success()
-      #  uses: actions/upload-artifact@v3.1.0
-      #  with:
-      #    # 唯一标志 下载用
-      #    name: build
-      #    # 指定上传文件/文件夹
-      #    path: public/blog/
        
       # 上传用于 Github Page 发布
-      - name: Upload artifact
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: public/blog/
@@ -119,7 +109,7 @@ jobs:
         path: ''
         
     - name: Check Build
-      run: ls -lah node_modules | head -5
+      run: ls -lah
         
     #- name: send files to a remote server with scp
     #  uses: appleboy/scp-action@master
