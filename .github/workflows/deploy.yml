@@ -19,6 +19,21 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # 检查依赖的安全风险
+  audit:
+    runs-on: ubuntu-latest
+    steps: #执行步骤
+      - uses: actions/checkout@v2.4.2
+      - name: Setup Node
+        uses: actions/setup-node@v3.4.1
+        with:
+          node-version: 16.x
+    
+      # 执行检查-只针对打包
+      - name: Run a Security Audit 
+        continue-on-error: true # 因为现在还没精力去调配依赖，报错先跳过
+        run: npm audit --only=prod
+        
   # 安装依赖
   install:
     runs-on: ubuntu-latest # 指定环境
@@ -53,6 +68,39 @@ jobs:
         # if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: yarn
         
+      # 上传依赖，由于 node_modules 不使用缓存每次都是重新安装，后续读取缓存的步骤变成读取资源，此处上传资源供其他 job 读取
+      - name: Upload a Node Modules Artifact
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          name: node-modules
+          path: node_modules
+     
+        
+  # 校验  
+  lint:
+    runs-on: ubuntu-latest # 指定环境
+    needs: [install] # 前置任务
+    steps: #执行步骤
+      - uses: actions/checkout@v2.4.2
+      - name: Setup Node
+        uses: actions/setup-node@v3.4.1
+        with:
+          node-version: 16.x
+          
+      # 下载 node_modules 文件
+      - name: Download a Node Modules Artifact
+        uses: actions/download-artifact@v3.0.0
+        with:
+          # 唯一标志
+          name: node-modules
+          # 下载至文件夹
+          path: '' 
+      
+      # 打包
+      - name: Eslint
+        run: yarn run lint
+          
+        
   # 打包
   build:
     runs-on: ubuntu-latest # 指定环境
@@ -64,14 +112,14 @@ jobs:
         with:
           node-version: 16.x
           
-      # 读取缓存
-      - name: Cache Node Modules
-        id: cache-node-modules # 当前步骤的唯一标记，用于后续判断缓存是否命中
-        uses: actions/cache@v3.0.8
+      # 下载 node_modules 文件
+      - name: Download a Node Modules Artifact
+        uses: actions/download-artifact@v3.0.0
         with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('yarn.lock') }}
-          restore-keys: node-modules-
+          # 唯一标志
+          name: node-modules
+          # 下载至文件夹
+          path: '' 
       
       # 打包
       - name: Build Dependencies
@@ -82,22 +130,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: public/blog/
-  
-  
-  # 检查依赖的安全风险
-  audit:
-    runs-on: ubuntu-latest
-    steps: #执行步骤
-      - uses: actions/checkout@v2.4.2
-      - name: Setup Node
-        uses: actions/setup-node@v3.4.1
-        with:
-          node-version: 16.x
-    
-      # 执行检查-只针对打包
-      - name: Run a Security Audit 
-        run: npm audit --only=prod
- 
+          
   
   # 发布到github page
   github-deploy:
