@@ -116,7 +116,39 @@ jobs:
       
       # 校验
       - name: Eslint
-        run: yarn run lint
+        run: yarn lint
+        
+  # 测试用例  
+  test:
+    runs-on: ubuntu-latest # 指定环境
+    needs: [install] # 前置任务
+    steps: #执行步骤
+      - uses: actions/checkout@v2.4.2
+      - name: Setup Node
+        uses: actions/setup-node@v3.4.1
+        with:
+          node-version: 16.x
+          
+      # 下载 node_modules 文件
+      - name: Download a Node Modules Artifact
+        uses: actions/download-artifact@v3.0.0
+        with:
+          # 唯一标志
+          name: node-modules
+          # 下载至文件夹
+          path: '' 
+          
+      # 解压依赖
+      - name: Extract Artifact
+        shell: bash
+        run: | # --dereference 跟踪符号链接 –-hard-dereference 解析硬链接  # -j bzip2 格式 占用小
+          tar \
+            --dereference --hard-dereference \
+            -jxvf "node_modules.bz2"
+      
+      # 校验
+      - name: Test
+        run: yarn test
           
         
   # 打包
