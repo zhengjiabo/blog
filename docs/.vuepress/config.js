@@ -1,21 +1,48 @@
-const themeConfig = require('./config/theme/')
-const argv = require('minimist')(process.argv.slice(2));
-const dest = argv.d ? argv.d : 'public/blog/';
-const base = dest.replace('public', '') || undefined
+/* import { viteBundler } from 'vuepress' */
+import { defineUserConfig } from 'vuepress'
+import { defaultTheme } from '@vuepress/theme-default'
+import generateSidebar from './generate/sidebar.json'
 
-module.exports = {
-  title: "Firefly",
+export const navbar = [
+  { text: '主页', link: '/' },
+  { text: '前端部署', link: '/views/docker/' },
+  // { text: 'Linux', link: '/views/linux/' },
+  // { text: 'Http', link: '/views/http/' },
+  // { text: 'Vue', link: '/views/vue/' },
+  // {
+  //   text: '更多',
+  //   children: [
+  //     { text: '其他杂文', link: '/views/article/' },
+  //   ],
+  // },
+]
+
+const sidebar = [
+  ...generateSidebar
+]
+
+
+export default defineUserConfig({
+  lang: 'zh-CN',
+  base: '/blog',
+  title: 'Firefly',
   description: 'Enjoy when you can, and endure when you must.',
-  dest,
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+    ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
   ],
-  theme: 'reco',
-  themeConfig,
-  markdown: {
-    lineNumbers: true
-  },
-  plugins: ['@vuepress/medium-zoom', 'flowchart'],
-  base
-}  
+  shouldPrefetch: () => true, // 控制对于哪些文件，是需要生成 <link rel="prefetch"> 资源提示的
+  theme: defaultTheme({
+    repo: 'zhengjiabo/blog', // 将会自动在每个页面的导航栏生成生成一个 GitHub 链接，以及在页面的底部生成一个 "Edit this page" 链接。
+    navbar,
+    sidebar,
+  }),
+  /*  bundler: viteBundler({ // 自定义打包器
+    vuePluginOptions: {
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag === 'center',
+        },
+      },
+    },
+  }), */
+})
