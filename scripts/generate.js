@@ -46,17 +46,19 @@ const generateSidebar = async (navbar = []) => {
   const ignoreLink = ['/']
   navbar = navbar.filter(({link = ''}) => !ignoreLink.includes(link))
 
-  const sidebar = []
+  const sidebar = {}
   
   let length = navbar.length
   for(let i = 0; i < length; i ++) {
-    const { link } = navbar[i]
+    const { text, link } = navbar[i]
     const children = []
-    sidebar.push({
-      ...navbar[i],
-      children
-    })
-
+    sidebar[link] = [
+      {
+        text,
+        link,
+        children
+      }
+    ]
     try {
       const dirPath = path.resolve(`./docs${link}`)
       let files = await readdir(dirPath);
@@ -80,6 +82,7 @@ const generateSidebar = async (navbar = []) => {
 
 
   // 开始写入 /docs/.vuepress/generate/sidebar.json
+  console.log(sidebar)
   const data = new Uint8Array(Buffer.from(JSON.stringify(sidebar)));
   writeFile(path.resolve('./docs/.vuepress/generate/sidebar.json'), data)
 }

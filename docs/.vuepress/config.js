@@ -17,9 +17,9 @@ export const navbar = [
   // },
 ]
 
-const sidebar = [
+const sidebar = {
   ...generateSidebar
-]
+}
 
 
 export default defineUserConfig({
