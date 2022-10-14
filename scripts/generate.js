@@ -45,16 +45,21 @@ const generateSidebar = async (navbar = []) => {
   // 过滤掉不想要目录的顶部菜单
   const ignoreLink = ['/']
   navbar = navbar.filter(({link = ''}) => !ignoreLink.includes(link))
-
-  const sidebar = {}
   
   let length = navbar.length
+  for(let i = 0; i < length; i ++) {
+    const { children = [] } = navbar[i]
+    navbar.push(...children)
+  }
+
+
+  const sidebar = {}
+  length = navbar.length
   for(let i = 0; i < length; i ++) {
     const { text, link } = navbar[i]
     const children = []
     sidebar[link] = [
       {
-        text,
         link,
         children
       }

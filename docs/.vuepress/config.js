@@ -9,12 +9,12 @@ export const navbar = [
   { text: 'Linux', link: '/views/linux/' },
   { text: 'Http', link: '/views/http/' },
   { text: 'Vue', link: '/views/vue/' },
-  // {
-  //   text: '更多',
-  //   children: [
-  //     { text: '其他杂文', link: '/views/article/' },
-  //   ],
-  // },
+  {
+    text: '更多',
+    children: [
+      { text: '其他杂文', link: '/views/article/' },
+    ],
+  },
 ]
 
 const sidebar = {
