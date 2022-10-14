@@ -1,14 +1,14 @@
 /* import { viteBundler } from 'vuepress' */
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
-import generateSidebar from './generate/sidebar.json'
+import generateSidebar from './generate/sidebar.json' assert {type: 'json'};
 
 export const navbar = [
   { text: '主页', link: '/' },
   { text: '前端部署', link: '/views/docker/' },
-  // { text: 'Linux', link: '/views/linux/' },
-  // { text: 'Http', link: '/views/http/' },
-  // { text: 'Vue', link: '/views/vue/' },
+  { text: 'Linux', link: '/views/linux/' },
+  { text: 'Http', link: '/views/http/' },
+  { text: 'Vue', link: '/views/vue/' },
   // {
   //   text: '更多',
   //   children: [
