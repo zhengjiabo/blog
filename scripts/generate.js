@@ -72,11 +72,11 @@ const generateSidebar = async (navbar = []) => {
       files = files.filter(filename => filename.endsWith('.md') && filename.toLowerCase() !== 'readme.md') // 只看文档，且不需要 readme
 
       // 获取文档内容里面的标题，和路径封装 { text: xx link: xx}
-      for (const file of files) {
+      for (const [index, file] of files.entries()) {
         try {
           const filePath = path.resolve(`${dirPath}`,`./${file}`)
           const text = await getTitle(filePath) // 读取文件获得 title
-          children.push({ text, link: `${link}${file}`})
+          children.push({ text: `${index + 1}. ${text}`, link: `${link}${file}`})
         } catch (err) {
           console.error(err);
         }
