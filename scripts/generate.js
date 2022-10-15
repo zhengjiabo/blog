@@ -17,7 +17,7 @@ const getTitle = async filePath => { // 获取标题
 
     stream.on('data', (str) => {
         allStr += str;
-        const result = allStr.match(/(?<=-*?(?:\n)+title:(?:\s)+?).*?(?=(?:\n)+date)/)
+        const result = allStr.match(/(?<=-*?(?:[\r\n])+title:(?:\s)+?)[\w\W]*?(?=(?:[\r\n])+date)/)
         if(result) {
           resolve(result[0])
           stream.close() // 取到指定文本，提前关闭 readStream
@@ -51,6 +51,7 @@ const generateSidebar = async (navbar = []) => {
     const { children = [] } = navbar[i]
     navbar.push(...children)
   }
+  navbar = navbar.filter(({link = ''}) => link)
 
 
   const sidebar = {}
@@ -68,12 +69,12 @@ const generateSidebar = async (navbar = []) => {
       const dirPath = path.resolve(`./docs${link}`)
       let files = await readdir(dirPath);
 
-      files = files.filter(filename => filename.endsWith('.md')) // 只看文档
+      files = files.filter(filename => filename.endsWith('.md') && filename.toLowerCase() !== 'readme.md') // 只看文档，且不需要 readme
 
       // 获取文档内容里面的标题，和路径封装 { text: xx link: xx}
       for (const file of files) {
         try {
-          const filePath = `${dirPath}/${file}`
+          const filePath = path.resolve(`${dirPath}`,`./${file}`)
           const text = await getTitle(filePath) // 读取文件获得 title
           children.push({ text, link: `${link}${file}`})
         } catch (err) {
@@ -87,7 +88,6 @@ const generateSidebar = async (navbar = []) => {
 
 
   // 开始写入 /docs/.vuepress/generate/sidebar.json
-  console.log(sidebar)
   const data = new Uint8Array(Buffer.from(JSON.stringify(sidebar)));
   writeFile(path.resolve('./docs/.vuepress/generate/sidebar.json'), data)
 }

@@ -24,7 +24,7 @@ const sidebar = {
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  base: '/blog',
+  base: '/blog/',
   title: 'Firefly',
   description: 'Enjoy when you can, and endure when you must.',
   head: [
