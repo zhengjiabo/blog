@@ -28,13 +28,14 @@ export default defineUserConfig({
   title: 'Firefly',
   description: 'Enjoy when you can, and endure when you must.',
   head: [
-    ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
+    ['link', { rel: 'shortcut icon', href: '/images/favicon.ico', type: 'image/x-icon' }],
   ],
   shouldPrefetch: () => true, // 控制对于哪些文件，是需要生成 <link rel="prefetch"> 资源提示的
   theme: defaultTheme({
     repo: 'zhengjiabo/blog', // 将会自动在每个页面的导航栏生成生成一个 GitHub 链接，以及在页面的底部生成一个 "Edit this page" 链接。
     navbar,
     sidebar,
+    editLink: false
   }),
   /*  bundler: viteBundler({ // 自定义打包器
     vuePluginOptions: {
