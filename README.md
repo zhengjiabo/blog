@@ -1,1 +1,0 @@
-### Firefly's blog [website](http://fireflymoon.cf)

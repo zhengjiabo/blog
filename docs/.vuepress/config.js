@@ -1,21 +1,57 @@
-const themeConfig = require('./config/theme/')
-const argv = require('minimist')(process.argv.slice(2));
-const dest = argv.d ? argv.d : 'public/blog/';
-const base = dest.replace('public', '') || undefined
+/* import { viteBundler } from 'vuepress' */
+import { defineUserConfig } from 'vuepress'
+import { defaultTheme } from '@vuepress/theme-default'
+import { searchPlugin } from '@vuepress/plugin-search'
+import generateSidebar from './generate/sidebar.json' assert {type: 'json'};
 
-module.exports = {
-  title: "Firefly",
-  description: 'Enjoy when you can, and endure when you must.',
-  dest,
-  head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
-  ],
-  theme: 'reco',
-  themeConfig,
-  markdown: {
-    lineNumbers: true
+export const navbar = [
+  { text: '主页', link: '/' },
+  { text: '前端部署', link: '/views/docker/' },
+  { text: 'Linux', link: '/views/linux/' },
+  { text: 'Http', link: '/views/http/' },
+  { text: 'Vue', link: '/views/vue/' },
+  {
+    text: '更多',
+    children: [
+      { text: 'Webpack', link: '/views/webpack/' },
+      { text: 'Algorithm', link: '/views/algorithm/' },
+      { text: '未归档', link: '/views/frontEnd/' },
+      { text: '其他杂文', link: '/views/article/' },
+    ],
   },
-  plugins: ['@vuepress/medium-zoom', 'flowchart'],
-  base
-}  
+]
+
+const sidebar = {
+  ...generateSidebar
+}
+
+
+export default defineUserConfig({
+  lang: 'zh-CN',
+  base: '/blog/',
+  title: 'Firefly',
+  description: 'Enjoy when you can, and endure when you must.',
+  head: [
+    ['link', { rel: 'shortcut icon', href: '/images/favicon.ico', type: 'image/x-icon' }],
+  ],
+  shouldPrefetch: () => true, // 控制对于哪些文件，是需要生成 <link rel="prefetch"> 资源提示的
+  theme: defaultTheme({
+    repo: 'zhengjiabo/blog', // 将会自动在每个页面的导航栏生成生成一个 GitHub 链接，以及在页面的底部生成一个 "Edit this page" 链接。
+    navbar,
+    sidebar,
+    editLink: false
+  }),
+  plugins: [
+    searchPlugin({ // 配置项 https://v2.vuepress.vuejs.org/zh/reference/plugin/search.html#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
+    }),
+  ],
+  /*  bundler: viteBundler({ // 自定义打包器
+    vuePluginOptions: {
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag === 'center',
+        },
+      },
+    },
+  }), */
+})

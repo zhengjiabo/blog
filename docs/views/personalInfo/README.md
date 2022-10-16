@@ -11,7 +11,7 @@ sidebar: false
 
 ***
  
-`Vue全家桶` `微信小程序` `ES6` `Sass` `Stylus`
+<!-- `Vue全家桶` `微信小程序` `ES6` `Sass` `Stylus` -->
 
 #### 我的业余生活
 
