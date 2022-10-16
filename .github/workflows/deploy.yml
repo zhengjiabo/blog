@@ -185,7 +185,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: public/blog/
+          path: public/dist/
           
   
   # 发布到github page
