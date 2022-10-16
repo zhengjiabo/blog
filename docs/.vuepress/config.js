@@ -1,6 +1,7 @@
 /* import { viteBundler } from 'vuepress' */
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
+import { searchPlugin } from '@vuepress/plugin-search'
 import generateSidebar from './generate/sidebar.json' assert {type: 'json'};
 
 export const navbar = [
@@ -12,6 +13,9 @@ export const navbar = [
   {
     text: '更多',
     children: [
+      { text: 'Webpack', link: '/views/webpack/' },
+      { text: 'Algorithm', link: '/views/algorithm/' },
+      { text: '未归档', link: '/views/frontEnd/' },
       { text: '其他杂文', link: '/views/article/' },
     ],
   },
@@ -37,6 +41,10 @@ export default defineUserConfig({
     sidebar,
     editLink: false
   }),
+  plugins: [
+    searchPlugin({ // 配置项 https://v2.vuepress.vuejs.org/zh/reference/plugin/search.html#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
+    }),
+  ],
   /*  bundler: viteBundler({ // 自定义打包器
     vuePluginOptions: {
       template: {
