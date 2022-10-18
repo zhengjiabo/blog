@@ -236,7 +236,7 @@ jobs:
         username: ${{ secrets.HUAWEI_USER_NAME }}
         password: ${{ secrets.HUAWEI_ACCESS_KEY_SECRET }}
         source: './*'
-        target: /var/www/blog
+        target: /home/bo/docker/blog/dist
         # 失败重试 3 次
         retry-attempts: 3
  
