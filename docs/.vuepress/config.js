@@ -37,6 +37,7 @@ export default defineUserConfig({
   shouldPrefetch: () => true, // 控制对于哪些文件，是需要生成 <link rel="prefetch"> 资源提示的
   theme: defaultTheme({
     repo: 'zhengjiabo/blog', // 将会自动在每个页面的导航栏生成生成一个 GitHub 链接，以及在页面的底部生成一个 "Edit this page" 链接。
+    colorMode: 'dark',
     navbar,
     sidebar,
     editLink: false
