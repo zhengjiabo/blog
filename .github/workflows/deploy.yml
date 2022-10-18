@@ -222,8 +222,8 @@ jobs:
     # 此时还是压缩包，也可以上传后解压
     - name: Check Build
       run: |
-        ls -lah \
-        tar -jxvf "artifact.tar" \
+        ls -lah 
+        tar -jxvf "artifact.tar" 
         rm -f artifact.tar
       
         
