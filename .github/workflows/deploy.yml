@@ -223,7 +223,7 @@ jobs:
     - name: Check Build
       run: |
         ls -lah 
-        tar \ -xvf "artifact.tar" 
+        tar -xvf "artifact.tar" 
         rm -f artifact.tar
       
         
