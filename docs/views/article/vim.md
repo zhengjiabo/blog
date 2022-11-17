@@ -1,5 +1,5 @@
 # vim 操作
-
+[https://prezi.com/view/RKhL17TysQ2tqvADpZDV/](https://prezi.com/view/RKhL17TysQ2tqvADpZDV/)
 
 ## 特殊标记
 
@@ -94,6 +94,12 @@
 
 - `d/c/yi<cin>`:  根据输入关键词，删除/更改/复制关键词匹配项内的内容，例如 `()<>''` 内容
 - `d/c/ya<cin>`:  根据输入关键词，删除/更改/复制关键词匹配项内的内容，包括关键词. 例如 `()<>''` 
+- `d/c/yit`: 删除/更改/复制标签内的内容，例如：`<div>aaa</div>` => 输入 `dit` => `<div></div>` 
+- `d/c/yat`: 删除/更改/复制标签内的内容，例如：`<div>aaa</div>` => 输入 `dat` => `` 
+- `d/c/yat`: 删除/更改/复制标签内的内容，例如：`<div>aaa</div>` => 输入 `dat` => `` 
+
+
+
 
 - `ciw`: 光标选中词删除，进入插入模式；
 - `cw`: 光标选中位置及其后面词删除，进入插入模式；
