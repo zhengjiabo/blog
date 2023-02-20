@@ -1,3 +1,12 @@
+---
+title: Vim
+date: 2022-07-19
+tags:
+ - 计算机
+categories: 
+ - article
+---
+
 # vim 操作
 
 [https://prezi.com/view/RKhL17TysQ2tqvADpZDV/](https://prezi.com/view/RKhL17TysQ2tqvADpZDV/)
