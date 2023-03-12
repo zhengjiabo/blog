@@ -1,0 +1,21 @@
+version: "3.9"
+
+networks:
+  traefik-proxy-network:
+    external: true # 使用已存在、组合（compose 文件）之外的 network，如果不存在则提示 network proxy-net declared as external, but could not be found
+    name: proxy-net # 指定名称
+
+services:
+  blog-nginx:
+    restart: always
+    image: brotli:latest
+    container_name: blog-nginx-container
+    volumes:
+      - ./dist/:/usr/share/nginx/html/
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    networks: # 指定 network 使这个容器成为该网络的一部分
+      - traefik-proxy-network
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.blog-nginx.rule=PathPrefix(`/blog`)
+
