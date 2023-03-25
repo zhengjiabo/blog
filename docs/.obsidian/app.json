@@ -2,7 +2,8 @@
   "attachmentFolderPath": "assets",
   "userIgnoreFilters": [
     ".vuepress",
-    "/demo/"
+    "/demo/",
+    "index"
   ],
   "alwaysUpdateLinks": true,
   "newLinkFormat": "relative",
