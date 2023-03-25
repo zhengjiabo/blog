@@ -41,7 +41,7 @@ webpack-cli 用来学习不够存粹，逻辑复杂，有太多影响因素。
 
 
 可以通过编译结束后的 [`stat`](https://github.com/facebook/create-react-app/blob/f34d88e30c7d8be7181f728d1abc4fd8d5cd07d3/packages/react-scripts/scripts/build.js#L79) 对象拿到打包后所有资源体积，以及打包时间。当基于 webpack api 开发脚手架后，其脚手架的构建日志也可以进行自定义。
-![](./220816/1.png)
+![](../assets/1%2033.png)
 
 
 

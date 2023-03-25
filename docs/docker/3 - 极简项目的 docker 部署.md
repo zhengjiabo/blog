@@ -13,7 +13,7 @@ categories:
 3. 使用 `docker compose up` 学习时，偶尔会报错导致产生 None 镜像（虚无镜像），可以通过 `docker image prune` 清理虚无镜像。
 4. Dockerfile 的 EXPOSE，不是只有注释作用，在 docker run -P 自动映射时，会取 EXPOSE 暴露出来的端口，随机映射到宿主机的端口上。
 5. docker 如果更换源，尽量不要用科大源。在 Tag `latest` 表现上不一致，拉取的版本可能会和 Hub Docker 不同。Hub Docker 目前 node 镜像的 latest 在 `18.7.0`，而更换了科大源：`https://docker.mirrors.ustc.edu.cn/`，latest 在 `17.3.0`。     
-  ![](./220730/2.png)      
+  ![](../assets/2%2011.png)      
   可以使用 Docker 中国区官方镜像: `https://registry.docker-cn.com` 替代
 6. Dockerfile 
    - ENV：    
@@ -135,7 +135,7 @@ docker run --rm -p 3000:3000 -it --name node node-demo
 
 ## 4. Docker Compose
 使用繁杂的命令构造镜像和运行容器，在管理端口，存储有天然劣势，将命令行的选项（例如-p）也翻译成配置文件，更易于维护。也可以实现多个容器相互配合。     
-![](./220730/1.png)    
+![](../assets/1%2014.png)    
 ```yml
 # docker-compose.yaml
 version: "3" # 这代表我们定义的docker-compose.yml 文件内容所采用的版本，目前Docker Compose的配置文件已经迭代至了第三版，其所支持的功能也越来越丰富，所以我们建议使用最新的版本来定义。
@@ -259,7 +259,7 @@ ln 原文件名 链接文件名
 
     执行 `docker image prune -f && docker build -t demo:base --progress plain -f base-Dockerfile . && docker run --rm -it demo:base`      
     构建基础镜像并运行容器，镜像名为 `demo:base`。运行容器时，输出如下       
-    ![](./220730/3.png)       
+    ![](../assets/3%209.png)       
     dockerfile 同时出现 ENTRYPOINT 和 CMD ，CMD 整个指令会作为参数附加在 ENTRYPOINT 指令后面，在基础镜像的预处理脚本通过 `$@` 接受参数。所以在两个打印组中间执行了 `ls`，出现了以上结果。基础镜像构建完毕（运行容器只是为了验证基础镜像配置是否正常，docker run 可以不要）
 
     个人镜像-预处理脚本        
@@ -288,7 +288,7 @@ ln 原文件名 链接文件名
     ```
     执行 `docker image prune -f && docker build -t demo:custom --progress plain . && docker run --rm -it demo:custom`      
     结果如下：     
-    ![](./220730/4.png)       
+    ![](../assets/4%207.png)       
     结论：使用了基础镜像的 CMD 和 ENTRYPOINT
 
 - 验证二：如果个人镜像有 CMD 和 ENTRYPOINT，能否和基础镜像内部的指令一起生效。      
@@ -303,7 +303,7 @@ ln 原文件名 链接文件名
     ```
     执行 `docker image prune -f && docker build -t demo:custom --progress plain . && docker run --rm -it demo:custom`      
     结果如下：     
-    ![](./220730/5.png)       
+    ![](../assets/5%206.png)       
     结论：ENTRYPOINT 和 CMD 会覆盖基础镜像内部对应的指令。  
 
 - 验证三：如果个人镜像只有 CMD，CMD 整个指令会作为参数附加在基础镜像的 ENTRYPOINT 指令后面吗？      
@@ -315,7 +315,7 @@ ln 原文件名 链接文件名
     ```
     执行 `docker image prune -f && docker build -t demo:custom --progress plain . && docker run --rm -it demo:custom`      
     结果如下：     
-    ![](./220730/6.png)       
+    ![](../assets/6%203.png)       
     结论：如果个人镜像只有 CMD，CMD 整个指令会作为参数附加在基础镜像的 ENTRYPOINT 指令后面       
 
 - 总结：FROM 基础镜像，ENTRYPOINT 和 CMD 会覆盖基础镜像内部对应的指令。覆盖后，如果同时出现 ENTRYPOINT 和 CMD ，CMD 整个指令会作为参数附加在 ENTRYPOINT 指令后面，如果 docker run 命令带了参数，参数会覆盖掉 CMD 指令，最终也将附加在 ENTRYPOINT 指令后面。     
@@ -548,7 +548,7 @@ COPY 相当于副本，占用太大空间。
   - bullseye-slim：Debian 瘦身版
   - buster：Debian 上一版本
   - buster-slim：Debian 上一版本瘦身版
-  ![](./220730/7.png)    
+  ![](../assets/7%201.png)    
   继续深入，可以看看 `node:bullseye` 镜像的依赖。根据他们的 [`FROM`](https://github.com/nodejs/docker-node/blob/main/18/bullseye/Dockerfile) 一层一层找。        
     1. node:bullseye(18, latest)
     2. buildpack-deps:bullseye

@@ -124,7 +124,7 @@ drwxr-xr-x  2 train train 4.0K Sep 12 10:40 whoami
 - N: 新文件
 - I: 忽略文件
 
-![](./02/1.png)
+![](../assets/1%2020.png)
 
 
 树状形式展示文件
@@ -134,7 +134,7 @@ drwxr-xr-x  2 train train 4.0K Sep 12 10:40 whoami
 # --git-ignore: 忽略 .gitignore 内指定的文件
 $ exa -lah -T -L 2 --git-ignore .
 ```
-![](./02/2.png)
+![](../assets/2%2016.png)
 
 
 
@@ -148,7 +148,7 @@ $ exa -lah -T -L 2 --git-ignore .
 # --gitignore: 忽略 .gitignore 内指定的文件
 $ tree -lah -L 2 --gitignore .
 ```
-![](./02/3.png)
+![](../assets/3%2012.png)
 
 > 在 Debian 中安装最新的 `tree` ，没有 `--gitignore` 指令，在 mac 中有，所以还是用 `exa` 吧 省心还好看。
 

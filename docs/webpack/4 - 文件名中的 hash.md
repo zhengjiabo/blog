@@ -201,10 +201,10 @@ const config = {
 对于 hash 算法的一部分代码可参考 [NormalModule](https://github.com/webpack/webpack/blob/main/lib/NormalModule.js) 的 hash 函数。     
 我们也可通过以下两个地方调试了解如何生成 hash       
 `\node_modules\webpack\lib\util\createHash.js`       
-![](./220827-1/1.png)         
+![](../assets/1%2034.png)         
 
 `\node_modules\webpack\lib\NormalModule.js`      
-![](./220827-1/2.png)         
+![](../assets/2%2023.png)         
 
 
 

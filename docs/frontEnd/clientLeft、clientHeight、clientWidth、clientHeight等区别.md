@@ -19,7 +19,7 @@ categories:
 ## 3. clientXxx
 元素内容信息
  
-![图片](./220609-1/220609-1-1.png 'clientXxx')
+![图片](../assets/220609-1-1.png 'clientXxx')
 - clientWidth = width + padding - scrollWidth(即不包含滚动条宽度)
 - clientHeight = height + padding - scrollWidth(即不包含滚动条宽度)
 - clientLeft =  左边框宽度 + srcollWidth(direction: rtl 且存在垂直滚动条, 个人在Mac的Edge中测试, 不会加scrollWidth, 所以这个了解就行)
@@ -29,13 +29,13 @@ categories:
 ## 4. offsetXxx
 元素可见信息
 
-![图片](./220609-1/220609-1-2.png 'offsetXxx')
+![图片](../assets/220609-1-2.png 'offsetXxx')
 
 - offsetWidth = width + padding + borderWidth(滚动条宽度已经计算在width 和 padding)
 - offsetHeight = height + padding + borderWidth(滚动条宽度已经计算在height 和 padding)
 
 
-![图片](./220609-1/220609-1-3.png 'offsetXxx')    
+![图片](../assets/220609-1-3.png 'offsetXxx')    
 offsetParent 是一个只读属性，获得**被定位**的最近祖先元素。    
 - offsetLeft = 距离offsetParent的左边边界偏移
 - offsetTop = 距离offsetParent的顶部边界偏移
@@ -43,7 +43,7 @@ offsetParent 是一个只读属性，获得**被定位**的最近祖先元素。
 
 ## 5. scrollXxx
 元素滚动信息    
-![图片](./220609-1/220609-1-4.png 'ScrollXxx')
+![图片](../assets/220609-1-4.png 'ScrollXxx')
 该元素在不使用滚动条的情况下的实际内容
 - scrollWidth = width + padding
 - scrollHeight = height + padding     
@@ -56,8 +56,8 @@ width和height都为内容, 在容器和元素有点区别, 以下只说了width
     - scrollWidth = 元素自身width + 元素自身padding
 - 可以看出, 上面写的容器和元素, 本质都是一样的, 内部的内容占用空间 + padding
 
-![图片](./220609-1/220609-1-5.png 'ScrollXxx')    
-![图片](./220609-1/220609-1-6.png 'ScrollXxx')    
+![图片](../assets/220609-1-5.png 'ScrollXxx')    
+![图片](../assets/220609-1-6.png 'ScrollXxx')    
 边缘: 内容的边缘    内容: 如果是元素, 包含该元素 width + padding + border + margin 所有占用     
 scrollLeft 和 scrollTop都是滚动距离
 - scrollLeft = 实际内容元素的左边缘和可视容器左边缘之间的距离
@@ -76,7 +76,7 @@ scrollLeft 和 scrollTop都是滚动距离
 - window.screenTop: 浏览器距离屏幕顶部的距离
 - window.screenLeft: 浏览器距离屏幕左边的距离
 ## 总结
-![图片](./220609-1/220609-1-7.png '总结')    
+![图片](../assets/220609-1-7.png '总结')    
 - clientWidth = width + padding - scrollWidth(即不包含滚动条宽度)
 - clientHeight = height + padding - scrollWidth(即不包含滚动条宽度)
 - clientLeft =  左边框宽度 + srcollWidth(direction: rtl 且存在垂直滚动条, 个人在Mac的Edge中测试, 不会加scrollWidth, 所以这个了解就行)

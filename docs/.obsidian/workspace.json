@@ -4,18 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "46a5a32b155a64fe",
+        "id": "d725a91bf2e8f322",
         "type": "tabs",
         "children": [
           {
-            "id": "39118438d28dbf26",
+            "id": "cfc983499e6139f4",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "article/机器数、真值、原码、反码、补码.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0e1dc2ad2ed73671",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/1 - 帮助命令 man、--help、tldr.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "318ac2f13132d98a",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "assets/1 34.png"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -81,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "assets/1 34.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "assets/1 34.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +147,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "assets/1 34.png"
+              }
             }
           }
         ]
@@ -138,42 +169,50 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "39118438d28dbf26",
+  "active": "e9b2ad56fb300a95",
   "lastOpenFiles": [
+    "assets/1 33.png",
+    "linux/2 - 目录与切换操作 cd、pwd、ls、exa、tree.md",
+    "linux/1 - 帮助命令 man、--help、tldr.md",
+    "assets/1 32.png",
+    "assets/1 31.png",
+    "assets/1 30.png",
+    "assets/1 29.png",
+    "assets/1 28.png",
+    "assets/1 27.png",
+    "assets/1 26.png",
+    "assets/1 25.png",
+    "assets/1 24.png",
+    "assets/1 23.png",
+    "frontEnd/clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
+    "frontEnd/call、apply、bind的原理剖析及实现.md",
+    "frontEnd/如何实现图片懒加载.md",
+    "frontEnd/如何将项目变成一个npm包提交.md",
+    "frontEnd/部署阅读疑问.md",
+    "algorithm/二叉树-总.md",
+    "algorithm/动态规划.md",
+    "algorithm/二分搜索算法-左右指针.md",
+    "algorithm/BFS-DFS.md",
+    "algorithm/双指针.md",
+    "algorithm/回溯算法.md",
+    "article/苹果更新app描述文件.md",
+    "article/浏览器原理 1 - Chrome多进程架构.md",
+    "article/机器数、真值、原码、反码、补码.md",
+    "article/Vim.md",
+    "article/questions.md",
+    "article/如何搭建一个博客，并放到服务器上.md",
+    "article/谈判技巧.md",
+    "article/220718",
+    "article/git revert、git restore 和 git reset.md",
+    "article/如何写简历.md",
+    "docker/220906/demo/README.md",
+    "unfiled",
     "linux/45 - curl 发送请求.md",
     "linux/47 - nc-telnet 发送 TCP-UDP.md",
-    "questions/问题集.md",
-    "frontEnd/如何实现复制内容到剪贴板.md",
-    "frontEnd/如何实现图片懒加载.md",
-    "frontEnd/clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
-    "frontEnd/部署阅读疑问.md",
-    "frontEnd/浏览器架构.md",
-    "frontEnd/HTTP.md",
-    "frontEnd/call、apply、bind的原理剖析及实现.md",
-    "frontEnd/如何理解函数参数都是按值传递.md",
-    "frontEnd/Generator 函数.md",
-    "frontEnd/vue-devtools 如何打开指定vue文件源码阅读.md",
-    "frontEnd/vue-next release 打包发布vue源码阅读.md",
-    "frontEnd/vue-next shared 工具类源码阅读.md",
-    "frontEnd/如何将项目变成一个npm包提交.md",
-    "backEnd/require module.exports 和 import export.md",
-    "article/Vim.md",
-    "article/机器数、真值、原码、反码、补码.md",
-    "article/浏览器原理 1 - Chrome多进程架构.md",
-    "article/苹果更新app描述文件.md",
-    "article/git revert、git restore 和 git reset.md",
-    "article/谈判技巧.md",
-    "article/如何写简历.md",
-    "article/如何搭建一个博客，并放到服务器上.md",
-    "algorithm/二叉树-总.md",
     "vue/Vue.js 设计与实现",
-    "assets/Pasted image 20230325181023.png",
-    "assets/Pasted image 20230325180954.png",
     "assets",
     "asses",
-    "Pasted image 20230325180853.png",
     "diary",
-    "Pasted image 20230325175833.png",
     "得到.canvas"
   ]
 }

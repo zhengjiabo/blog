@@ -107,7 +107,7 @@ word
   here-document
 EOF
 ```
-![](./08/1.png)
+![](../assets/1%2023.png)
 
 
 

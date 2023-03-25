@@ -90,7 +90,7 @@ categories:
 ### 2.2 浏览器中的 pseudo-header
 **伪头不属于 `HTTP` 头部字段**，但仍然跟头部列再一起，在 `Chrome/Edge` 浏览器控制台网络面板中也将他们置于一起。
 
-![](./5/1.png)
+![](../assets/1%2018.png)
 
 
 > 若要试验，可以查看网站 [HTTP/1 和 HTTP/2 速度对比 demo](https://http2.akamai.com/demo)，可以看到 `HTTP/2` 的伪头，也可以看到 `HTTP/1.1` 和 `HTTP/2` 速度的对比
@@ -100,10 +100,10 @@ categories:
 
 ### 2.3 抓包软件中的 pseudo-header
 以下为 `Charles` 抓取 `HTTP/2` 包
-![](./5/2.png)
+![](../assets/2%2015.png)
 
 以下为 `Charles` 抓取 `HTTP/1.1` 包
-![](./5/3.png)
+![](../assets/3%2011.png)
 
 这也可以进一步说明 
 - **伪头不属于 `HTTP` 头部字段**。

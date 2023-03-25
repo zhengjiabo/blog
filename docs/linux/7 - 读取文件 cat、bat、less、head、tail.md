@@ -68,7 +68,7 @@ $ cat package.json yarn.lock
 ```
 
 实际图如下：
-![](./07/1.png)
+![](../assets/1%2022.png)
 
 
 
@@ -89,13 +89,13 @@ $ cat package.json yarn.lock
 
 ## 4. bat（cat 命令的升级版）
 `Rust` 编写的 `cat` 命令的升级版，需要手动安装，默认支持语法高亮，以及显示行号。
-![](./07/2.png)
+![](../assets/2%2018.png)
 
 `--show-all/-A ` 显示不可打印字符。
-![](./07/3.png)
+![](../assets/3%2014.png)
 
 而且配置了环境变量 `export MANPAGER="sh -c 'col -bx | bat -l man -p'"` 可以使得 `man` 文档更好看。
-![](./07/4.png)
+![](../assets/4%2010.png)
 > `sh -c command_string`: 将命令文本视为命令执行
 
 

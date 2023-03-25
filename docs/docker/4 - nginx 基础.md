@@ -118,7 +118,7 @@ server {
 
 
 ## 2. 通过 docker 学习 nginx
-![](./220802/1.png)      
+![](../assets/1%2013.png)      
 通过 `volumes` 挂在资源到容器内，挂在当前目录以及 nginx 配置文件。可以分模块快速验证 nginx 配置。      
 
 - root：静态资源的根目录，默认 `/usr/share/nginx/html`
@@ -218,7 +218,7 @@ server_name nginx的虚拟服务器名，按照以下顺序处理，命中第一
 
   /in 作为第一个匹配的路由，但没有匹配资源。/index 作为后续的路由，有匹配资源，但第一个匹配路由不满足，便直接 404，不会再进入该路由。     
 
-  ![](./220802/2.png)
+  ![](../assets/2%2010.png)
 
 
 
@@ -533,11 +533,11 @@ proxy_send_timeout time：默认60s，如果连续的60s内没有发送1个字�
 docker 中每个容器都有自己的内网 ip，容器间可以通过内网 ip 访问。             
 之所以可以使用 http://api 访问，是因为 docker 内部的服务发现，有个 DNS服务器。在内网可以直接通过服务名访问，有点类似于域名，经过 DNS 服务解析出内网 IP。      
 可以在容器内通过 `cat /etc/resolv.conf` 找到 DNS 服务器地址      
-![](./220802/3.png)              
+![](../assets/3%208.png)              
 也可以在容器内通过 `nslookup 服务名` 找到指定服务的内网 IP（即找到提供服务的容器的IP）。      
-![](./220802/4.png)    
+![](../assets/4%206.png)    
 通过 `docker inspect container_name` 核查，也可以发现跟上方 `nslookup` 找到 IP 一致     
-![](./220802/5.png)
+![](../assets/5%205.png)
 由于没有经过真实域名也不会消耗多余流量。
 
 

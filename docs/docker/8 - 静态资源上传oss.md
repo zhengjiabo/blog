@@ -53,7 +53,7 @@ OSS(Object Storage) 云存储服务，提供海量、安全、低成本、高可
 
 
 目的：将静态资源上传至 OSS，并对 OSS 提供 CDN 服务。 
-![](./220818/1.png)  
+![](../assets/1%2010.png)  
 
 由于我个人使用的是华为云，华为云对应的是 `OBS` 效果相同。后续使用 `OBS` 演示。            
 价格很便宜，按量包月，40GB标准存储包，1年价格仅9块钱。按需计费40GB只要4块钱。    
@@ -308,7 +308,7 @@ services:
 
     ```
     执行 `docker compose build --progress plain --no-cache` 结果如下，确实 `/usr/local/bin` 下有 `obsutil` 文件。           
-    ![](./220818/2.png)        
+    ![](../assets/2%207.png)        
 
 
 
