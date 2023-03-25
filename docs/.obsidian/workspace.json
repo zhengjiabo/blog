@@ -140,6 +140,8 @@
   },
   "active": "e4946ef5f0418dd7",
   "lastOpenFiles": [
+    "linux/45 - curl 发送请求.md",
+    "linux/47 - nc-telnet 发送 TCP-UDP.md",
     "questions/问题集.md",
     "frontEnd/如何实现复制内容到剪贴板.md",
     "frontEnd/如何实现图片懒加载.md",
@@ -164,8 +166,6 @@
     "article/如何写简历.md",
     "article/如何搭建一个博客，并放到服务器上.md",
     "algorithm/二叉树-总.md",
-    "algorithm/二分搜索算法-左右指针.md",
-    "algorithm/双指针.md",
     "vue/Vue.js 设计与实现",
     "assets/Pasted image 20230325181023.png",
     "assets/Pasted image 20230325180954.png",
