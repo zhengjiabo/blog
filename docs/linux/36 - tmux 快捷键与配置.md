@@ -82,7 +82,7 @@ bind C-s send-prefix -2
 
 在命令模式输入 `rename <newName>` 可以更改 `window` 名字
 
-![[../assets/1 30.png]]
+![](../assets/1%2030.png)
 
 ## 4. 查看帮助
 在 `tmux` 中，可通过 `<prefix>?` 查看所有的快捷键
@@ -187,7 +187,7 @@ C-b S-Right Move the visible part of the window right
 
 在 tmux 环境下使用快捷键 `<prefix>%` 与 `<prefix>"` 完成分屏
 
-![[../assets/2 20.png]]
+![](../assets/2%2020.png)
 
 或者通过命令 `tmux split-window` 分屏
 ```bash

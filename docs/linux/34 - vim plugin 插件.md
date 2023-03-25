@@ -71,7 +71,7 @@ filetype plugin indent on
 
 随后使用 `vim` 打开任意文件，键入 `:NERDTree<CR>`，`<CR>` 为回车，便能看到以下界面
 
-![[../assets/1 28.png]]
+![](../assets/1%2028.png)
 
 也可以设置快捷键，在 `.vimrc` 中配置
 ```bash

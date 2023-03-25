@@ -73,7 +73,9 @@ rsync error: error in rsync protocol data stream (code 12) at io.c(228) [sender=
 ```
 
 可以使用 `which ssh` 查看当前使用的来源， `where ssh` 查看已有列表
-![[../assets/1 26.png]]
+
+![](../assets/1%2026.png)
+
 可以临时指定 `ssh` 
 ```bash
 # -e: 指定 ssh 路径，根据自己 where ssh 查到的设置

@@ -23,12 +23,8 @@
             "id": "7b3843ce37fba2fb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docker/7 - 单页应用的路由与持久缓存优化.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
@@ -99,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker/7 - 单页应用的路由与持久缓存优化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker/7 - 单页应用的路由与持久缓存优化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docker/7 - 单页应用的路由与持久缓存优化.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -161,11 +153,11 @@
   },
   "active": "7b3843ce37fba2fb",
   "lastOpenFiles": [
-    "docker/4 - nginx 基础.md",
+    "frontEnd/如何实现图片懒加载.md",
     "docker/7 - 单页应用的路由与持久缓存优化.md",
+    "docker/4 - nginx 基础.md",
     "4.md",
     "docker/5 - 极简项目的  docker-nginx 部署.md",
-    "frontEnd/如何实现图片懒加载.md",
     "frontEnd/clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
     "assets/1 24.png",
     "views/frontEnd/2022/220609.html.md",

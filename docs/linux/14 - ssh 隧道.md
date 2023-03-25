@@ -71,10 +71,10 @@ local$ nohup ssh -NL 5000:localhost:5000 user@[bind_address]
 
 local$ curl localhost:5000
 ```
-![[../assets/1 25.png]]
+![](../assets/1%2025.png)
 此时在本地访问 `localhost:5000`，便可以访问到服务器的服务了。
 
-![[../assets/2 19.png]]
+![](../assets/2%2019.png)
 
 
 
@@ -111,7 +111,7 @@ local$ nohup ssh -NR 5000:localhost:5000 user@[bind_address]
 server$ curl localhost:5000
 ```
 
-![[../assets/3 15.png]]
+![](../assets/3%2015.png)
 
 
 ### 3.2 远程服务器科学上网
