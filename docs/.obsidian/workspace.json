@@ -140,6 +140,20 @@
   },
   "active": "5460c77eb30fc11d",
   "lastOpenFiles": [
+    "webpack/webpack 7 - code spliting 运行时分析.md",
+    "webpack/webpack 6 - ESM to CJS.md",
+    "webpack/webpack 5 - CJS 与 ESM.md",
+    "webpack/webpack 3 - CJS 模块收集与 AST.md",
+    "webpack/webpack 4 - 文件名中的 hash.md",
+    "webpack/webpack 2 - CJS 运行时分析.md",
+    "webpack/webpack 1 - 使用 node api 学习 webpack.md",
+    "diary/2023-03-25.md",
+    "assets/Pasted image 20230325181023.png",
+    "assets/Pasted image 20230325180954.png",
+    "assets",
+    "asses",
+    "Pasted image 20230325180853.png",
+    "diary",
     "2023-03-25.md",
     "Pasted image 20230325175833.png",
     "得到.canvas",
@@ -159,9 +173,6 @@
     "docker/docker 4 - nginx 基础-220802.md",
     "docker/docker 3 - 极简项目的 docker 部署-220730.md",
     "docker/docker 2 - 静态资源服务器-220727.md",
-    "docker/docker 1 - Docker基础-220723.md",
-    "linux/03.md",
-    "linux/02.md",
-    "linux/01.md"
+    "docker/docker 1 - Docker基础-220723.md"
   ]
 }
