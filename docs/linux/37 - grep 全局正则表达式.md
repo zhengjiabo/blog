@@ -57,8 +57,7 @@ categories:
 ```bash
 $ grep vue package.json
 ```
-![](./37/1.png)
-
+![[../assets/1 31.png]]
 
 在实际项目中，经常和 `|` 管道结合使用
 ```bash
@@ -81,7 +80,7 @@ $ ls -lah | grep vue
 $ grep -P '\s"vue' package.json
 ```
 
-![](./37/2.png)
+![[../assets/2 21.png]]
 
 
 
@@ -95,8 +94,8 @@ $ grep -P '\s"vue' package.json
 $ grep -r 'react' .
 ```
 
-![](./37/3.png)
 
+![[../assets/3 16.png]]
 
 
 ## 4. grep -v 反向匹配
@@ -109,8 +108,7 @@ $ grep -r 'react' .
 $ grep -v vue package.json
 ```
 
-![](./37/4.png)
-
+![[../assets/4 11.png]]
 
 
 

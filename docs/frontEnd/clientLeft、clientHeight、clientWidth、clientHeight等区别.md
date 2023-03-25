@@ -111,8 +111,7 @@ scrollLeft 和 scrollTop都是滚动距离
 
 对client、offset、scroll记得, window和document了解, 忘记时可以查一查, 因为这些只在特定场景会使用, 学习嘛, 不要有负担.
 ## 应用场景
-1. [图片懒加载](/views/frontEnd/2022/220609.html) 
-
+1. [[如何实现图片懒加载]]
 
 
 

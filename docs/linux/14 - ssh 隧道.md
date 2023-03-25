@@ -71,10 +71,10 @@ local$ nohup ssh -NL 5000:localhost:5000 user@[bind_address]
 
 local$ curl localhost:5000
 ```
-![](./14/1.png)
+![[../assets/1 25.png]]
 此时在本地访问 `localhost:5000`，便可以访问到服务器的服务了。
-![](./14/2.png)
 
+![[../assets/2 19.png]]
 
 
 
@@ -110,8 +110,8 @@ local$ nohup ssh -NR 5000:localhost:5000 user@[bind_address]
 # 模拟 webhook 请求后台服务
 server$ curl localhost:5000
 ```
-![](./14/3.png)
 
+![[../assets/3 15.png]]
 
 
 ### 3.2 远程服务器科学上网

@@ -77,7 +77,8 @@ $ rm -rf tmux
 
 ## 4. 命令
 `tmux`: 进入 `tmux` 环境
-![](./35/1.png)
+
+![[../assets/1 29.png]]
 
 ```bash
 # 新建一个 tmux session
