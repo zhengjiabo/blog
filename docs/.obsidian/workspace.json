@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f50c5abdddb4141d",
+        "id": "46a5a32b155a64fe",
         "type": "tabs",
         "children": [
           {
-            "id": "e4946ef5f0418dd7",
+            "id": "39118438d28dbf26",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -138,7 +138,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e4946ef5f0418dd7",
+  "active": "39118438d28dbf26",
   "lastOpenFiles": [
     "linux/45 - curl 发送请求.md",
     "linux/47 - nc-telnet 发送 TCP-UDP.md",

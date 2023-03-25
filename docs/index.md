@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Blog"
-  text: "A blog"
-  tagline: My great project tagline
+  name: Knowledge Framework
+  text: 知识框架梳理
+  tagline: 使用 Obsidian 维护
   actions:
     - theme: brand
       text: Markdown Examples
