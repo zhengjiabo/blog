@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "a1f16341d69653a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "26972b855d9902eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5460c77eb30fc11d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eb47ce1dac2da4e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "c419d70ea85a42ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9b2ad56fb300a95",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a88c9db8295b2d96",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "afd7842b7ef6771b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cd013ef00a62e2ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "2131cde0799e0b8a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d241f13d8fe6a45",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bcae709bb1c8fd4a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7c12f3d0772a0bdb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8975263c8b3c4251",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "5460c77eb30fc11d",
+  "lastOpenFiles": [
+    "2023-03-25.md",
+    "Pasted image 20230325175833.png",
+    "得到.canvas",
+    "linux/05.md",
+    "docker/docker 15 - CI 中的环境变量-220924.md",
+    "docker/docker 16 - CI Preview-220924-1.md",
+    "docker/docker 14 - CI 缓存-220921.md",
+    "docker/docker 13 - CI 实践-220920.md",
+    "docker/docker 12 - CI-CD简介-220919.md",
+    "docker/docker 11 - traefik 自动配置证书-220906.md",
+    "docker/docker 10 - traefik 网关搭建-220829.md",
+    "docker/docker 9 - 对象存储优化-220820.md",
+    "docker/docker 8 - 静态资源上传oss-220818.md",
+    "docker/docker 7 - 单页应用的路由与持久缓存优化-220814.md",
+    "docker/docker 6 - 构建缓存优化技术及多阶段构建-220808.md",
+    "docker/docker 5 - 极简项目的  docker-nginx 部署-220807.md",
+    "docker/docker 4 - nginx 基础-220802.md",
+    "docker/docker 3 - 极简项目的 docker 部署-220730.md",
+    "docker/docker 2 - 静态资源服务器-220727.md",
+    "docker/docker 1 - Docker基础-220723.md",
+    "linux/03.md",
+    "linux/02.md",
+    "linux/01.md"
+  ]
+}
