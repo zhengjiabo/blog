@@ -8,6 +8,7 @@
     "generate:menu": "node ./scripts/generateMenu.js",
     "generate:nav": "node ./scripts/generateNav.js",
     "generate:sidebar": "node ./scripts/generateSidebar.js",
+    "lint": "echo \"Error: no lint specified\" && exit 0",
     "test": "echo \"Error: no test specified\" && exit 0",
     "docs:dev": "npm run generate && vitepress dev docs",
     "docs:build": "npm run generate && vitepress build docs",
