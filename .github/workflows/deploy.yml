@@ -179,7 +179,7 @@ jobs:
       
       # 打包
       - name: Build Dependencies
-        run: yarn build
+        run: yarn docs:build
        
       # 上传用于 Github Page 发布
       - name: Upload Artifact
