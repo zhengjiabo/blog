@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import nav from './generate/nav.json' assert {type: 'json'};
-import sidebar from './generate/nav.json' assert {type: 'json'};
+import sidebar from './generate/sidebar.json' assert {type: 'json'};
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "generate": "npm run generate:menu && npm run generate:nav && npm run generate:sidebar",
     "generate:menu": "node ./scripts/generateMenu.js",
+    "generate:nav": "node ./scripts/generateNav.js",
+    "generate:sidebar": "node ./scripts/generateSidebar.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "npm run generate:menu && vitepress dev docs",
-    "docs:build": "npm run generate:menu && vitepress build docs",
+    "docs:dev": "npm run generate && vitepress dev docs",
+    "docs:build": "npm run generate && vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "repository": {

@@ -78,8 +78,6 @@ async function getFilesAndDirs(rootDir, blacklist, rootPath = '/') {
  * @returns {Promise<void>}
  */
 async function overwriteFile(filePath, data) {
-
-  // const filePath = path.join(rootDir, fileOrDir);
   await fs.promises.writeFile(filePath, data);
 }
 
@@ -92,12 +90,18 @@ async function overwriteFile(filePath, data) {
  */
 async function generateFilesAndDirs(rootDir, blacklist, filePath) {
   const data = await getFilesAndDirs(rootDir, blacklist);
+  data.sort((a, b) => {
+    const aIndex = SORTLIST.findIndex(str => str === a.text)
+    const bIndex = SORTLIST.findIndex(str => str === b.text)
+    return (~aIndex ? aIndex : Infinity) - (~bIndex ? bIndex : Infinity) 
+  })
   const json = JSON.stringify(data, null, 2);
 
   await overwriteFile(filePath, json);
 }
 const ROOT_DIR = './docs';
-const BLACKLIST = ['\.vitepress', 'assets'];
+const BLACKLIST = ['demo', '\.vitepress', 'assets'];
+const SORTLIST = ['docker', 'linux', 'http', 'webpack', 'vue']
 const FILE_PATH = './docs/.vitepress/generate/nav.json';
 
 generateFilesAndDirs(ROOT_DIR, BLACKLIST, FILE_PATH)
