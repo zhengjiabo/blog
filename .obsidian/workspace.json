@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d2a5b4081ad13bf2",
+        "id": "8afbe7a7a93b6a24",
         "type": "tabs",
         "children": [
           {
-            "id": "d8eb9b124f57e35a",
+            "id": "8ba8a80a30056dd2",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -137,8 +137,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d8eb9b124f57e35a",
+  "active": "8ba8a80a30056dd2",
   "lastOpenFiles": [
+    "docs/index.md",
     "vue/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
     "docker/11 - traefik 自动配置证书 - demo/nuxt/store/0 - store.md",
     "docker/11 - traefik 自动配置证书 - demo/nuxt/0 - nuxt.md",
@@ -184,7 +185,6 @@
     "docker/6 - 构建缓存优化技术及多阶段构建 - demo/README.md",
     "docker/4 - nginx 基础 - demo/Readme.md",
     "docker/220818/8 - 静态资源上传oss - demo/README.md",
-    "docker/7 - 单页应用的路由与持久缓存优化/README.md",
     "未命名.canvas",
     "得到.canvas"
   ]
