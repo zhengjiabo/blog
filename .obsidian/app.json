@@ -1,0 +1,16 @@
+{
+  "attachmentFolderPath": "docs/assets",
+  "userIgnoreFilters": [
+    "/demo/",
+    "scripts/",
+    ".git/",
+    ".github/",
+    "node_modules/",
+    "README.md",
+    "docs/.vitepress/",
+    "docs/index"
+  ],
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
+}
