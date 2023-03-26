@@ -74,7 +74,7 @@ example:
 - `if(expression) statement [else statement]`：条件
 
 当然还有更多参考以下，来源 `man`
-```bash
+```sh
 # 粗略瞥一眼就行，知道个大概印象。
 if( expression ) statement [ else statement ]
 while( expression ) statement
@@ -100,7 +100,7 @@ exit [ expression ]     # exit immediately; status is expression
 `print`: 打印，一般用于重新封装
 `$0`: 文本本身
 `$1`: 第一列，以此类推
-```bash
+```sh
 # $0: 文本本身
 $ cat <<EOF | awk '{print $0}'
 a1 a2 a3 a4
@@ -139,7 +139,7 @@ c:2 c:c
 > 注意：需要使用单引号，因为双引号会对变量名进行替换，而 `$0 $1...` 这些会被 `shell` 工具识别且替换。导致无法以原本的字符传递给 `awk`  
 
 也可以通过 `-F` 指定分隔符
-```bash
+```sh
 # -F: 分隔符
 $ cat <<EOF | awk -F : '{print $1}'
 a1:a2:a3:a4
@@ -155,7 +155,7 @@ c1
 
 ### 4.2 打印匹配字符的行
 
-```bash
+```sh
 $ cat <<EOF | awk '/cat/'
 hello cat
 hello dog
@@ -166,7 +166,7 @@ hello cat
 ```
 
 也可以针对某一列进行匹配
-```bash
+```sh
 # 记得 ~ 号
 # 虽然第 1 列大家都有 o，但指定匹配第 2 列
 $ cat <<EOF | awk '$2 ~/o/'
@@ -182,7 +182,7 @@ hello dog
 
 ### 4.3 条件操作符
 
-```bash
+```sh
 # 默认是数字匹配
 $ cat <<EOF | awk '$2==b'
 a b c d
@@ -244,7 +244,7 @@ f
 `FS`： 输入字段分隔符，默认空格
 
 添加序号
-```bash
+```sh
 # print: 打印，一般用于重新封装
 # NR: 行号
 $ cat <<EOF | awk '{print NR,$0}'
@@ -259,7 +259,7 @@ EOF
 ```
 
 也可以结合条件判断
-```bash
+```sh
 $ cat <<EOF | awk 'NR>1 && NR<3'
 a b c d
 e f g h
@@ -270,7 +270,7 @@ e f g h
 ```
 
 查看列数
-```bash 
+```sh 
 # NF：字段数
 $ cat <<EOF | awk '{print NF}'
 a b c d
@@ -285,7 +285,7 @@ EOF
 
 
 分隔符
-```bash 
+```sh 
 # FS：分隔符，默认空格
 $ cat <<EOF | awk '{print FS}'
 a b c d

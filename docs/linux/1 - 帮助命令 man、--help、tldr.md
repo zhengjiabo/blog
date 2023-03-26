@@ -38,7 +38,7 @@ categories:
 
 
 ## 2. 命令格式
-```bash
+```sh
 $ git --help
 usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
@@ -58,13 +58,13 @@ usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
 - `[ ]`：可选参数
 - `[-v | --version]`：`-v` 或者 `--version`，是等效的。
 - `[<files> ...]`：多可选参数，类似于 Javascript 中的 `...` 扩展运算符。
-    ```bash
+    ```sh
     $ cat [-belnstuv] [file ...]
 
     $ cat a.txt b.txt c.txt ...
     ```
 - `-abc`：多个单字符选项拼接
-    ```bash
+    ```sh
     # 以下两个命令是等价的
     $ ls -lah
 
@@ -79,9 +79,9 @@ usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
 
 ## 3. man 操作手册
 `man`：manual 操作手册，实际存储在 linux 的 `/usr/share/man` 目录
-![](../assets/1%2019.png)
+![](../assets/1s19.png)
 > 看到图中 `ZH_CN` 文件夹了吗，`man` 也有中文文档，但内置很少量，想要全的可以去网上下载，具体操作网上搜很容易找到的。但不推荐，避免养成习惯心里抵触英文文档。可以使用 `man -M /usr/share/man/zh_CN/ man` 浅试一下。
-```bash
+```sh
 # man <command>
 $ man ls
 
@@ -125,12 +125,12 @@ DESCRIPTION
 9. 其他（Linux特定的）， 用来存放内核例行程序的文档。
 
 如果发现文档缺失，`Debian` 可以执行以下命令更新文档
-```bash
+```sh
 $ apt-get update
 $ apt-get -y install manpages manpages-de manpages-de-dev manpages-posix manpages-posix-dev libc6-dev glibc-doc manpages-posix manpages-posix-dev linux-doc libstdc++-7-dev libstdc++-7-doc
 ```
 或者手动更新整个 `man-pages` 包
-```bash
+```sh
 $ git clone git://git.kernel.org/pub/scm/docs/man-pages/man-pages.git
 $ cd man-pages
 $ make install
@@ -143,7 +143,7 @@ $ make install
 前期可以使用 `man` 查看文档，后续想不起如何使用，使用 `tldr`。      
 可以安装在全局 `npm i -g tldr`，使用方法 `tldr <command>`
 
-```bash
+```sh
 $ tldr ls  
 
   ls

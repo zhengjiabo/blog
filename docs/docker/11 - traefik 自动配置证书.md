@@ -164,7 +164,7 @@ services:
 
 
 需要注意的是，`Nuxt` 的 `Dockerfile` 文件中，要设置环境变量
-```Dockerfile
+```yaml
 # 一定要设置这个，否则 traefik http 无法正常使用
 ENV HOST 0.0.0.0 
 ```

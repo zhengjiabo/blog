@@ -38,7 +38,7 @@ js对象描述更加灵活，也称为 虚拟DOM。（虚拟DOM是用js对象来
 在Vue中，两者都有采用，只是最终模板都转成 虚拟DOM。
 
 在 Vue 的组件中，手写的渲染函数就是使用 虚拟DOM 来描述UI的。
-```javascript
+```js
 import { h } from 'vue'
 
 export default {
@@ -64,7 +64,7 @@ export default {
 组件也可以是一个对象，对象内包含 render函数 作为函数想要渲染的内容，返回 虚拟DOM。  
 总而言之，组件的表达形式可以很多种，只要渲染器配合即可，本质都是记录了渲染的内容，返回 虚拟DOM。    
 在 虚拟DOM 中，可以将组件函数放在 tag属性 中，渲染器根据 tag属性 的类型，运行 创造元素的函数 或者 递归调用render渲染器。
-```javascript
+```js
 // 组件
 const MyConponent = function () {
     return {

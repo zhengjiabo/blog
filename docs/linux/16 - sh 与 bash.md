@@ -48,7 +48,7 @@ categories:
 2. 在 `ubuntu/debian` 操作系统中 `/bin/sh` 链接指向 `/bin/dash`，即 `dash`
 
 以下命令可以查询目前使用的 `sh` 应用程序
-```bash
+```sh
 # 大部分操作系统是软连接
 $ ls -lah /bin/sh
 lrwxrwxrwx 1 root root 4 Jul 27  2021 /bin/sh -> bash
@@ -67,7 +67,7 @@ $ find -L /bin -samefile /bin/sh
 ## 4. Shebang 脚本中指定
 在脚本中可以指定 `sh/bash/dash` 应用程序去运行脚本
 
-```bash
+```sh
 #!/bin/sh
 
 #!/bin/bash

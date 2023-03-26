@@ -46,7 +46,7 @@ categories:
 
 ## 2. chown 更改文件的所属用户及用户组
 `change owner`，可以通过 `ls -l` 查询文件的所属用户和用户组
-```bash
+```sh
 $ ls -l
 total 824
 drwxr-xr-x 5 bo root   4096 Oct 13 10:10 docs
@@ -58,7 +58,7 @@ drwxr-xr-x 5 bo root   4096 Oct 13 10:10 docs
 ```
 
 可以通过 `chown -R`，递归将子文件所属用户及用户组进行修改
-```bash
+```sh
 # 将 . 文件夹下当前目录的用户及用户组设为 shanyue
 # -R：遍历子文件修改
 $ chown -R bo:bo .
@@ -68,7 +68,7 @@ $ chown -R bo:bo .
 
 ## 3. EACCES: permission denied 权限报错
 在前端使用 `yarn` 去装包的时候，可能会遇到以下问题
-```bash
+```sh
 $ yarn
 error An unexpected error occurred: "EACCES: permission denied, unlink '/home/train/Documents/react/node_modules/@babel/cli/node_modules/commander/CHANGELOG.md'".
 info If you think this is a bug, please open a bug report with the information provided in "/home/train/Documents/react/packages/react/yarn-error.log".
@@ -82,7 +82,7 @@ info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this 
 ## 4. chmod 修改文件权限
 `change mode` 修改文件权限
 修改完文件所属后，便可以针对不同身份设置不同权限了。可以通过 `ls -l` 查询文件权限
-```bash
+```sh
 $ ls -l
 total 824
 # 第一列为文件权限
@@ -104,7 +104,7 @@ drwxr-xr-x 5 bo root   4096 Oct 13 10:10 docs
   - w: 可写，二进制为 010，十进制为 2
   - x: 可执行，二进制为 001，十进制为 1
 
-```bash
+```sh
 # rw-：所属用户可写可读，110，十进制 6
 # r--：所属用户组可读，100，十进制 4
 # r--：其它用户可读，100，十进制 4
@@ -115,7 +115,7 @@ drwxr-xr-x 5 bo root   4096 Oct 13 10:10 docs
 
 
 ### 4.1 chmod xxx \<filename\> 直接设置
-```bash
+```sh
 # 777，rwxrwxrwx，代表所有用户可读可写可执行
 $ chmod 777 yarn.lock
 ```
@@ -125,7 +125,7 @@ $ chmod 777 yarn.lock
 
 ### 4.2 chmod [ugoa...][[+-=][perms...]...] 可读式设置
 更加偏向人类可读的设置方式
-```bash
+```sh
 # u: user
 # g: group
 # o: other

@@ -68,7 +68,7 @@ categories:
 示例：`curl ifconfig.me`
 
 
-```bash
+```sh
 # https://ifconfig.me 是一个获取客户端公网 IP 的服务。
 $ curl ifconfig.me
 118.73.227.215#
@@ -81,7 +81,7 @@ $ curl ifconfig.me
 命令：`curl <url> -X <method>`     
 示例：`curl https://httpbin.org/post -X POST`
 
-```bash
+```sh
 # -X: 指定请求方法
 # -H: 添加请求头。请求头不区分大小写。
 $ curl https://httpbin.org/post -X POST -H "a: 3" -H "b: 4"
@@ -105,7 +105,7 @@ $ curl https://httpbin.org/post -X POST -H "a: 3" -H "b: 4"
 命令：`curl <url> -I `     
 示例：`curl https://httpbin.org/get -I`
 
-```bash
+```sh
 $ curl https://httpbin.org/get -I
 
 HTTP/2 200 
@@ -124,7 +124,7 @@ access-control-allow-credentials: true
 命令：`curl <url> -i`     
 示例：`curl https://httpbin.org/get -i`
 
-```bash
+```sh
 # 返回响应头 和 响应体    
 $ curl https://httpbin.org/get -i
 
@@ -157,7 +157,7 @@ access-control-allow-credentials: true
 命令：`curl <url> -v` 或者更详细 `curl <url> -vvv`     
 示例：`curl https://shanyue.tech/ -vvv`
 
-```bash
+```sh
 # -vvv: 查看更详细的过程，如 TLS handshake
 $ curl https://shanyue.tech/ -vvv -I
 *   Trying 122.228.7.237...
@@ -275,7 +275,7 @@ eagleid: 7ae4079716701325292036477e
 命令：`curl <url> -L`    
 示例：`curl http://httpbin.org/absolute-redirect/1 -LI`
 
-```bash
+```sh
 # -L: 追踪重定向
 # -I: 只返回响应头
 $ curl http://httpbin.org/absolute-redirect/1 -LI
@@ -338,7 +338,7 @@ content-length: 38114
 命令：`http[s] [METHOD] URL [REQUEST_ITEM ...]`            
 示例：`http http://httpbin.org/get`
 
-```bash
+```sh
 # 人性化识别 get/post
 # 不带 body 默认 get
 # -p: 打印

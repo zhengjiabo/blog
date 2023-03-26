@@ -215,7 +215,7 @@ map.get(obj); // value
 ```
 对象是字符串-值的映射，Map是值-值的映射，适应性更广。
 
-```javascript
+```js
 // 例如映射关系，有时候键并非文本
 const data = {};
 const elementDiv = document.getElementById('myDiv');

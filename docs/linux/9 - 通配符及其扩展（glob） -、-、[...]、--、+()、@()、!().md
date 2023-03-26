@@ -61,7 +61,7 @@ categories:
 
 与 `JS` 的正则有些不一样。正则是前一字符位置的描述（扩展匹配符），而这里的 `*`、`?` 为自身位置的描述。
 
-```bash
+```sh
 # 列出当前目录下所有的 js 文件
 $ ls -lah *.js
 -rw-r--r-- 1 train train 1.5K Jun 10 15:45 ReactVersions.js
@@ -89,13 +89,13 @@ $ ls -lah [258]*
 - `!(pattern-list)`: 非匹配
 
 
-```bash
+```sh
 # 列出所有以 js/json/md 结尾的文件
 $ ls -lah *.@(js|json|md)
 ```
 
 在 `bash` 中，`extglob` 需要通过 `shopt` 命令手动开启。
-```bash
+```sh
 $ shopt -s extglob
 
 $ shopt | grep glob
@@ -111,7 +111,7 @@ nullglob        off
 
 
 在 `zsh` 中，`extglob` 需要通过 `setopt` 命令手动开启。
-```bash
+```sh
 $ setopt extendedglob
 $ setopt kshglob
 ```

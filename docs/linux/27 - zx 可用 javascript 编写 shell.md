@@ -36,7 +36,7 @@ categories:
 
 ## 1. 前提提要、场景
 在 `bash` / `zsh` 中有很多不统一的东西，例如 `$0`。严格的空格限制，还有各种 `#`、`@` 难以理解的符号。
-```bash
+```sh
 # = 号左右不能有空格
 $ list=(3 4 5 6)
 
@@ -59,7 +59,7 @@ $ echo ${#list[@]}
 一般 shell 脚本为 `.sh` 后缀，`zx` 的后缀不太一样，为 `mjs`。
 
 新建 `hello.mjs` 脚本文件
-```javascript
+```js
 #!/usr/bin/env zx
 
 const [a, b, c] = await Promise.all([
@@ -81,7 +81,7 @@ console.log(a, b, c)
 ### 3.1 $ 标记 shell 命令
 脚本内执行 `shell` 命令，可以使用 $&#96; &#96; 包裹命令， 将其命令的标准输出使用 `Promise` 包裹作为返回值返回。
 > 反引号 &#96; 在 shell 中为直接执行内部命令，所以也可以理解为 `zx` 通过 `$` 将后面的反引号识别为 shell 的语法。
-```javascript
+```js
 const curlOutput = await $`curl --head https://www.baidu.com`
 
 console.log(curlOutput)
@@ -102,7 +102,7 @@ console.log(curlOutput)
 
 
 可以尝试复杂一些的需求，例如用数字 0 - 99 创建 100 个文件夹，每个文件夹下有同名的 `.txt` 文件。
-```javascript
+```js
 #!/usr/bin/env zx
 
 for (let i = 0; i < 100; i++) {

@@ -35,7 +35,7 @@ categories:
 [pathogen github](https://github.com/tpope/vim-pathogen)    
 
 新建文件夹，并将后续插件都放于该文件夹中。
-```bash
+```sh
 $ mkdir -p ~/.vim-config/plugins && \
 curl -LSso ~/.vim-config/plugins https://tpo.pe/pathogen.vim
 ```
@@ -43,7 +43,7 @@ curl -LSso ~/.vim-config/plugins https://tpo.pe/pathogen.vim
 配置 `vim` 插件路径为 `~/.vim-config/plugins/`，后续将插件下载在该目录。由于是自定义目录，不是 `vim-pathogen` 默认的目录，所以根据 `github` 上的说明。
 
 在 `.vimrc` 中配置
-```bash
+```sh
 " 配置 runtimepath
 source ~/.vim-config/plugins/vim-pathogen/pathogen.vim
 
@@ -58,23 +58,23 @@ execute pathogen#helptags()
 文件目录管理器，跟 vscode 的目录一样。      
 
 将插件下载到上一步设置的自定义目录 `~/.vim-config/plugins/nerdtree` 中
-```bash
+```sh
 # depth：1 只保留最近一次 commit 记录，轻量级 clone
 $ git clone --depth=1 https://github.com/preservim/nerdtree.git ~/.vim-config/plugins/nerdtree
 ```
 
 在 `.vimrc` 中配置
-```bash
+```sh
 syntax on
 filetype plugin indent on
 ```
 
 随后使用 `vim` 打开任意文件，键入 `:NERDTree<CR>`，`<CR>` 为回车，便能看到以下界面
 
-![](../assets/1%2028.png)
+![](../assets/1s28.png)
 
 也可以设置快捷键，在 `.vimrc` 中配置
-```bash
+```sh
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -96,14 +96,14 @@ nnoremap <C-f> :NERDTreeFind<CR> " 定位当前文件的位置
 
 
 将插件下载到上一步设置的自定义目录 `~/.vim-config/plugins/ctrlp` 中
-```bash
+```sh
 # depth：1 只保留最近一次 commit 记录，轻量级 clone
 $ git clone --depth=1 https://github.com/ctrlpvim/ctrlp.vim.git  ~/.vim-config/plugins/ctrlp
 ```
 
 
 在 `.vimrc` 中配置
-```bash
+```sh
 " ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'

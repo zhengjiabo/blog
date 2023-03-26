@@ -54,13 +54,13 @@ categories:
 ## 2. 正则 匹配文本内容
 
 命令：`grep <expression> <filename>`
-```bash
+```sh
 $ grep vue package.json
 ```
-![](../assets/1%2031.png)
+![](../assets/1s31.png)
 
 在实际项目中，经常和 `|` 管道结合使用
-```bash
+```sh
 # 过滤出带有 vue 的文件
 $ ls -lah | grep vue
 ```
@@ -75,12 +75,12 @@ $ ls -lah | grep vue
  在 `Javascript/Python/Java` 中，正则表达式便是基于 `PCREs`，推荐这种正则，更符合我们平常的使用习惯。
 
 使用以下命令使用 `PCREs`
-```bash
+```sh
 # -P: 使用 PCRE 正则 
 $ grep -P '\s"vue' package.json
 ```
 
-![](../assets/2%2021.png)
+![](../assets/2s21.png)
 
 
 
@@ -88,27 +88,27 @@ $ grep -P '\s"vue' package.json
 
 命令：`grep -r PATTERN [FILE...]`
 
-```bash
+```sh
 # 在当前目录递归文件寻找 react
 # -r / --recursive: 递归搜索
 $ grep -r 'react' .
 ```
 
 
-![](../assets/3%2016.png)
+![](../assets/3s16.png)
 
 
 ## 4. grep -v 反向匹配
 
 命令：`grep -v PATTERN [FILE...]`
 
-```bash
+```sh
 # 打印不包含 vue 字符的行
 # -v / --invert-match: 反选匹配
 $ grep -v vue package.json
 ```
 
-![](../assets/4%2011.png)
+![](../assets/4s11.png)
 
 
 

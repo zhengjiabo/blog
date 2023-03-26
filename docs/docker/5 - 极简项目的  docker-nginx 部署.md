@@ -15,7 +15,7 @@ categories:
 
 ## 1. nginx 镜像
 在 docker 中，前端静态文件服务器可以使用 nginx 镜像，因为体积小，性能更好。        
-```bash
+```sh
 docker images
 #REPOSITORY       TAG       IMAGE ID       CREATED        SIZE  
 # node             alpine    16b18c065537   10 days ago    166MB
@@ -31,8 +31,8 @@ alpine：小巧、功能完备，非常适合作为容器的基础镜像。
 
 > Alpine 是众多 Linux 发行版中的一员，和 CentOS、Ubuntu、Archlinux 之类一样，只是一个发行版的名字，号称小巧安全，有自己的包管理工具 apk。它镜像的容量非常小，仅仅只有 5 MB 左右。
 
-启动容器，宿主机 3000 端口映射容器 80 端口，访问 http://localhost:3000 便能访问 nginx 页面。      
-```bash
+启动容器，宿主机 `3000` 端口映射容器 `80` 端口，访问 `http://localhost:3000` 便能访问 nginx 页面。      
+```sh
 docker run -it --rm -p 3000:80 nginx:alpine sh
 ```
 
@@ -62,7 +62,7 @@ server {
 
 ## 3. 构建镜像、运行容器
 使用繁杂的命令构造镜像和运行容器，在管理端口，存储有天然劣势，将命令行的选项（例如-p）也翻译成配置文件，更易于维护。也可以实现多个容器相互配合。     
-```dockerfile
+```yaml
 # Dockerfile
 FROM nginx:alpine
 
@@ -82,9 +82,9 @@ services:
       - .:/usr/share/nginx/html
 ```
 
-构建镜像、启动容器，访问 http://localhost:3000 便能访问 nginx 页面。
+构建镜像、启动容器，访问 `http://localhost:3000` 便能访问 nginx 页面。
 
-```bash
+```sh
 # --build：重新构建镜像
 # -f：指定 docker-compose.yaml 文件名称
 docker compose up --build

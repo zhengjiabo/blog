@@ -30,7 +30,7 @@ categories:
 - [x] CommonJS 中，如果不实现 __webpack_module_cache__ 数据结构，即不对 module 进行缓存会有什么问题？      
     1. 模块将会被加载多次，每次引用模块都会去执行模块。可能破坏幂等性，有些模块是副作用函数，执行会直接或间接影响其他函数的执行。单次执行和多次执行产生不同结果。       
     1. 可能会导致内存泄漏 [一行 delete require.cache 引发的内存泄漏血案](https://zhuanlan.zhihu.com/p/34702356)。
-       ```javascript
+       ```js
         // lib/module.js
         function updateChildren(parent, child, scan) {
               var children = parent && parent.children;
@@ -57,18 +57,18 @@ exports = module.exports
 
 ## 2. 静态资源文件
 `index.js` 
-```javascript
+```js
 const sum = require('./sum')
 console.log(sum(3, 8))
 ```
 
 `sum.js`
-```javascript
+```js
 module.exports = (...args) => args.reduce((x, y) => x + y, 0)
 ```
 
 `build.js`
-```javascript
+```js
 webpack({
   entry: './index.js',
   mode: 'none',
@@ -82,7 +82,7 @@ webpack({
 
 ## 3. webpack 运行时代码
 执行 `node build.js`，得到以下打包后的代码 
-```javascript
+```js
 /******/ var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
@@ -145,7 +145,7 @@ console.log(sum(3, 8))
 ### 3.1 模块数组 __webpack_modules__
 入口代码作为 0 号模块，即 `__webpack_modules__[0]`，其它引用模块从 1 开始存放。   
 执行的模块，只要将返回值赋值给 `module.exports` 对象。如果需要整个替换，要使用 `module.exports` 而不是 `exports`，后者只是更改了形参的指向。
-```javascript
+```js
 // 维护一个所有模块的数组。
 var __webpack_modules__ = ([
   // moduleId=0 的模块空缺，可理解为 index.js 即是0号模块
@@ -163,7 +163,7 @@ var __webpack_modules__ = ([
 单例模式，模块只会加载一次。       
 对已加载过的模块进行缓存，对未加载过的模块初始化模块，主要是 `module.exports` 属性，初始化后利用执行 id 定位到 `__webpack_modules__` 中的包裹函数，执行返回 `module.exports` 并缓存。
 
-```javascript
+```js
 // 模块缓存
 var __webpack_module_cache__ = {};
 
@@ -194,7 +194,7 @@ function __webpack_require__(moduleId) {
 
 ### 3.3 入口模块执行
 入口模块也可以视为 0 号模块，即 `__webpack_modules__[0]`
-```javascript
+```js
 var __webpack_exports__ = {}; // 全局
 
 // 此处是一个立即执行函数
@@ -228,7 +228,7 @@ var __webpack_exports__ = {}; // 全局
 
 
 ### 4.2 webpack runtime 精简版
-```javascript
+```js
 const __webpack_modules__ = [() => { console.log(10) }, /* 后续引用包 */]
 const __webpack_module_cache__ = {} // 缓存
 const __webpack_require__ = id => {

@@ -32,7 +32,7 @@ categories:
 
 ## 2. dig 安装
 
-```bash
+```sh
 # Debian / Ubuntu
 $ sudo apt-get install dnsutils
 
@@ -46,7 +46,7 @@ $ sudo yum install bind-utils
 示例：`dig www.bilibili.com`
 
 ### 3.1 dig 直接解析域名
-```bash
+```sh
 # 查找哔哩哔哩的 IP 地址，
 # 可以看到 CNAME 到某个 CDN 全局负载服务器上。判断出网站部署在 CDN。
 # 哔哩哔哩做了负载均衡 查到多个 IP 证明负载均衡
@@ -100,7 +100,7 @@ ct.w.bilicdn1.com.      25      IN      A       171.214.10.140
 
 看到 `;; ANSWER SECTION:` 第二列那串数字了吧，`DNS TTL`(`DNS TIME TO LIVE`) 存活时间，以秒为单位（可以尝试一秒 `dig` 试验一次，会减少 1）。在缓存时间内重复访问会返回相同的映射域名或 `IP`。
 结合上面 `dig` 的返回内容
-```bash
+```sh
 www.bilibili.com 57 => a.w.bilibilicdn1.com.
 a.w.bilibilicdn1.com. 41 => ct.w.bilicdn1.com.
 ct.w.bilicdn1.com. 25 => x.x.x.x   从这里开始打到任一服务器上
@@ -116,7 +116,7 @@ ct.w.bilicdn1.com. 25 => x.x.x.x
 
 ### 3.2 `dig +short` 仅返回 IP
 过滤其他信息，仅仅返回 `IP`
-```bash
+```sh
 $ dig +short www.bilibili.com
 a.w.bilicdn1.com.
 ct.w.bilicdn1.com.
@@ -145,7 +145,7 @@ ct.w.bilicdn1.com.
 
 ### 3.3 `dig -x` 反向解析
 
-```bash
+```sh
 # 例如查找 dns 服务器的域名，发现是谷歌系的，安心使用该 dns 服务器
 $ dig -x 8.8.8.8 +short 
 dns.google.
@@ -156,7 +156,7 @@ dns.google.
 ### 3.4 `dig +trace` 追踪整个过程
 
 
-```bash
+```sh
 $ dig +trace a.w.bilicdn1.com. 
 ; <<>> DiG 9.11.5-P4-5.1+deb10u7-Debian <<>> +trace a.w.bilicdn1.com.
 ;; global options: +cmd
@@ -249,7 +249,7 @@ bilicdn1.com.           86400   IN      NS      ns4.dnsv5.com.
 
 可以使用 `traceroute` 查看实际经过多少个中间设备到B站 `traceroute www.bilibili.com`
 
-```bash
+```sh
 # -n: 不展示过多信息 在显示IP地址时，不要试图将其映射为主机名称。
 # 可以看到经过的路由数不算多
 $ traceroute -n www.bilibili.com

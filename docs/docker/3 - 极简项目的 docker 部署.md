@@ -13,7 +13,7 @@ categories:
 3. 使用 `docker compose up` 学习时，偶尔会报错导致产生 None 镜像（虚无镜像），可以通过 `docker image prune` 清理虚无镜像。
 4. Dockerfile 的 EXPOSE，不是只有注释作用，在 docker run -P 自动映射时，会取 EXPOSE 暴露出来的端口，随机映射到宿主机的端口上。
 5. docker 如果更换源，尽量不要用科大源。在 Tag `latest` 表现上不一致，拉取的版本可能会和 Hub Docker 不同。Hub Docker 目前 node 镜像的 latest 在 `18.7.0`，而更换了科大源：`https://docker.mirrors.ustc.edu.cn/`，latest 在 `17.3.0`。     
-  ![](../assets/2%2011.png)      
+  ![](../assets/2s11.png)      
   可以使用 Docker 中国区官方镜像: `https://registry.docker-cn.com` 替代
 6. Dockerfile 
    - ENV：    
@@ -54,7 +54,7 @@ categories:
 
 ## 1. 本地运行项目
 上一章我们通过 `node:http` 启动了本地服务器，这次我们借助一个开源工具 `serve`，启动一个静态资源服务器。
-```bash
+```sh
 # 下载 sever 依赖
 npm i serve
 
@@ -75,7 +75,7 @@ npm serve .
 接下来，将脚本命令翻译成 Dockerfile，就可以在 Docker 中启动服务了。
 
 ## 2. Dockerfile
-```dockerfile
+```yaml
 # alpine 版本的体积小
 FROM node:14-alpine
 
@@ -100,7 +100,7 @@ CMD npm start
 
 ## 3. 构建镜像、运行容器
 接下来构建镜像，并运行容器。     
-```bash
+```sh
 # -t 镜像名称 name:tag
 # . 获取当前目录下的 Dockerfile
 # --progress plain: 查看其输出结果。
@@ -135,7 +135,7 @@ docker run --rm -p 3000:3000 -it --name node node-demo
 
 ## 4. Docker Compose
 使用繁杂的命令构造镜像和运行容器，在管理端口，存储有天然劣势，将命令行的选项（例如-p）也翻译成配置文件，更易于维护。也可以实现多个容器相互配合。     
-![](../assets/1%2014.png)    
+![](../assets/1s14.png)    
 ```yml
 # docker-compose.yaml
 version: "3" # 这代表我们定义的docker-compose.yml 文件内容所采用的版本，目前Docker Compose的配置文件已经迭代至了第三版，其所支持的功能也越来越丰富，所以我们建议使用最新的版本来定义。
@@ -151,7 +151,7 @@ services: # Docker Compose 里不直接体现容器这个概念，这是把 serv
     restart: always # 容器出错了 无限重启
 ```
 
-```bash
+```sh
 # up: 创建并启动容器
 # --build: 每次启动容器前构建镜像
 docker compose up --build 
@@ -170,7 +170,7 @@ docker compose up --build
 ### 5.2 为什么可以直接在 node 镜像中使用 yarn 命令行工具
 官方 node 镜像的 [Dockerfile](https://github.com/nodejs/docker-node/blob/6249a0b2a460b010c9ee216c8ab81ea8c698ab07/18/bullseye/Dockerfile) 文件中安装了 yarn
 
-```dockerfile
+```yaml
 FROM buildpack-deps:bullseye
 # codes
 ENV NODE_VERSION 18.7.0
@@ -231,7 +231,7 @@ ln 原文件名 链接文件名
 1. 构建基础镜像      
     基础镜像代码：       
     base-docker-entrypoint.sh：基础镜像-预处理脚本
-    ```powershell
+    ```sh
     #!/bin/sh
     echo "*****************"
     echo "**************"
@@ -248,7 +248,7 @@ ln 原文件名 链接文件名
     ```
 
     base-Dockerfile：基础镜像-dockerfile
-    ```dockerfile
+    ```yaml
     FROM alpine:3.16
 
     COPY base-docker-entrypoint.sh /usr/local/bin/
@@ -259,12 +259,12 @@ ln 原文件名 链接文件名
 
     执行 `docker image prune -f && docker build -t demo:base --progress plain -f base-Dockerfile . && docker run --rm -it demo:base`      
     构建基础镜像并运行容器，镜像名为 `demo:base`。运行容器时，输出如下       
-    ![](../assets/3%209.png)       
+    ![](../assets/3s9.png)       
     dockerfile 同时出现 ENTRYPOINT 和 CMD ，CMD 整个指令会作为参数附加在 ENTRYPOINT 指令后面，在基础镜像的预处理脚本通过 `$@` 接受参数。所以在两个打印组中间执行了 `ls`，出现了以上结果。基础镜像构建完毕（运行容器只是为了验证基础镜像配置是否正常，docker run 可以不要）
 
     个人镜像-预处理脚本        
     docker-entrypoint.sh：个人镜像-预处理脚本
-    ```powershell
+    ```sh
     #!/bin/sh
     echo "*****************"
     echo "**************"
@@ -283,17 +283,17 @@ ln 原文件名 链接文件名
 2. 验证
 - 验证一：如果个人镜像没有 CMD 和 ENTRYPOINT，是否使用基础镜像的。      
     Dockerfile：个人镜像-dockerfile
-    ```dockerfile
+    ```yaml
     FROM demo:base
     ```
     执行 `docker image prune -f && docker build -t demo:custom --progress plain . && docker run --rm -it demo:custom`      
     结果如下：     
-    ![](../assets/4%207.png)       
+    ![](../assets/4s7.png)       
     结论：使用了基础镜像的 CMD 和 ENTRYPOINT
 
 - 验证二：如果个人镜像有 CMD 和 ENTRYPOINT，能否和基础镜像内部的指令一起生效。      
     Dockerfile：个人镜像-dockerfile
-    ```dockerfile
+    ```yaml
     FROM demo:base
 
     COPY docker-entrypoint.sh /usr/local/bin/
@@ -303,19 +303,19 @@ ln 原文件名 链接文件名
     ```
     执行 `docker image prune -f && docker build -t demo:custom --progress plain . && docker run --rm -it demo:custom`      
     结果如下：     
-    ![](../assets/5%206.png)       
+    ![](../assets/5s6.png)       
     结论：ENTRYPOINT 和 CMD 会覆盖基础镜像内部对应的指令。  
 
 - 验证三：如果个人镜像只有 CMD，CMD 整个指令会作为参数附加在基础镜像的 ENTRYPOINT 指令后面吗？      
     Dockerfile：个人镜像-dockerfile
-    ```dockerfile
+    ```yaml
     FROM demo:base
 
     CMD ["ls", "-1"]
     ```
     执行 `docker image prune -f && docker build -t demo:custom --progress plain . && docker run --rm -it demo:custom`      
     结果如下：     
-    ![](../assets/6%203.png)       
+    ![](../assets/6s3.png)       
     结论：如果个人镜像只有 CMD，CMD 整个指令会作为参数附加在基础镜像的 ENTRYPOINT 指令后面       
 
 - 总结：FROM 基础镜像，ENTRYPOINT 和 CMD 会覆盖基础镜像内部对应的指令。覆盖后，如果同时出现 ENTRYPOINT 和 CMD ，CMD 整个指令会作为参数附加在 ENTRYPOINT 指令后面，如果 docker run 命令带了参数，参数会覆盖掉 CMD 指令，最终也将附加在 ENTRYPOINT 指令后面。     
@@ -324,7 +324,7 @@ ln 原文件名 链接文件名
 
 ### 5.4 docker-entrypoint.sh
 [以 node 18 bullseye 的 docker-entrypoint.sh 为例](https://github.com/nodejs/docker-node/blob/main/18/bullseye/docker-entrypoint.sh)        
-```bash
+```sh
 #!/bin/sh
 set -e
 
@@ -339,7 +339,7 @@ exec "$@"
 ```
 
 - shebang：指定脚本执行的解释器的绝对路径             
-  ```bash
+  ```sh
   # 使用 sh 执行脚本
   #!/bin/sh
 
@@ -350,7 +350,7 @@ exec "$@"
 
 - set -e：当命令发生异常时立即退出     
   可以将以下文件存为 demo.sh，使用 `bash demo.sh` 测试          
-  ```bash
+  ```sh
   # 当有该行时，直接报错退出
   # 当无该行时，最终会输出 done
   set -e
@@ -362,11 +362,11 @@ exec "$@"
 
 
 - if 判断语句，以 fi 结尾
-  ```bash
+  ```sh
   if [[ -z $USER ]]; then echo ok; fi
   ```
   
-  ```bash
+  ```sh
   if [ "${1#-}" != "${1}" ] || [ -z "$(command -v "${1}")" ] || { [ -f "${1}" ] && ! [ -x "${1}" ]; }; then
   set -- node "$@"
   fi
@@ -380,7 +380,7 @@ exec "$@"
   - ${1#-}： $1展开后前面以--开始，把它换成-。
   不较常见的 Parameter Expansion，常见的也就 ${NODE_ENV:=development} [文档：Shell Parameter Expansion](https://www.gnu.org/software/bash/manual/bash.html#Shell-Parameter-Expansion)
   - ${var#word}：可以理解为：如果变量 $var 以 word 开头，则 ${var#word} 的值为 $var 删掉 word，否则为 $var。简单点来说，就是 Remove prefix。      
-      ```bash
+      ```sh
       $ var=helloworld
 
       $ echo ${var#hello}
@@ -393,7 +393,7 @@ exec "$@"
       helloworld
       ```
   - 所以 `"${1#-}" != "${1}"` 的意思是：判断 $1 是否以 - 开头。
-     ```bash
+     ```sh
       # 等同以下二选一
       $ var=--version
 
@@ -405,7 +405,7 @@ exec "$@"
       ```
   - `command -v <command>`：用以执行命令，及列出全局命令路径，`which` 也可以。
     二者最重要的一个不同点是，当某个命令不存在时，command -v 不会输出任何字符，用此常来判断某个命令是否存在。
-    ```bash
+    ```sh
       # 当我们执行 ps 时，实际上执行的是 /usr/bin/ps
       $ which ps
       /usr/bin/ps
@@ -443,7 +443,7 @@ exec "$@"
     该命令使用 {} 包裹，且最后有一个分号 [how to nest conditional script operators -a -o in an if statement in bash](https://unix.stackexchange.com/questions/670519/how-to-nest-conditional-script-operators-a-o-in-an-if-statement-in-bash)     
     {} 使得指令是以分组的形式执行内部 && 左右的指令，但不会使变量产生类似作用域块的区域。
   - set --：用以重置命令行 $1 $2 $3 等参数     
-    ```bash
+    ```sh
       $ set -- a b c d
 
       $ echo $1 $2 $3 $4
@@ -466,7 +466,7 @@ exec "$@"
 
 
 总结：`docker-entrypoint.sh`
-```bash
+```sh
 # shebang：使用 sh 执行脚本
 #!/bin/sh
 
@@ -515,7 +515,7 @@ COPY 相当于副本，占用太大空间。
   有这个疑问，还是对 FROM 理解有问题，解答如下题。
 
 - [x] 假如上面的问题结论成立，那在我自己构造个人镜像时，假如要使用预处理脚本。如以下代码。      
-    ```dockerfile
+    ```yaml
     FROM node:alpine
 
     # codes
@@ -548,7 +548,7 @@ COPY 相当于副本，占用太大空间。
   - bullseye-slim：Debian 瘦身版
   - buster：Debian 上一版本
   - buster-slim：Debian 上一版本瘦身版
-  ![](../assets/7%201.png)    
+  ![](../assets/7s1.png)    
   继续深入，可以看看 `node:bullseye` 镜像的依赖。根据他们的 [`FROM`](https://github.com/nodejs/docker-node/blob/main/18/bullseye/Dockerfile) 一层一层找。        
     1. node:bullseye(18, latest)
     2. buildpack-deps:bullseye

@@ -74,7 +74,7 @@ categories:
 - `-mindepth`：指定检索最小深度
 - `-maxdepth`：指定检索最大深度
 
-```bash
+```sh
 # 注意，如果文件路径名使用 glob，则需要使用引号括起来
 $ find . -name '*.json'
 
@@ -109,7 +109,7 @@ $ find . -mindepth 1 -maxdepth 1 -name '*.json'
 
 ## 3. Actions 操作
 找到文件后对所查询的文件进行操作：`-exec` 执行命令，文件名使用 `{}` 替代，最后使用 `\;` 结尾。
-```bash
+```sh
 # realpath：打印当前文件的绝对路径
 $ realpath package.json 
 /home/train/Documents/student/shanyue/react/package.json
@@ -120,7 +120,7 @@ $ find . -name 'test*' -exec realpath {} \;
 
 ```
 当然使用 `-exec` 加指令可能繁琐些，其自带些常用的快捷指令
-```bash
+```sh
 # 在当前目录递归查找所有以 test 开头的文件，并删除
 # delete：删除
 $ find . -name '*.json' -delete

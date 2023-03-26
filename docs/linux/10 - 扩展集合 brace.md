@@ -44,7 +44,7 @@ categories:
 - `range`：`{1..10}`，`{01..10}`
 - `step`：`{1..10..2}`
 
-```bash
+```sh
 # 不同项用 , 隔开，如果是自动扩展则是..
 $ echo {a,b,c}
 a b c
@@ -73,7 +73,7 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h 
 ```
 
 批量操作
-```bash
+```sh
 # 列出当前目录下所有的 json 与 md 文件
 $ ls -lah {*.json,*.md}
 

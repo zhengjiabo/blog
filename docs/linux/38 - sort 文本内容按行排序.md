@@ -33,7 +33,7 @@ categories:
 - `x`: 显示所有程序，不以终端机来区分
 
 
-![](../assets/1%2032.png)
+![](../assets/1s32.png)
 
 `ps -ef` 也可以显示所有的程序进程（推荐)
 
@@ -54,7 +54,7 @@ categories:
 ## 2. sort 默认首字母排序
 
 - 示例文件准备
-    ```bash
+    ```sh
     $ cat <<EOF > sort.md
     A 4
     C 2
@@ -73,7 +73,7 @@ categories:
 命令：`sort [File...]`
 
 默认按第一列字符 `ASCII` 排序
-```bash
+```sh
 $ sort sort.md
 A 4
 B 3
@@ -82,7 +82,7 @@ D 1
 ```
 
 也可以多个文件内容一块排序
-```bash
+```sh
 $ sort sort.md sort1.md
 A 14
 A 4
@@ -98,7 +98,7 @@ D 11
 ## 3. sort -r 降序排序
 
 命令：`sort -r [File...]`
-```bash
+```sh
 $ cat <<EOF | sort -r sort.md
 A 4
 B 3
@@ -119,7 +119,7 @@ A 4
 
 列的起始值是 1, 不是 0
 
-```bash
+```sh
 $ cat <<EOF | sort -k 2 sort.md
 A 4
 B 3
@@ -137,7 +137,7 @@ A 4
 默认分隔符为空格，但有时候文本的分隔符为其他，这时候就可以用 `-t` 参数
 
 命令：`sort -t [File...]`
-```bash
+```sh
 $ cat <<EOF | sort -t : -k 2
 A:14
 C:13
@@ -154,7 +154,7 @@ A:14
 ## 6. 排序细节
 ### 6.1 ASCII 码排序
 默认根据字符排序，即 `ASCII` 码排序，如果同一位置具有相同的字符，则继续比对后一位置的 `ASCII` 码，直到行末。
-```bash
+```sh
 $ cat <<EOF | sort
 130
 121
@@ -176,7 +176,7 @@ EOF
 
 
 ### 6.2 分隔符与排序的关系
-```bash
+```sh
 $ cat <<EOF | sort -k 1 
 15
 1 
@@ -187,7 +187,7 @@ EOF
 15
 ```
 
-```bash
+```sh
 $ cat <<EOF | sort -k 1 
 15 6 
 1 6
@@ -209,7 +209,7 @@ EOF
 - `[OPTS]`: 排序方法 `[bdfgiMhnRrV]`，在 `Start` 或 `End` 中指定都是等效的。未指定则继承全局
 
 可以理解为 `sort -k` 只关注两个点之间的内容，毕竟 `F` 和 `c` 的描述的是点的位置（第几列第几个字符）。而分隔符直接过滤掉。
-```bash
+```sh
 # 现在再回过头来看这道题
 $ cat <<EOF | sort -k 1 
 15 6 
@@ -231,7 +231,7 @@ EOF
 ```
 
 两个点之间的文本，那如果将两个点约束同个列上，例如第 1 列，能否实现我们期待的效果
-```bash
+```sh
 $ cat <<EOF | sort -k 1,1 
 15 6 
 1 6
@@ -245,7 +245,7 @@ EOF
 
 继续验证
 
-```bash
+```sh
 # 之前的数据是
 # 15 6
 # 1 6
@@ -283,7 +283,7 @@ EOF
 ## 7. sort -n 按数字大小排序
 
 命令：`sort -n [File...]`
-```bash
+```sh
 $ sort -nk 2 sort.md sort1.md
 D 1
 C 2
@@ -300,7 +300,7 @@ A 14
 前面都是以行为单位排序，也可以配合其他命令，实现以字符为单位的排序
 
 本质是利用 `grep -o` 将字符串转为行，`sort` 排序后，`tr -d` 删除换行符还原为字符串。
-```bash
+```sh
 # grep -o：--only-matching，仅仅打印匹配到的字符，相当于将 hello 分成每行一个字符
 # tr -d '\n'：删除所有换行符
 $ echo hello | grep -o . | sort | tr -d '\n'

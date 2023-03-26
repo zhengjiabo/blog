@@ -59,7 +59,7 @@ categories:
 - `default` 转化为 `module.exports.default`
 - `name` 转化为 `module.exports.name` 
 
-```javascript
+```js
 // esm 代码
 import sum, { name } from './sum'
 import * as s from './sum'
@@ -74,7 +74,7 @@ const name = s.name
 ## 3. 运行时代码分析
 
 
-```javascript
+```js
 /* webpack/runtime/define property getters */
 (() => {
     // define getter functions for harmony exports
@@ -114,7 +114,7 @@ const name = s.name
 
 ### 3.1 __webpack_require__.r  标记是一个 ESM 模块
 暂时不知道 r 是哪个单词的缩写。
-```javascript
+```js
 /* webpack/runtime/make namespace object */
 (() => {
     // define __esModule on exports
@@ -133,7 +133,7 @@ const name = s.name
 
 
 ### 3.2 __webpack_require__.d  定义 get 函数(define)
-```javascript
+```js
 /* webpack/runtime/define property getters */
 (() => {
     // define getter functions for harmony exports
@@ -153,7 +153,7 @@ const name = s.name
 
 
 ### 3.3 __webpack_require__.o 判断是否实例的属性(OwnProperty)
-```javascript
+```js
 /* webpack/runtime/hasOwnProperty shorthand */
 (() => {
     __webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -168,7 +168,7 @@ const name = s.name
 
 ### 3.4 Symbol.toStringTag 设定 Object.prototype.toString 返回值
 `Object.prototype.toString()` 方法会去读取 `Symbol.toStringTag` 并把它包含在自己的返回值里
-```javascript
+```js
 var t = {}
 Object.prototype.toString.call(t) // '[object Object]'
 Object.defineProperty(t, Symbol.toStringTag, { value: 'Module' });
@@ -180,7 +180,7 @@ Object.prototype.toString.call(t) // '[object Module]'
 
 ### 3.5 运行时代码分析
 `sum.js`
-```javascript
+```js
 // 源码
 const sum = (...args) => args.reduce((x, y) => x + y, 0)
 
@@ -210,7 +210,7 @@ export const name = 'sum'
 ```
 
 `index.js`
-```javascript
+```js
 // 源码
 import sum, { name } from './sum'
 import * as s from './sum'

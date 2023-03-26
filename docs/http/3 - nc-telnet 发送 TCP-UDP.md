@@ -19,13 +19,13 @@ categories:
 
 ## 提问
 - [x] 通过 `nc/telnet` 发送 `GET/POST` 报文
-    > ```bash
+    > ```sh
     > [nc/telnet] httpbin.org 80         
     > GET /get HTTP/1.1       
     > Host: httpbin.org`
     > ```
 
-    > ```bash
+    > ```sh
     > [nc/telnet] httpbin.org 80         
     > POST /post  HTTP/1.1       
     > Host: httpbin.org`
@@ -55,7 +55,7 @@ categories:
 输入 `nc httpbin.org 80` 命令后回车执行命令，随后手动输入 `HTTP` 请求报文，输入完毕后，键入两次回车后发送请求。
 
 
-```bash
+```sh
 # 以下三行都是手动输入
 # 域名 端口 请求头都是手动输入
 # 两次 CRCL 后发送请求（两次回车）
@@ -94,7 +94,7 @@ Access-Control-Allow-Credentials: true
 
 所以建议使用 `nc`
 
-```bash
+```sh
 $ telnet httpbin.org 80
 Trying 54.166.148.227...
 Connected to httpbin.org.
@@ -131,7 +131,7 @@ Access-Control-Allow-Credentials: true
 
 模拟 `POST` 请求时，一定要带上头信息 `Content-Length`，指明 `Body` 字符数量。
 
-```bash
+```sh
 # 如果输入请求头 Content-Length 
 # 两次 CRCL 后发送请求（两次回车） 可以输入 Body
 # 当 Body 长度达到 Content-length 时，键入回车键就会发送请求。

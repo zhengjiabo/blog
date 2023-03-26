@@ -29,8 +29,8 @@ categories:
 
 - [x] 实现 Preview
   自己实现的 demo，由于没有域名，改了 `nginx` 不同分支使用了路径。也实现了 `Stop Preview` [workflow-examples](https://github.com/zhengjiabo/workflow-examples)
-  ![](../assets/4%202.png)
-  ![](../assets/5%202.png)
+  ![](../assets/4s2.png)
+  ![](../assets/5s2.png)
 
 
 
@@ -52,12 +52,12 @@ CI Preview，每一个功能分支都配有对应的测试环境，相互独立�
 
 ## 2. 自建 CI 服务器
 github 可以参考文档 [Adding self-hosted runners](https://docs.github.com/cn/actions/hosting-your-own-runners/adding-self-hosted-runners)，跟着操作建立自己 CI 服务器。大概流程如下        
-![](../assets/2%204.png)
+![](../assets/2s4.png)
 操作简单，但涉及 linux 命令，需要留意以下方面：     
 - 建立服务器时使用的用户不能为 `root` 用户，需要自建用户。     
 - 新建用户，分配用户组时需要添加 `docker` 用户组，否则后续无法调用 docker。
 - `./run.sh` 需要后台执行，可以使用 `nohup ./run.sh &` 后台执行。关闭时使用 `ps -ef |grep ./run.sh` 查询后 `kill -9 <pid>` 关闭
-    ![](../assets/3%203.png)
+    ![](../assets/3s3.png)
 
 自建 CI 服务器后，继续准备多分支部署
 
@@ -128,7 +128,7 @@ services:
 以下命令中的 `COMMIT_REF_NAME` 环境变量为当前分支名称，在此处可通过 `git` 命令获取。       
 而在 CI 当中，可直接通过 CI 相关环境变量获得，无需通过 `git` 命令。
 
-```bash
+```sh
 # envsubst 可以直接指定输入文件，默认使用环境变量，但也可以指定临时全局变量
 $ COMMIT_REF_NAME=$(git rev-parse --abbrev-ref HEAD) envsubst '${COMMIT_REF_NAME}' < docker-compose.yaml
 
@@ -176,7 +176,7 @@ environment:
 ```
 
 
-![](../assets/1%204.png)
+![](../assets/1s4.png)
 
 
 

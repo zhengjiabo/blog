@@ -41,7 +41,7 @@ categories:
 - mac: `brew install tmux`
 - linux: 直接通过 [ tmux源码 ](https://github.com/tmux/tmux) 编译安装。当然有些 linux 发行版有二进制安装包，但不一定有更新，所以还是使用源码编译安装吧。
 
-```bash
+```sh
 # Debian 安装软件依赖 编译时缺啥安啥，结果就需要安装这么多依赖了
 $ apt install -y autoconf automake pkg-config libevent-dev byacc ncurses-dev
 
@@ -78,9 +78,9 @@ $ rm -rf tmux
 ## 4. 命令
 `tmux`: 进入 `tmux` 环境
 
-![](../assets/1%2029.png)
+![](../assets/1s29.png)
 
-```bash
+```sh
 # 新建一个 tmux session
 # new：new-session 的简写
 # -s: sessionName
@@ -93,7 +93,7 @@ $ tmux new -s shanyue
 退出 `tmux` 环境，使用快捷键 `ctrl + d`，此时现场被销毁了。
 如果想保留现场，可以使用命令 `tmux detach` (或者快捷键 `ctrl + b d`)， 保留现场退出，下次进入时使用 `tmux attach` 重新进入保留的现场。
 
-```bash
+```sh
 # 退出并保存环境
 $ tmux detach
 

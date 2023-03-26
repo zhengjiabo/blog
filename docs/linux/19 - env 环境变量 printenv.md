@@ -36,7 +36,7 @@ categories:
 ## 2. printenv
 通过 `printenv` 可获得系统的所有环境变量
 
-```bash
+```sh
 $ printenv
 LANG=en_US.UTF-8
 USER=root
@@ -58,7 +58,7 @@ XDG_SESSION_CLASS=user
 
 ## 3. $HOME
 `$HOME`，当前用户目录，即 `~` 目录。
-```bash
+```sh
 # 以下两个命令是等价的
 $ cd $HOME
 $ cd ~
@@ -68,7 +68,7 @@ $ cd ~
 
 ## 4. $USER
 `$USER`，即当前用户名。
-```bash
+```sh
 $ echo $USER
 root
 
@@ -82,7 +82,7 @@ $ id -un
 `sh` 是规范，`bash` 是其实现，但在部分 `POSIX` 系统中没有 `bash`，他们也有自己对 `sh` 的实现使得命令可以正常运行。
 
 可以使用 `$SHELL` 查看目前使用的 SHELL 工具
-```bash
+```sh
 $ echo $SHELL
 /bin/zsh
 ```

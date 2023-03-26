@@ -51,7 +51,7 @@ categories:
 
 按需上传：上传重复文件时，会对比文件的元属性，如果无变更则不会重复上传。
 
-```bash
+```sh
 # 将本地的 react 拷贝到 shanyue 服务器的 ~/Documents 目录
 #
 # -l：--links，拷贝符号链接
@@ -65,7 +65,7 @@ $ rsync -lahzv <local_file_path> <server>:<server_file_path>
 
 ### 2.2 window 下的 rsync
 `window` 需要安装 `cygwin64` 且在依赖中选中 `ssh` 和 `rsync`。 使用时如果以下报错，大概率是使用了非 `cygwin64` 的 `ssh` 
-```bash
+```sh
 rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
 rsync error: error in rsync protocol data stream (code 12) at io.c(235) [Receiver=3.1.3]
 rsync: connection unexpectedly closed (0 bytes received so far) [sender]
@@ -74,10 +74,10 @@ rsync error: error in rsync protocol data stream (code 12) at io.c(228) [sender=
 
 可以使用 `which ssh` 查看当前使用的来源， `where ssh` 查看已有列表
 
-![](../assets/1%2026.png)
+![](../assets/1s26.png)
 
 可以临时指定 `ssh` 
-```bash
+```sh
 # -e: 指定 ssh 路径，根据自己 where ssh 查到的设置
 $ rsync -e <ssh_path> -lahzv <local_file_path> <server>:<server_file_path>
 
@@ -92,7 +92,7 @@ total size is 3.92K  speedup is 53.63
 
 ## 3. 归档模式 -a
 归档模式：拷贝元属性，如 `ctime/mtime/mode` 等等，这对于静态资源服务器相当有用。例如 `nginx` 根据 `mtime/size` 生成 `Etag`，归档模式的拷贝可以避免元属性的变动，使得 `Etag` 不变，浏览器缓存不会受影响。
-```bash
+```sh
 # 查看其 yarn.lock 信息
 $ ls -lah | grep yarn
 -rw-r--r-- 1 root root 323K Oct 24 10:44 yarn.lock
@@ -123,7 +123,7 @@ $ find -maxdepth 1 -name 'yarn*' -printf '%i\n'
 拷贝目录时需要留意 **源目录** 的 `/`
 - 不以 `/` 结尾: 该目录连同目录名一起进行拷贝
 - 以 `/` 结尾: 该目录下所有内容进行拷贝
-```bash
+```sh
 # 以下以拷贝 react 目录为例
 # 结果都是：~/Documents/abc/react
 $ rsync -lahz ~/Documents/react ~/Documents/abc

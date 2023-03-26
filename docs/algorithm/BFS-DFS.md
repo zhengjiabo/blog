@@ -29,7 +29,7 @@ categories:
 4. 一轮扩散完毕后，扩散步数更新
 
 ## 3. BFS框架
-```javascript
+```js
 function BFS(start, target) {
    var q = [] // 当前队列
    var visited = new Set() // 已访问列表

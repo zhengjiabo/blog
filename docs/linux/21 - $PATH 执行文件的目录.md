@@ -31,7 +31,7 @@ categories:
 
 `$PATH` 决定了 `shell` 将到哪些目录中寻找命令或程序，`$PATH` 的值是一系列目录。
 
-```bash
+```sh
 $ echo $PATH
 /opt/share/pnpm:/opt/nvm/versions/node/v16.17.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
@@ -45,7 +45,7 @@ $ echo $PATH
 
 
 ## 3. which 列出命令的完整路径
-```bash
+```sh
 # 实际使用的 node 路径
 $ which node
 /opt/nvm/versions/node/v16.17.1/bin/node
@@ -56,7 +56,7 @@ $ which ssh
 
 ## 4. where 列出指令全局所有的匹配路径
 部分指令可能存在多个版本，如果发现自己使用的版本不对，想要知道所有的全局匹配路径，可以使用 `where`
-```bash
+```sh
 $ where ssh
 C:\Windows\System32\OpenSSH\ssh.exe
 C:\cygwin64\bin\ssh.exe
@@ -66,7 +66,7 @@ D:\cmder\vendor\git-for-windows\usr\bin\ssh.exe
 
 
 ## 5. command -v 列出命令的完整路径 
-```bash
+```sh
 # 实际使用的 node 路径
 $ command -v node
 /opt/nvm/versions/node/v16.17.1/bin/node
@@ -76,7 +76,7 @@ $ command node
 ```
 当某个命令不存在时，`command -v` 不会输出任何字符，用此常来判断某个命令是否存在。
 
-```bash
+```sh
 # Debian，不同发行版 which 找不到命令的提示可能略微不同
 $ which hello
 hello not found

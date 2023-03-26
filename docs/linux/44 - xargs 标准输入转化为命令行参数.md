@@ -44,7 +44,7 @@ categories:
 ## 1. 前提提要、场景
 
 我们可以通过 `pipe` 将标准输出转换为标准输入，标准输入传递给命令。如以下
-```bash
+```sh
 $ cat /etc/passwd | grep root
 
 # 由于 grep 可以接受【标准输入】作为参数
@@ -53,14 +53,14 @@ $ grep root /etc/passwd
 ```
 
 但不是所有命令都接受标准输入作为参数的，如以下
-```bash
+```sh
 # cat 没有按照期望打开 package.json 文件
 $ echo package.json | cat
 package.json
 ```
 
 为了解决覆盖这类场景，便有了 `xargs` ，可以将【标准输入】转化为命令行参数
-```bash
+```sh
 # 成功，内容过多，截取一部分
 $ echo package.json | xargs cat
 {
@@ -79,7 +79,7 @@ $ echo package.json | xargs cat
 ### 2.1 `-I replace-str` 占位符
 
 使用 `xargs` 默认会将【标准输入】放在命令的最后位置
-```bash
+```sh
 $ echo 5 | xargs head -n package.json
 head: invalid number of lines: ‘package.json’
 # 等价于以下，默认作为命令的最后一个参数
@@ -89,7 +89,7 @@ head: invalid number of lines: ‘package.json’
 
 如果要自定义参数的位置，可以使用 `-I replace-str` 使用占位符     
 `replace-str` 可以更改为其他占位符，一般使用 `{}`
-```bash
+```sh
 $ echo 5 | xargs -I {} head -n {} package.json
 {
   "name": "Tab" ,
@@ -99,7 +99,7 @@ $ echo 5 | xargs -I {} head -n {} package.json
 ```
 
 需要注意，使用 `-I`时，分隔符默认为换行符
-```bash
+```sh
 # 需要留意一点
 # 使用 `-I` 占用符时，分隔符默认为 换行符
 # echo -n: 不输出末尾换行
@@ -132,7 +132,7 @@ head package.json -n 4 ?...y
 - `-t`: 打印执行的命令，且立马执行
 
 > 学习时可以经常使用 `-p` 查看真正执行的命令
-```bash
+```sh
 # -p: 打印执行的命令，需要键入 y 确认
 $ echo 5 | xargs -pI {} head -n {} package.json
 # 键入 y
@@ -161,7 +161,7 @@ head -n 5 package.json
 - `-d`: 指定分隔符
 - `-0`: 指定 `null` 即没有分隔符，在明确不需要分隔成多个参数时使用，避免使用默认的空格或换行符等空白字符分隔
 
-```bash
+```sh
 # -d: 指定分隔符
 $ echo 'a:b:c' | xargs -pd : mkdir
 mkdir a b c ?...
@@ -177,7 +177,7 @@ rm ./1.json ./2.json ./demo.json ?...
 
 
 当标准输入为多行参数时
-```bash
+```sh
 # 因为默认分隔符为空格或换行符等空白字符
 # 所以跟没换行空格隔开的效果一样
 $ cat <<EOF | xargs -p touch    
@@ -225,7 +225,7 @@ $ ls
 
 这时候可以使用 `-n`
 
-```bash
+```sh
 # 场景：每次执行只能接受一个参数
 # echo -n: 不输出最后的换行
 # xargs -n: 指定参数数量作为一个命令行参数 
@@ -248,7 +248,7 @@ head package.json -n 4 ?...y
 
 
 当标准输入为多行参数时
-```bash
+```sh
 # 因为默认分隔符为空格或换行符等空白字符
 # 所以跟没换行，仅用空格隔开的效果一样
 $ cat <<EOF | xargs -pn 1 touch       
@@ -269,7 +269,7 @@ touch c.json ?...y
 
 超过行数限制，将会另起一个命令
 
-```bash
+```sh
 # -L: 指定 n 行作为一个命令行参数 
 $ cat <<EOF | xargs -pL 1 touch       
 a.json b.json c.json
@@ -291,7 +291,7 @@ touch d.json e.json ?...y
 在一些场景我们更关注执行效率，例如批量关闭 `docker` 进程。
 
 可以指定 `-P`，实现多进程。
-```bash
+```sh
 # docker ps -q: 只打印容器的id
 # -P: 最多进程数量，0 为无限制
 $ docker ps -q | xargs -L 1 -P 0 docker kill

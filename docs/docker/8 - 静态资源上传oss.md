@@ -17,7 +17,7 @@ categories:
 6.  PUBLIC_URL：静态资源的基础路径，一般配置 output.publicPath，`cra` 是配置环境变量 `PUBLIC_URL`。静态资源最终访问路径 = output.publicPath（基础路径） + 资源loader或插件等配置路径。        
     所以设置 `PUBLIC_URL=https://$Bucket.$Endpoint` 经过打包后，网页需要的内容静态资源就都指向了 `oss`。
 7.  如何设置环境变量：
-    ```bash
+    ```sh
     # linux / mac 临时更改，当前窗口有效 
     export PUBLIC_URL=https://$Bucket.$Endpoint
 
@@ -53,7 +53,7 @@ OSS(Object Storage) 云存储服务，提供海量、安全、低成本、高可
 
 
 目的：将静态资源上传至 OSS，并对 OSS 提供 CDN 服务。 
-![](../assets/1%2010.png)  
+![](../assets/1s10.png)  
 
 由于我个人使用的是华为云，华为云对应的是 `OBS` 效果相同。后续使用 `OBS` 演示。            
 价格很便宜，按量包月，40GB标准存储包，1年价格仅9块钱。按需计费40GB只要4块钱。    
@@ -78,7 +78,7 @@ OSS(Object Storage) 云存储服务，提供海量、安全、低成本、高可
    
  `PUBLIC_URL`：对应 `webpack` 配置中 [output.publicPath](https://www.webpackjs.com/configuration/output/#output-publicpath) ，设置静态资源的基础路径。              
 静态资源最终访问路径 = output.publicPath（基础路径） + 资源loader或插件等配置路径
-```javascript
+```js
 {   
     /* codes */
     output: {
@@ -95,7 +95,7 @@ OSS(Object Storage) 云存储服务，提供海量、安全、低成本、高可
 
 不同的脚手架可能不同，对于 `cra` 是使用 `PUBLIC_URL`，可以在 `node_modules\react-scripts\config\paths.js:29` 看到相关代码。    
 在 `linux` 中指定 `PUBLIC_URL`
-```bash
+```sh
 # 临时更改，仅当前窗口有效
 # 设定环境变量
 # = 左右不要由空格
@@ -106,7 +106,7 @@ export PUBLIC_URL=https://$Bucket.$Endpoint
 ```
 
 在 `window` 中指定 `PUBLIC_URL`
-```bash
+```sh
 # 临时更改，仅当前窗口有效
 # && 前面不要空格
 set PUBLIC_URL=https://$Bucket.$Endpoint&& npm run build
@@ -135,13 +135,13 @@ set PUBLIC_URL=https://$Bucket.$Endpoint&& npm run build
 
 
 根据安装说明安装后，需要将上面得到的 `AccessKeyId` `SecretAccessKey` `Endpoint` 进行权限配置。
-```bash
+```sh
 # obsutil config -i=${AccessKeyId} -k=${SecretAccessKey} -e=${Endpoint}
 obsutil config -i=ak -k=sk -e=endpoint
 ```
 
 配置完成，现在就可以将打包后的静态文件上传到 `OBS` 上了
-```bash
+```sh
 # 将本地目录 build 上传到 Bucket obs://xxx 中
 # cp：上传
 # -r：递归上传文件夹中的所有文件和子文件夹。
@@ -189,7 +189,7 @@ obsutil cp -r -f --meta CacheControl:max-age=31536000 build/static obs://xxx/
 可将敏感信息可使用 `ARG` 作为变量，通过 `docker build --build-arg` 或 `docker-compose.yaml` 的 `build.args` 传入。           
 `build.args` 从宿主机的同名环境变量中取值，所以只要配置好宿主机的环境变量，便可以不暴露敏感信息并配置到镜像内使用。
      
-```dockerfile
+```yaml
 # 使用 node:14-alpine 找不到 obsutil 很奇怪
 FROM node:14 as builder
 
@@ -251,7 +251,7 @@ COPY --from=builder code/build /usr/share/nginx/html
 但同样不允许出现敏感数据，此时通过环境变量进行传参，在 `build.args` 中，默认从**宿主机的同名环境变量**中取值。
 
 在宿主机中，linux 和 mac 在命令行中设置
-```bash
+```sh
 export ACCESS_KEY_ID=xxxx
 export ACCESS_KEY_SECRET=xxxx
 ```
@@ -289,7 +289,7 @@ services:
 ## 疑问
 - [ ] 我使用的是 华为云 obs，下载后是解压包，解压后放到`/usr/local/bin/` 但出现问题 obsutil: not found。为什么会有这种情况，阿里的 ossutil 也是放在 `/usr/local/bin/` 可以使用，华为云的 obsutil 一样放在 `/usr/local/bin/` 却不行。这个跟 `linux` 系统相关，有点不理解。         
     我把镜像换成 `FROM node:14` 可以正常使用，以下是代码
-    ```dockerfile
+    ```yaml
       # 使用 node:14-alpine 找不到 obsutil 很奇怪
       FROM node:14-alpine 
       # FROM node:14 这个可以
@@ -308,7 +308,7 @@ services:
 
     ```
     执行 `docker compose build --progress plain --no-cache` 结果如下，确实 `/usr/local/bin` 下有 `obsutil` 文件。           
-    ![](../assets/2%207.png)        
+    ![](../assets/2s7.png)        
 
 
 

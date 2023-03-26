@@ -31,7 +31,7 @@ categories:
 4. 递归调用完，最后得到出所有需要打包的模块
 
 - [x] 如何去除代码中的所有 console.log
-```javascript
+```js
 const acorn = require("acorn");
 const astring = require("astring");
 const fs = require('node:fs')
@@ -92,7 +92,7 @@ AST 涉及到工程化诸多环节的应用，比如:
 可以在 [AST Explorer](https://www.astexplorer.net/) 查看不同语言的 AST 格式
 
 ### 2.1 JS
-```javascript
+```js
 const n = 1 + 1
 ```
 
@@ -189,7 +189,7 @@ AST 的生成这一步骤被称为解析(Parser)，而该步骤也有两个阶�
 ### 3.1 词法分析，也称分词
 词法分析用以将代码转化为 `Token`，维护一个关于 `Token` 的数组。      
 `Token` 指语法上不可能再分的、最小的单个字符或字符串。       
-```javascript
+```js
 var num = 1
 ```
 涉及到了 4 个属性不一样的 Token：
@@ -199,7 +199,7 @@ var num = 1
 4. 字面量 1
 
 
-```javascript
+```js
 // Code
 a = 3
 
@@ -271,7 +271,7 @@ a = 3
 4. 生成模板。
 
 
-```javascript
+```js
 const fs = require('fs')
 const path = require('path')
 

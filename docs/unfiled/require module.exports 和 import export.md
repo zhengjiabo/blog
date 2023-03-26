@@ -48,7 +48,7 @@ categories:
 
 ## 3. 普通用法
 - require/exports
-    ```javascript
+    ```js
     exports.fs = fs // 返回 {fs: fs}
     module.exports = fs // 返回 fs
 
@@ -56,7 +56,7 @@ categories:
     ```
 
 - import/export  （ES6）
-    ````javascript
+    ````js
     export default fs
     export const fs
     export function readFile
@@ -79,7 +79,7 @@ categories:
 ### 4.1 COMMONJS中 exports 和 module.exports关系
 结论：两者相等    
 exports 是 module.exports 的引用
-```javascript
+```js
 // module.js
 var say = () => {
     console.log('hello')
@@ -133,7 +133,7 @@ function(module, exports, __webpack_require__) {
 ### 4.2 COMMONJS中的require
 require等价于module.exports，module.exports后面内容是什么，require的结果就是什么。    
 所以可以添加在任何地方, 看代码便于理解
-```javascript
+```js
 // counter.js
 module.exports = {
     count: 0,
@@ -150,7 +150,7 @@ increaseCount()
 console.log('read count after increase in comonjs.js', count)
 ```
 打包后如下
-```javascript
+```js
 // counter.js打包完代码如下
 /* 3 */ /***/
 function(module, exports, __webpack_require__) {
@@ -196,7 +196,7 @@ default是ES6的关键字，用于指定默认输出，而没有default关键字
 ### 5.2 ES6 export 命名输出
 命名输出后面需要命名表达式 或 匿名对象  
 本质是抽出命名变量作为exports属性    
-```javascript
+```js
 // export 命名输出后面需要命名表达式 或 匿名对象
 /* 例子1 命名表达式 正确 */
 export const func = () => {}
@@ -220,7 +220,7 @@ export func
 
 ### 5.3 ES6 export default 默认输出 
 本质是将后面的值或变量赋值给exports.default
-```javascript
+```js
 // export default 是将后面的值或变量赋值给exports.default
 /* 例子1 正确 */
 const func = () => {}
@@ -266,7 +266,7 @@ ES6，基础数据类型生成的是只读引用。
 但使用export default生成的只读引用有点特殊，后续的值更改，并不会重新赋值给exports.default。    
 
 结论：export default 基本数据类型赋值给新变量，修改原变量，不影响新变量的取值。    
-```javascript
+```js
 export let num = 1
 ++num
 
@@ -295,7 +295,7 @@ exports.default = number
 可以概况为
 - export：抽出命名变量作为exports属性  
 - export default：将后面的值赋值给exports.default
-```javascript
+```js
 // 命名输出
 const func = () => {}
 export { func } // 跟匿名对象
@@ -319,7 +319,7 @@ exports.default = { func: func } // 匿名对象直接赋值给exports.default
 
 ### 5.6 ES6的export，经bable转化成ES5, 打包后的源码对比
 COMMONJS
-```javascript
+```js
 // module.js
 const count = 0
 const func = () => {}
@@ -341,7 +341,7 @@ module.exports = {
 ```
 
 ES6
-```javascript
+```js
 // module.js
 const count = 0
 const func = () => {}
@@ -372,7 +372,7 @@ exports {
 
 ### 5.7. import不同取值方式，打包后的源码对比
 在5.6同一输出文件情况下，看import不同取值方式，打包后的源码对比
-```javascript
+```js
 // module.js
 const count = 0
 const func = () => {}
@@ -382,7 +382,7 @@ exports = {
 };
 ```
 1. 取默认输出
-    ```javascript
+    ```js
     /* 取默认输出 */
     import counter from './module.js'
     console.log(counter)
@@ -406,7 +406,7 @@ exports = {
     - 如果使用COMMONJS的module.exports，ES6引用import，会自动添加default指向原引用。（当然不推荐这么混合使用）
 
 2. 取所有输出的集合
-    ```javascript
+    ```js
     /* 取所有输出的集合 */
     import * as counter from './module.js'
     console.log(counter)
@@ -443,7 +443,7 @@ exports = {
     结论：因为是取所有输出的集合，所以用的是_interopRequireWildcard 返回一个浅拷贝对象，而不是_interopRequireDefault仅处理default。和默认输出也就这点差别。
 
 3. 取指定输出
-    ```javascript
+    ```js
     /* 取指定输出 */
     import { count } from './module.js'
     console.log(count)
@@ -464,7 +464,7 @@ exports = {
 
 ### 5.8 import的引用解构
 `import fs from 'fs'`fs是默认输出，但如果使用解构，针对的是module.exports
-```javascript
+```js
 // func.js
 const func = () => {}
 export default { func }
@@ -491,7 +491,7 @@ import { default as module } from './func.js'
 
 ### 5.9 import的提升效果
 以下代码不会报错，编译时会将import提升到模块的顶部
-```javascript
+```js
 foo();
 
 import { foo } from 'my_module';
@@ -515,7 +515,7 @@ import { foo } from 'my_module';
 - import/export(ES6)需要经过编译，编译后，在基础数据类型处，生成只读引用，等到脚本真正执行时，才去取值。后续原变量的修改了，影响取值，因为读取的还是原变量的值
 
 直接看代码便于理解
-```javascript
+```js
 // counter.js
 module.exports = {
     count: 0,
@@ -562,7 +562,7 @@ read count after increase in es6.js 1
 
 ### 6.2 引用差异-打包文件对比
 可以看打包后的源码，加深印象
-```javascript
+```js
 // counter.js打包完代码如下
 /* 3 */ /***/
 function(module, exports, __webpack_require__) {
@@ -610,7 +610,7 @@ function(module, exports, __webpack_require__) {
 以下内容是上方打包代码的扩展，可选择性阅读    
 - 扩展：逗号操作符 (0, func)()    
     作用1：本质是逗号操作符，对每个操作对象求值（从左到右），返回**最后**一个操作对象的值
-    ```javascript
+    ```js
     （‘OMG’，false, 1，2，3） // 3
     /* 从左到右，无论左边多少个，写的是什么类型、值，都不影响最后的输出 
         所以不一定要(0, func)()，只是大家保持统一。*/
@@ -623,7 +623,7 @@ function(module, exports, __webpack_require__) {
     ```
     作用2：改变方法的this指向，指向全局    
     作用和call 和 apply相当，为什么不用这两个呢，可能是怕原型链或这两个方法被人为改写。这个写法可以避开被改写问题
-    ```javascript
+    ```js
     const person = {
         say: function () {
             console.log(this)
@@ -633,7 +633,7 @@ function(module, exports, __webpack_require__) {
     (0, person.say)() // Window  网页里
     ```
     这时候对于webpack打包处理的，便可以理解了
-    ```javascript
+    ```js
     // es6.js
     import { count, increaseCount } from './counter'
     increaseCount() // 可以看到increaseCount是在全局直接调用的，
@@ -675,7 +675,7 @@ function(module, exports, __webpack_require__) {
 
 - 条件编译    
     COMMONJS 代码
-    ```javascript
+    ```js
     /* COMMONJS 代码 */
     const flag = true
     let count
@@ -698,7 +698,7 @@ function(module, exports, __webpack_require__) {
     console.log(count);
     ```
     ES6 代码 import
-    ```javascript
+    ```js
     /* ES6 代码 import */
     const flag = true
     let count
@@ -715,7 +715,7 @@ function(module, exports, __webpack_require__) {
     // import不可在条件语句中使用
     ```
     ES11 代码 import()
-    ```javascript
+    ```js
     /* ES11 代码 import() */
     (async () => {
         const flag = true
@@ -747,7 +747,7 @@ function(module, exports, __webpack_require__) {
 
 - 动态引用    
     COMMONJS 代码
-    ```javascript
+    ```js
     /* COMMONJS 代码 */
     /* 错误写法 -START- */
     const fileName = 'module';
@@ -806,7 +806,7 @@ function(module, exports, __webpack_require__) {
     ```
     
     ES6 代码 import
-    ```javascript
+    ```js
     /* ES6 代码 import */
     const fileName = 'module';
     const myModual = import './' + fileName;
@@ -822,7 +822,7 @@ function(module, exports, __webpack_require__) {
 
 
     ES11 代码 import()
-    ```javascript
+    ```js
     /* ES11 代码 import() */
     /* 错误写法 -START- */
     const fileName = 'module';

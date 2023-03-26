@@ -33,7 +33,7 @@ categories:
 
 默认 `sh` 是 `bash` 或 `dash`。如果想切换默认 `shell` 工具，可以使用：`chsh` (`change shell`)，下次登录会生效。
 
-```bash
+```sh
 # 安装 zsh
 # 注意，不同的 linux 发行版，zsh 的安装命令不同
 # 以下是 Debian 安装
@@ -83,7 +83,7 @@ $ zsh
 
 ## 3. ohmyzsh
 [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) 是一个管理 zsh 插件的轻量框架，使用其搭配 `zsh`，可配置大量有用的好看主题及插件。可以在服务器和本地都安装。
-```bash
+```sh
 # 远程下载 install.sh 安装程序并直接执行
 # `sh -c command_string`: 将命令文本视为命令执行
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -117,7 +117,7 @@ window 用户可以参考 [Window 10上使用zsh并安装oh-my-zsh](https://www.
 >大部分插件的功能是 `alias` 与 自动补全。
 
 `~/.zshrc` 文件中的 `plugins` 配置，可启用插件 
-```bash
+```sh
 plugins=(git dotenv vi-mode)
 ```
 - [git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git): 添加了大量别名，例如 g => git
@@ -133,7 +133,7 @@ plugins=(git dotenv vi-mode)
 `ohmyzsh` 中维护了多个主题，可见 [主题列表](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)     
 
 `~/.zshrc` 文件中的 `ZSH_THEME` 配置，可更换主题。
-```bash
+```sh
 # 默认主题 
 ZSH_THEME="robbyrussell"
 
@@ -146,7 +146,7 @@ $echo $RANDOM_THEME
 
 
 ### 4.4 多用户使用相同配置
-```bash
+```sh
 # root 文件夹开通 x 权限
 # 我的账号在同个 group ，所以就只开通了 g
 $ chmod g+x /root

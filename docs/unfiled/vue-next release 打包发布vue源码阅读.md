@@ -17,7 +17,7 @@ categories:
 
 ### 1.1 minimist 参数解析器  
 
-```javascript
+```js
 /**
  * process.argv
  * 第一个参数 process.execPath Node.js。进程的可执行文件的绝对路径名 
@@ -28,7 +28,7 @@ var argv = require('minimist')(process.argv.slice(2)); // 提取参数
 ```
 
 
-```javascript
+```js
 /**
  * var argv = parseArgs(args, opts={})
  * 
@@ -59,7 +59,7 @@ $ node example/parse.js -x 3 -y 4 -n5 -abc --beep=boop foo bar baz
 更多可以参考 **minimist**[<sup id="$1">1</sup>](#1)
 
 
-```javascript
+```js
 const args = require('minimist')(process.argv.slice(2))
 
 const preId =
@@ -80,7 +80,7 @@ path.resolve([...paths])
 从右到左，将路径或路径片段的序列解析为绝对路径    
 如果没有传入 path 片段，则 path.resolve() 返回当前工作目录的绝对路径。
 
-```javascript
+```js
 path.resolve('/foo/bar', './baz');
 // 返回: '/foo/bar/baz'  绝对路径,相对路径
 
@@ -98,7 +98,7 @@ path.resolve('wwwroot', 'static_files/png/', '../gif/image.gif');
 
 ### 1.3 fs 文件系统
 
-```javascript
+```js
 
 /**
  * __dirname 当前模块的目录名，绝对路径
@@ -135,7 +135,7 @@ const packages = fs
 
 ### 1.4 chalk 更好看的终端文本
 
-```javascript
+```js
 const chalk = require('chalk')
 
 const dryRun = (bin, args, opts = {}) =>
@@ -151,7 +151,7 @@ const step = msg => console.log(chalk.cyan(msg)) // 青色
 
 ### 1.5 semver 语义化版本
 
-```javascript
+```js
 const semver = require('semver')
 semver.valid('1.2.3') // '1.2.3' 返回解析后的版本，无则返回null
 semver.valid('a.b.c') // null
@@ -166,7 +166,7 @@ semver.lt('1.2.3', '9.8.7') // true  是否小于
 
 
 留空/星号/x：代表该处任意 [major, minor, patch]
-```javascript
+```js
   1.2.3 - 2.3.4 := >=1.2.3 <=2.3.4
   * := >=0.0.0 (Any version satisfies)
   1.x := >=1.0.0 <2.0.0-0 (Matching major version)
@@ -182,7 +182,7 @@ semver.lt('1.2.3', '9.8.7') // true  是否小于
 1. patch有定义时，仅允许patch更改。 
 2. minor有定义时，允许**patch**修改. 
 3. major有定义时，允许**minor**修改. 
-```javascript
+```js
   ~1.2.3 := >=1.2.3 <1.(2+1).0 := >=1.2.3 <1.3.0-0
   ~1.2 := >=1.2.0 <1.(2+1).0 := >=1.2.0 <1.3.0-0 (Same as 1.2.x)
   ~1 := >=1.0.0 <(1+1).0.0 := >=1.0.0 <2.0.0-0 (Same as 1.x)
@@ -195,7 +195,7 @@ semver.lt('1.2.3', '9.8.7') // true  是否小于
 1. major有定义时，允许**minor**修改.。 
 2. minor有定义时，允许**patch**修改. 
 3. patch有定义时，仅允许测试版本更改。 
-```javascript
+```js
   ^1.2.3 := >=1.2.3 <2.0.0-0
   ^0.2.3 := >=0.2.3 <0.3.0-0
   ^0.0.3 := >=0.0.3 <0.0.4-0
@@ -208,7 +208,7 @@ inc 返回一个增加1的版本。根据参2类型决定是增加哪种类型�
 
 pre代表预发版本
 
-```javascript
+```js
 semver.inc('1.2.3', 'major'); // 2.0.0
 // 测试需要一个额外的标识符字符串参数，该参数将附加字符串的值作为测试标识符.
 semver.inc('1.2.3', 'major', 'beta'); // 2.0.0 结果一样，所以 非测试就不要写参3了.
@@ -229,13 +229,13 @@ semver.inc('1.2.3-alpha.1', 'prerelease', 'beta'); // 1.2.3-beta.0  以新的预
 
 
 prerelease 返回测试版本的数组，如果不存在，则返回 null
-```javascript
+```js
 semver.prerelease('1.2.3-alpha.1') -> ['alpha', 1]
 ```
 
 
 release.js源码
-```javascript
+```js
 const semver = require('semver')
 const currentVersion = require('../package.json').version
 
@@ -265,7 +265,7 @@ if (!semver.valid(targetVersion)) { // 取版本号，不标准则抛异常
 ### 1.6 enquirer 更好的交互CLI提示
 
 单提示
-```javascript
+```js
 const { prompt } = require('enquirer');
  
 const response = await prompt({
@@ -279,7 +279,7 @@ console.log(response); // { username: 'jonschlinkert' }
 
 
 多提示
-```javascript
+```js
 const response = await prompt([
   {
     type: 'input',
@@ -298,7 +298,7 @@ console.log(response); // { name: 'Edward Chan', username: 'edwardmchan' }
 
 
 选择
-```javascript
+```js
 const { prompt } = require('enquirer');
  
 const questions = [{
@@ -314,7 +314,7 @@ console.log('Answer:', answers.color); // 根据选择 red、green、blue其一
 ```
 
 release.js源码
-```javascript
+```js
 const versionIncrements = [
   'patch',
   'minor',
@@ -362,7 +362,7 @@ execa(file, arguments, options?)
 - options 可选项
 
 
-```javascript
+```js
 const execa = require('execa')
 
 const run = (bin, args, opts = {}) =>
@@ -383,7 +383,7 @@ const run = (bin, args, opts = {}) =>
 ### 2.1 isDryRun 是否真正执行命令标志
 根据上面了解到的内容，就很清晰知道，添加了--dry，会用打印替代执行命令（后续的发布和git操作都用到了runIfNotDry方法，在--dry下为打印），便于调试。
 
-```javascript
+```js
 const isDryRun = args.dry
 
 if (!skipTests && !isDryRun) { // 有dry 或 skipTests 都会跳过
@@ -419,7 +419,7 @@ const runIfNotDry = isDryRun ? dryRun : run // 后续的发布和git操作用到
 
 ### 2.2 skipTests 跳过测试标志
 
-```javascript
+```js
 const skipTests = args.skipTests
 
 /* code */
@@ -438,7 +438,7 @@ if (!skipTests && !isDryRun) { // 有dry 或 skipTests
 
 ### 2.3 skipBuild 跳过打包标志
 
-```javascript
+```js
 const skipBuild = args.skipBuild
 
 /* code */
@@ -457,7 +457,7 @@ if (!skipBuild && !isDryRun) { // 有skipBuild 或 dry 都会跳过
 
 
 ### 2.4 step 打印青色文本方法
-```javascript
+```js
 const step = msg => console.log(chalk.cyan(msg))
 
 step('\nRunning tests...')
@@ -483,7 +483,7 @@ step(`Publishing ${pkgName}...`)
 
 ### 2.5 packages 包数组
 根目录下packages文件夹的目录数组，不包含 **.ts后缀的文件** 和 **.开头的文件**
-```javascript
+```js
 const packages = fs
   .readdirSync(path.resolve(__dirname, '../packages'))
   .filter(p => !p.endsWith('.ts') && !p.startsWith('.'))
@@ -495,7 +495,7 @@ const packages = fs
 ### 2.6 skippedPackages 不发布的包数组
 跳过指定包不发布。
 
-```javascript
+```js
 const skippedPackages = []
 
 for (const pkg of packages) { // 从packages文件夹中循环，执行发布方法
@@ -520,7 +520,7 @@ package.json可转成的对象，主要用于更新其信息
 
 传入包对象，依赖类型，和版本号。    
 会对该 包对象 里的 依赖类型 内部，vue 和 所有包含在packages包数组内的vue/xxx更新版本    
-```javascript
+```js
 /**
  * 更新包文件信息
  * @params pkg 包对象 一般为package.json转成的对象
@@ -560,7 +560,7 @@ function updateDeps(pkg, depType, version) {
 ### 2.8 updatePackage 更新包package.json文件的方法
 更新包的package.json文件。   
 
-```javascript
+```js
 /**
  * 更新包方法
  * @params pkgRoot 包目录
@@ -591,7 +591,7 @@ function updatePackage(pkgRoot, version) {
 ### 2.9 getPkgRoot 获得指定包目录的绝对路径的方法
 传入包名，可获得包目录的绝对路径
 
-```javascript
+```js
 /**
  * 获得指定包目录的绝对路径的方法
  * @params pkg 包名
@@ -606,7 +606,7 @@ const getPkgRoot = pkg => path.resolve(__dirname, '../packages/' + pkg)
 ### 2.10 updateVersions 更新版本-更新主包和所有子包的package.json文件
 更新主包和所有子包的package.json文件。   
 
-```javascript
+```js
 /**
  * 
  **/
@@ -628,7 +628,7 @@ function updateVersions(version) {
 ### 2.11 publishPackage 发布包
 更新主包和所有子包的package.json文件。 
 
-```javascript
+```js
 for (const pkg of packages) { // 发布packages所有包
   await publishPackage(pkg, targetVersion, runIfNotDry)
 }
@@ -715,7 +715,7 @@ async function publishPackage(pkgName, version, runIfNotDry) {
 ### 3.1 main 主函数
 看完上面这些点后，再看主函数就很清晰了
 
-```javascript
+```js
 async function main() {
   
   let targetVersion = args._[0] 

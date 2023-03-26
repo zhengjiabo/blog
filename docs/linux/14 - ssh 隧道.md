@@ -49,18 +49,18 @@ categories:
 远程服务器的端口，可在本地进行访问。      
 场景：远程服务器的安全组禁止指定端口，如数据库服务的端口。    
 基础用法：
-```bash
+```sh
 # 左侧为本地 IP:PORT，右侧为远程服务器 IP:PORT
 $ ssh -L port:host:hostport user@[bind_address]
 ```
 在远程服务器中：
-```bash
+```sh
 # 在远程服务器开启一个 5000 端口号的服务，此时需要 node 环境
 server$ npx serve . -p 5000
 ```
 
 在本地：
-```bash
+```sh
 # 将远程服务器的 5000 端口供本地使用，此时窗口会被占用
 # -N: 仅用于转发端口，取消执行远程命令。如果不加这个，单纯 -L 会进入服务器。
 # -L: 将服务器中 localhost:5000 映射到本地 5000 端口
@@ -71,10 +71,10 @@ local$ nohup ssh -NL 5000:localhost:5000 user@[bind_address]
 
 local$ curl localhost:5000
 ```
-![](../assets/1%2025.png)
+![](../assets/1s25.png)
 此时在本地访问 `localhost:5000`，便可以访问到服务器的服务了。
 
-![](../assets/2%2019.png)
+![](../assets/2s19.png)
 
 
 
@@ -84,7 +84,7 @@ local$ curl localhost:5000
 场景：
 - `webhook` 顶替服务器端口，供应商被触发后，直接推送给本地后台。
 - 远程服务器科学上网，需要经过本地的端口。
-```bash
+```sh
 # 左侧为远程服务器 IP:PORT，右侧为本地 IP:PORT
 $ ssh -R port:host:hostport user@[bind_address]
 ```
@@ -92,7 +92,7 @@ $ ssh -R port:host:hostport user@[bind_address]
 ## 3.1 顶替服务器端口，webhook 推送到本地后台
 如果远程服务器对应端口服务已开启的话，需要停止服务。      
 在本地：
-```bash
+```sh
 # 在远程服务器开启一个 5000 端口号的服务，此时需要 node 环境
 local$ npx serve . -p 5000
 
@@ -106,29 +106,29 @@ local$ nohup ssh -NR 5000:localhost:5000 user@[bind_address]
 ```
 
 在远程服务器中：
-```bash
+```sh
 # 模拟 webhook 请求后台服务
 server$ curl localhost:5000
 ```
 
-![](../assets/3%2015.png)
+![](../assets/3s15.png)
 
 
 ### 3.2 远程服务器科学上网
 假设本地已经开启了小飞机，浏览器可以正常访问异世界，但命令行不行，可以使用 `http_proxy` 环境变量设置代理，后续请求都会转发到该代理上。
-```bash
+```sh
 local$ export http_proxy=xxxx
 ```
 至此，本地命令行也可以科学上网了。      
 如果远程服务器也要科学上网，可以将本地小飞机的端口号映射到远程服务器。
 
 在本地：
-```bash
+```sh
 local$ ssh -NR 5000:localhost:5000 user@[bind_address]
 ```
 
 在远程服务器：
-```bash
+```sh
 # 将所有请求代理到本地映射到服务器的端口上
 server$ export HTTP_PROXY=http://127.0.0.1:5000/
 ```

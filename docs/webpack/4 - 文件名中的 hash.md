@@ -13,7 +13,7 @@ categories:
 
 先抛出结论：1GB 资源 `xxhash64` 用时 161ms，`md4` 用时 1.6s，快了接近 10 倍。        
 也尝试了多种 `hash` 算法，以下是 1GB 写满 1 的文本资源，也尝试过随机文本，结果差不多，各个 `hash` 算法的排序，
-```bash
+```sh
 webpack_xxhash64: 161.71ms              # webpack 的 xxhash64
 RSA-SHA1: 990.429ms
 sha1WithRSAEncryption: 998.56ms
@@ -78,7 +78,7 @@ mdc2: 53.637s
 ```
 
 以下是 hash 算法，测试代码。内含排序
-```javascript
+```js
 function main () {
     const crypto = require('node:crypto');
     const createHash = require("webpack/lib/util/createHash");
@@ -155,7 +155,7 @@ hash 资源可以设置强缓存的原因：只要资源内容更新，hash 会�
 使用 `xxhash64` 替代 `md4` hash 算法。    
 
 - [x] 在 Node.js 中如何进行 hash 计算
-  ```javascript
+  ```js
   const {
     createHash
   } = await import('node:crypto');
@@ -169,7 +169,7 @@ hash 资源可以设置强缓存的原因：只要资源内容更新，hash 会�
 
 ## 1. 前提提要、场景
 使用 `webpack` 打包时，我们总能看到一些带有 hash 的文件，例如以下配置
-```javascript
+```js
 {
   output: {
     filename: `${package.version}.{hash}.js`
@@ -180,7 +180,7 @@ hash 资源可以设置强缓存的原因：只要资源内容更新，hash 会�
 
 
 应不应该将版能否将版本写到文件名，例如以下配置
-```javascript
+```js
 const package = require('./package.json')
 
 const config = {
@@ -201,10 +201,10 @@ const config = {
 对于 hash 算法的一部分代码可参考 [NormalModule](https://github.com/webpack/webpack/blob/main/lib/NormalModule.js) 的 hash 函数。     
 我们也可通过以下两个地方调试了解如何生成 hash       
 `\node_modules\webpack\lib\util\createHash.js`       
-![](../assets/1%2034.png)         
+![](../assets/1s34.png)         
 
 `\node_modules\webpack\lib\NormalModule.js`      
-![](../assets/2%2023.png)         
+![](../assets/2s23.png)         
 
 
 

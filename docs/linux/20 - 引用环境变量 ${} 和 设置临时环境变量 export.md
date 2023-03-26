@@ -49,7 +49,7 @@ categories:
 - `${var:-word}`：如果 `var` 不存在，则使用默认值 `word`。
 - `${var:=word}`：如果 `var` 不存在，则使用默认值 `word`, 并且赋值 `$var=word`, 赋值为临时赋值，仅在当前窗口有效. 如果有，则正常获取原值
 - `${var:+word}`：如果 `var` 存在，则使用默认值 `word`。
-```bash
+```sh
 # 作为变量的边界
 $ echo shell is: ${SHELL}
 shell is: /bin/zsh
@@ -75,7 +75,7 @@ $ echo ${HELLO:+shanyue}
 
 ```
 在 `Dockerfile` 与 `CI` 中，常用到环境变量的扩展
-```bash
+```sh
 # 如果不配置环境变量，则默认值为 production，并赋值给 NODE_ENV
 ${NODE_ENV:=production}
 ```
@@ -83,7 +83,7 @@ ${NODE_ENV:=production}
 
 ## 3. export 设置临时环境变量 
 通过 `export` 可配置环境变量，如 `export A=3`，注意 `=` 前后不能有
-```bash
+```sh
 $ export NODE_ENV=production
 $ echo $NODE_ENV
 production
@@ -93,7 +93,7 @@ production
 
 永久有效，需要写入 `~/.bashrc` 或者 `~/.zshrc`
 
-```bash
+```sh
 # 判断当前是哪个 shell
 # 如果是 zsh，写入 ~/.zshrc
 # 如果是 bash，写入 ~/.bashrc
@@ -112,7 +112,7 @@ $ source ~/.zshrc
 ## 4. 前置变量
 在执行命令之前置入变量，用以指定仅在该命令中有效的变量       
 注意：是命令的变量，不是环境变量
-```bash
+```sh
 # 该变量仅在当前命令中有效
 $ NODE_ENV=production printenv NODE_ENV
 production
@@ -123,7 +123,7 @@ $ printenv NODE_ENV
 ```
 
 在前端非常常见
-```bash
+```sh
 $ NODE_ENV=production npm run build
 ```
 

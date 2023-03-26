@@ -51,7 +51,7 @@ Github 上也有许多受欢迎的 `.vimrc` 配置
 通过 `leader` 可配置诸多自定义的快捷键，我们一般先按下 `<leader>` 键，再按自定义键就可以完成快捷键操作。
 
 编辑 `~/.vimrc`，添加以下内容，表示 `,` 为 `<leader>` 键。
-```bash
+```sh
 let mapleader=","
 ```
 
@@ -62,7 +62,7 @@ let mapleader=","
 
 在 `.vimrc` 中使用 `"` 作为注释。`nmap` 的使用方法为: `nmap <快捷键> <执行的操作>`。      
 `<leader>` 作为变量，会替换为上面设置的 `mapleader` ，而 `<cr>` 代表回车。
-```bash
+```sh
 " ,w：快速保存
 nmap <leader>w :w!<cr>
 
@@ -77,7 +77,7 @@ nmap Y y$;
 - 在命令行窗口直接使用 `vim -o <文件路径1> <文件路径2>`
 
 通过 `<ctrl-w>` 与 `jkhl` 结合即可上下左右切换窗口，此时也可以通过快捷键简化操作。
-```bash
+```sh
 " 快速切换窗口
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -89,9 +89,9 @@ map <C-l> <C-W>l
 ## 4. swapfile 交换文件
 当打开一个文件未正常关闭时会产生交换文件。可以把这个选项关闭
 
-![](../assets/1%2027.png)
+![](../assets/1s27.png)
 
-```bash
+```sh
 " 不产生交换文件(当打开一个文件未正常关闭时会产生交换文件)
 set noswapfile
 
@@ -99,7 +99,7 @@ set noswapfile
 
 
 ## 5. tab/space 制表符和空格配置
-```bash
+```sh
 " 表符和空格配置
 set tabstop=2 " 设置制表符为 2 宽度
 set expandtab " 制表符用空格替代

@@ -17,7 +17,7 @@ categories:
 
 ## 1. 前提提要、场景
 在项目性能优化时，常讲到 `code spliting` 代码分割用以分包。通过 `import()` 动态导入实现懒加载。         
-```javascript
+```js
 // index.js 内容
 import('./sum').then(m => {
   console.log(m.default(3, 4))
@@ -41,7 +41,7 @@ export default sum
 
 ## 2. 导出转换
 
-```javascript
+```js
 /* 加载入口文件，加载更多 chunk */
 __webpack_require__.e = (chunkId) => {
 	return Promise.all(Object.keys(__webpack_require__.f).reduce((promises, key) => {
@@ -80,7 +80,7 @@ __webpack_require__.l = (url, done, key, chunkId) => {
 ```
 
 
-```javascript
+```js
 // install a JSONP callback for chunk loading
 var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 	var [chunkIds, moreModules, runtime] = data;

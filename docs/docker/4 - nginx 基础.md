@@ -118,7 +118,7 @@ server {
 
 
 ## 2. 通过 docker 学习 nginx
-![](../assets/1%2013.png)      
+![](../assets/1s13.png)      
 通过 `volumes` 挂在资源到容器内，挂在当前目录以及 nginx 配置文件。可以分模块快速验证 nginx 配置。      
 
 - root：静态资源的根目录，默认 `/usr/share/nginx/html`
@@ -184,7 +184,7 @@ server_name nginx的虚拟服务器名，按照以下顺序处理，命中第一
   ```
   访问 `curl --head http://localhost:8210/C` 会得到
 
-  ```bash
+  ```sh
   HTTP/1.1 200 OK
   Server: nginx/1.23.1
   Date: Thu, 04 Aug 2022 16:08:24 GMT
@@ -218,7 +218,7 @@ server_name nginx的虚拟服务器名，按照以下顺序处理，命中第一
 
   /in 作为第一个匹配的路由，但没有匹配资源。/index 作为后续的路由，有匹配资源，但第一个匹配路由不满足，便直接 404，不会再进入该路由。     
 
-  ![](../assets/2%2010.png)
+  ![](../assets/2s10.png)
 
 
 
@@ -261,7 +261,7 @@ location /api {
 ### 5.1 强缓存：浏览器不会像服务器发送任何请求，直接从本地缓存中读取文件并返回         
   设置 `expires 3d;` 表示 3 天内不会过期，直接使用浏览器缓存                  
   响应头返回
-  ```bash
+  ```sh
 
     Date: Thu, 04 Aug 2022 14:29:56 GMT # 服务器当前时间，如果需要缓存，会以此时间添加缓存时间，放在Expires 里。
 
@@ -284,7 +284,7 @@ location /api {
 ### 5.2 协商缓存，向服务器验证是否过期。         
   设置 `expires -1;`        
   响应头返回 
-  ```bash
+  ```sh
   Cache-Control: no-cache # 每次请求都需要向服务器校验
 
   ETag: $token  # 后面用于 If-None-Match 校验，基于资源的内容编码生成一串唯一的标识字符串，只要内容不同，就会生成不同的 ETag。
@@ -533,11 +533,11 @@ proxy_send_timeout time：默认60s，如果连续的60s内没有发送1个字�
 docker 中每个容器都有自己的内网 ip，容器间可以通过内网 ip 访问。             
 之所以可以使用 http://api 访问，是因为 docker 内部的服务发现，有个 DNS服务器。在内网可以直接通过服务名访问，有点类似于域名，经过 DNS 服务解析出内网 IP。      
 可以在容器内通过 `cat /etc/resolv.conf` 找到 DNS 服务器地址      
-![](../assets/3%208.png)              
+![](../assets/3s8.png)              
 也可以在容器内通过 `nslookup 服务名` 找到指定服务的内网 IP（即找到提供服务的容器的IP）。      
-![](../assets/4%206.png)    
+![](../assets/4s6.png)    
 通过 `docker inspect container_name` 核查，也可以发现跟上方 `nslookup` 找到 IP 一致     
-![](../assets/5%205.png)
+![](../assets/5s5.png)
 由于没有经过真实域名也不会消耗多余流量。
 
 

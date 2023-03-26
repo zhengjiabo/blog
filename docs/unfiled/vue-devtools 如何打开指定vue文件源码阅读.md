@@ -29,7 +29,7 @@ categories:
 
 ## 2. serve.js 服务（主入口）
 
-```javascript
+```js
 // /node_modules/@vue/cli-service/lib/commands/serve.js
 const launchEditorMiddleware = require('launch-editor-middleware')
 
@@ -48,7 +48,7 @@ before (app, server) {
 
 ## 3. launch-editor-middleware 启动编辑器中间件
 
-```javascript
+```js
 const url = require('url')
 const path = require('path')
 const launch = require('launch-editor')
@@ -142,7 +142,7 @@ module.exports = (specifiedEditor, srcRoot, onErrorCallback) => {
 
 ### 4.1 launchEditor 启动编辑器主函数
 
-```javascript
+```js
 /**
  * @params file 文件绝对路径 可能包含行列信息
  * @params specifiedEditor 指定编辑器
@@ -256,7 +256,7 @@ function launchEditor (file, specifiedEditor, onErrorCallback) {
 
 ### 4.2 parseFile 解析文件路径信息
 
-```javascript
+```js
 const positionRE = /:(\d+)(:(\d+))?$/
 /**
  * @params file 文件绝对路径 可能包含行列信息
@@ -280,7 +280,7 @@ function parseFile (file) {
 ### 4.3 fs.existsSync 判断路径是否存在
 如果路径存在则返回 true，否则返回 false。
 
-```javascript
+```js
 import { existsSync } from 'fs';
 
 if (existsSync('/etc/passwd')) {
@@ -293,7 +293,7 @@ if (existsSync('/etc/passwd')) {
 
 ### 4.4 wrapErrorCallback 错误回调函数封装
 
-```javascript
+```js
 function wrapErrorCallback (cb) {
   return (fileName, errorMessage) => {
     console.log()
@@ -325,7 +325,7 @@ function wrapErrorCallback (cb) {
 
 ### 4.5 guessEditor 猜测使用的编辑器
 
-```javascript
+```js
 const childProcess = require('child_process')
 
 /**
@@ -420,7 +420,7 @@ function guessEditor (specifiedEditor) {
 
 ### 4.6 path.basename 返回 path 的最后一部分
 方法返回 path 的最后一部分。 传入参2，可以将尾随的目录分隔符忽略
-```javascript
+```js
 path.basename('/foo/bar/baz/asdf/quux.html');
 // 返回: 'quux.html'
 
@@ -433,7 +433,7 @@ path.basename('/foo/bar/baz/asdf/quux.html', '.html');
 
 ### 4.7 process.platform 运行Node.js进程的操作系统平台
 返回标识运行 Node.js 进程的操作系统平台的字符串
-```javascript
+```js
 import { platform } from 'process';
 
 console.log(platform); // 我这是 win32
@@ -444,7 +444,7 @@ console.log(platform); // 我这是 win32
 
 ### 4.8 os.release 返回操作系统的发行版本的方法
 
-```javascript
+```js
 os.release(); // 我这是 10.0.19xxx
 ```
 
@@ -455,7 +455,7 @@ os.release(); // 我这是 10.0.19xxx
 path.relative(from, to)    
 方法根据当前工作目录返回从 from 到 to 的相对路径。 如果 from 和 to 都解析为相同的路径（在分别调用 path.resolve() 之后），则返回零长度字符串。    
 如果零长度字符串作为 from 或 to 传入，则将使用当前工作目录而不是零长度字符串
-```javascript
+```js
 path.relative('C:\\orandea\\test\\aaa', 'C:\\orandea\\impl\\bbb');
 // 返回: '..\\..\\impl\\bbb'
 ```
@@ -465,7 +465,7 @@ path.relative('C:\\orandea\\test\\aaa', 'C:\\orandea\\impl\\bbb');
 
 ### 4.10 getArgumentsForPosition 取得坐标信息数组
 
-```javascript
+```js
 const path = require('path')
 
 // normalize file/line numbers into command line args for specific editors
@@ -541,7 +541,7 @@ function getArgumentsForPosition (
 
 ### 4.11 isTerminalEditor 是否终端文本编辑器
 
-```javascript
+```js
 function isTerminalEditor (editor) {
   switch (editor) {
     case 'vim':

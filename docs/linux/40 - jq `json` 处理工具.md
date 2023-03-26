@@ -64,7 +64,7 @@ categories:
 ## 3. 示例准备
 `demo.jsonl`: 模拟日志文件中，每行日志记录都是 `json`
 > `JSONL` 即 `JSON Lines`
-```bash
+```sh
 $ cat <<EOF > demo.jsonl
 {"name": "shanyue", "age": 24, "friend": {"name": "shuifeng"}}
 {"name": "shuifeng", "age": 25, "friend": {"name": "shanyue"}}
@@ -72,7 +72,7 @@ EOF
 ```
 
 `demo.json`: 模拟后台接口返回的数据
-```bash
+```sh
 $ cat <<EOF > demo.json
 [
   {"name": "shanyue", "age": 24, "friend": {"name": "shuifeng"}},
@@ -110,7 +110,7 @@ EOF
 
 ## 5. 场景示例
 ### 5.1 JSON to JSONL
-```bash
+```sh
 # .[]: 返回数组或对象里的所有值，且是以单独的结果返回，即 JSONL
 $ cat demo.json | jq '.[]'
 {
@@ -130,7 +130,7 @@ $ cat demo.json | jq '.[]'
 ```
 
 ### 5.2 JSONL to JSON
-```bash
+```sh
 # -s: 代表把 jsonl 组成数组处理
 $ cat demo.jsonl | jq -s '.'
 [
@@ -155,7 +155,7 @@ $ cat demo.jsonl | jq -s '.'
 `.`: [Object Identifier-Index: .foo, .foo.bar](https://stedolan.github.io/jq/manual/#Basicfilters)
 类似 `loadsh` 的 [_.get](https://www.lodashjs.com/docs/lodash.get)
 
-```bash
+```sh
 $ cat demo.jsonl | jq '.name'
 "shanyue"
 "shuifeng"
@@ -169,7 +169,7 @@ $ cat demo.jsonl | jq '.name'
 
 接收 `JSONL`
 
-```bash
+```sh
 $ cat demo.jsonl | jq '{name, friendname: .friend.name}'
 {
   "name": "shanyue",
@@ -187,7 +187,7 @@ $ cat demo.jsonl | jq '{name, friendname: .friend.name}'
 `select`: [select(boolean_expression)](https://stedolan.github.io/jq/manual/#Builtinoperatorsandfunctions)
 类似 `loadsh` 的 [_.filter](https://www.lodashjs.com/docs/lodash.filter)
 
-```bash
+```sh
 # 先过滤，后抽取属性构建新对象
 $ cat demo.jsonl | jq 'select(.age > 24) | {name}'
 {
@@ -200,7 +200,7 @@ $ cat demo.jsonl | jq 'select(.age > 24) | {name}'
 `map_values`: [map(x), map_values(x)](https://stedolan.github.io/jq/manual/#Builtinoperatorsandfunctions)
 类似 `loadsh` 的 [_.map](https://www.lodashjs.com/docs/lodash.map)
 
-```bash
+```sh
 # 先抽取属性构建新对象，后映射 + 10
 $ cat demo.jsonl | jq '{age} | map_values(.+10)'
 {
@@ -217,7 +217,7 @@ $ cat demo.jsonl | jq '{age} | map_values(.+10)'
 类似 `loadsh` 的 [_.sortBy](https://www.lodashjs.com/docs/lodash.sortBy)
 
 `sort_by` 只接受数组，所以要把 `JSONL` 转 `JSON`
-```bash
+```sh
 # 按照 age 降序排列
 # -s: jsonl to json
 # -.age: 降序
@@ -254,7 +254,7 @@ $ cat demo.jsonl | jq -s '. | sort_by(.age) | .[] | {name, age}'
 `stream`: [Streaming](https://stedolan.github.io/jq/manual/#Streaming)
 
 当字段嵌套过多时，逐字段查看 `JSON` 数据
-```bash
+```sh
 $ cat demo.json
 [
   {"name": "shanyue", "age": 24, "friend": {"name": "shuifeng"}},
@@ -281,7 +281,7 @@ $ cat demo.json | jq --stream -c
 
 如果 `JSON` 数据过大时，可选择使用 `less` 查看数据，如果在 `less` 中需要语法高亮时，可使用 `jq -C`。
 
-```bash
+```sh
 # -C: --color-output
 $ cat demo.json | jq -C '.' | less
 ```
@@ -294,7 +294,7 @@ $ cat demo.json | jq -C '.' | less
 
 如果只关注某几个重要指标，也可以进行筛选。
 
-```bash
+```sh
 # 实时查看日志
 $ tail -f demo.jsonl | jq '.'
 
@@ -303,7 +303,7 @@ $ tail -f demo.jsonl | jq '{name}'
 ```
 
 如果需要测试上面命令，可新开一个 `shell`，输入以下命令进行测试
-```bash
+```sh
 # -c: 紧凑输出。 JSONL 只压缩第一行， JSON 所有都压缩成一行
 $ cat demo.jsonl | jq -c '.' >> demo.jsonl
 ```

@@ -22,7 +22,7 @@ categories:
 
 ## 提问
 - [x] 1. [nodejs 官方镜像的 docker-entrypoint](https://github.com/nodejs/docker-node/blob/main/16/alpine3.16/docker-entrypoint.sh) 是何意思？
-    ```bash
+    ```sh
     # shebang 解释器的绝对路径，可能是软链接指向 bash 或 dash
     #!/bin/sh
 
@@ -82,7 +82,7 @@ categories:
 
 ## 1. 前提提要、场景
 `shell` 中的函数调用，跟使用命令一致     
-```bash
+```sh
 # 定义
 $ hello(){echo world}
 # 跟命令一样直接调用指向
@@ -97,7 +97,7 @@ world
 函数内，使用 `$1`、`$2`、`$3`… 接收参数，而 `$0` 在 zsh 中指函数名，在 bash 中指脚本名称。
 
 > 注意：函数名和脚本名的区别，
-```bash
+```sh
 # index.sh
 hello () {
   echo $0 $1 $2 $3 $4
@@ -122,7 +122,7 @@ hello a b c d
 
 结合之前的文章，在数组中 `#` 用来取数组长度，`@` 用来取所有数组，便于理解。
 
-```bash
+```sh
 hello () {
   echo '$#' ${#}
   echo '$*' ${*}

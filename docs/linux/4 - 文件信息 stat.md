@@ -81,7 +81,7 @@ categories:
 
 
 ## 2. stat 查询文件信息
-```bash
+```sh
 $ stat README.md
   Filæe: README.md
   Size: 51              Blocks: 8          IO Block: 4096   regular file
@@ -108,7 +108,7 @@ Birth: -
 
 
 ## 3. stat -c 指定元属性输出
-```bash
+```sh
 $ stat -c <FORMAT> <file>
 # %a     access rights in octal (note '#' and'0' printf flags)
 # %A     access rights in human readable form
@@ -143,7 +143,7 @@ $ stat -c <FORMAT> <file>
 ```
 
 一般常用以下
-```bash 
+```sh 
 $ stat -c "%a" README.md # 权限
 644
 $ stat -c "%A" README.md # 权限 - 更符合人类可读
@@ -177,7 +177,7 @@ $ stat -c "%h" README.md # 硬链接数量
 | 字符设备文件 | `character special file` | `c`                 |                                                                                                    |
 
 
-```bash
+```sh
 # c 字符设备文件
 # b 块级设备文件
 $ exa -lah /dev

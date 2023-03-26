@@ -10,7 +10,7 @@ categories:
 # vim 操作
 
 [https://prezi.com/view/RKhL17TysQ2tqvADpZDV/](https://prezi.com/view/RKhL17TysQ2tqvADpZDV/)
-![](../assets/2%202.png)
+![](../assets/2s2.png)
 
 ## 特殊标记
 
@@ -63,7 +63,7 @@ categories:
 - `{` / `}`: 切换段落
 - `(` / `)`: 切换句子
 
-![](../assets/1%202.png)
+![](../assets/1s2.png)
 
 - `<< / >>`: 缩进
 - `n + << / >>`: 多次缩进

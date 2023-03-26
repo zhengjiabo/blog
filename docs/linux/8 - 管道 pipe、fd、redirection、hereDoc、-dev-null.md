@@ -53,7 +53,7 @@ categories:
 
 ## 2. |（pipe 管道）
 `|` 构成了管道，它将前边命令的标准输出（stdout）作为下一个命令的标准输入（stdin）。
-```bash
+```sh
 # 读取 package.json 内容，读取前十行，再读取最后三行
 $ cat package.json | head -10 | tail -3
 ```
@@ -77,7 +77,7 @@ $ cat package.json | head -10 | tail -3
 - `>`：将文件描述符或标准输出中内容写入文件
 - `>>`：将文件描述符或标准输出中内容追加入文件
 
-```bash
+```sh
 # 将 hello 写入到文件READEME.md
 # 这里的 echo hello 指令的文件描述符为 标准输出
 $ echo hello > README.md
@@ -94,7 +94,7 @@ $ echo hello >> README.md
 
 `<<EOF`，称作 `Here Document`，当最终写入 `EOF`（End of file）时，则 `heredoc` 会停止输入。
 
-```bash
+```sh
 # word 可以是任意字符，一般选择 EOF
 <<[-]word
   # 在这里开始写文档
@@ -107,24 +107,24 @@ word
   here-document
 EOF
 ```
-![](../assets/1%2023.png)
+![](../assets/1s23.png)
 
 
 
 ## 6. \> /dev/null 日志重定向
 `/dev/null` 是一个空文件，对于所有的输入都统统吃下，化为乌有。     
 有时，为了不显示日志，可将所有**标准输出**重定向至 `/dev/null`。
-```bash
+```sh
 $ echo hello > /dev/null
 ```
 
 但此时，只是将 `stdout`fd 1）重定向了，还有 `stderr`fd 2）没有重定向，仍会报错输出。
-```bash
+```sh
 $ cat hello > /dev/null
 cat: hello: No such file or directory
 ```     
 为了使 `stderr` 也不显示，后面携带 `2>&1`，表示将 `stderr`(fd 2) 重定向至 `stdout`(fd 1)。标准输出日志、标准错误日志都不显示。
-```bash
+```sh
 $ cat hello > /dev/null 2>&1
 ```   
 > `/dev/null` 在类 `Unix` 系统中是一个特殊的字符设备文件，它丢弃一切写入其中的数据，读取它则会立即得到一个 `EOF`。在程序员行话，`/dev/null` 被称为比特桶或者黑洞。

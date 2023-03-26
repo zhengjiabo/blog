@@ -114,7 +114,7 @@ example:
 
 命令：`sed -n '1p'` 或 `sed -n '/reg/p'`
 
-```bash
+```sh
 # ps -ef: 显示所有的程序进程
 # 1p: 打印第一行
 $ ps -ef | sed -n '1p'
@@ -134,7 +134,7 @@ root         4     2  0 Sep13 ?        00:00:00 [rcu_par_gp]
 `$`: 最后一行
 > 注意使用单引号
 
-```bash
+```sh
 $ ps -ef | sed -n '$p'
 ```
 
@@ -144,7 +144,7 @@ $ ps -ef | sed -n '$p'
 
 `/reg/`: 正则匹配 
 
-```bash
+```sh
 $ ps -ef | sed -n '/ssh/p'
 root       888     1  0 Sep13 ?        00:00:07 /usr/sbin/sshd -D
 root      3397   888  0 13:39 ?        00:00:00 sshd: root@pts/2
@@ -160,7 +160,7 @@ root      3397   888  0 13:39 ?        00:00:00 sshd: root@pts/2
 
 命令：`sed '1d'` 或 `sed '/reg/d'`
 
-```bash
+```sh
 $ cat hello.txt
 hello, one
 hello, two
@@ -175,7 +175,7 @@ hello, two
 
 ### 4.5 删除匹配行
 
-```bash
+```sh
 $ cat hello.txt
 hello, one
 hello, two
@@ -194,7 +194,7 @@ hello, three
 
 默认只替换每一行的第一个，如果要全部替换，使用 `sed 's/regexp/replacement/g'`       
 
-```bash
+```sh
 $ echo hello | sed 's/hello/world/'
 world
 
@@ -221,7 +221,7 @@ k
 
 命令：`sed '/regexp/i addText'` 或 `sed '/regexp/a addText'`
 
-```bash
+```sh
 # i: 指定前一行
 # a: 指定后一行
 # -e: 指定脚本，重复使用实现一个命令多个脚本
@@ -234,7 +234,7 @@ hello append
 
 ### 4.8 原地替换文件内容
 `-i`: 原地替换文本内容
-```bash
+```sh
 $ cat hello.txt
 hello, world
 hello, world

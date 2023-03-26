@@ -66,7 +66,7 @@ categories:
 在 `tmux` 中，有一个 `<prefix>` 键做为前置按键，默认为 `<ctrl-b>`，在按任意快捷键之前需要先按一个 `<prefix>` 键。
 
 由于 `<ctrl-s`> 相比 `<ctrl-b>` 更加方便快捷，因此使用它作为常用快捷键。
-```bash
+```sh
 # 方法一：进入 tmux 后，键入 <C-b> : 进入命令模式，输入以下捆绑备用的前置按键。两个命令都要输入
 # send-prefix 指令代表向 tmux 发送 <prefix> 键，send-prefix -2 代表新增一个 <prefix> 键。
 set -g prefix2 C-s # 一个兼容写法
@@ -82,12 +82,12 @@ bind C-s send-prefix -2
 
 在命令模式输入 `rename <newName>` 可以更改 `window` 名字
 
-![](../assets/1%2030.png)
+![](../assets/1s30.png)
 
 ## 4. 查看帮助
 在 `tmux` 中，可通过 `<prefix>?` 查看所有的快捷键
 
-```bash
+```sh
 C-b C-b     Send the prefix key 
 C-b C-o     Rotate through the panes                                                                     
 C-b C-z     Suspend the current client                                                                   
@@ -187,10 +187,10 @@ C-b S-Right Move the visible part of the window right
 
 在 tmux 环境下使用快捷键 `<prefix>%` 与 `<prefix>"` 完成分屏
 
-![](../assets/2%2020.png)
+![](../assets/2s20.png)
 
 或者通过命令 `tmux split-window` 分屏
-```bash
+```sh
 # -h: 水平分屏
 # -v: 垂直分屏
 # -c: 分屏打开指定路径
@@ -198,7 +198,7 @@ $ tmux split-window -h -c ~
 ```
 
 为了每次分屏都能定位到分屏窗口的当前路径，在 `~/.tmux.conf` 使用以下快捷键覆盖绑定
-```bash
+```sh
 # pane_current_path: 变量 当前路径。man tmux 中还可以查到很多变量，推荐看别人的配置，遇到哪个变量查哪个
 bind % split-window -h -c "#{pane_current_path}"
 bind '"' split-window -c "#{pane_current_path}"
@@ -210,7 +210,7 @@ bind '"' split-window -c "#{pane_current_path}"
 可配置快捷键使得移动命令为 `hljk`，`<prefix>h` 为向左聚焦。
 
 在 `~/.tmux.conf` 中配置
-```bash
+```sh
 # bind：绑定快捷键
 # -r：可重复按键
 # select-pane：选择面板
@@ -222,7 +222,7 @@ bind -r k select-pane -U
 ```
 
 也可以开启鼠标支持，通过鼠标快速移动面板。
-```bash
+```sh
 set -g mouse on
 ```
 
@@ -230,14 +230,14 @@ set -g mouse on
 ## 7. 翻屏 类似 vi 模式
 按 `prefix [` 键进入 tmux 的 `copy mode`，此时可见到在 `tmux` 右上角有一个黄色的行号。
 该模式类似于 vi 的 `normal mode`，支持复制，粘贴，查找，以及翻页。具体是 `vi` 还是 `emacs` 可以根据以下命令探知。
-```bash
+```sh
 $ tmux show-window-options -g mode-keys
 mode-keys vi
 ```
 
 与 vi 命令相同，如上下翻页(半屏)可使用 `<ctrl-d>` 以及 `<ctrl-u>`。
 在 `~/.tmux.conf` 中配置
-```bash
+```sh
 set -wg mode-keys vi
 ```
 

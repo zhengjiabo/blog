@@ -33,11 +33,11 @@ categories:
 
 ## 2. for 循环 
 `for in`, 遍历数组
-```bash
+```sh
 for name [ [ in [ word ... ] ] ; ] do list ; done
 ```
 分号可以使用换行替换
-```bash
+```sh
 for i in {1..100}; do echo $i; done
 
 # 等价于
@@ -47,7 +47,7 @@ done
 ```
 
 除了 `for in`，也可以使用常见的 `for` 循环样式。
-```bash
+```sh
 for (( i = 0; i < 100; i++ )); do echo $i; done
 ```
 
@@ -56,7 +56,7 @@ for (( i = 0; i < 100; i++ )); do echo $i; done
 
 `if` 常与布尔运算符 `[[ ]]` 进行搭配，`if` 开头且以 `fi` 结尾。     
 `if [[ ]]; then ; fi`
-```bash
+```sh
 # 如果 $USER 为空字符串，则输出 ok
 $ if [[ -z $USER ]]; then echo ok; fi
 # 没有输出
@@ -70,7 +70,7 @@ not ok
 ```
 
 使用命令 `command -v <command>` 可查看某个命令的真实执行路径，如果该路径为空，则该命令不存在。
-```bash
+```sh
 # 判断系统中是否有 Node.js 环境
 $ if [[ -n $(command -v node) ]]; then echo ok; else echo not ok; fi
 

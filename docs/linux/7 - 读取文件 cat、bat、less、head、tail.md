@@ -55,7 +55,7 @@ categories:
 ## 2. cat 打印输出文件
 `concatenate` 缩写，`concatenate and print files` 连接文件并打印至标准输出（stdout）。
 
-```bash
+```sh
 # 也可以打印控制字符，比如 Tab、换行等不可见字符
 # -v: 显示非打印字符，使其可见，例如 <Ctrl-X> 
 # -e: 打印 换行  LF $   CRLF ^M$ 表示
@@ -68,7 +68,7 @@ $ cat package.json yarn.lock
 ```
 
 实际图如下：
-![](../assets/1%2022.png)
+![](../assets/1s22.png)
 
 
 
@@ -89,19 +89,19 @@ $ cat package.json yarn.lock
 
 ## 4. bat（cat 命令的升级版）
 `Rust` 编写的 `cat` 命令的升级版，需要手动安装，默认支持语法高亮，以及显示行号。
-![](../assets/2%2018.png)
+![](../assets/2s18.png)
 
 `--show-all/-A ` 显示不可打印字符。
-![](../assets/3%2014.png)
+![](../assets/3s14.png)
 
 而且配置了环境变量 `export MANPAGER="sh -c 'col -bx | bat -l man -p'"` 可以使得 `man` 文档更好看。
-![](../assets/4%2010.png)
+![](../assets/4s10.png)
 > `sh -c command_string`: 将命令文本视为命令执行
 
 
 
 ## 5. less（cat 更高级命令，可用 vim 操作上下移动和搜索）
-```bash
+```sh
 # -N: 打印 行号
 $ less -N README.md
 ```
@@ -110,7 +110,7 @@ $ less -N README.md
 
 ## 6. head 前 N 行或前 N 个字节
 
-```bash
+```sh
 # 输出文件前 10 行内容
 $ head -10 README.md
 
@@ -127,7 +127,7 @@ $ head -c 10 READEME.md
 
 ## 7. tail 后 N 行或后 N 个字节
 与 `head` 对应
-```bash
+```sh
 # 输出文件后 10 行内容
 $ tail -10 README.md
 
@@ -139,7 +139,7 @@ $ tail --lines 10 READEME.md
 $ tail -c 10 READEME.md
 ```
 特殊：使用 `-f` / `--follow` 可以实时打印文件中最新内容，在调试日志时非常有用。
-```bash
+```sh
 $ tail -f --lines 20 error.log
 ```
 

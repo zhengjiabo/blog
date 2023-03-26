@@ -57,7 +57,7 @@ categories:
 
 
 ### 2.1 GET
-```bash
+```sh
 # -v: 更详细的输出 包含 request 和 response
 # httpbin.org: 一个用来学习 http 的服务，各种例子
 $ curl -v httpbin.org/get 
@@ -103,7 +103,7 @@ $ curl -v httpbin.org/get
 ### 2.2 POST
 `POST` 与 `GET` 相比只是多了个请求体
 
-```bash
+```sh
 $ curl httpbin.org/post -X POST -H "content-type: application/json" -d '{"age": "18"}' -v
 
 > POST /post HTTP/1.1

@@ -39,7 +39,7 @@ categories:
 
 ## 1. 前提提要、场景
 通过前面的学习，我们已经能够自己编写简单的 SHELL 脚本了。例如新建脚本文件 `hello.sh`
-```bash
+```sh
 echo 'hello, world'
 ```
 只要在命令行工具中执行 `bash hello.sh`，便可以执行脚本
@@ -58,21 +58,21 @@ echo 'hello, world'
 ### 2.1 `#! /usr/bin/env xxx`
 
 指定 `bash` 环境
-```bash
+```sh
 #! /usr/bin/env bash
 
 echo 'hello, world'
 ```
 
 指定 `node` 环境
-```bash
+```sh
 #! /usr/bin/env node 
 
 echo 'hello, world'
 ```
 
 指定 `python` 环境
-```bash
+```sh
 #! /usr/bin/env python
 
 echo 'hello, world'
@@ -89,7 +89,7 @@ echo 'hello, world'
 ### 2.2 `#! /usr/bin/xx`
 
 也可以直接指定 `shell` 工具的绝对路径
-```bash
+```sh
 #! /usr/bin/sh
 
 echo 'hello, world'
@@ -103,7 +103,7 @@ echo 'hello, world'
 - 将可执行文件的目录添加到 `$PATH` 中
 
 以下为第一种操作
-```bash
+```sh
 # 添加执行权限
 $ chmod +x hello.sh
 

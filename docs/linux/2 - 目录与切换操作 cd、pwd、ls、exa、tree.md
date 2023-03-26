@@ -85,7 +85,7 @@ categories:
 
 ## 3. pwd 打印当前工作目录
 `pwd`: `print working directory` 打印当前工作目录
-```bash
+```sh
 $ pwd
 /home/train
 ```
@@ -97,7 +97,7 @@ $ pwd
 `ls` 默认不列出 `.` 开头的文件，如 `.git`、 `.babelrc`、`.eslintrc` 均不会显示。使用 `-a`，将会把所有文件列出，包含了 `.` 、 `..`。使用 `-A` 将不会列出 `.` 、 `..`      
 
 日常使用 `ls -lah` 列出文件信息
-```bash
+```sh
 # -l: 使用长列表格式
 # -a: 列出所有文件，包括以 . 开头的文件
 # -h: 以可读的形式表示文件体积，比如 100M
@@ -124,17 +124,17 @@ drwxr-xr-x  2 train train 4.0K Sep 12 10:40 whoami
 - N: 新文件
 - I: 忽略文件
 
-![](../assets/1%2020.png)
+![](../assets/1s20.png)
 
 
 树状形式展示文件
-```bash
+```sh
 # -T: --tree，以树状图的形式列出文件
 # -L: --level，指定层级
 # --git-ignore: 忽略 .gitignore 内指定的文件
 $ exa -lah -T -L 2 --git-ignore .
 ```
-![](../assets/2%2016.png)
+![](../assets/2s16.png)
 
 
 
@@ -142,13 +142,13 @@ $ exa -lah -T -L 2 --git-ignore .
 
 ## 6. tree 树状形式展示目录内容
 树状形式展示目录内容
-```bash
+```sh
 # -F: 对目录末尾添加 /，对可执行文件末尾添加 *
 # -L: 指定层级
 # --gitignore: 忽略 .gitignore 内指定的文件
 $ tree -lah -L 2 --gitignore .
 ```
-![](../assets/3%2012.png)
+![](../assets/3s12.png)
 
 > 在 Debian 中安装最新的 `tree` ，没有 `--gitignore` 指令，在 mac 中有，所以还是用 `exa` 吧 省心还好看。
 

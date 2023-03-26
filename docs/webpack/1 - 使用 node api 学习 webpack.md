@@ -14,7 +14,7 @@ categories:
   - `require('webpack')`：使用的是 webpack 包 `package.json` 的 `main` 字段 `"main": "lib/index.js"`，即 Webpack API
 
 4. 执行 `npx webpack` 时，能看到 `process.argv` 为 `['xx/bin/node', '/node_modules/.bin/webpack]`，为什么是使用 `node` 去执行？因为 `/node_modules/.bin/webpack` sh 脚本写了使用 `node` 执行。 
-    ```bash
+    ```sh
       if [ -x "$basedir/node" ]; then
         exec "$basedir/node"  "$basedir/../webpack/bin/webpack.js" "$@"
       else
@@ -41,7 +41,7 @@ webpack-cli 用来学习不够存粹，逻辑复杂，有太多影响因素。
 
 
 可以通过编译结束后的 [`stat`](https://github.com/facebook/create-react-app/blob/f34d88e30c7d8be7181f728d1abc4fd8d5cd07d3/packages/react-scripts/scripts/build.js#L79) 对象拿到打包后所有资源体积，以及打包时间。当基于 webpack api 开发脚手架后，其脚手架的构建日志也可以进行自定义。
-![](../assets/1%2033.png)
+![](../assets/1s33.png)
 
 
 
@@ -49,7 +49,7 @@ webpack-cli 用来学习不够存粹，逻辑复杂，有太多影响因素。
 ## 3. webpack api 简介
 使用 `webpack api` 也特别容易，将以前 `webpack.config.js` 的配置，作为参数传递给 `webpack` 函数即可。详见文档 [webpack node api](https://webpack.js.org/api/node/#webpack)。
 
-```javascript
+```js
 const webpack = require('webpack')
 
 const compiler = webpack({
@@ -65,7 +65,7 @@ compiler.run((err, stat) => {
 例如，使用它测试不同 `mode` 对打包资源的影响
 
 
-```javascript
+```js
 webpack([
   {
     entry: './index.js',
@@ -108,7 +108,7 @@ webpack 运行是通过 `run` 方法的回调取得 `stat`，在回调中打断�
 当找不到函数在哪里调用的时候，可以查找调用栈。
 > 小技巧：在 VSCode 的调用栈模块按 `Ctrl + F` 搜索函数名。
 
-```javascript
+```js
 run(callback) {
   /* ----- 1 ----- */
   const finalCallback = (err, stats) => {
@@ -178,7 +178,7 @@ run(callback) {
 
 
 ## 5. webpack/webpack-cli 间相互调用
-```bash
+```sh
 npx webpack
 ```
 1. 调用执行 `webpack` 包对应的 `bin/webpack.js` 文件，然后调用 `webpack-cli` 包
@@ -198,7 +198,7 @@ npx webpack
 
 逐步拆解：
 1. 当运行 `npx webpack` 后，会执行 `node_modules/.bin/webpack` 可执行文件
-    ```bash
+    ```sh
       if [ -x "$basedir/node" ]; then
         exec "$basedir/node"  "$basedir/../webpack/bin/webpack.js" "$@"
       else
@@ -208,7 +208,7 @@ npx webpack
     最终执行了 `webpack` 包里的 `bin/webpack.js` 文件        
 
 2. 判断有无安装 `webpack-cli`
-    ```javascript
+    ```js
     // node_modules/webpack/bin/webpack.js
 
     /* codes */
@@ -259,7 +259,7 @@ npx webpack
     ```
 
 3. 无 `webpack-cli` 依赖包时询问是否安装，同意则会安装，否则退出执行。 
-    ```javascript
+    ```js
     // node_modules/webpack/bin/webpack.js
 
     /* codes */
@@ -351,7 +351,7 @@ npx webpack
 4. 当有 `webpack-cli` 后调用 `node_modules/webpack-cli/packages.json` 的 `bin` 语句。        
    `package.json` 的 `bin` 字段：包命令行工具的入口，也用来安装包管理器例如 `npm` 的可执行文件。即生成 `/node_modules/.bin/` 下的可执行文件，且可执行文件执行应该指本包的哪个位置。
     
-    ```javascript
+    ```js
     // node_modules/webpack/bin/webpack.js
 
     const cli = {
@@ -409,7 +409,7 @@ npx webpack
   以下代码，最终执行 `require('webpack')`                      
 
   最终还是回到了 `webpack` 包的 `lib/index.js`，即 API。
-  ```javascript
+  ```js
     // /node_modules/webpack-cli/bin/cli.js
 
     #!/usr/bin/env node // shebang 指定解释器
@@ -430,7 +430,7 @@ npx webpack
     runCLI(process.argv);
   ```
   process.argv：当前进程的所有命令行参数
-  ```bash
+  ```sh
       node argv.js a b c
       # process.argv [ 'node', '/path/to/argv.js', 'a', 'b', 'c' ]
   ```
@@ -439,7 +439,7 @@ npx webpack
     
   我的思路是，知道一定会调用 webpack，所以第一次调试时，会留意 webpack 字样的变量，找到了 `this.webpack` 字段。下一步就是找到其赋值的操作：`this.webpack = await this.loadWebpack();` 从而找到了下面的函数。     
  
-  ```javascript
+  ```js
     // /node_modules/webpack-cli/lib/webpack-cli.js
     // module: 'webpack'
     async tryRequireThenImport(module, handleError = true) {
@@ -457,7 +457,7 @@ npx webpack
   接下来跟着调用栈，往回倒推，看看 `module` 变量是如何得到的。  
 
   根据调用栈发现 `module` 的定义
-  ```javascript
+  ```js
     // /node_modules/webpack-cli/lib/webpack-cli.js
     const WEBPACK_PACKAGE = process.env.WEBPACK_PACKAGE || "webpack";
     async loadWebpack(handleError = true) {
@@ -467,7 +467,7 @@ npx webpack
   此时就有个疑惑，webpack 的加载 `loadWebpack`，好像跟 `runCLI` 的传参无关。如果有关的话，那肯定是决定 `loadWebpack` 方法是否被调用。
 
   继续根据调用栈往外找，可以发现以下代码
-  ```javascript
+  ```js
       // /node_modules/webpack-cli/lib/webpack-cli.js
       // commandName: 'build'
       const loadCommandByName = async (commandName, allowToInstall = false) => {
@@ -483,7 +483,7 @@ npx webpack
   `loadWebpack` 函数是否被调用，取决于 `loadCommandByName` 函数的 `commandName` 参数是否为 `'build'`。    
   
   继续跟着调用栈找，可以发现以下代码
-  ```javascript
+  ```js
       // /node_modules/webpack-cli/lib/webpack-cli.js
       // 这块代码可以略过，放在这里只是方便你调试时可以参考
       // 简化核心代码请看下块代码块
@@ -510,7 +510,7 @@ npx webpack
   ```
 
   上面的代码还是有点长，当看是否传 `'build'` 可以看简化后的核心部分
-  ```javascript
+  ```js
       this.program.action(async (options, program) => {
         let commandToRun = program.args[0] ? program.args[0] : 'build'
         if(commandToRun === 'build') {
@@ -522,7 +522,7 @@ npx webpack
   可以得知，想要传 `'build'` ，需要 `this.program.action` 函数的回调传参 `program.args[0]` 无值。下一个调试目的： `program` 的值。  
 
   接下来将断点打在 `action` 方法上，然后重新调试。以下为简化后的核心部分
-  ```javascript
+  ```js
       action(fn) {
         const listener = (args) => {
           const actionResult = fn.apply(this, [{}, this]);
@@ -534,7 +534,7 @@ npx webpack
   只要 `fn` 代表回调，第二个参数 `this` 即我们要找的 `program`，所以只要 `Command` 实例的 `args` 为空即可。      
 
   搜索 `this.args` 关键字，找到 `this.args = operands.concat(unknown);` 打上断点，重新调试。
-  ```javascript
+  ```js
       _parseCommand(operands, unknown) {
         this.args = operands.concat(unknown);
       }
@@ -542,7 +542,7 @@ npx webpack
   只要 `_parseCommand` 函数的传参 `operands`, `unknown` 都为空数组，上面的过程都算验证成功。    
 
   通过断点调试，进入 `\node_modules\commander\index.js`
-  ```javascript
+  ```js
     // \node_modules\commander\index.js
     
     /* codes */
@@ -577,7 +577,7 @@ npx webpack
   我们的期盼是 `run` 函数的传参 `parseOptions` 为 `undefined` ，`this._parseCommand` 将会传两个空数组。
 
   终于要到头了，接下来就是找哪里调用了 `run` 函数，且看他第二个传参。  
-  ```javascript
+  ```js
       const runCLI = async (args) => {
         const cli = new WebpackCLI();
         await cli.run(args);
@@ -596,7 +596,7 @@ npx webpack
 <!-- 
 
 ## 5. output.filename 的调试分析
-```javascript
+```js
 const func = f1
 function f1 () {
   return webpack({
@@ -630,7 +630,7 @@ func().run((err, stat) => {
 在 `run` 函数中打断点，`F11` 进入该函数，来到了  `\node_modules\webpack\lib\Compiler.js` 文件。       
 
 我们的目的很明确，搜索 `filename` 关键字，发现 `includesHash` 函数，为其打上断点，按 `F5` 直接运行到下个断点，发现代码运行完成，没进入。
-```javascript
+```js
 const includesHash = (filename, hashes) => {
 	if (!hashes) return false;
 	if (Array.isArray(hashes)) {
@@ -642,7 +642,7 @@ const includesHash = (filename, hashes) => {
 ```
 
 搜索 `includesHash` 关键字，看看哪里调用了，发现以下代码，打上断点重新运行，可以发现 `targetFile` 变量便是我们配置的 `'hello.js'`，接下来根据调用栈，开始查找外层传参，看看是如何产生且传进来的。
-```javascript
+```js
 asyncLib.forEachLimit( // 该函数会把 assets 做为参数，传给后面的回调做为第一个参
 				assets,
 				15,
@@ -666,7 +666,7 @@ asyncLib.forEachLimit( // 该函数会把 assets 做为参数，传给后面的�
 ```
 
 接下来看 `assets` 如何获得 
-```javascript
+```js
 const assets = compilation.getAssets();
 
 // compilation
@@ -705,7 +705,7 @@ asyncLib.forEach(
 
 ## 6. webpack 的简单分析        
 webpack 传入配置 options，最终是返回一个编译器 compiler。
-```javascript
+```js
   /* codes */
 
   /* 主入口 */
@@ -825,7 +825,7 @@ webpack 编译结束后，可拿到 `Stat` 对象，其中包含诸多编译时�
 ![](./220816/2.png)
 
 也通过打断点或者以下方式查看
-```bash
+```sh
 # jq 需要手动安装，是一个 JSON 处理器
 $ node build2.js | jq -C "." | less
 ```

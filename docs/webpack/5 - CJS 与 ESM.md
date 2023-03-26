@@ -42,7 +42,7 @@ CJS：Node 中的模块规范，可运行在 Node 环境、webpack 环境，不�
 不可在浏览器中直接使用，一般前端项目是通过 webpack 打包转换 `CJS` 为 ES5（语言层级的规范），才可以在浏览器中使用。       
 
 由于 `require` 是运行时代码，可直接 `require` 一个变量。所以 `CJS` 可以动态加载
-```javascript
+```js
 require(`./${a}`)
 ```
 
@@ -53,7 +53,7 @@ require(`./${a}`)
 ES6 模块不是对象，它的对外接口只是一种静态定义，在代码静态解析阶段就会生成。
 
 使用 import/export 进行模块导入导出。
-```javascript
+```js
 // sum.js
 export const sum = (x, y) => x + y
 
@@ -64,7 +64,7 @@ import { sum } from './sum'
 - 具名导出/导入: `Named Import`/Export
 - 默认导出/导入: `Default Import`/Export
 
-```javascript
+```js
 // 默认导出 只能有 1 个
 export default function () {
   console.log('foo');
@@ -84,7 +84,7 @@ export { firstName, lastName, year };
 `ESM` 为静态导入，正因如此，可在编译期进行 `Tree Shaking`，减少 js 体积。    
 
 如果需要动态导入，tc39 为动态加载模块定义了 API: `import(module)` 。
-```javascript
+```js
 const {default: arrayUniq} = await import('https://cdn.jsdelivr.net/npm/array-uniq/index.js')
 
 arrayUniq([1,1,2,2,2,3]) // [1, 2, 3]
