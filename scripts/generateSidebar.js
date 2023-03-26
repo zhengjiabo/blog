@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-
 /**
  * 从字符串中提取数字部分。
  * @param {string} str 待处理的字符串。
@@ -10,85 +9,88 @@ const path = require('path');
 function extractNumber(str) {
   const regex = /(\d+)/;
   const match = str.match(regex);
-  if (match && match[1]) {
-    return parseInt(match[1]);
-  } else {
-    return null;
-  }
+  return match && match[1] ? parseInt(match[1]) : null;
 }
 
-function getSubItems(navItem) {
-  const ret = []
-  
-  const arr = []
-  if (navItem.link) {
-    arr.push(navItem)
-  } else if (navItem.items) {
-    arr.push(...navItem.items)
-  }
+/**
+ * 获取一个目录下所有的md文件.
+ * @param {string} dirPath 目录路径.
+ * @param {string} excludeFile 要排除的文件名.
+ * @returns {array} md文件列表.
+ */
+function getMdFiles(dirPath, excludeFile) {
+  // 读取目录下所有的md文件并过滤掉要排除的文件
+  const files = fs.readdirSync(dirPath)
+    .filter(file => path.extname(file) === '.md' && file !== excludeFile)
+    .sort((a, b) => extractNumber(a) - extractNumber(b));
+  return files;
+}
 
-  arr.forEach(nav => {
-    const items = []
+/**
+ * 生成子目录数组.
+ * @param {object} navItem 导航条目.
+ * @param {string} docsDirPath 文档目录路径.
+ * @returns {array} 子目录数组.
+ */
+function getSubItems(navItem, docsDirPath) {
+  // subItems用于保存子目录数组
+  const subItems = [];
+  // 获取需要处理的导航条目，如果有link属性，则只处理该条目，否则处理items数组中的所有条目
+  const items = navItem.link ? [navItem] : navItem.items || [];
 
-    //处理子目录
-    const subDirPath = path.resolve(path.join(DOC_PATH, nav.link, '..'));
-    const files = fs.readdirSync(subDirPath).filter(file => {
-      return path.extname(file) === '.md' && file !== '0 - ' + nav.text + '.md';
-    });
+  // 遍历items数组处理子目录
+  for (let item of items) {
+    const subDirPath = path.resolve(path.join(docsDirPath, item.link, '..'));
+    const files = getMdFiles(subDirPath, `0 - ${item.text}.md`);
 
-    files.sort((file1, file2) => {
-      const name1 = extractNumber(file1);
-      const name2 = extractNumber(file2);
-      return name1 - name2;
-    });
-
-
-    for (let file of files) {
-      const filePath = path.relative(DOC_PATH, path.join(subDirPath, file)).replace(/\\/g, '/');
-      items.push({
+    // 将子目录下所有md文件对应的对象放入subItems数组
+    const subItemsArr = files.map(file => {
+      const filePath = path.relative(docsDirPath, path.join(subDirPath, file)).replace(/\\/g, '/');
+      return {
         text: file,
         link: `/${filePath}`,
-      });
-    }
+      };
+    });
 
-    ret.push({
-      text: nav.text,
-      link: nav.link.replace(/\\/g, '/'),
-      items
+    // 将该子目录及其下所有md文件对应的对象放入subItems数组
+    subItems.push({
+      text: item.text,
+      link: item.link.replace(/\\/g, '/'),
+      items: subItemsArr
     })
-  })
-
-  return ret 
-}
-
-
-function generateSidebar(navbar) {
-  const ret = {};
-
-  //循环处理navArray中的每个对象
-  for (let navItem of navbar) {
-      const itemPath = `/${navItem.text}/`;
-      //向RET对象添加T数组
-      ret[itemPath] = getSubItems(navItem);
   }
-  return ret
+
+  return subItems;
 }
 
-const DOC_PATH = './docs';
-const NAV_PATH = './docs/.vitepress/generate/nav.json';
-const FILE_PATH = './docs/.vitepress/generate/sidebar.json';
-
 /**
- * 读取JSON对象数组
+ * 生成侧边栏数据.
+ * @param {array} navbar 导航条目数组.
+ * @param {string} docsDirPath 文档目录路径.
+ * @returns {object} 侧边栏数据.
  */
-const content = fs.readFileSync(NAV_PATH, 'utf8');
-const navbar = JSON.parse(content);
+function generateSidebar(navbar, docsDirPath) {
+  const sidebarData = {};
 
-const data = generateSidebar(navbar)
+  // 循环处理navbar中的每个对象
+  for (let navItem of navbar) {
+    const itemPath = `/${navItem.text}/`;
+    // 向sidebarData对象添加子目录数组
+    sidebarData[itemPath] = getSubItems(navItem, docsDirPath);
+  }
 
-/**
- * 将RET对象写入文件
- */
-fs.writeFileSync(FILE_PATH, JSON.stringify(data, null, 2));
+  return sidebarData;
+}
 
+// 定义常量
+const DOCS_DIR_PATH = './docs';
+const NAV_JSON_FILE_PATH = path.join(DOCS_DIR_PATH, '.vitepress/generate/nav.json');
+const SIDEBAR_JSON_FILE_PATH = path.join(DOCS_DIR_PATH, '.vitepress/generate/sidebar.json');
 
+// 读取JSON对象数组
+const navbarContent = fs.readFileSync(NAV_JSON_FILE_PATH, 'utf8');
+const navbar = JSON.parse(navbarContent);
+
+// 生成侧边栏数据并写入文件
+const sidebarData = generateSidebar(navbar, DOCS_DIR_PATH)
+fs.writeFileSync(SIDEBAR_JSON_FILE_PATH, JSON.stringify(sidebarData, null, 2));
