@@ -413,6 +413,18 @@
       "link": "/unfiled/0 - unfiled.md",
       "items": [
         {
+          "text": "Generator 函数.md",
+          "link": "/unfiled/Generator 函数.md"
+        },
+        {
+          "text": "HTTP.md",
+          "link": "/unfiled/HTTP.md"
+        },
+        {
+          "text": "Vim.md",
+          "link": "/unfiled/Vim.md"
+        },
+        {
           "text": "call、apply、bind的原理剖析及实现.md",
           "link": "/unfiled/call、apply、bind的原理剖析及实现.md"
         },
@@ -421,16 +433,8 @@
           "link": "/unfiled/clientLeft、clientHeight、clientWidth、clientHeight等区别.md"
         },
         {
-          "text": "Generator 函数.md",
-          "link": "/unfiled/Generator 函数.md"
-        },
-        {
           "text": "git revert、git restore 和 git reset.md",
           "link": "/unfiled/git revert、git restore 和 git reset.md"
-        },
-        {
-          "text": "HTTP.md",
-          "link": "/unfiled/HTTP.md"
         },
         {
           "text": "questions.md",
@@ -439,10 +443,6 @@
         {
           "text": "require module.exports 和 import export.md",
           "link": "/unfiled/require module.exports 和 import export.md"
-        },
-        {
-          "text": "Vim.md",
-          "link": "/unfiled/Vim.md"
         },
         {
           "text": "vue-devtools 如何打开指定vue文件源码阅读.md",

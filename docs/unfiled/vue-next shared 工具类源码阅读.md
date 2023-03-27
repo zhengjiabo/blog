@@ -13,7 +13,7 @@ categories:
 ## 1 index.ts
 ### 1.1 babelParserDefaultPlugins
 用来声明用于【模板表达式转换】和【SFC脚本转换】的@babel/parser插件列表，会随着ES2020提案而更新
-``` javascript
+```js
 const babelParserDefaultPlugins = [
   'bigInt',
   'optionalChaining',
@@ -28,8 +28,9 @@ const babelParserDefaultPlugins = [
 ### 1.2 EMPTY_OBJ
 空对象   
 Object.freeze(obj)：冻结对象，不能增删改该对象的熟悉，不过可以改该对象内部引用的对象的属性  
-``` javascript
-const EMPTY_OBJ = (process.env.NODE_ENV !== 'production')
+
+```js
+const EMPTY_OBJ = (process .env.NODE_ENV !== 'production')
   ? Object.freeze({})
   : {};
 
@@ -46,16 +47,17 @@ obj.prop = 1; // fail
 obj.subObj.subProp = 1; //success
 
 ```
-> process.env.NODE_ENV 环境变量，用来判断当前环境，如非生产用Object.freeze({})，错误操作会提示错误信息。生产环境则无需这些错误信息
+> `process.env.NODE_ENV` 环境变量，用来判断当前环境，如非生产用 `Object.freeze({})`，错误操作会提示错误信息。生产环境则无需这些错误信息
 
+> 由于 Vitepress 搜跨插件有问题，代码快识别 `process.env.NODE_ENV` 会转成变量，所以后续代码中会故意空格，如 `process .env.NODE_ENV`。
 
 
 ### 1.3 EMPTY_ARR
 空数组    
 
 Object.freeze([])：冻结数组，数组也无法更改
-``` javascript
-const EMPTY_ARR = (process.env.NODE_ENV !== 'production') ? Object.freeze([]) : [];
+```js
+const EMPTY_ARR = (process .env.NODE_ENV !== 'production') ? Object.freeze([]) : [];
 
 
 const arr = [0];
@@ -71,7 +73,7 @@ arr.push(0); // fail
 
    
 1. 便于判断
-``` javascript
+```js
 const NOOP = () => { };
 
 
@@ -96,14 +98,14 @@ if(instance.render !== NOOP) {
 
 ### 1.5 NO
 返回false的函数，作用：压缩代码
-``` javascript
+```js
 const NO = () => false;
 ```
 
 
 ### 1.6 isOn
 判断是否on开头，后续小写字母的函数
-``` javascript
+```js
 const onRE = /^on[^a-z]/;
 const isOn = (key) => onRE.test(key);
 
@@ -115,7 +117,7 @@ isOn('onclick1'); // false
 
 ### 1.7 isModelListener
 判断是否数据监听以onUpdate:开头的函数
-``` javascript
+```js
 const isModelListener = (key) => key.startsWith('onUpdate:');
 
 
@@ -126,7 +128,7 @@ isModelListener('OnUpdate:data'); // false
 
 ### 1.8 extend
 Object.assign的简写，继承/合并
-``` javascript
+```js
 const extend = Object.assign;
 
 
@@ -139,7 +141,7 @@ extend(data, {name: '弟弟'}); // { name: '弟弟', age: 18 }
 
 ### 1.9 remove
 在数组中删除指定元素的函数
-``` javascript
+```js
 const remove = (arr, el) => {
   const i = arr.indexOf(el);
   if (i > -1) {
@@ -168,7 +170,7 @@ remove(family, son); // [ { name: 'father' }, { name: 'morther' } ]
 ### 1.10 hasOwn
 是否本身拥有的属性
 
-``` javascript
+```js
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
 
@@ -181,7 +183,7 @@ hasOwn({}, 'hasOwnProperty') // false
 ### 1.11 isArray
 Array.isArray的简写，是否数组
 
-``` javascript
+```js
 const isArray = Array.isArray;
 
 
@@ -199,7 +201,7 @@ instanceof是通过检查构造函数的prototype是否出现在实例对象的�
 ### 1.12 isMap
 是否Map对象
 
-``` javascript
+```js
 const objectToString = Object.prototype.toString;
 const toTypeString = (value) => objectToString.call(value);
 const isMap = (val) => toTypeString(val) === '[object Map]';
@@ -237,7 +239,7 @@ map.get(elementSpan); // span
 ### 1.13 isSet
 是否Set对象
 
-``` javascript
+```js
 const isSet = (val) => toTypeString(val) === '[object Set]';
 
 
@@ -247,7 +249,7 @@ isSet(set); // true
 ```
 
 Set类似于数组，不会添加重复值，内部的值都是唯一的。
-``` javascript
+```js
 let set = new Set([1, 2, 3, 3, 3]); // [1, 2, 3]
 set.size // 3
 
@@ -271,7 +273,7 @@ set.has({}) // false
 ### 1.14 isDate
 是否为日期Date对象
 
-``` javascript
+```js
 const isDate = (val) => val instanceof Date;
 
 
@@ -281,7 +283,7 @@ isDate(new Date()); // true
 
 ### 1.15 isFunction
 是否为函数
-``` javascript
+```js
 const isFunction = (val) => typeof val === 'function';
 
 
@@ -292,7 +294,7 @@ typeof 可返回 'undefined'，'string'，'boolean'，'number'，'function'，'o
 
 ### 1.16 isString
 是否为文本
-``` javascript
+```js
 const isString = (val) => typeof val === 'string';
 
 
@@ -302,7 +304,7 @@ isString('') // true
 
 ### 1.17 isSymbol
 是否为Symbol，独一无二的值
-``` javascript
+```js
 const isSymbol = (val) => typeof val === 'symbol';
 
 
@@ -323,7 +325,7 @@ s2.toString() // "Symbol(bar)"
 Symbol的目的是作为唯一值，
 1. 解决对象内部，键名字符串重复问题
 2. 作为值唯一，消除魔术字符串
-``` javascript
+```js
 function getArea(shape, options) {
   let area = 0;
 
@@ -371,7 +373,7 @@ const shapeType = {
 
 ### 1.18 isObject
 是否为对象
-``` javascript
+```js
 const isObject = (val) => val !== null && typeof val === 'object';
 
 typeof null // object 所以要去除他
@@ -384,7 +386,7 @@ isObject({}) // true
 
 ### 1.19 isPromise
 是否为Promise
-``` javascript
+```js
 const isPromise = (val) => {
   return isObject(val) && isFunction(val.then) && isFunction(val.catch);
 };
@@ -395,7 +397,7 @@ isPromise(new Promise((resolve, reject) => resolve(''))); // true
 ### 1.20 objectToString
 Object.prototype.toString简写，对象转字符串
 
-``` javascript
+```js
 const objectToString = Object.prototype.toString;
 // 跟call结合使用
 ```
@@ -403,7 +405,7 @@ const objectToString = Object.prototype.toString;
 ### 1.21 toTypeString
 获取其类型 返回字符串
 
-``` javascript
+```js
 const toTypeString = (value) => objectToString.call(value);
 
 
@@ -413,7 +415,7 @@ toTypeString(new Date()) // '[object Date]'
 ### 1.22 toRawType
 获取其原始类型 返回字符串
 
-``` javascript
+```js
 const toRawType = (value) => {
     // extract "RawType" from strings like "[object RawType]"
     return toTypeString(value).slice(8, -1); // 截取RawType
@@ -427,7 +429,7 @@ toRawType(new Date()) // 'Date'
 ### 1.23 isPlainObject
 是否纯粹的对象
 
-``` javascript
+```js
 const isPlainObject = (val) => toTypeString(val) === '[object Object]';
 
 isObject([]) // true 上面的isObject, 只判断typeof
@@ -440,7 +442,7 @@ isPlainObject({}) // true
 ### 1.24 isIntegerKey
 是否自然数文本，不可有小数
 
-``` javascript
+```js
 const isIntegerKey = (key) => isString(key) &&
   key !== 'NaN' &&
   key[0] !== '-' &&
@@ -457,7 +459,7 @@ isIntegerKey(1) // false
 传入一个以逗号隔开的文本，生成一个Map，并返回一个函数用来判断输入文本是否在该Map中。
 参二可指定是否期望小写
 
-``` javascript
+```js
 /**
  * Make a map and return a function for checking if a key
  * is in that map.
@@ -490,7 +492,7 @@ Object.create(proto,[propertiesObject])
 ### 1.26 isReservedProp
 是否保留字段
 
-``` javascript
+```js
 const isReservedProp = /*#__PURE__*/ makeMap(
 // the leading comma is intentional so empty string "" is also included
 ',key,ref,' +
@@ -509,7 +511,7 @@ isReservedProp('key'); // true
 提供一个函数，用于定义在无缓存情况下的值计算    
 返回一个函数，提供文本读取缓存值
 
-``` javascript
+```js
 const cacheStringFunction = (fn) => {
   const cache = Object.create(null);
   return ((str) => {
@@ -523,14 +525,14 @@ const cacheStringFunction = (fn) => {
 驼峰正则    
 匹配-[a-zA-Z0-9_] 并捕获 [a-zA-Z0-9_]
 
-``` javascript
+```js
 const camelizeRE = /-(\w)/g;
 ```
 
 ### 1.29 camelize
 连字符 转 驼峰，此方法以及后续方法用到了上面的缓存。    
 
-``` javascript
+```js
 const camelize = cacheStringFunction((str) => {
     return str.replace(camelizeRE, (_, c) => (c ? c.toUpperCase() : ''));
 });
@@ -544,7 +546,7 @@ camelize('on-click') // onClick
 连字符正则    
 非边缘大写字母捕获
 
-``` javascript
+```js
 const hyphenateRE = /\B([A-Z])/g;
 ```
 
@@ -552,7 +554,7 @@ const hyphenateRE = /\B([A-Z])/g;
 ### 1.31 hyphenate
 驼峰 转 连字符    
 
-``` javascript
+```js
 const hyphenate = cacheStringFunction((str) => str.replace(hyphenateRE, '-$1').toLowerCase());
 
 
@@ -563,7 +565,7 @@ hyphenate('onClick') // on-click
 ### 1.32 capitalize
 首字母转大写   
 
-``` javascript
+```js
 const capitalize = cacheStringFunction((str) => str.charAt(0).toUpperCase() + str.slice(1));
 
 
@@ -575,7 +577,7 @@ capitalize('click') // Click
 取得事件处理规范命名  click => onClick    
 监听
 
-``` javascript
+```js
 const toHandlerKey = cacheStringFunction((str) => str ? `on${capitalize(str)}` : ``);
 
 
@@ -587,7 +589,7 @@ toHandlerKey('click') // onClick
 判断是否有变化    
 目的是用来判断值前后是否有变化，考虑到了NaN情况
 
-``` javascript
+```js
 // compare whether a value has changed, accounting for NaN.
 const hasChanged = (value, oldValue) => !Object.is(value, oldValue);
 
@@ -623,7 +625,7 @@ Object.is为ES6的相等判断
 ### 1.35 invokeArrayFns
 执行数组里的函数
 
-``` javascript
+```js
 const invokeArrayFns = (fns, arg) => {
     for (let i = 0; i < fns.length; i++) {
         fns[i](arg);
@@ -638,7 +640,7 @@ invokeArrayFns(arr, 'Yeah~') // Yeah~gege   Yeah~yaya
 ### 1.36 def
 定义对象里的键值
 
-``` javascript
+```js
 const def = (obj, key, value) => {
   Object.defineProperty(obj, key, {
     configurable: true,
@@ -667,7 +669,7 @@ def(obj, 'Name', 'John') // {Name: 'John'}
 转数字
 如果为转不了数字则保留原本
 
-``` javascript
+```js
 const toNumber = (val) => {
     const n = parseFloat(val);
     return isNaN(n) ? val : n;
@@ -683,7 +685,7 @@ toNumber('1a') // 1
 ### 1.38 getGlobalThis
 获取全局对象
 
-``` javascript
+```js
 let _globalThis;
 const getGlobalThis = () => {
   return (_globalThis ||
