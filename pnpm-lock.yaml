@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   flexsearch: ^0.7.31
+  vite: ^4.2.1
   vitepress: 1.0.0-alpha.61
   vitepress-plugin-search: 1.0.4-alpha.19
   vue: ^3.2.47
 
 devDependencies:
   flexsearch: registry.npmmirror.com/flexsearch/0.7.31
+  vite: registry.npmmirror.com/vite/4.2.1
   vitepress: registry.npmmirror.com/vitepress/1.0.0-alpha.61
   vitepress-plugin-search: registry.npmmirror.com/vitepress-plugin-search/1.0.4-alpha.19_edo22ptstdal2cr2abhskclrqi
   vue: registry.npmmirror.com/vue/3.2.47
