@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "a307725b49687599",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e610eaf9f5185ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3259960dd49bfdab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "82fb3d47b58b9a40",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "1aceb9c13d9c0dfa",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "ce6d41db24d6f4d2",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "faef445810809b3a",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "55ad8cf6dea99852",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "9b01c251c341555b",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "cb0b24dae9affa68",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "6ce39c67cfebf311",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "c097fee2af46eb4b",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "docs/unfiled/浏览器敲入 URL 过程.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "3259960dd49bfdab",
+  "lastOpenFiles": [
+    "docs/webpack/0 - webpack.md",
+    "docs/unfiled/浏览器敲入 URL 过程.md",
+    "nginx.conf",
+    "scripts/generateMenu.js",
+    "scripts/generateSidebar.js",
+    "scripts/generateNav.js",
+    "scripts",
+    "README.md",
+    "package.json",
+    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/static/js/787.cf6a8955.chunk.js",
+    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/static/js/main.9afb2b4c.js.map",
+    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/static/js/main.9afb2b4c.js",
+    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/static/js/787.cf6a8955.chunk.js.map",
+    "docs/docker/8 - 静态资源上传oss - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "docs/docker/7 - 单页应用的路由与持久缓存优化 - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "docs/docker/9 - 对象存储优化 - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "docs/docker/4 - nginx 基础 - demo/city-A/A/assets/img.png",
+    "docs/docker/11 - traefik 自动配置证书 - demo/nuxt/store/README.md",
+    "docs/docker/4 - nginx 基础 - demo/city-B/assets/img.png",
+    "docs/docker/4 - nginx 基础 - demo/city-login/assets/img.png",
+    "docs/docker/4 - nginx 基础 - demo/city-A/assets/img.png",
+    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/src/logo.svg",
+    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/logo192.png",
+    "docs/docker/11 - traefik 自动配置证书 - demo/nuxt/README.md",
+    "docs/vue/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
+    "docs/vue/Vue.js 设计与实现/1 - 权衡的艺术.md",
+    "docs/vue/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
+    "docs/vue/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
+    "docs/vue/Vue.js 设计与实现/2 - 框架设计的核心要素.md",
+    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/README.md",
+    "docs/docker/8 - 静态资源上传oss - demo/README.md",
+    "docs/docker/7 - 单页应用的路由与持久缓存优化 - demo/README.md",
+    "docs/docker/9 - 对象存储优化 - demo/README.md",
+    "docs/docker/11 - traefik 自动配置证书 - demo/README.md",
+    "docs/docker/4 - nginx 基础 - demo/Readme.md",
+    "docs/linux/29 - vim move 光标移动.md",
+    "docs/linux/18 - 终端快捷键.md",
+    "docs/linux/7 - 读取文件 cat、bat、less、head、tail.md",
+    "docs/linux/27 - zx 可用 javascript 编写 shell.md",
+    "docs/linux/12 - 文件内容搜索 ag.md",
+    "docs/linux/43 - awk 文本分析工具.md",
+    "docs/linux/5 - 权限-所属更改 chmod、chown.md",
+    "docs/linux/46 - dig 解析域名.md",
+    "docs/linux/38 - sort 文本内容按行排序.md",
+    "docs/linux/41 - tr 全局文本替换.md"
+  ]
+}
