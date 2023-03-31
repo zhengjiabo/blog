@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ChatGPT 沟通技巧.md",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "ChatGPT 沟通技巧.md",
+            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "ChatGPT 沟通技巧.md",
+            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "ChatGPT 沟通技巧.md"
+            "file": "docs/unfiled/ChatGPT 沟通技巧.md"
           }
         }
       }
@@ -131,11 +131,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3259960dd49bfdab",
+  "active": "1aceb9c13d9c0dfa",
   "lastOpenFiles": [
     "docs/assets/4E887A2D-F4BB-489D-8250-4ECD23CA5A79.jpeg",
     "docs/unfiled/浏览器敲入 URL 过程.md",
-    "ChatGPT 沟通技巧.md",
+    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/webpack/0 - webpack.md",
     "nginx.conf",
     "scripts/generateMenu.js",
