@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+                "file": "ChatGPT 沟通技巧.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+            "file": "ChatGPT 沟通技巧.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+            "file": "ChatGPT 沟通技巧.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/unfiled/浏览器敲入 URL 过程.md"
+            "file": "ChatGPT 沟通技巧.md"
           }
         }
       }
@@ -133,8 +133,10 @@
   },
   "active": "3259960dd49bfdab",
   "lastOpenFiles": [
-    "docs/webpack/0 - webpack.md",
+    "docs/assets/4E887A2D-F4BB-489D-8250-4ECD23CA5A79.jpeg",
     "docs/unfiled/浏览器敲入 URL 过程.md",
+    "ChatGPT 沟通技巧.md",
+    "docs/webpack/0 - webpack.md",
     "nginx.conf",
     "scripts/generateMenu.js",
     "scripts/generateSidebar.js",
@@ -176,8 +178,6 @@
     "docs/linux/12 - 文件内容搜索 ag.md",
     "docs/linux/43 - awk 文本分析工具.md",
     "docs/linux/5 - 权限-所属更改 chmod、chown.md",
-    "docs/linux/46 - dig 解析域名.md",
-    "docs/linux/38 - sort 文本内容按行排序.md",
-    "docs/linux/41 - tr 全局文本替换.md"
+    "docs/linux/46 - dig 解析域名.md"
   ]
 }
