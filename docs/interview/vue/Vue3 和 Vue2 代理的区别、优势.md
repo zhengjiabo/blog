@@ -1,8 +1,8 @@
 ## 总结
-1. 解决里无法监听【数组变化】和【对象属性的增加】的问题。支持数组索引修改，对象属性的增加
+1. 解决了无法监听【数组变化】和【增加对象属性】的问题。支持数组索引修改，增加对象属性
 2. 性能更好，实现方面
-	Vue2: `Object.defineProperty` 给对象的属性添加 `getter` 和 `setter`，遇到嵌套对象时需要递归
-	Vue3: `Proxy` 直接监听对象而非属性, 且实现嵌套对象惰性监听 . 
+	- Vue2: `Object.defineProperty` 给对象的【属性】添加 `getter` 和 `setter`，遇到嵌套对象时需要递归处理
+	- Vue3: `Proxy` 直接监听对象而非属性, 且实现嵌套对象惰性监听 
 	
 	
 
@@ -13,15 +13,37 @@
 
 以下是伪代码
 ```js
+// 创建一个 WeakMap 对象，用于缓存已经代理过的对象及其代理对象
+const reactiveMap = new WeakMap()
+
+/**
+ * 将一个 JavaScript 对象转换为响应式对象，并返回其代理对象。
+ * 如果该对象已经被代理过，则直接返回其缓存的代理对象。
+ * @param {Object} obj 要转换为响应式对象的原始 JavaScript 对象
+ * @returns {Object} 返回转换后的响应式对象的代理对象
+ */
 function reactive(obj) {
+  // 检查该对象是否已经存在于缓存中，如果是，则直接返回其代理对象
+  if (reactiveMap.has(obj)) {
+    return reactiveMap.get(obj)
+  }
+
+  // 定义拦截器对象，在 getter 中收集依赖项，在 setter 中触发更新
   const handler = {
     get(target, key, receiver) {
       const result = Reflect.get(target, key)
-      track(target, key) // 记录属性的访问情况
-      return isObject(result) ? reactive(result) : result // 递归地代理嵌套对象
+      track(target, key) // 收集依赖
+      return isObject(result) ? reactive(result) : result // 惰性监听 代理嵌套对象
     },
     // ...其他拦截器
   }
-  return new Proxy(obj, handler)
+
+  // 创建一个新的代理对象，并将其添加到缓存中
+  const observed = new Proxy(obj, handler)
+  reactiveMap.set(obj, observed)
+
+  // 返回新创建的代理对象
+  return observed
 }
+
 ```
