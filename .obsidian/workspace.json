@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8f6db0c8d2504e15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -129,7 +142,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -145,13 +159,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ec6532f226f3cf44",
+  "active": "8f6db0c8d2504e15",
   "lastOpenFiles": [
-    "README.md",
+    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
+    "README.md",
     "docs/interview/vue",
     "docs/interview",
-    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/unfiled/clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
     "docs/assets/4E887A2D-F4BB-489D-8250-4ECD23CA5A79.jpeg",
     "docs/vite.config.ts",
