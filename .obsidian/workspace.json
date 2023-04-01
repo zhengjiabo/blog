@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md"
               }
             }
           }
@@ -147,6 +147,11 @@
   },
   "active": "d4a8761dbea36c60",
   "lastOpenFiles": [
+    "docs/vite.config.ts",
+    "docs/unfiled/浏览器敲入 URL 过程.md",
+    "docs/unfiled/ChatGPT 沟通技巧.md",
+    "docs/assets/4E887A2D-F4BB-489D-8250-4ECD23CA5A79.jpeg",
+    "README.md",
     "未命名.canvas",
     "docs/linux/0 - linux.md",
     "docs/unfiled/问题集.md",
@@ -171,8 +176,6 @@
     "backEnd/0 - backEnd.md",
     "article/0 - article.md",
     "algorithm/0 - algorithm.md",
-    "vue/Vue.js 设计与实现/1 - 权衡的艺术.md",
-    "demo/100.md",
     "assets/Pasted image 20230325220904.png",
     "docker/220829/10 - traefik 网关搭建 - demo/whoami/docker-compose.yml",
     "docker/220829/10 - traefik 网关搭建 - demo/log/traefik.log",
@@ -183,7 +186,6 @@
     "docker/220829/10 - traefik 网关搭建 - demo/docker-compose.yml",
     "docker/220829/10 - traefik 网关搭建 - demo/acme.json",
     "docker/220829/10 - traefik 网关搭建 - demo",
-    "docker/220906/11 - traefik 自动配置证书 - demo/nuxt/store/README.md",
     "docker/220820/9 - 对象存储优化 - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "docker/220820/9 - 对象存储优化 - demo/src/logo.svg",
     "docker/220820/9 - 对象存储优化 - demo/public/logo512.png",
@@ -192,7 +194,6 @@
     "docker/220820/9 - 对象存储优化 - demo/build/logo192.png",
     "docker/7 - 单页应用的路由与持久缓存优化 - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "docker/7 - 单页应用的路由与持久缓存优化 - demo/src/logo.svg",
-    "docker/7 - 单页应用的路由与持久缓存优化 - demo/public/logo512.png",
     "得到.canvas"
   ]
 }
