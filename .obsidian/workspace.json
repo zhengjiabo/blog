@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0af21b2e748fd15a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
+                "file": "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
+                "file": "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md"
+                "file": "docs/interview/vue/Vue 中 nextTick 的实现原理.md"
               }
             }
           }
@@ -159,10 +171,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8f6db0c8d2504e15",
+  "active": "0af21b2e748fd15a",
   "lastOpenFiles": [
-    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
+    "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
+    "docs/unfiled/ChatGPT 沟通技巧.md",
     "README.md",
     "docs/interview/vue",
     "docs/interview",
@@ -192,7 +205,6 @@
     "frontEnd/0 - frontEnd.md",
     "docker/0 - docker.md",
     "backEnd/0 - backEnd.md",
-    "article/0 - article.md",
     "assets/Pasted image 20230325220904.png",
     "docker/220829/10 - traefik 网关搭建 - demo/whoami/docker-compose.yml",
     "docker/220829/10 - traefik 网关搭建 - demo/log/traefik.log",
