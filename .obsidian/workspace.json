@@ -11,8 +11,12 @@
             "id": "81e49e55b1b60c8f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md"
+              }
             }
           }
         ]
@@ -139,8 +147,9 @@
   },
   "active": "81e49e55b1b60c8f",
   "lastOpenFiles": [
-    "docs/assets/4E887A2D-F4BB-489D-8250-4ECD23CA5A79.jpeg",
+    "docs/unfiled/clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
     "docs/unfiled/ChatGPT 沟通技巧.md",
+    "docs/assets/4E887A2D-F4BB-489D-8250-4ECD23CA5A79.jpeg",
     "docs/vite.config.ts",
     "docs/unfiled/浏览器敲入 URL 过程.md",
     "README.md",
