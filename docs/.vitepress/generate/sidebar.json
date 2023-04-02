@@ -407,34 +407,50 @@
       ]
     }
   ],
+  "/interview/": [
+    {
+      "text": "vue",
+      "link": "/interview/vue/0 - vue.md",
+      "items": [
+        {
+          "text": "Vue 中 nextTick 的实现原理.md",
+          "link": "/interview/vue/Vue 中 nextTick 的实现原理.md"
+        },
+        {
+          "text": "Vue3 和 Vue2 代理的区别、优势.md",
+          "link": "/interview/vue/Vue3 和 Vue2 代理的区别、优势.md"
+        }
+      ]
+    }
+  ],
   "/unfiled/": [
     {
       "text": "unfiled",
       "link": "/unfiled/0 - unfiled.md",
       "items": [
         {
-          "text": "Generator 函数.md",
-          "link": "/unfiled/Generator 函数.md"
-        },
-        {
-          "text": "HTTP.md",
-          "link": "/unfiled/HTTP.md"
-        },
-        {
-          "text": "Vim.md",
-          "link": "/unfiled/Vim.md"
-        },
-        {
           "text": "call、apply、bind的原理剖析及实现.md",
           "link": "/unfiled/call、apply、bind的原理剖析及实现.md"
+        },
+        {
+          "text": "ChatGPT 沟通技巧.md",
+          "link": "/unfiled/ChatGPT 沟通技巧.md"
         },
         {
           "text": "clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
           "link": "/unfiled/clientLeft、clientHeight、clientWidth、clientHeight等区别.md"
         },
         {
+          "text": "Generator 函数.md",
+          "link": "/unfiled/Generator 函数.md"
+        },
+        {
           "text": "git revert、git restore 和 git reset.md",
           "link": "/unfiled/git revert、git restore 和 git reset.md"
+        },
+        {
+          "text": "HTTP.md",
+          "link": "/unfiled/HTTP.md"
         },
         {
           "text": "questions.md",
@@ -443,6 +459,10 @@
         {
           "text": "require module.exports 和 import export.md",
           "link": "/unfiled/require module.exports 和 import export.md"
+        },
+        {
+          "text": "Vim.md",
+          "link": "/unfiled/Vim.md"
         },
         {
           "text": "vue-devtools 如何打开指定vue文件源码阅读.md",
@@ -485,12 +505,20 @@
           "link": "/unfiled/机器数、真值、原码、反码、补码.md"
         },
         {
+          "text": "浏览器敲入 URL 过程.md",
+          "link": "/unfiled/浏览器敲入 URL 过程.md"
+        },
+        {
           "text": "浏览器架构.md",
           "link": "/unfiled/浏览器架构.md"
         },
         {
           "text": "苹果更新app描述文件.md",
           "link": "/unfiled/苹果更新app描述文件.md"
+        },
+        {
+          "text": "认知与优质信息.md",
+          "link": "/unfiled/认知与优质信息.md"
         },
         {
           "text": "谈判技巧.md",
