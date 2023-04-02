@@ -17,6 +17,10 @@
 基础概念推荐文档：[nextTick | Vue3 (vue3js.cn)](https://vue3js.cn/global/nextTick.html)
 
 ## vue 2 
+
+口语化：
+nextTick 函数会把回调函数推入一个数组中，如果当前浏览器不支持 `Promise` 和 `MutationObserver`，会退回到使用 `setImmediate` / `setTimeout` 创建宏任务，在下一个事件循环中执行这些回调函数。在执行回调函数时，如果出现错误会捕获。如果 Promise 可用，nextTick 函数也可以返回一个 Promise，以便在回调函数执行完成后进行链式调用。
+
 在 Vue 2 中，`nextTick` 函数尝试使用 microtask（微任务），如 `Promise` 或 `MutationObserver` 创建微任务，并将回调函数添加到微任务队列中，以便在当前 macrotask（宏任务）执行完毕后立即执行该回调函数。
 如果当前浏览器不支持 `Promise` 和 `MutationObserver`，Vue 2 会退回到使用 `setImmediate` / `setTimeout` 创建宏任务（macrotask）。
 
