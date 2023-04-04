@@ -88,7 +88,11 @@
 		  - 滚动条也会单独生成一个图层
         5. 图层绘制（Paint）：
 	      每个图层生成待绘制指令列表，且记录绘制顺序，真正的绘制在后续的合成线程中
-	 6. 栅格化（tiles 和 raster）（从此阶段开始进入合成线程）
+	 6. 栅格化（tiles 和 raster）（从此阶段开始进入合成线程）：
+			绘制列表提供给合成线程，合成线程将图层划分为图块，并会优先处理视口附近的图块，将图块指令发送给 GPU 线程转换为位图。
+	7. 合成和显示（Draw quad 和display）：
+		- 所有图块都被栅格化后，合成线程会发送一个【绘制图块】的指令“DrawQuad”给浏览器进程。
+		- 浏览器进程的 viz 组件接收该指令，并将页面绘制到内存，再将内存的图片显示在屏幕。
 
 
 可以补充内容：
@@ -102,5 +106,17 @@
 疑问
 - node 流形式传输html文件，如果在中间 debug 不继续传输后续内容，提交文档则不会触发？页面将一直空白未渲染？（网络进程能否变下载，边往渲染进程传输数据）
 - 布局树可见元素，包含opacity 0 吗
+- 合成也显示需要重新整理
 
 https://b23.tv/C8X1yEk
+
+
+## 问题梳理
+
+### 渲染进程边接收HTML数据边渲染
+立即将该块交给渲染引擎（即Blink）进行处理和渲染，而不需要等待所有HTML数据都接收完毕。这种边接收边渲染的方式可以提高网页加载速度和用户感知的响应速度。
+
+参考：
+[渲染进程的职责和功能： https://www.chromium.org/developers/design-documents/multi-process-architecture/#TOC-Renderer-Architecture
+](https://www.chromium.org/developers/design-documents/multi-process-architecture/#TOC-Renderer-Architecture)
+

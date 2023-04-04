@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+            "file": "docs/unfiled/浏览器敲入 URL 过程.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+            "file": "docs/unfiled/浏览器敲入 URL 过程.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/unfiled/ChatGPT 沟通技巧.md"
+            "file": "docs/unfiled/浏览器敲入 URL 过程.md"
           }
         }
       }
@@ -131,11 +131,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1aceb9c13d9c0dfa",
+  "active": "3259960dd49bfdab",
   "lastOpenFiles": [
-    "docs/assets/4E887A2D-F4BB-489D-8250-4ECD23CA5A79.jpeg",
-    "docs/unfiled/浏览器敲入 URL 过程.md",
+    "docs/unfiled/如何理解函数参数都是按值传递.md",
     "docs/unfiled/ChatGPT 沟通技巧.md",
+    "docs/unfiled/call、apply、bind的原理剖析及实现.md",
+    "docs/unfiled/浏览器架构.md",
+    "docs/unfiled/浏览器敲入 URL 过程.md",
+    "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
+    "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
+    "docs/unfiled/认知与优质信息.md",
+    "docs/assets/4E887A2D-F4BB-489D-8250-4ECD23CA5A79.jpeg",
     "docs/webpack/0 - webpack.md",
     "nginx.conf",
     "scripts/generateMenu.js",
@@ -158,7 +164,6 @@
     "docs/docker/4 - nginx 基础 - demo/city-login/assets/img.png",
     "docs/docker/4 - nginx 基础 - demo/city-A/assets/img.png",
     "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/src/logo.svg",
-    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/logo192.png",
     "docs/docker/11 - traefik 自动配置证书 - demo/nuxt/README.md",
     "docs/vue/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
     "docs/vue/Vue.js 设计与实现/1 - 权衡的艺术.md",
@@ -173,11 +178,6 @@
     "docs/docker/4 - nginx 基础 - demo/Readme.md",
     "docs/linux/29 - vim move 光标移动.md",
     "docs/linux/18 - 终端快捷键.md",
-    "docs/linux/7 - 读取文件 cat、bat、less、head、tail.md",
-    "docs/linux/27 - zx 可用 javascript 编写 shell.md",
-    "docs/linux/12 - 文件内容搜索 ag.md",
-    "docs/linux/43 - awk 文本分析工具.md",
-    "docs/linux/5 - 权限-所属更改 chmod、chown.md",
-    "docs/linux/46 - dig 解析域名.md"
+    "docs/linux/7 - 读取文件 cat、bat、less、head、tail.md"
   ]
 }
