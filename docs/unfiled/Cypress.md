@@ -2,7 +2,7 @@
 1. 安装 Cypress     `npm install cypress --save-dev`
 2. 打开 Cypress 的控制台  `npx cypress open`
 3. 创建脚本 
-![](../assets/Pasted%20image%2020230408173804.png)
+![](../assets/20230408173804.png)
 
 ```js
 describe('Login', () => { // 定义一个测试套件，名称为“Login”
@@ -17,5 +17,5 @@ describe('Login', () => { // 定义一个测试套件，名称为“Login”
 ```
 
 4. 执行脚本，在 Cypress 控制台点击脚本便会执行
-![](../assets/Pasted%20image%2020230408174139.png)
+![](../assets/20230408174139.png)
 
