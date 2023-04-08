@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "195befff8baa40ac",
+        "id": "54af7b2a2d60b81c",
         "type": "tabs",
         "children": [
           {
-            "id": "ec6532f226f3cf44",
+            "id": "be8085ea28c459ee",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "docs/assets/20230408174139.png"
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/assets/20230408174139.png",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/assets/20230408174139.png",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/assets/20230408174139.png"
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md"
               }
             }
           }
@@ -144,15 +146,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ec6532f226f3cf44",
+  "active": "be8085ea28c459ee",
   "lastOpenFiles": [
+    "docs/assets/277790923f0cc9b36fb96ed9d40c209.png",
+    "docs/unfiled/Cypress.md",
+    "docs/unfiled/Generator 函数.md",
+    "docs/unfiled/HTTP.md",
+    "docs/unfiled/require module.exports 和 import export.md",
+    "docs/unfiled/vue-next release 打包发布vue源码阅读.md",
+    "docs/assets/20230408174139.png",
     "docs/assets/20230408173804.png",
     "docs/assets/20230408173737.png",
     "docs/assets/20230408173735.png",
     "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/unfiled/浏览器敲入 URL 过程.md",
-    "docs/unfiled/Cypress.md",
-    "docs/assets/20230408174139.png",
     "docs/assets/20230405140536.png",
     "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
     "docs/assets/Pasted image 20230402192600.png",
@@ -172,7 +179,6 @@
     "docs/linux/0 - linux.md",
     "docs/unfiled/问题集.md",
     "docs/questions/0 - questions.md",
-    "docs/unfiled/require module.exports 和 import export.md",
     "docs/unfiled/部署阅读疑问.md",
     "docs/index.md",
     "vue/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
@@ -181,9 +187,6 @@
     "index.md",
     "linux/26 - 全局命令行工具 shebang.md",
     "linux/26 - 全局命令行工具 shebang -",
-    "linux/26 - 全局命令行工具 shebang -.md",
-    "webpack/0 - webpack.md",
-    "questions/0 - questions.md",
     "assets/Pasted image 20230325220904.png",
     "docker/220829/10 - traefik 网关搭建 - demo/whoami/docker-compose.yml",
     "docker/220829/10 - traefik 网关搭建 - demo/log/traefik.log",
