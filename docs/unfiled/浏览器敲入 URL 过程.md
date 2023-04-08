@@ -111,12 +111,27 @@
 https://b23.tv/C8X1yEk
 
 
-## 问题梳理
 
-### 渲染进程边接收HTML数据边渲染
-立即将该块交给渲染引擎（即Blink）进行处理和渲染，而不需要等待所有HTML数据都接收完毕。这种边接收边渲染的方式可以提高网页加载速度和用户感知的响应速度。
+## 问 - 渲染进程边接收 HTML 数据边渲染
+网络进程接收数据后会放在缓冲区，当达到一定量，将缓冲区数据交给渲染进程，而不需要等待所有 HTML 数据都接收完毕。这种边接收边渲染的方式可以提高网页加载速度和用户感知的响应速度。
+
+当渲染进程接收到部分 HTML 数据时，会进行解析构建 DOM 树。在这种情况下，用户会看到部分 HTML 内容，而不需要等待整个 HTML文件 下载完毕。
+
+但是，在整个 HTML 文件下载完毕之前，浏览器无法准确估算页面元素的位置和大小。因此，浏览器通常会等待所有HTML数据都被下载后才开始进行最终的布局和绘制。
+
 
 参考：
 [渲染进程的职责和功能： https://www.chromium.org/developers/design-documents/multi-process-architecture/#TOC-Renderer-Architecture
 ](https://www.chromium.org/developers/design-documents/multi-process-architecture/#TOC-Renderer-Architecture)
 
+
+
+## 问 - 布局树可见元素，包含opacity 0 吗
+布局树只包含可见元素，包含了：
+- opacity: 0 
+- visibility: hidden
+因为这些元素在渲染时仍然占据空间和布局，并参与交互，但不会被显示出来。
+
+不包含：
+- display: none
+从视图中完全删除，不在布局树中。
