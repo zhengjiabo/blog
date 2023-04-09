@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+                "file": "docs/algorithm/动态规划.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+                "file": "docs/algorithm/动态规划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+                "file": "docs/algorithm/动态规划.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/unfiled/ChatGPT 沟通技巧.md"
+                "file": "docs/algorithm/动态规划.md"
               }
             }
           }
@@ -148,6 +148,15 @@
   },
   "active": "be8085ea28c459ee",
   "lastOpenFiles": [
+    "docs/algorithm/二叉树-总.md",
+    "docs/algorithm/BFS-DFS.md",
+    "docs/algorithm/双指针.md",
+    "docs/algorithm/回溯算法.md",
+    "docs/unfiled/机器数、真值、原码、反码、补码.md",
+    "docs/unfiled/部署阅读疑问.md",
+    "docs/unfiled/0 - unfiled.md",
+    "docs/docker/0 - docker.md",
+    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/assets/277790923f0cc9b36fb96ed9d40c209.png",
     "docs/unfiled/Cypress.md",
     "docs/unfiled/Generator 函数.md",
@@ -158,7 +167,6 @@
     "docs/assets/20230408173804.png",
     "docs/assets/20230408173737.png",
     "docs/assets/20230408173735.png",
-    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/unfiled/浏览器敲入 URL 过程.md",
     "docs/assets/20230405140536.png",
     "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
@@ -168,7 +176,6 @@
     "docs/interview/vue/0 - vue.md",
     "docs/linux/45 - curl 发送请求.md",
     "docs/unfiled/认知与优质信息.md",
-    "docs/unfiled/机器数、真值、原码、反码、补码.md",
     "README.md",
     "docs/interview/vue",
     "docs/interview",
@@ -179,13 +186,7 @@
     "docs/linux/0 - linux.md",
     "docs/unfiled/问题集.md",
     "docs/questions/0 - questions.md",
-    "docs/unfiled/部署阅读疑问.md",
     "docs/index.md",
-    "vue/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
-    "docker/11 - traefik 自动配置证书 - demo/nuxt/store/0 - store.md",
-    "docker/11 - traefik 自动配置证书 - demo/nuxt/0 - nuxt.md",
-    "index.md",
-    "linux/26 - 全局命令行工具 shebang.md",
     "linux/26 - 全局命令行工具 shebang -",
     "assets/Pasted image 20230325220904.png",
     "docker/220829/10 - traefik 网关搭建 - demo/whoami/docker-compose.yml",
@@ -194,7 +195,6 @@
     "docker/220829/10 - traefik 网关搭建 - demo/traefik.toml",
     "docker/220829/10 - traefik 网关搭建 - demo/whoami",
     "docker/220820/9 - 对象存储优化 - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "docker/220820/9 - 对象存储优化 - demo/src/logo.svg",
     "得到.canvas"
   ]
 }
