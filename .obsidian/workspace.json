@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/algorithm/动态规划.md",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/algorithm/动态规划.md",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/algorithm/动态规划.md",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/algorithm/动态规划.md"
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md"
               }
             }
           }
@@ -148,45 +148,45 @@
   },
   "active": "be8085ea28c459ee",
   "lastOpenFiles": [
+    "docs/unfiled/clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
+    "docs/unfiled/Generator 函数.md",
+    "docs/unfiled/require module.exports 和 import export.md",
+    "docs/unfiled/questions.md",
+    "docs/unfiled/Cypress.md",
+    "docs/unfiled/call、apply、bind的原理剖析及实现.md",
+    "docs/unfiled/ChatGPT 沟通技巧.md",
+    "docs/unfiled/机器数、真值、原码、反码、补码.md",
+    "docs/unfiled/如何搭建一个博客，并放到服务器上.md",
+    "docs/unfiled/Vim.md",
+    "docs/unfiled/如何写简历.md",
+    "docs/unfiled/谈判技巧.md",
+    "docs/unfiled/问题集.md",
+    "docs/unfiled/git revert、git restore 和 git reset.md",
+    "docs/unfiled/认知与优质信息.md",
+    "docs/unfiled/浏览器原理 1 - Chrome多进程架构.md",
+    "docs/unfiled/苹果更新app描述文件.md",
+    "docs/algorithm/动态规划.md",
     "docs/algorithm/二叉树-总.md",
     "docs/algorithm/BFS-DFS.md",
     "docs/algorithm/双指针.md",
     "docs/algorithm/回溯算法.md",
-    "docs/unfiled/机器数、真值、原码、反码、补码.md",
     "docs/unfiled/部署阅读疑问.md",
     "docs/unfiled/0 - unfiled.md",
     "docs/docker/0 - docker.md",
-    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/assets/277790923f0cc9b36fb96ed9d40c209.png",
-    "docs/unfiled/Cypress.md",
-    "docs/unfiled/Generator 函数.md",
     "docs/unfiled/HTTP.md",
-    "docs/unfiled/require module.exports 和 import export.md",
-    "docs/unfiled/vue-next release 打包发布vue源码阅读.md",
     "docs/assets/20230408174139.png",
     "docs/assets/20230408173804.png",
     "docs/assets/20230408173737.png",
     "docs/assets/20230408173735.png",
-    "docs/unfiled/浏览器敲入 URL 过程.md",
     "docs/assets/20230405140536.png",
-    "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
     "docs/assets/Pasted image 20230402192600.png",
-    "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
     "_tmp_8524_a2f6f4c6270033e55013a4245c96f45d",
-    "docs/interview/vue/0 - vue.md",
-    "docs/linux/45 - curl 发送请求.md",
-    "docs/unfiled/认知与优质信息.md",
-    "README.md",
     "docs/interview/vue",
     "docs/interview",
-    "docs/unfiled/clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
     "docs/assets/4E887A2D-F4BB-489D-8250-4ECD23CA5A79.jpeg",
     "docs/vite.config.ts",
     "未命名.canvas",
-    "docs/linux/0 - linux.md",
-    "docs/unfiled/问题集.md",
-    "docs/questions/0 - questions.md",
-    "docs/index.md",
     "linux/26 - 全局命令行工具 shebang -",
     "assets/Pasted image 20230325220904.png",
     "docker/220829/10 - traefik 网关搭建 - demo/whoami/docker-compose.yml",
