@@ -182,3 +182,8 @@ cd /root/obsidian/blog && rsync --exclude='.git' -lahzv /root/obsidian/blog/ /ro
 ```
 
 后续在 ios 更新文章也就上面两个命令，复制到备忘录中常用，相当简便。
+
+
+## 参考
+
+- [42号笔记：iOS上使用iSH的git同步Obsidian - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/565028534)
