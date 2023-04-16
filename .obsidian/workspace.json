@@ -20,19 +20,31 @@
             }
           },
           {
-            "id": "4daea45482e0f582",
+            "id": "2713ae2f4c2189ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/Obsidian ios 和 pc 数据同步.md",
+                "file": "docs/linux/28 - vim mode 模式.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c05b0fb3ab5d7bc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/unfiled/Obsidian 如何实现 ios 和 pc 免费共享.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"开启 brotli\"",
+                "query": "免密",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/unfiled/Obsidian ios 和 pc 数据同步.md",
+                "file": "docs/unfiled/Obsidian 如何实现 ios 和 pc 免费共享.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/unfiled/Obsidian ios 和 pc 数据同步.md",
+                "file": "docs/unfiled/Obsidian 如何实现 ios 和 pc 免费共享.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/unfiled/Obsidian ios 和 pc 数据同步.md"
+                "file": "docs/unfiled/Obsidian 如何实现 ios 和 pc 免费共享.md"
               }
             }
           }
@@ -159,10 +172,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4daea45482e0f582",
+  "active": "a88c9db8295b2d96",
   "lastOpenFiles": [
+    "docs/linux/28 - vim mode 模式.md",
+    "docs/unfiled/Obsidian 如何实现 ios 和 pc 免费共享.md",
+    "docs/unfiled/Obsidian 为什么还需要知识库-外脑.md",
     "docs/unfiled/ChatGPT 沟通技巧.md",
-    "docs/unfiled/Obsidian ios 和 pc 数据同步.md",
+    "docs/linux/18 - 终端快捷键.md",
+    "docs/linux/7 - 读取文件 cat、bat、less、head、tail.md",
+    "docs/linux/0 - linux.md",
+    "docs/unfiled/Vim.md",
     "docs/unfiled/clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
     "docs/unfiled/Generator 函数.md",
     "docs/unfiled/require module.exports 和 import export.md",
@@ -171,7 +190,6 @@
     "docs/unfiled/call、apply、bind的原理剖析及实现.md",
     "docs/unfiled/机器数、真值、原码、反码、补码.md",
     "docs/unfiled/如何搭建一个博客，并放到服务器上.md",
-    "docs/unfiled/Vim.md",
     "docs/unfiled/如何写简历.md",
     "docs/unfiled/谈判技巧.md",
     "docs/unfiled/问题集.md",
@@ -182,11 +200,6 @@
     "docs/algorithm/动态规划.md",
     "docs/algorithm/二叉树-总.md",
     "docs/algorithm/BFS-DFS.md",
-    "docs/algorithm/双指针.md",
-    "docs/algorithm/回溯算法.md",
-    "docs/unfiled/部署阅读疑问.md",
-    "docs/unfiled/0 - unfiled.md",
-    "docs/docker/0 - docker.md",
     "docs/assets/277790923f0cc9b36fb96ed9d40c209.png",
     "docs/assets/20230408174139.png",
     "docs/assets/20230408173804.png",
