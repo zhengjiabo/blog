@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/unfiled/浏览器敲入 URL 过程.md"
+            "file": "docs/unfiled/ChatGPT 沟通技巧.md"
           }
         }
       }
@@ -131,13 +131,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1aceb9c13d9c0dfa",
+  "active": "3259960dd49bfdab",
   "lastOpenFiles": [
-    "docs/unfiled/如何理解函数参数都是按值传递.md",
+    "docs/unfiled/浏览器敲入 URL 过程.md",
     "docs/unfiled/ChatGPT 沟通技巧.md",
+    "docs/unfiled/如何理解函数参数都是按值传递.md",
     "docs/unfiled/call、apply、bind的原理剖析及实现.md",
     "docs/unfiled/浏览器架构.md",
-    "docs/unfiled/浏览器敲入 URL 过程.md",
     "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
     "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
     "docs/unfiled/认知与优质信息.md",
