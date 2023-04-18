@@ -4,8 +4,8 @@
 
 注：你还需要有个服务器，需要配置 ios 和 服务器，配置会略麻烦，但使用时相当轻松。
 
-## 收费方法
-ios 下载 working copy，开通会员（100+¥）
+## 方式
+收费：ios 下载 working copy，开通会员（100+¥）
 
 这个是最方便的，working copy 可以直接 git 形式拉取和提交代码。但由于需要花费，不继续深入
 
@@ -18,7 +18,7 @@ ios 下载 working copy，开通会员（100+¥）
 2. 打开 ISH，执行
 	```bash
 	apk update
-	apk add git vim openssh openrc rsync ssh-copy-id
+	apk add git vim openssh openrc rsync ssh-copy-id inotifywait
 	```
 
 ## 2. git 设置
@@ -97,7 +97,7 @@ git remote add origin git@xxxx/blog.git
 
 ## 5. 设置服务器
 
-由于 ISH 有个 bug，几年了至今未解决， `git add` 或 `git commit` 会假死，所以无法使用正常的 git 取维护。
+由于 ISH 有个 bug，几年了至今未解决， `git add` 或 `git commit` 会假死，所以无法使用正常的 git 去维护。
 
 > 详见  issue [Git Commands Stuck Forever · Issue #1640 · ish-app/ish (github.com)](https://github.com/ish-app/ish/issues/1640)  如果这个被修复了，可以直接使用 ISH 提交拉取代码，不用服务器
 
@@ -156,14 +156,13 @@ while true; do
 done
 ```
 
-3. 服务器安装 `inotifywait` ：`apt add inotifywait`
-4. 服务器拉取项目
+3. 服务器拉取项目
 ```bash
 cd /root/scripts
 git clone git@xxxx/blog.git
 ```
 
-7. 后台起动监听脚本 
+4. 后台起动监听脚本 
 ```bash
 nohup /bin/bash /root/scripts/listen.sh > /dev/null 2>&1 &
 ```

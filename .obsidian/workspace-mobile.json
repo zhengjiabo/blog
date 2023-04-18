@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+                "file": "docs/article/Obsidian 为什么还需要知识库-外脑.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+            "file": "docs/article/Obsidian 为什么还需要知识库-外脑.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+            "file": "docs/article/Obsidian 为什么还需要知识库-外脑.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/unfiled/ChatGPT 沟通技巧.md"
+            "file": "docs/article/Obsidian 为什么还需要知识库-外脑.md"
           }
         }
       }
@@ -133,9 +133,12 @@
   },
   "active": "3259960dd49bfdab",
   "lastOpenFiles": [
+    "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
+    "docs/article/Obsidian 为什么还需要知识库-外脑.md",
     "docs/unfiled/浏览器敲入 URL 过程.md",
-    "docs/unfiled/ChatGPT 沟通技巧.md",
+    "docs/article",
     "docs/unfiled/如何理解函数参数都是按值传递.md",
+    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/unfiled/call、apply、bind的原理剖析及实现.md",
     "docs/unfiled/浏览器架构.md",
     "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
@@ -154,7 +157,6 @@
     "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/static/js/787.cf6a8955.chunk.js",
     "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/static/js/main.9afb2b4c.js.map",
     "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/static/js/main.9afb2b4c.js",
-    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/build/static/js/787.cf6a8955.chunk.js.map",
     "docs/docker/8 - 静态资源上传oss - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "docs/docker/7 - 单页应用的路由与持久缓存优化 - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "docs/docker/9 - 对象存储优化 - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
@@ -176,8 +178,6 @@
     "docs/docker/9 - 对象存储优化 - demo/README.md",
     "docs/docker/11 - traefik 自动配置证书 - demo/README.md",
     "docs/docker/4 - nginx 基础 - demo/Readme.md",
-    "docs/linux/29 - vim move 光标移动.md",
-    "docs/linux/18 - 终端快捷键.md",
-    "docs/linux/7 - 读取文件 cat、bat、less、head、tail.md"
+    "docs/linux/29 - vim move 光标移动.md"
   ]
 }
