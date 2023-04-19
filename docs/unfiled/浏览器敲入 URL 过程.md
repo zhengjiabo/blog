@@ -141,3 +141,8 @@ DNS 缓存：在本地保存访问过的域名与其 IP ，在下次访问时能
 不包含：
 - display: none
 从视图中完全删除，不在布局树中。
+
+
+## 问 - 可继承属性有哪些
+-   字体相关属性：font、font-family、font-size、font-style、font-weight、line-height
+-   文本相关属性：color、direction、letter-spacing、text-align、text-indent、text-transform、visibility、white-space、word-spacing
