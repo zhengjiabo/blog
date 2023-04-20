@@ -144,6 +144,7 @@ DNS 缓存：在本地保存访问过的域名与其 IP ，在下次访问时能
 
 
 ## 问 - 可继承属性有哪些
+<<<<<<< HEAD
 1.  字体相关属性
     -   font-family
     -   font-size
@@ -176,3 +177,7 @@ DNS 缓存：在本地保存访问过的域名与其 IP ，在下次访问时能
 5.  其他
     -   cursor
     -   visibility
+=======
+-   字体相关属性：font、font-family、font-size、font-style、font-weight、line-height
+-   文本相关属性：color、direction、letter-spacing、text-align、text-indent、text-transform、visibility、white-space、word-spacing
+>>>>>>> 3bf3e5bfc29d19f612e98a20278c89f2bfa8d535
