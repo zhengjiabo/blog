@@ -13,50 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2713ae2f4c2189ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/linux/28 - vim mode 模式.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c05b0fb3ab5d7bc2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/article/Obsidian 为什么还需要知识库-外脑.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1140cb1f63822fee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
+                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
+                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
+                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md"
+                "file": "docs/unfiled/浏览器敲入 URL 过程.md"
               }
             }
           }
@@ -183,13 +146,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e9b2ad56fb300a95",
+  "active": "be8085ea28c459ee",
   "lastOpenFiles": [
+    "docs/unfiled/ChatGPT 沟通技巧.md",
+    "docs/webpack/7 - code spliting 运行时分析.md",
     "docs/article/Obsidian 为什么还需要知识库-外脑.md",
     "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
     "docs/article",
     "docs/linux/28 - vim mode 模式.md",
-    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/linux/18 - 终端快捷键.md",
     "docs/linux/7 - 读取文件 cat、bat、less、head、tail.md",
     "docs/linux/0 - linux.md",

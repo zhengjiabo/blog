@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/article/Obsidian 为什么还需要知识库-外脑.md",
+                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "4926337bd3669231",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/unfiled/部分 CSS 属性的使用场景.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/article/Obsidian 为什么还需要知识库-外脑.md",
+            "file": "docs/unfiled/部分 CSS 属性的使用场景.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/article/Obsidian 为什么还需要知识库-外脑.md",
+            "file": "docs/unfiled/部分 CSS 属性的使用场景.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +127,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/article/Obsidian 为什么还需要知识库-外脑.md"
+            "file": "docs/unfiled/部分 CSS 属性的使用场景.md"
           }
         }
       }
@@ -131,14 +144,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3259960dd49bfdab",
+  "active": "4926337bd3669231",
   "lastOpenFiles": [
+    "docs/unfiled/浏览器敲入 URL 过程.md",
+    "docs/unfiled/部分 CSS 属性的使用场景.md",
+    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
     "docs/article/Obsidian 为什么还需要知识库-外脑.md",
-    "docs/unfiled/浏览器敲入 URL 过程.md",
     "docs/article",
     "docs/unfiled/如何理解函数参数都是按值传递.md",
-    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/unfiled/call、apply、bind的原理剖析及实现.md",
     "docs/unfiled/浏览器架构.md",
     "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
@@ -177,7 +191,6 @@
     "docs/docker/7 - 单页应用的路由与持久缓存优化 - demo/README.md",
     "docs/docker/9 - 对象存储优化 - demo/README.md",
     "docs/docker/11 - traefik 自动配置证书 - demo/README.md",
-    "docs/docker/4 - nginx 基础 - demo/Readme.md",
-    "docs/linux/29 - vim move 光标移动.md"
+    "docs/docker/4 - nginx 基础 - demo/Readme.md"
   ]
 }
