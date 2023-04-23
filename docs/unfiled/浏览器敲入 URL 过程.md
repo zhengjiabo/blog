@@ -40,7 +40,7 @@
 4. DNS解析，目的获取服务器 IP
 	- 有 DNS 缓存，返回缓存里的服务器 IP
 	- 否则向 DNS 服务器请求解析，获取服务器 IP
-5. 如果是 HTTPS 协议，需建立TLS连接
+5. 如果是 HTTPS 协议，需建立 TLS 连接
 6. 是否超过 TCP 连接建立数量
 7. 建立 TCP 连接
 8. 浏览器的【网络进程】构建请求行、请求头等信息，并将该域名相关的Cookie放在请求头中，向服务器发送构建的请求
@@ -99,7 +99,7 @@
 - tls连接
 - tcp链接握手
 - http
-- 可继承属性有哪些
+
 
 疑问
 - node 流形式传输html文件，如果在中间 debug 不继续传输后续内容，提交文档则不会触发？页面将一直空白未渲染？（网络进程能否变下载，边往渲染进程传输数据）
@@ -144,7 +144,6 @@ DNS 缓存：在本地保存访问过的域名与其 IP ，在下次访问时能
 
 
 ## 问 - 可继承属性有哪些
-<<<<<<< HEAD
 1.  字体相关属性
     -   font-family
     -   font-size
@@ -152,8 +151,7 @@ DNS 缓存：在本地保存访问过的域名与其 IP ，在下次访问时能
     -   font-variant
     -   font-weight
     -   line-height
-
- 2. 文本相关属性
+2.  文本相关属性
     -   color
     -   direction
     -   letter-spacing
@@ -162,22 +160,17 @@ DNS 缓存：在本地保存访问过的域名与其 IP ，在下次访问时能
     -   text-transform
     -   white-space
     -   word-spacing
-
-3.  表格相关属性 
+3.  表格相关属性
     -   border-collapse
     -   border-spacing
     -   caption-side
     -   empty-cells
-
 4.  列表相关属性
     -   list-style
     -   list-style-type
     -   list-style-position
-
 5.  其他
     -   cursor
     -   visibility
-=======
--   字体相关属性：font、font-family、font-size、font-style、font-weight、line-height
--   文本相关属性：color、direction、letter-spacing、text-align、text-indent、text-transform、visibility、white-space、word-spacing
->>>>>>> 3bf3e5bfc29d19f612e98a20278c89f2bfa8d535
+
+te
