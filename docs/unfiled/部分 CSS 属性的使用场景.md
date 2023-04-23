@@ -49,7 +49,7 @@
 ## font-variant
 
 `font-variant` 属性用于设置字体的变体。
-- `normal` 表示正常变体
+- `normal` 表示正常体
 - `small-caps` 表示小型大写字母变体
 
 
