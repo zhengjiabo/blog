@@ -11,7 +11,7 @@
 
 ## text-transform
 
-`text-transform` 属性用于转换文本的大小写。它可以有三个值：
+`text-transform` 属性用于转换文本的大小写。
 - `none` 表示不转换
 - `uppercase` 表示将所有字符转换为大写
 - `lowercase` 表示将所有字符转换为小写
@@ -20,7 +20,7 @@
 
 ## white-space
 
-`white-space` 属性用于设置空白符的处理方式。它可以有三个值：
+`white-space` 属性用于设置空白符的处理方式。
 - `normal` 表示将多个连续的空白符合并为一个空格
 - `pre` 表示保留空白符的原有格式
 - `nowrap` 表示不换行
@@ -40,7 +40,7 @@
 
 ## font-style
 
-`font-style` 属性用于设置字体的风格。它可以有三个值：
+`font-style` 属性用于设置字体的风格。
 - `normal` 表示正常风格
 - `italic` 表示斜体风格
 - `oblique` 表示倾斜风格
@@ -48,14 +48,14 @@
 
 ## font-variant
 
-`font-variant` 属性用于设置字体的变体。它可以有两个值：
+`font-variant` 属性用于设置字体的变体。
 - `normal` 表示正常变体
 - `small-caps` 表示小型大写字母变体
 
 
 ## border-collapse
 
-`border-collapse` 属性用于设置表格边框的折叠方式。它可以有两个值：
+`border-collapse` 属性用于设置表格边框的折叠方式。
 - `separate` 表示边框不折叠
 - `collapse` 表示边框折叠为一条线
 
@@ -73,3 +73,4 @@
 ## empty-cells
 
 `empty-cells` 属性用于设置空单元格的显示方式。它可以有两个值：`show` 表示显示空单元格，`hide` 表示隐藏空单元格。
+
