@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/部分 CSS 属性的使用场景.md",
+                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/unfiled/部分 CSS 属性的使用场景.md",
+            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/unfiled/部分 CSS 属性的使用场景.md",
+            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/unfiled/部分 CSS 属性的使用场景.md"
+            "file": "docs/unfiled/ChatGPT 沟通技巧.md"
           }
         }
       }
@@ -133,6 +133,9 @@
   },
   "active": "3259960dd49bfdab",
   "lastOpenFiles": [
+    "docs/unfiled/Cypress.md",
+    "docs/unfiled/如何写简历.md",
+    "docs/unfiled/部署阅读疑问.md",
     "docs/unfiled/浏览器敲入 URL 过程.md",
     "docs/unfiled/部分 CSS 属性的使用场景.md",
     "docs/article/Obsidian 为什么还需要知识库-外脑.md",
@@ -175,9 +178,6 @@
     "docs/vue/Vue.js 设计与实现/2 - 框架设计的核心要素.md",
     "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/README.md",
     "docs/docker/8 - 静态资源上传oss - demo/README.md",
-    "docs/docker/7 - 单页应用的路由与持久缓存优化 - demo/README.md",
-    "docs/docker/9 - 对象存储优化 - demo/README.md",
-    "docs/docker/11 - traefik 自动配置证书 - demo/README.md",
-    "docs/docker/4 - nginx 基础 - demo/Readme.md"
+    "docs/docker/7 - 单页应用的路由与持久缓存优化 - demo/README.md"
   ]
 }
