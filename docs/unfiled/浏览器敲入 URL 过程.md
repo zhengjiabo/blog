@@ -172,5 +172,3 @@ DNS 缓存：在本地保存访问过的域名与其 IP ，在下次访问时能
 5.  其他
     -   cursor
     -   visibility
-
-te

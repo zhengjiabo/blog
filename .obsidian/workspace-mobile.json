@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+                "file": "docs/unfiled/部分 CSS 属性的使用场景.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+            "file": "docs/unfiled/部分 CSS 属性的使用场景.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+            "file": "docs/unfiled/部分 CSS 属性的使用场景.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/unfiled/浏览器敲入 URL 过程.md"
+            "file": "docs/unfiled/部分 CSS 属性的使用场景.md"
           }
         }
       }
@@ -133,10 +133,10 @@
   },
   "active": "3259960dd49bfdab",
   "lastOpenFiles": [
+    "docs/unfiled/浏览器敲入 URL 过程.md",
     "docs/unfiled/部分 CSS 属性的使用场景.md",
     "docs/article/Obsidian 为什么还需要知识库-外脑.md",
     "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
-    "docs/unfiled/浏览器敲入 URL 过程.md",
     "docs/article",
     "docs/unfiled/如何理解函数参数都是按值传递.md",
     "docs/unfiled/ChatGPT 沟通技巧.md",
