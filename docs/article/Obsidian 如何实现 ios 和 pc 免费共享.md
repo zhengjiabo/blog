@@ -95,6 +95,22 @@ git config --global --add safe.directory /root/obsidian/blog
 git remote add origin git@xxxx/blog.git
 ```
 
+
+9. 设置中文兼容，因为 `obsidian` 基本都是中文命名
+```bash
+  
+# 该命令表示提交命令的时候使用 utf-8 编码集 
+git config --global i18n.commitencoding utf-8 
+
+# 该命令表示日志输出时使用 utf-8 编码集显示 
+git config --global i18n.logoutputencoding utf-8
+
+# 该命令使得 git status 中文正常显示
+git config --global core.quotepath false
+
+```
+
+
 ## 5. 设置服务器
 
 由于 ISH 有个 bug，几年了至今未解决， `git add` 或 `git commit` 会假死，所以无法使用正常的 git 去维护。
