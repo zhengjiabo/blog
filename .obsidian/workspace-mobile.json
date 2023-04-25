@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+                "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+            "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/unfiled/ChatGPT 沟通技巧.md",
+            "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/unfiled/ChatGPT 沟通技巧.md"
+            "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md"
           }
         }
       }
@@ -133,6 +133,7 @@
   },
   "active": "3259960dd49bfdab",
   "lastOpenFiles": [
+    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/unfiled/Cypress.md",
     "docs/unfiled/如何写简历.md",
     "docs/unfiled/部署阅读疑问.md",
@@ -142,7 +143,6 @@
     "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
     "docs/article",
     "docs/unfiled/如何理解函数参数都是按值传递.md",
-    "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/unfiled/call、apply、bind的原理剖析及实现.md",
     "docs/unfiled/浏览器架构.md",
     "docs/interview/vue/Vue 中 nextTick 的实现原理.md",

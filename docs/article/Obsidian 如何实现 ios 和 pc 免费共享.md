@@ -170,17 +170,43 @@ nohup /bin/bash /root/scripts/listen.sh > /dev/null 2>&1 &
 
 ## 6. ios 提交文档
 
-1. 在 ios 写完文章后，打开 ISH 发送到服务器
+1. 在 ios ISH 根目录新建 `push.sh` 文件，用于提交代码：`vim push.sh`
 ```bash
-rsync -lahzv --exclude='.git' /root/obsidian/blog/ 服务器简称:/root/scripts/blog/
+#!/bin/bash 
+ 
+# 项目路径和目标服务器信息 
+LOCAL_DIR="/root/obsidian/blog/" 
+LOCAL_BK="/root/bk/blog/" 
+TARGET_ALIAS="bo" 
+TARGET_PATH="/root/scripts/blog/" 
+  
+# 切换到Git项目根目录 
+cd $LOCAL_DIR 
+  
+# 获取Git变更文件列表 上传服务器并备份到本地 bk 文件夹
+git status --porcelain | sed 's/^ //g' | cut -d ' ' -f 2- | sed 's/"//g' | xargs -I {} sh -c "rsync -lahzv '${LOCAL_DIR}{}' ${TARGET_ALIAS}:'${TARGET_PATH}{}'; rsync -lahzv '${LOCAL_DIR}{}' '${LOCAL_BK}{}'" 
 ```
 
-2. 服务器会监听并提交，此时可以将 IOS 的代码备份（以防万一），并重置代码、拉取 git 最新代码
+2. 在 ios ISH 根目录新建 `pull.sh` 文件，用于拉取代码：`vim pull.sh`
 ```bash
-cd /root/obsidian/blog && rsync --exclude='.git' -lahzv /root/obsidian/blog/ /root/bk/blog/ &&  git reset --hard HEAD && git pull
+#!/bin/bash
+
+# 项目路径和目标服务器信息
+LOCAL_DIR="/root/obsidian/blog/"
+
+# 切换到Git项目根目录
+cd $LOCAL_DIR
+
+git reset --hard HEAD
+git pull
 ```
 
-后续在 ios 更新文章也就上面两个命令，复制到备忘录中常用，相当简便。
+
+3. 在 ios 写完文章后，输入 `./push.sh` 执行提交代码
+
+4. 等待代码发布完成，输入`./pull.sh` 执行拉取代码
+
+后续在 ios 更新文章也就上面两个命令，相当简便。
 
 
 ## 参考
