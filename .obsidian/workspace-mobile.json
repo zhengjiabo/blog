@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
+                "file": "docs/unfiled/HTTPS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
+            "file": "docs/unfiled/HTTPS.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
+            "file": "docs/unfiled/HTTPS.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md"
+            "file": "docs/unfiled/HTTPS.md"
           }
         }
       }
@@ -133,14 +133,16 @@
   },
   "active": "3259960dd49bfdab",
   "lastOpenFiles": [
+    "docs/unfiled/HTTP.md",
+    "docs/unfiled/HTTPS.md",
+    "docs/unfiled/浏览器敲入 URL 过程.md",
+    "docs/unfiled/部分 CSS 属性的使用场景.md",
+    "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
     "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/unfiled/Cypress.md",
     "docs/unfiled/如何写简历.md",
     "docs/unfiled/部署阅读疑问.md",
-    "docs/unfiled/浏览器敲入 URL 过程.md",
-    "docs/unfiled/部分 CSS 属性的使用场景.md",
     "docs/article/Obsidian 为什么还需要知识库-外脑.md",
-    "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
     "docs/article",
     "docs/unfiled/如何理解函数参数都是按值传递.md",
     "docs/unfiled/call、apply、bind的原理剖析及实现.md",
@@ -176,8 +178,6 @@
     "docs/vue/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
     "docs/vue/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
     "docs/vue/Vue.js 设计与实现/2 - 框架设计的核心要素.md",
-    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/README.md",
-    "docs/docker/8 - 静态资源上传oss - demo/README.md",
-    "docs/docker/7 - 单页应用的路由与持久缓存优化 - demo/README.md"
+    "docs/docker/6 - 构建缓存优化技术及多阶段构建 - demo/README.md"
   ]
 }
