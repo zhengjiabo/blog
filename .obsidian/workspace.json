@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4e63b0d907a8611b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -62,6 +73,14 @@
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "d092aab855ae3699",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -146,7 +165,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "be8085ea28c459ee",
+  "active": "4e63b0d907a8611b",
   "lastOpenFiles": [
     "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/webpack/7 - code spliting 运行时分析.md",
