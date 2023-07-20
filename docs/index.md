@@ -26,3 +26,18 @@ hero:
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<script id="fdhfhhfhfh">
+  window.difyChatbotConfig = { token: 'vV4NTVAUuNR5IhLL' }
+  // (function () {
+    var script = document.createElement('script') 
+    script.src = 'https://udify.app/embed.min.js'
+    script.id = 'vV4NTVAUuNR5IhLL'
+    // script.defer = true
+    document.head.appendChild(script)
+
+    script = document.createElement('script')
+    script.innerText = 'embedChatbot()'
+    script.defer = true
+    document.body.appendChild(script)
+  // })()
+</script>
