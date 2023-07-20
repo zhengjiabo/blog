@@ -26,7 +26,9 @@ hero:
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<script id="fdhfhhfhfh">
+<script setup>
+import { ref, onMounted } from 'vue'
+const init =  () => {
   const theme = localStorage.getItem('vitepress-theme-appearance')
   if (!theme) {
     localStorage.setItem('vitepress-theme-appearance', 'dark')
@@ -42,5 +44,9 @@ hero:
     btn.click()
   };
   document.head.appendChild(script)
+}
 
+onMounted(() => {
+  init()
+})
 </script>
