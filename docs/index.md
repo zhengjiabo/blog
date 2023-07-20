@@ -6,6 +6,9 @@ hero:
   name: Knowledge Framework
   text: 知识框架梳理
   tagline: 使用 Obsidian 维护
+  image:
+    light: /img/logo/light.png
+    dark: /img/logo/dark.png
   # actions:
   #   - theme: brand
   #     text: Markdown Examples
