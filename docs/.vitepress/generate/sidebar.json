@@ -407,6 +407,22 @@
       ]
     }
   ],
+  "/article/": [
+    {
+      "text": "article",
+      "link": "/article/0 - article.md",
+      "items": [
+        {
+          "text": "Obsidian 为什么还需要知识库-外脑.md",
+          "link": "/article/Obsidian 为什么还需要知识库-外脑.md"
+        },
+        {
+          "text": "Obsidian 如何实现 ios 和 pc 免费共享.md",
+          "link": "/article/Obsidian 如何实现 ios 和 pc 免费共享.md"
+        }
+      ]
+    }
+  ],
   "/interview/": [
     {
       "text": "vue",
@@ -429,28 +445,40 @@
       "link": "/unfiled/0 - unfiled.md",
       "items": [
         {
-          "text": "call、apply、bind的原理剖析及实现.md",
-          "link": "/unfiled/call、apply、bind的原理剖析及实现.md"
-        },
-        {
           "text": "ChatGPT 沟通技巧.md",
           "link": "/unfiled/ChatGPT 沟通技巧.md"
         },
         {
-          "text": "clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
-          "link": "/unfiled/clientLeft、clientHeight、clientWidth、clientHeight等区别.md"
+          "text": "Cypress.md",
+          "link": "/unfiled/Cypress.md"
         },
         {
           "text": "Generator 函数.md",
           "link": "/unfiled/Generator 函数.md"
         },
         {
-          "text": "git revert、git restore 和 git reset.md",
-          "link": "/unfiled/git revert、git restore 和 git reset.md"
-        },
-        {
           "text": "HTTP.md",
           "link": "/unfiled/HTTP.md"
+        },
+        {
+          "text": "HTTPS.md",
+          "link": "/unfiled/HTTPS.md"
+        },
+        {
+          "text": "Vim.md",
+          "link": "/unfiled/Vim.md"
+        },
+        {
+          "text": "call、apply、bind的原理剖析及实现.md",
+          "link": "/unfiled/call、apply、bind的原理剖析及实现.md"
+        },
+        {
+          "text": "clientLeft、clientHeight、clientWidth、clientHeight等区别.md",
+          "link": "/unfiled/clientLeft、clientHeight、clientWidth、clientHeight等区别.md"
+        },
+        {
+          "text": "git revert、git restore 和 git reset.md",
+          "link": "/unfiled/git revert、git restore 和 git reset.md"
         },
         {
           "text": "questions.md",
@@ -459,10 +487,6 @@
         {
           "text": "require module.exports 和 import export.md",
           "link": "/unfiled/require module.exports 和 import export.md"
-        },
-        {
-          "text": "Vim.md",
-          "link": "/unfiled/Vim.md"
         },
         {
           "text": "vue-devtools 如何打开指定vue文件源码阅读.md",
@@ -523,6 +547,10 @@
         {
           "text": "谈判技巧.md",
           "link": "/unfiled/谈判技巧.md"
+        },
+        {
+          "text": "部分 CSS 属性的使用场景.md",
+          "link": "/unfiled/部分 CSS 属性的使用场景.md"
         },
         {
           "text": "部署阅读疑问.md",

@@ -1,11 +1,17 @@
 {
-  "hash": "e9164acb",
-  "browserHash": "355c0973",
+  "hash": "da7f3648",
+  "browserHash": "6c01b0c0",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "4b74a854",
+      "fileHash": "94fd5a4b",
+      "needsInterop": false
+    },
+    "@vue/devtools-api": {
+      "src": "../../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "@vue_devtools-api.js",
+      "fileHash": "0a72d5cf",
       "needsInterop": false
     }
   },

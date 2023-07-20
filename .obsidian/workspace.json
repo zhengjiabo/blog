@@ -23,9 +23,11 @@
             "id": "4e63b0d907a8611b",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.3.5"
+                "file": "docs/linux/3 - 用户相关 whoami、id、who、w、last.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -104,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+                "file": "docs/linux/3 - 用户相关 whoami、id、who、w、last.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
+                "file": "docs/linux/3 - 用户相关 whoami、id、who、w、last.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/unfiled/浏览器敲入 URL 过程.md"
+                "file": "docs/linux/3 - 用户相关 whoami、id、who、w、last.md"
               }
             }
           }
@@ -167,6 +169,20 @@
   },
   "active": "4e63b0d907a8611b",
   "lastOpenFiles": [
+    "docs/article/0 - article.md",
+    "docs/public/img/logo/light.png",
+    "docs/public/img/logo/dark.png",
+    "docs/public/img/logo",
+    "docs/public/img",
+    "docs/public/favicon.ico",
+    "docs/public",
+    "public/img/logo/light.png",
+    "public/img/logo/dark.png",
+    "public/img/logo",
+    "public/favicon.ico",
+    "public/img",
+    "public",
+    "docs/linux/2 - 目录与切换操作 cd、pwd、ls、exa、tree.md",
     "docs/unfiled/ChatGPT 沟通技巧.md",
     "docs/webpack/7 - code spliting 运行时分析.md",
     "docs/article/Obsidian 为什么还需要知识库-外脑.md",
@@ -191,29 +207,14 @@
     "docs/unfiled/git revert、git restore 和 git reset.md",
     "docs/unfiled/认知与优质信息.md",
     "docs/unfiled/浏览器原理 1 - Chrome多进程架构.md",
-    "docs/unfiled/苹果更新app描述文件.md",
-    "docs/algorithm/动态规划.md",
-    "docs/algorithm/二叉树-总.md",
     "docs/assets/277790923f0cc9b36fb96ed9d40c209.png",
     "docs/assets/20230408174139.png",
     "docs/assets/20230408173804.png",
     "docs/assets/20230408173737.png",
     "docs/assets/20230408173735.png",
     "docs/assets/20230405140536.png",
-    "docs/assets/Pasted image 20230402192600.png",
     "_tmp_8524_a2f6f4c6270033e55013a4245c96f45d",
-    "docs/interview/vue",
-    "docs/interview",
-    "docs/assets/4E887A2D-F4BB-489D-8250-4ECD23CA5A79.jpeg",
-    "docs/vite.config.ts",
     "未命名.canvas",
-    "linux/26 - 全局命令行工具 shebang -",
-    "assets/Pasted image 20230325220904.png",
-    "docker/220829/10 - traefik 网关搭建 - demo/whoami/docker-compose.yml",
-    "docker/220829/10 - traefik 网关搭建 - demo/log/traefik.log",
-    "docker/220829/10 - traefik 网关搭建 - demo/log/traefik-access.json",
-    "docker/220829/10 - traefik 网关搭建 - demo/traefik.toml",
-    "docker/220820/9 - 对象存储优化 - demo/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "得到.canvas"
   ]
 }
