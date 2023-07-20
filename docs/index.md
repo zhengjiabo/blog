@@ -27,17 +27,20 @@ hero:
 ---
 
 <script id="fdhfhhfhfh">
+  const theme = localStorage.getItem('vitepress-theme-appearance')
+  if (!theme) {
+    localStorage.setItem('vitepress-theme-appearance', 'dark')
+  }
   window.difyChatbotConfig = { token: 'vV4NTVAUuNR5IhLL' }
-  // (function () {
-    var script = document.createElement('script') 
-    script.src = 'https://udify.app/embed.min.js'
-    script.id = 'vV4NTVAUuNR5IhLL'
-    // script.defer = true
-    document.head.appendChild(script)
+  var script = document.createElement('script') 
+  script.src = 'https://udify.app/embed.min.js'
+  script.id = 'vV4NTVAUuNR5IhLL'
+  script.defer = true
+  script.onload = function() {
+    embedChatbot()
+    const btn = document.getElementById("dify-chatbot-bubble-button")
+    btn.click()
+  };
+  document.head.appendChild(script)
 
-    script = document.createElement('script')
-    script.innerText = 'embedChatbot()'
-    script.defer = true
-    document.body.appendChild(script)
-  // })()
 </script>
