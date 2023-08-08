@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/linux/3 - 用户相关 whoami、id、who、w、last.md",
+                "file": "docs/docker/1 - Docker基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/linux/3 - 用户相关 whoami、id、who、w、last.md",
+                "file": "docs/docker/1 - Docker基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/linux/3 - 用户相关 whoami、id、who、w、last.md",
+                "file": "docs/docker/1 - Docker基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/linux/3 - 用户相关 whoami、id、who、w、last.md"
+                "file": "docs/docker/1 - Docker基础.md"
               }
             }
           }
@@ -167,8 +167,25 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4e63b0d907a8611b",
+  "active": "e9b2ad56fb300a95",
   "lastOpenFiles": [
+    "docs/docker/Untitled-1.md",
+    "docs/docker/4 - nginx 基础.md",
+    "docs/linux/0 - linux.md",
+    "docs/linux/34 - vim plugin 插件.md",
+    "docs/linux/24 - for-if 遍历、判断.md",
+    "docs/linux/28 - vim mode 模式.md",
+    "docs/linux/14 - ssh 隧道.md",
+    "docs/linux/1 - 帮助命令 man、--help、tldr.md",
+    "docs/http/7 - 请求头列表.md",
+    "docs/assets/20230408174139.png",
+    "docs/http/3 - nc-telnet 发送 TCP-UDP.md",
+    "docs/http/2 - HTTPS加密机制.md",
+    "docs/http/1 - HTTP 报文.md",
+    "docs/http/0 - http.md",
+    "docs/unfiled/认知与优质信息.md",
+    "docs/unfiled/部分 CSS 属性的使用场景.md",
+    "docs/linux/3 - 用户相关 whoami、id、who、w、last.md",
     "node_modules/shiki/dist/onig.wasm",
     "node_modules/shiki/dist/index.d.ts",
     "node_modules/shiki/samples/zenscript.sample",
@@ -179,7 +196,6 @@
     "node_modules/shiki/samples/turtle.sample",
     "node_modules/shiki/samples/tsx.sample",
     "node_modules/shiki/samples/tasl.sample",
-    "node_modules/shiki/samples/stata.sample",
     "node_modules/shiki/README.md",
     "node_modules/vitepress-plugin-search/node_modules/vite/README.md",
     "node_modules/vitepress-plugin-search/node_modules/vite/LICENSE.md",
@@ -190,28 +206,12 @@
     "node_modules/@vue/compiler-sfc/README.md",
     "node_modules/vitepress/README.md",
     "node_modules/vitepress/template/markdown-examples.md",
-    "node_modules/vitepress/template/index.md",
-    "node_modules/vitepress/template/api-examples.md",
-    "node_modules/vue/README.md",
-    "node_modules/preact/README.md",
-    "node_modules/esbuild/README.md",
-    "node_modules/esbuild/LICENSE.md",
-    "node_modules/@vueuse/shared/node_modules/vue-demi/README.md",
-    "node_modules/@vueuse/core/node_modules/vue-demi/README.md",
-    "node_modules/@algolia/autocomplete-core/README.md",
-    "node_modules/postcss/README.md",
-    "node_modules/@vue/runtime-dom/README.md",
-    "node_modules/@vitejs/plugin-vue/README.md",
-    "node_modules/@vue/compiler-core/README.md",
-    "node_modules/@docsearch/react/README.md",
-    "node_modules/@docsearch/css/README.md",
     "node_modules/vitepress-plugin-search/dist/flex-logo.svg",
     "docs/public/img/logo/light.png",
     "docs/public/img/logo/dark.png",
     "public/img/logo/light.png",
     "public/img/logo/dark.png",
     "docs/assets/277790923f0cc9b36fb96ed9d40c209.png",
-    "docs/assets/20230408174139.png",
     "docs/assets/20230408173804.png",
     "docs/assets/20230408173737.png",
     "docs/assets/20230408173735.png",
