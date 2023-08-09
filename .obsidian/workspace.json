@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8268a1bab164aece",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/vue/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f7bb9cd262ad30e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/docker/1 - Docker基础.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/docker/1 - Docker基础.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/docker/1 - Docker基础.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -167,8 +191,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e9b2ad56fb300a95",
+  "active": "f7bb9cd262ad30e1",
   "lastOpenFiles": [
+    "docs/vue/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
+    "conflict-files-obsidian-git.md",
+    "docs/assets/Pasted image 20230809174256.png",
+    "docs/assets/Pasted image 20230809172026.png",
+    "docs/assets/Pasted image 20230809170928.png",
+    "docs/vue/Vue.js 设计与实现/1 - 权衡的艺术.md",
+    "docs/vue/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
+    "docs/vue/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
+    "docs/docker/1 - Docker基础.md",
     "docs/docker/Untitled-1.md",
     "docs/docker/4 - nginx 基础.md",
     "docs/linux/0 - linux.md",
@@ -199,22 +232,12 @@
     "node_modules/shiki/README.md",
     "node_modules/vitepress-plugin-search/node_modules/vite/README.md",
     "node_modules/vitepress-plugin-search/node_modules/vite/LICENSE.md",
-    "node_modules/vite/README.md",
-    "node_modules/vite/LICENSE.md",
-    "node_modules/rollup/README.md",
-    "node_modules/rollup/LICENSE.md",
-    "node_modules/@vue/compiler-sfc/README.md",
-    "node_modules/vitepress/README.md",
-    "node_modules/vitepress/template/markdown-examples.md",
     "node_modules/vitepress-plugin-search/dist/flex-logo.svg",
     "docs/public/img/logo/light.png",
     "docs/public/img/logo/dark.png",
     "public/img/logo/light.png",
     "public/img/logo/dark.png",
     "docs/assets/277790923f0cc9b36fb96ed9d40c209.png",
-    "docs/assets/20230408173804.png",
-    "docs/assets/20230408173737.png",
-    "docs/assets/20230408173735.png",
     "未命名.canvas",
     "得到.canvas"
   ]
