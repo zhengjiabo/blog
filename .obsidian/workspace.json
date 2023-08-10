@@ -42,21 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f7bb9cd262ad30e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -130,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "docs/vue/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "docs/vue/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "docs/vue/Vue.js 设计与实现/21 - 简单 Diff 算法.md"
               }
             }
           }
@@ -191,10 +179,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f7bb9cd262ad30e1",
+  "active": "8268a1bab164aece",
   "lastOpenFiles": [
-    "docs/vue/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
     "conflict-files-obsidian-git.md",
+    "docs/vue/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
     "docs/assets/Pasted image 20230809174256.png",
     "docs/assets/Pasted image 20230809172026.png",
     "docs/assets/Pasted image 20230809170928.png",

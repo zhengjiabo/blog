@@ -63,7 +63,9 @@ function patchElement(oldNode, newNode) {
 以上步骤操作如图
 ![](../../assets/Pasted%20image%2020230809174256.png)
 
+
  具体代码入下
+ 
 ```js
 function patchChildren(n1, n2, container) {
   if (typeof n2.children === 'string') {
