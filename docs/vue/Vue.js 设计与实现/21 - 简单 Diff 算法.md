@@ -37,6 +37,7 @@ categories:
 已知如何找到待移动的节点，下一步便是移动节点
 
 节点的真实 DOM 存在 `vnode.el` 中，在移动前会对新节点打内容补丁（因为新节点没有 `vnode.el`  属性）
+
 ```js
 function patchElement(oldNode, newNode) {
   // 新的 vnode 也引用了真实 DOM 元素
