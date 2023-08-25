@@ -170,6 +170,7 @@
   "active": "4e63b0d907a8611b",
   "lastOpenFiles": [
     "docs/algorithm/动态规划.md",
+    "docs/unfiled/浏览器敲入 URL 过程.md",
     "docs/algorithm/动态规划-买卖股票-121.md",
     "docs/algorithm/轮转数组-189.md",
     "docs/docker/1 - Docker基础.md",
@@ -198,7 +199,6 @@
     "docs/linux/1 - 帮助命令 man、--help、tldr.md",
     "docs/http/7 - 请求头列表.md",
     "docs/assets/20230408174139.png",
-    "docs/http/3 - nc-telnet 发送 TCP-UDP.md",
     "node_modules/shiki/dist/onig.wasm",
     "node_modules/shiki/dist/index.d.ts",
     "node_modules/shiki/samples/zenscript.sample",
