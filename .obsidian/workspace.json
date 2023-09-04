@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/algorithm/动态规划-买卖股票-121.md",
+                "file": "docs/article/GItHub 趋势项目整理.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/algorithm/动态规划-买卖股票-121.md",
+                "file": "docs/article/GItHub 趋势项目整理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/algorithm/动态规划-买卖股票-121.md",
+                "file": "docs/article/GItHub 趋势项目整理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/algorithm/动态规划-买卖股票-121.md"
+                "file": "docs/article/GItHub 趋势项目整理.md"
               }
             }
           }
@@ -167,11 +167,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4e63b0d907a8611b",
+  "active": "e9b2ad56fb300a95",
   "lastOpenFiles": [
+    "docs/article/Obsidian 为什么还需要知识库-外脑.md",
+    "docs/article/GItHub 趋势项目整理.md",
+    "docs/algorithm/动态规划-买卖股票-121.md",
     "docs/algorithm/动态规划.md",
     "docs/unfiled/浏览器敲入 URL 过程.md",
-    "docs/algorithm/动态规划-买卖股票-121.md",
     "docs/algorithm/轮转数组-189.md",
     "docs/docker/1 - Docker基础.md",
     "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
@@ -196,8 +198,6 @@
     "docs/linux/24 - for-if 遍历、判断.md",
     "docs/linux/28 - vim mode 模式.md",
     "docs/linux/14 - ssh 隧道.md",
-    "docs/linux/1 - 帮助命令 man、--help、tldr.md",
-    "docs/http/7 - 请求头列表.md",
     "docs/assets/20230408174139.png",
     "node_modules/shiki/dist/onig.wasm",
     "node_modules/shiki/dist/index.d.ts",
