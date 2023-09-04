@@ -13,7 +13,7 @@
 ## 其它
 
 - [IceWhaleTech/CasaOS: CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system. --- IceWhaleTech/CasaOS：CasaOS - 一个简单，易于使用，优雅的开源个人云系统。 (github.com)](https://github.com/IceWhaleTech/CasaOS)
-	- 描述：个人云，
+	- 描述：个人云，纯 UI 数据所有权归个人，代码开源自由度高。
 
 
 
