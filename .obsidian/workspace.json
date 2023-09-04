@@ -167,8 +167,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e9b2ad56fb300a95",
+  "active": "4e63b0d907a8611b",
   "lastOpenFiles": [
+    "docs/assets/Pasted image 20230904193004.png",
     "docs/article/Obsidian 为什么还需要知识库-外脑.md",
     "docs/article/GItHub 趋势项目整理.md",
     "docs/algorithm/动态规划-买卖股票-121.md",
@@ -197,7 +198,6 @@
     "docs/linux/34 - vim plugin 插件.md",
     "docs/linux/24 - for-if 遍历、判断.md",
     "docs/linux/28 - vim mode 模式.md",
-    "docs/linux/14 - ssh 隧道.md",
     "docs/assets/20230408174139.png",
     "node_modules/shiki/dist/onig.wasm",
     "node_modules/shiki/dist/index.d.ts",
