@@ -25,7 +25,7 @@
 	- 包管理器：安装比 `pnpm` 快 17 倍，执行脚本也是瞬间，替代 `npm/yarn/pnpm/lerna`。
 	- 测试库：与 `Jest` 兼容的测试运行器，比 `Vitest` 快 13 倍，比 `Jest` 快 8 倍。支持快照测试、模拟和代码覆盖率。替代 `jest/ts-ject/vitest`
 - [MIT License](https://bun.sh/docs/project/licensing)
-> 可惜一点，2023-09-11时，Bun 还未提供原生 Windows 版本，在公司没法用。
+> 可惜 2023-09-11时，Bun 还未提供原生 Windows 版本，在公司没法用。
 
 
 
