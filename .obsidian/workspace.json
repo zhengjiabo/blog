@@ -169,6 +169,9 @@
   },
   "active": "4e63b0d907a8611b",
   "lastOpenFiles": [
+    "docs/assets/GItHub趋势项目整理-1.png",
+    "docs/assets/Pasted image 20230912132422.png",
+    "docs/assets/GItHub趋势项目整理.png",
     "未命名.md",
     "docs/article/GItHub 趋势项目整理.md",
     "docs/assets/Pastedimage20230904193004.png",
@@ -198,7 +201,6 @@
     "docs/linux/0 - linux.md",
     "docs/linux/34 - vim plugin 插件.md",
     "docs/linux/24 - for-if 遍历、判断.md",
-    "docs/linux/28 - vim mode 模式.md",
     "docs/assets/20230408174139.png",
     "node_modules/shiki/dist/onig.wasm",
     "node_modules/shiki/dist/index.d.ts",
@@ -213,8 +215,6 @@
     "node_modules/vitepress-plugin-search/dist/flex-logo.svg",
     "docs/public/img/logo/light.png",
     "docs/public/img/logo/dark.png",
-    "public/img/logo/light.png",
-    "public/img/logo/dark.png",
     "未命名.canvas",
     "得到.canvas"
   ]

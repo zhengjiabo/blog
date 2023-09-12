@@ -1,5 +1,5 @@
 ## 整理目的
-分类整理，备注好每个项目的优点，预留一些使用上的可能性。
+分类整理，备注好每个项目的特点，预留一些使用上的可能性。
 
 ## AI 类
 ### ChatDev: 自然语言创建软件
@@ -37,4 +37,9 @@
 	- ![](../assets/Pastedimage20230904193004.png)
 
 
+### Hello 算法
+[krahets/hello-algo: 《Hello 算法》：动画图解、一键运行的数据结构与算法教程，支持 Java, C++, Python, Go, JS, TS, C#, Swift, Rust, Dart, Zig 等语言。 (github.com)](https://github.com/krahets/hello-algo)
+- leetCode 上 C 神的书，提供在线文档和源码，在线文档有动画图解，覆盖多种语言，且源码中有详细打印辅助理解。
+- [在线文档-Hello 算法 (hello-algo.com)](https://www.hello-algo.com/)
+- ![](../assets/GItHub趋势项目整理-1.png)
 
