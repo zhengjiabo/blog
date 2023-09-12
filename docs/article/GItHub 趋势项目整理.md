@@ -37,9 +37,24 @@
 	- ![](../assets/Pastedimage20230904193004.png)
 
 
-### Hello 算法
+### Hello: 算法
 [krahets/hello-algo: 《Hello 算法》：动画图解、一键运行的数据结构与算法教程，支持 Java, C++, Python, Go, JS, TS, C#, Swift, Rust, Dart, Zig 等语言。 (github.com)](https://github.com/krahets/hello-algo)
 - leetCode 上 C 神的书，提供在线文档和源码，在线文档有动画图解，覆盖多种语言，且源码中有详细打印辅助理解。
 - [在线文档-Hello 算法 (hello-algo.com)](https://www.hello-algo.com/)
 - ![](../assets/GItHub趋势项目整理-1.png)
+
+### Resume-Matcher: 求职者跟踪系统
+[srbhr/Resume-Matcher: Open Source Free ATS Tool to compare Resumes with Job Descriptions and create a score to rank them.  (github.com)](https://github.com/srbhr/Resume-Matcher)
+- Applicant Tracking System（求职者跟踪系统）
+- 将 `pdf` 简历与 `pdf` 职位描述进行比较，并创建一个分数进行排名，为您提供见解和建议。
+- 找工作的可以反向操作，核对自己简历的问题加以修改。
+
+
+### Home Assistant: 家庭助理
+[home-assistant/core: :house_with_garden: Open source home automation that puts local control and privacy first. (github.com)](https://github.com/home-assistant/core)
+- 一个开源家庭自动化项目，可用于 DIY，且注重保护本地控制和隐私。非常适合在树莓派或本地服务器上运行。家里有自动化需求可以接入，用的语言是 `Python`
+- [Apache License 2.0]([core/LICENSE.md at dev · home-assistant/core (github.com)](https://github.com/home-assistant/core/blob/dev/LICENSE.md))
+- [官方 DEMO (home-assistant.io)](https://demo.home-assistant.io/#/lovelace/0) | [官方 示例 (home-assistant.io)](https://www.home-assistant.io/examples/)
+- ![](../assets/GItHub趋势项目整理.png)
+
 

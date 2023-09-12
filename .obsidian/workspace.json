@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/unfiled/浏览器敲入 URL 过程.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4e63b0d907a8611b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "docs/article/GItHub 趋势项目整理.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -167,18 +154,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4e63b0d907a8611b",
+  "active": "be8085ea28c459ee",
   "lastOpenFiles": [
+    "docs/assets/GItHub趋势项目整理.png",
+    "docs/unfiled/浏览器敲入 URL 过程.md",
+    "[core/LICENSE.md",
+    "docs/article/GItHub 趋势项目整理.md",
+    "[core",
     "docs/assets/GItHub趋势项目整理-1.png",
     "docs/assets/Pasted image 20230912132422.png",
     "docs/assets/GItHub趋势项目整理.png",
     "未命名.md",
-    "docs/article/GItHub 趋势项目整理.md",
     "docs/assets/Pastedimage20230904193004.png",
     "docs/article/Obsidian 为什么还需要知识库-外脑.md",
     "docs/algorithm/动态规划-买卖股票-121.md",
     "docs/algorithm/动态规划.md",
-    "docs/unfiled/浏览器敲入 URL 过程.md",
     "docs/algorithm/轮转数组-189.md",
     "docs/docker/1 - Docker基础.md",
     "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
@@ -200,7 +190,6 @@
     "docs/docker/4 - nginx 基础.md",
     "docs/linux/0 - linux.md",
     "docs/linux/34 - vim plugin 插件.md",
-    "docs/linux/24 - for-if 遍历、判断.md",
     "docs/assets/20230408174139.png",
     "node_modules/shiki/dist/onig.wasm",
     "node_modules/shiki/dist/index.d.ts",
@@ -211,10 +200,8 @@
     "node_modules/shiki/samples/vyper.sample",
     "node_modules/shiki/samples/turtle.sample",
     "node_modules/shiki/samples/tsx.sample",
-    "node_modules/shiki/samples/tasl.sample",
     "node_modules/vitepress-plugin-search/dist/flex-logo.svg",
     "docs/public/img/logo/light.png",
-    "docs/public/img/logo/dark.png",
     "未命名.canvas",
     "得到.canvas"
   ]
