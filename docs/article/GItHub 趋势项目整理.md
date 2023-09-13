@@ -8,6 +8,12 @@
 - 非商业
 
 
+### AIdea: 集合聊天和图像生成的 AI App
+[mylxsw/aidea: AIdea 是一款支持 GPT 以及国产大语言模型通义千问、文心一言等，支持 Stable Diffusion 文生图、图生图、 SDXL1.0、超分辨率、图片上色的全能型 APP。 (github.com)](https://github.com/mylxsw/aidea)
+- 移动端便捷，无电脑场景十分好用
+- [MIT License](https://github.com/mylxsw/aidea/blob/main/LICENSE)
+- ![](../assets/GItHub趋势项目整理-app.png)![](../assets/GItHub趋势项目整理-app2.png)
+
 ## 前端
 ### Astro: 专为速度而设计的一体化 Web 框架
 [withastro/astro: The all-in-one web framework designed for speed. ⭐️ Star to support our work! --- withastro/astro：专为速度而设计的多合一Web框架。⭐️ 星星支持我们的工作！ (github.com)](https://github.com/withastro/astro)
