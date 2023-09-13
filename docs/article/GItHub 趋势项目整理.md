@@ -34,6 +34,10 @@
 > 可惜 2023-09-11时，Bun 还未提供原生 Windows 版本，在公司没法用。
 
 
+### clean-code-javascript: 干净代码概念
+[ryanmcdermott/clean-code-javascript: :bathtub: Clean Code concepts adapted for JavaScript --- ryanmcdermott/clean-code-javascript： 适用于JavaScript的Clean Code概念 (github.com)](https://github.com/ryanmcdermott/clean-code-javascript)
+- 《Clean Code》一书，改编为JavaScript，作者从多年的集体经验中编纂出来。
+
 
 ## 其它
 ### CasaOS: 个人云
