@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "4a4467d5e1ae7c3a",
+        "id": "1164fac71dd26f69",
         "type": "tabs",
         "children": [
           {
-            "id": "45c0382ba98a85c3",
+            "id": "d3dca990444cf4da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -154,11 +146,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "45c0382ba98a85c3",
+  "active": "d3dca990444cf4da",
   "lastOpenFiles": [
+    "未命名.canvas",
+    "docs/article/GItHub 趋势项目整理.md",
     "docs/assets/Pastedimage20230912132422.png",
     "docs/assets/Pastedimage20230914233836.png",
-    "docs/article/GItHub 趋势项目整理.md",
     "docs/vue/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
     "未命名.md",
     "docs/assets/Pastedimage20230904193004.png",
@@ -201,7 +194,6 @@
     "node_modules/vue/README.md",
     "node_modules/preact/README.md",
     "node_modules/esbuild/README.md",
-    "未命名.canvas",
     "得到.canvas"
   ]
 }
