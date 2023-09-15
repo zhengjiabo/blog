@@ -14,19 +14,8 @@
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "c257382a870a0e5f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.12"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,7 +146,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c257382a870a0e5f",
+  "active": "d3dca990444cf4da",
   "lastOpenFiles": [
     "未命名.canvas",
     "docs/article/GItHub 趋势项目整理.md",
