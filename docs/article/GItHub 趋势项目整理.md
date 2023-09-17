@@ -46,6 +46,22 @@
 - ![](../assets/Pastedimage20230914233836.png)
 
 
+### poster-design: 图片设计器
+[palxiao/poster-design: 一款漂亮且功能强大的在线图片设计器，仿稿定设计，适用于多种场景：海报生成、电商产品图、文章长图、视频/公众号封面等，让设计更简单！A beautiful online image designer, suitable for various scenarios like generate posters, making design easier. (github.com)](https://github.com/palxiao/poster-design)
+- [MIT License](https://github.com/palxiao/poster-design/blob/main/LICENSE)
+- [在线体验 (palxp.cn)](https://design.palxp.cn/home)
+
+
+
+## 书籍
+
+
+### Hello: 书籍-算法
+[krahets/hello-algo: 《Hello 算法》：动画图解、一键运行的数据结构与算法教程，支持 Java, C++, Python, Go, JS, TS, C#, Swift, Rust, Dart, Zig 等语言。 (github.com)](https://github.com/krahets/hello-algo)
+- leetCode 上 C 神的书，提供在线文档和源码，在线文档有动画图解，覆盖多种语言，且源码中有详细打印辅助理解。
+- [在线文档-Hello 算法 (hello-algo.com)](https://www.hello-algo.com/)
+- ![](../assets/GItHub趋势项目整理-1.png)
+
 
 ## 其它
 ### CasaOS: 个人云
@@ -54,12 +70,6 @@
 	- [Apache-2.0 license](https://github.com/IceWhaleTech/CasaOS/blob/main/LICENSE)
 	- ![](../assets/Pastedimage20230904193004.png)
 
-
-### Hello: 算法
-[krahets/hello-algo: 《Hello 算法》：动画图解、一键运行的数据结构与算法教程，支持 Java, C++, Python, Go, JS, TS, C#, Swift, Rust, Dart, Zig 等语言。 (github.com)](https://github.com/krahets/hello-algo)
-- leetCode 上 C 神的书，提供在线文档和源码，在线文档有动画图解，覆盖多种语言，且源码中有详细打印辅助理解。
-- [在线文档-Hello 算法 (hello-algo.com)](https://www.hello-algo.com/)
-- ![](../assets/GItHub趋势项目整理-1.png)
 
 ### Resume-Matcher: 求职者跟踪系统
 [srbhr/Resume-Matcher: Open Source Free ATS Tool to compare Resumes with Job Descriptions and create a score to rank them.  (github.com)](https://github.com/srbhr/Resume-Matcher)
