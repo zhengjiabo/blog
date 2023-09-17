@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/books/TypeScript 教程/1 - 简介.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/books/TypeScript 教程/1 - 简介.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/books/TypeScript 教程/1 - 简介.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md"
+                "file": "docs/books/TypeScript 教程/1 - 简介.md"
               }
             }
           }
@@ -154,8 +154,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e9b2ad56fb300a95",
+  "active": "be8085ea28c459ee",
   "lastOpenFiles": [
+    "docs/article/GItHub 趋势项目整理.md",
+    "docs/books/TypeScript 教程/1 - 简介.md",
+    "docs/books/TypeScript 教程",
     "未命名.canvas",
     "docs/assets/Pastedimage20230914233836.png",
     "docs/assets/Pastedimage20230912132422.png",
@@ -164,7 +167,6 @@
     "docs/assets/GItHub趋势项目整理.png",
     "docs/unfiled/浏览器敲入 URL 过程.md",
     "[core/LICENSE.md",
-    "docs/article/GItHub 趋势项目整理.md",
     "[core",
     "docs/assets/GItHub趋势项目整理-1.png",
     "docs/assets/Pasted image 20230912132422.png",
@@ -177,18 +179,18 @@
     "docs/algorithm/轮转数组-189.md",
     "docs/docker/1 - Docker基础.md",
     "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
-    "docs/vue/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
-    "docs/vue/Vue.js 设计与实现/1 - 权衡的艺术.md",
-    "docs/vue/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
-    "docs/vue/Vue.js 设计与实现/2 - 框架设计的核心要素.md",
-    "docs/vue/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
+    "docs/books/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
+    "docs/books/Vue.js 设计与实现/1 - 权衡的艺术.md",
+    "docs/books/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
+    "docs/books/Vue.js 设计与实现/2 - 框架设计的核心要素.md",
+    "docs/books/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
     "docs/algorithm/二叉树-总.md",
     "docs/algorithm/BFS-DFS.md",
     "docs/algorithm/二分搜索算法-左右指针.md",
     "docs/algorithm/双指针.md",
     "conflict-files-obsidian-git.md",
     "docs/assets/20230809174256.png",
-    "docs/vue/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
+    "docs/books/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
     "docs/docker/Untitled-1.md",
     "docs/docker/4 - nginx 基础.md",
     "docs/linux/0 - linux.md",
@@ -201,7 +203,6 @@
     "node_modules/shiki/samples/v.sample",
     "node_modules/shiki/samples/vyper.sample",
     "node_modules/shiki/samples/turtle.sample",
-    "node_modules/shiki/samples/tsx.sample",
     "得到.canvas"
   ]
 }

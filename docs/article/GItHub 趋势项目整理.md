@@ -62,6 +62,12 @@
 - [在线文档-Hello 算法 (hello-algo.com)](https://www.hello-algo.com/)
 - ![](../assets/GItHub趋势项目整理-1.png)
 
+### TypeScript: 书籍-阮一峰 TS 
+
+[wangdoc/typescript-tutorial: TypeScript 教程 (github.com)](https://github.com/wangdoc/typescript-tutorial)
+- TypeScript 开源教程，介绍基本概念和用法，面向初学者。
+- [在线文档 - TypeScript 教程 - 网道 (wangdoc.com)](https://wangdoc.com/typescript/)
+
 
 ## 其它
 ### CasaOS: 个人云
