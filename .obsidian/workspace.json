@@ -154,8 +154,18 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d3dca990444cf4da",
+  "active": "e9b2ad56fb300a95",
   "lastOpenFiles": [
+    "docs/books/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
+    "docs/books/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
+    "docs/books/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
+    "docs/books/Vue.js 设计与实现/2 - 框架设计的核心要素.md",
+    "docs/books/Vue.js 设计与实现/1 - 权衡的艺术.md",
+    "docs/books/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
+    "docs/books/Vue.js 设计与实现",
+    "docs/books/TypeScript 教程/1 - x.md",
+    "docs/books/TypeScript 教程",
+    "docs/books",
     "docs/assets/GItHub趋势项目整理152351.png",
     "docs/assets/GItHub趋势项目整理152335.png",
     "docs/assets/GItHub趋势项目整理1523.png",
@@ -170,7 +180,6 @@
     "docs/assets/GItHub趋势项目整理-app2.png",
     "docs/assets/GItHub趋势项目整理-app.png",
     "docs/assets/GItHub趋势项目整理-1.png",
-    "docs/assets/20230809174256.png",
     "docs/algorithm/轮转数组-189.md",
     "docs/algorithm/动态规划-买卖股票-121.md",
     "[core/LICENSE.md",
@@ -185,9 +194,6 @@
     "node_modules/shiki/samples/wolfram.sample",
     "node_modules/shiki/samples/wgsl.sample",
     "node_modules/shiki/samples/v.sample",
-    "node_modules/shiki/samples/vyper.sample",
-    "node_modules/shiki/samples/turtle.sample",
-    "node_modules/shiki/samples/tsx.sample",
     "node_modules/shiki/README.md",
     "node_modules/vitepress-plugin-search/node_modules/vite/README.md",
     "node_modules/vitepress-plugin-search/node_modules/vite/LICENSE.md",
@@ -197,12 +203,6 @@
     "node_modules/rollup/LICENSE.md",
     "node_modules/@vue/compiler-sfc/README.md",
     "node_modules/vitepress/README.md",
-    "node_modules/vitepress/template/markdown-examples.md",
-    "node_modules/vitepress/template/index.md",
-    "node_modules/vitepress/template/api-examples.md",
-    "node_modules/vue/README.md",
-    "node_modules/preact/README.md",
-    "node_modules/esbuild/README.md",
     "得到.canvas"
   ]
 }

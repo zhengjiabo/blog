@@ -21,10 +21,6 @@
 - (https://github.com/yoheinakajima/instagraph/blob/main/LICENSE)
 - ![](../assets/GItHub趋势项目整理1523.png)
 
-### 书籍: 《动手学深度学习》
-[d2l-ai/d2l-zh: 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。 (github.com)](https://github.com/d2l-ai/d2l-zh)
-- [在线书籍 |《动手学深度学习》](http://zh.d2l.ai/)
-
 
 ## 前端
 ### Astro: 专为速度而设计的一体化 Web 框架
@@ -58,12 +54,19 @@
 - ![](../assets/Pastedimage20230914233836.png)
 
 
+
+### poster-design: 图片设计器
+[palxiao/poster-design: 一款漂亮且功能强大的在线图片设计器，仿稿定设计，适用于多种场景：海报生成、电商产品图、文章长图、视频/公众号封面等，让设计更简单！A beautiful online image designer, suitable for various scenarios like generate posters, making design easier. (github.com)](https://github.com/palxiao/poster-design)
+- [MIT License](https://github.com/palxiao/poster-design/blob/main/LICENSE)
+- [在线体验 (palxp.cn)](https://design.palxp.cn/home)
+
 ### jsoncrack.com: 数据转可交互式图形
 [AykutSarac/jsoncrack.com: ✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML, CSV and more, into interactive graphs. --- AykutSarac/jsoncrack.com：创新的开源可视化应用程序，可将各种数据格式（如JSON，YAML，XML，CSV ✨等）转换为交互式图形。 (github.com)](https://github.com/AykutSarac/jsoncrack.com)
 - 直观且用户友好的交互界面，复杂的数据结构也可以轻松探索、分析和理解。
 - [VsCode 插件](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode)
 - [GNU General Public License v3.0](https://github.com/AykutSarac/jsoncrack.com/blob/main/LICENSE)
 - ![](../assets/GItHub趋势项目整理152335.png)
+
 
 ### elementor: 低代码-页面构建器
 [elementor/elementor: The most advanced frontend drag & drop page builder. Create high-end, pixel perfect websites at record speeds. Any theme, any page, any design. --- elementor/elementor：最先进的前端拖放页面构建器。以创纪录的速度创建高端、像素完美的网站。任何主题，任何页面，任何设计。 (github.com)](https://github.com/elementor/elementor)
@@ -72,6 +75,41 @@
 - [官方演示视频: https://elementor.com/wp-content/uploads/2023/09/02_MainVideo_1066_600_1.mp4](https://elementor.com/wp-content/uploads/2023/09/02_MainVideo_1066_600_1.mp4)
 - ![](../assets/GItHub趋势项目整理152351.png)
 
+
+### poster-design: 图片设计器
+[palxiao/poster-design: 一款漂亮且功能强大的在线图片设计器，仿稿定设计，适用于多种场景：海报生成、电商产品图、文章长图、视频/公众号封面等，让设计更简单！A beautiful online image designer, suitable for various scenarios like generate posters, making design easier. (github.com)](https://github.com/palxiao/poster-design)
+- [MIT License](https://github.com/palxiao/poster-design/blob/main/LICENSE)
+- [在线体验 (palxp.cn)](https://design.palxp.cn/home)
+
+
+
+## 书籍
+
+### 《动手学深度学习》
+[d2l-ai/d2l-zh: 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。 (github.com)](https://github.com/d2l-ai/d2l-zh)
+- [在线书籍 |《动手学深度学习》](http://zh.d2l.ai/)
+
+
+### Hello: 书籍-算法
+[krahets/hello-algo: 《Hello 算法》：动画图解、一键运行的数据结构与算法教程，支持 Java, C++, Python, Go, JS, TS, C#, Swift, Rust, Dart, Zig 等语言。 (github.com)](https://github.com/krahets/hello-algo)
+- leetCode 上 C 神的书，提供在线文档和源码，在线文档有动画图解，覆盖多种语言，且源码中有详细打印辅助理解。
+- [在线文档-Hello 算法 (hello-algo.com)](https://www.hello-algo.com/)
+- ![](../assets/GItHub趋势项目整理-1.png)
+
+### TypeScript: 书籍-阮一峰 TS 
+
+[wangdoc/typescript-tutorial: TypeScript 教程 (github.com)](https://github.com/wangdoc/typescript-tutorial)
+- TypeScript 开源教程，介绍基本概念和用法，面向初学者。
+- [在线文档 - TypeScript 教程 - 网道 (wangdoc.com)](https://wangdoc.com/typescript/)
+
+
+### 精益副业：程序员如何优雅地做副业
+[easychen/lean-side-bussiness: 精益副业：程序员如何优雅地做副业 (github.com)](https://github.com/easychen/lean-side-bussiness)
+引入「精益创业」流程，并优化「精益副业」流程，以实际案例为主，添加了「独立开发变现」和「网课变现实践」的内容。
+- [在线文档 - 精益副业](http://r.ftqq.com/lean-side-bussiness/index.html)
+
+
+
 ## 其它
 ### CasaOS: 个人云
 [IceWhaleTech/CasaOS: CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system. --- IceWhaleTech/CasaOS：CasaOS - 一个简单，易于使用，优雅的开源个人云系统。 (github.com)](https://github.com/IceWhaleTech/CasaOS)
@@ -79,12 +117,6 @@
 	- [Apache-2.0 license](https://github.com/IceWhaleTech/CasaOS/blob/main/LICENSE)
 	- ![](../assets/Pastedimage20230904193004.png)
 
-
-### Hello: 算法
-[krahets/hello-algo: 《Hello 算法》：动画图解、一键运行的数据结构与算法教程，支持 Java, C++, Python, Go, JS, TS, C#, Swift, Rust, Dart, Zig 等语言。 (github.com)](https://github.com/krahets/hello-algo)
-- leetCode 上 C 神的书，提供在线文档和源码，在线文档有动画图解，覆盖多种语言，且源码中有详细打印辅助理解。
-- [在线文档-Hello 算法 (hello-algo.com)](https://www.hello-algo.com/)
-- ![](../assets/GItHub趋势项目整理-1.png)
 
 ### Resume-Matcher: 求职者跟踪系统
 [srbhr/Resume-Matcher: Open Source Free ATS Tool to compare Resumes with Job Descriptions and create a score to rank them.  (github.com)](https://github.com/srbhr/Resume-Matcher)
