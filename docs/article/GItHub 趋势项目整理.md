@@ -72,6 +72,7 @@
 ### 精益副业：程序员如何优雅地做副业
 [easychen/lean-side-bussiness: 精益副业：程序员如何优雅地做副业 (github.com)](https://github.com/easychen/lean-side-bussiness)
 引入「精益创业」流程，并优化「精益副业」流程，以实际案例为主，添加了「独立开发变现」和「网课变现实践」的内容。
+- [在线文档 - 精益副业](http://r.ftqq.com/lean-side-bussiness/index.html)
 
 
 
