@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/books/TypeScript 教程/1 - x.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/books/TypeScript 教程/1 - x.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/books/TypeScript 教程/1 - x.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md"
+                "file": "docs/books/TypeScript 教程/1 - x.md"
               }
             }
           }
@@ -156,8 +156,8 @@
   },
   "active": "be8085ea28c459ee",
   "lastOpenFiles": [
-    "docs/books/TypeScript 教程/1 - 简介.md",
     "docs/article/GItHub 趋势项目整理.md",
+    "docs/books/TypeScript 教程/1 - x.md",
     "docs/books/TypeScript 教程",
     "未命名.canvas",
     "docs/assets/Pastedimage20230914233836.png",
