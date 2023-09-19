@@ -14,6 +14,18 @@
 - [MIT License](https://github.com/mylxsw/aidea/blob/main/LICENSE)
 - ![](../assets/GItHub趋势项目整理-app.png)![](../assets/GItHub趋势项目整理-app2.png)
 
+### instagraph: 文本/URL 转知识图谱
+[yoheinakajima/instagraph: Converts text input or URL into knowledge graph and displays --- yoheinakajima/instagraph：将文本输入或URL转换为知识图谱并显示 (github.com)](https://github.com/yoheinakajima/instagraph)
+- 将问题或 URL 转换为知识图谱，可以摸清复杂主题中各个对象之间的关系。对于学习新的知识框架、不同行业可以有个系统性的认知。
+- [MIT License]
+- (https://github.com/yoheinakajima/instagraph/blob/main/LICENSE)
+- ![](../assets/GItHub趋势项目整理1523.png)
+
+### 书籍: 《动手学深度学习》
+[d2l-ai/d2l-zh: 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。 (github.com)](https://github.com/d2l-ai/d2l-zh)
+- [在线书籍 |《动手学深度学习》](http://zh.d2l.ai/)
+
+
 ## 前端
 ### Astro: 专为速度而设计的一体化 Web 框架
 [withastro/astro: The all-in-one web framework designed for speed. ⭐️ Star to support our work! --- withastro/astro：专为速度而设计的多合一Web框架。⭐️ 星星支持我们的工作！ (github.com)](https://github.com/withastro/astro)
@@ -46,6 +58,19 @@
 - ![](../assets/Pastedimage20230914233836.png)
 
 
+### jsoncrack.com: 数据转可交互式图形
+[AykutSarac/jsoncrack.com: ✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML, CSV and more, into interactive graphs. --- AykutSarac/jsoncrack.com：创新的开源可视化应用程序，可将各种数据格式（如JSON，YAML，XML，CSV ✨等）转换为交互式图形。 (github.com)](https://github.com/AykutSarac/jsoncrack.com)
+- 直观且用户友好的交互界面，复杂的数据结构也可以轻松探索、分析和理解。
+- [VsCode 插件](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode)
+- [GNU General Public License v3.0](https://github.com/AykutSarac/jsoncrack.com/blob/main/LICENSE)
+- ![](../assets/GItHub趋势项目整理152335.png)
+
+### elementor: 低代码-页面构建器
+[elementor/elementor: The most advanced frontend drag & drop page builder. Create high-end, pixel perfect websites at record speeds. Any theme, any page, any design. --- elementor/elementor：最先进的前端拖放页面构建器。以创纪录的速度创建高端、像素完美的网站。任何主题，任何页面，任何设计。 (github.com)](https://github.com/elementor/elementor)
+- 引入WordPress网站构建器，没有设计限制。非常适合希望快速上线的营销人员。
+- [GNU General Public License v3.0](https://github.com/elementor/elementor/blob/main/license.txt)
+- [官方演示视频: https://elementor.com/wp-content/uploads/2023/09/02_MainVideo_1066_600_1.mp4](https://elementor.com/wp-content/uploads/2023/09/02_MainVideo_1066_600_1.mp4)
+- ![](../assets/GItHub趋势项目整理152351.png)
 
 ## 其它
 ### CasaOS: 个人云
@@ -76,3 +101,8 @@
 - ![](../assets/GItHub趋势项目整理.png)
 
 
+
+### 12306智能刷票
+[testerSunshine/12306: 12306智能刷票，订票 (github.com)](https://github.com/testerSunshine/12306)
+- 于2023年9月15日收集时已有功能：自动打码、自动登录、准点预售和捡漏、智能候补、邮件通知、server酱通知
+- [MIT License](https://github.com/testerSunshine/12306/blob/master/LICENSE)

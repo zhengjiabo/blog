@@ -11,8 +11,12 @@
             "id": "d3dca990444cf4da",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/article/GItHub 趋势项目整理.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/article/GItHub 趋势项目整理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/article/GItHub 趋势项目整理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/article/GItHub 趋势项目整理.md"
+              }
             }
           }
         ],
@@ -148,6 +156,9 @@
   },
   "active": "d3dca990444cf4da",
   "lastOpenFiles": [
+    "docs/assets/GItHub趋势项目整理152351.png",
+    "docs/assets/GItHub趋势项目整理152335.png",
+    "docs/assets/GItHub趋势项目整理1523.png",
     "未命名.canvas",
     "docs/article/GItHub 趋势项目整理.md",
     "docs/assets/Pastedimage20230912132422.png",
@@ -160,8 +171,6 @@
     "docs/assets/GItHub趋势项目整理-app.png",
     "docs/assets/GItHub趋势项目整理-1.png",
     "docs/assets/20230809174256.png",
-    "docs/assets/20230809172026.png",
-    "docs/assets/20230809170928.png",
     "docs/algorithm/轮转数组-189.md",
     "docs/algorithm/动态规划-买卖股票-121.md",
     "[core/LICENSE.md",
