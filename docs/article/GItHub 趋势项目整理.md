@@ -42,10 +42,6 @@
 > 可惜 2023-09-11时，Bun 还未提供原生 Windows 版本，在公司没法用。
 
 
-### clean-code-javascript: 干净代码概念
-[ryanmcdermott/clean-code-javascript: :bathtub: Clean Code concepts adapted for JavaScript --- ryanmcdermott/clean-code-javascript： 适用于JavaScript的Clean Code概念 (github.com)](https://github.com/ryanmcdermott/clean-code-javascript)
-- 《Clean Code》一书，改编为JavaScript，作者从多年的集体经验中编纂出来。
-
 ### tldraw: 白板编辑器组件
 [tldraw/tldraw: a very good whiteboard --- TLdraw/TLDRAW：一个非常好用的白板 (github.com)](https://github.com/tldraw/tldraw)
 - 白板编辑器组件，功能挺好的。用于 React 项目
@@ -108,7 +104,9 @@
 引入「精益创业」流程，并优化「精益副业」流程，以实际案例为主，添加了「独立开发变现」和「网课变现实践」的内容。
 - [在线文档 - 精益副业](http://r.ftqq.com/lean-side-bussiness/index.html)
 
-
+### clean-code-javascript: 干净代码概念
+[ryanmcdermott/clean-code-javascript: :bathtub: Clean Code concepts adapted for JavaScript --- ryanmcdermott/clean-code-javascript： 适用于JavaScript的Clean Code概念 (github.com)](https://github.com/ryanmcdermott/clean-code-javascript)
+- 《Clean Code》一书，改编为JavaScript，作者从多年的集体经验中编纂出来。
 
 ## 其它
 ### CasaOS: 个人云
