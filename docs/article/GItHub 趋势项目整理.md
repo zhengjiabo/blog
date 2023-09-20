@@ -148,3 +148,9 @@
 [testerSunshine/12306: 12306智能刷票，订票 (github.com)](https://github.com/testerSunshine/12306)
 - 于2023年9月15日收集时已有功能：自动打码、自动登录、准点预售和捡漏、智能候补、邮件通知、server酱通知
 - [MIT License](https://github.com/testerSunshine/12306/blob/master/LICENSE)
+
+
+
+### Public Apis: 公共接口
+[public-apis/public-apis: A collective list of free APIs (github.com)](https://github.com/public-apis/public-apis)
+各式各样的公共接口，例如随机获取狗照片，获取各国的节假日，多个交易所的实时和历史数据等等。
