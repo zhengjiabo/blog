@@ -2,6 +2,14 @@
 分类整理，备注好每个项目的特点，预留一些使用上的可能性。
 
 ## AI 类
+### tabby: 私人编程助理
+[TabbyML/tabby: Self-hosted AI coding assistant (github.com)](https://github.com/TabbyML/tabby)
+- 无需其他云服务
+- 使用消费者级别的 GPU 即可
+- 注重代码隐私的小型企业使用成为可能，支持主流 IDE
+- ![](../assets/GItHub趋势项目整理09201517.png)
+
+
 ### ChatDev: 自然语言创建软件
 [OpenBMB/ChatDev: Create Customized Software using Natural Language Idea (through Multi-Agent Collaboration) --- OpenBMB/ChatDev：使用自然语言理念创建自定义软件（通过多代理协作） (github.com)](https://github.com/OpenBMB/ChatDev)
 - 未来发展的其中一个趋势，目前只能做简单的软件。使用自然语言开发软件，提供软件构建过程的综合日志，可用于重放。
@@ -21,6 +29,12 @@
 - (https://github.com/yoheinakajima/instagraph/blob/main/LICENSE)
 - ![](../assets/GItHub趋势项目整理1523.png)
 
+
+## 中后台系统
+### soybean-admin
+[honghuangdc/soybean-admin: A fresh and elegant admin template, based on Vue3,Vite3,TypeScript,NaiveUI and UnoCSS [一个基于Vue3、Vite3、TypeScript、NaiveUI 和 UnoCSS的清新优雅的中后台模版] (github.com)](https://github.com/honghuangdc/soybean-admin)
+- ![](../assets/GItHub趋势项目整理09201446.png)
+- ![](../assets/GItHub趋势项目整理09201447.png)
 
 ## 前端
 ### Astro: 专为速度而设计的一体化 Web 框架
