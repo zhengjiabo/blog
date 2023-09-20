@@ -51,11 +51,6 @@
 
 
 
-### poster-design: 图片设计器
-[palxiao/poster-design: 一款漂亮且功能强大的在线图片设计器，仿稿定设计，适用于多种场景：海报生成、电商产品图、文章长图、视频/公众号封面等，让设计更简单！A beautiful online image designer, suitable for various scenarios like generate posters, making design easier. (github.com)](https://github.com/palxiao/poster-design)
-- [MIT License](https://github.com/palxiao/poster-design/blob/main/LICENSE)
-- [在线体验 (palxp.cn)](https://design.palxp.cn/home)
-
 ### jsoncrack.com: 数据转可交互式图形
 [AykutSarac/jsoncrack.com: ✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML, CSV and more, into interactive graphs. --- AykutSarac/jsoncrack.com：创新的开源可视化应用程序，可将各种数据格式（如JSON，YAML，XML，CSV ✨等）转换为交互式图形。 (github.com)](https://github.com/AykutSarac/jsoncrack.com)
 - 直观且用户友好的交互界面，复杂的数据结构也可以轻松探索、分析和理解。
@@ -72,10 +67,12 @@
 - ![](../assets/GItHub趋势项目整理152351.png)
 
 
+
 ### poster-design: 图片设计器
 [palxiao/poster-design: 一款漂亮且功能强大的在线图片设计器，仿稿定设计，适用于多种场景：海报生成、电商产品图、文章长图、视频/公众号封面等，让设计更简单！A beautiful online image designer, suitable for various scenarios like generate posters, making design easier. (github.com)](https://github.com/palxiao/poster-design)
 - [MIT License](https://github.com/palxiao/poster-design/blob/main/LICENSE)
 - [在线体验 (palxp.cn)](https://design.palxp.cn/home)
+- ![](../assets/GItHub趋势项目整理09201330.png)
 
 
 
@@ -108,6 +105,7 @@
 [ryanmcdermott/clean-code-javascript: :bathtub: Clean Code concepts adapted for JavaScript --- ryanmcdermott/clean-code-javascript： 适用于JavaScript的Clean Code概念 (github.com)](https://github.com/ryanmcdermott/clean-code-javascript)
 - 《Clean Code》一书，改编为JavaScript，作者从多年的集体经验中编纂出来。
 
+
 ## 其它
 ### CasaOS: 个人云
 [IceWhaleTech/CasaOS: CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system. --- IceWhaleTech/CasaOS：CasaOS - 一个简单，易于使用，优雅的开源个人云系统。 (github.com)](https://github.com/IceWhaleTech/CasaOS)
@@ -120,7 +118,7 @@
 [srbhr/Resume-Matcher: Open Source Free ATS Tool to compare Resumes with Job Descriptions and create a score to rank them.  (github.com)](https://github.com/srbhr/Resume-Matcher)
 - Applicant Tracking System（求职者跟踪系统）
 - 将 `pdf` 简历与 `pdf` 职位描述进行比较，并创建一个分数进行排名，为您提供见解和建议。
-- 找工作的可以反向操作，核对自己简历的问题加以修改。
+- 找工作的可以反向操作，核对自己简历的问题加以修改。该系对英文描述和简历比较友好，也适合远程工作机会。
 
 
 ### Home Assistant: 家庭助理
