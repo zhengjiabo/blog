@@ -30,6 +30,13 @@
 - ![](../assets/GItHub趋势项目整理1523.png)
 
 
+### Real-Time-Voice-Cloning:  克隆声音特征生成演讲
+[CorentinJ/Real-Time-Voice-Cloning: Clone a voice in 5 seconds to generate arbitrary speech in real-time (github.com)](https://github.com/CorentinJ/Real-Time-Voice-Cloning)
+- 多次录入 5s 的声音，采集声音特性后，提供文本，可以生成任意演讲（训练的数据集都是演讲类的， 所以不是自然的说话）。
+- [MIT License](https://github.com/CorentinJ/Real-Time-Voice-Cloning/blob/master/LICENSE.md)
+- [演示视频：Real-Time Voice Cloning Toolbox - YouTube](https://www.youtube.com/watch?v=-O_hYhToKoA)
+
+
 ## 中后台系统
 ### soybean-admin
 [honghuangdc/soybean-admin: A fresh and elegant admin template, based on Vue3,Vite3,TypeScript,NaiveUI and UnoCSS [一个基于Vue3、Vite3、TypeScript、NaiveUI 和 UnoCSS的清新优雅的中后台模版] (github.com)](https://github.com/honghuangdc/soybean-admin)
@@ -87,6 +94,12 @@
 - [MIT License](https://github.com/palxiao/poster-design/blob/main/LICENSE)
 - [在线体验 (palxp.cn)](https://design.palxp.cn/home)
 - ![](../assets/GItHub趋势项目整理09201330.png)
+
+### kamal: 零停机部署应用
+[basecamp/kamal: Deploy web apps anywhere. (github.com)](https://github.com/basecamp/kamal)
+- 实现零停机。在新的应用程序容器启动、旧的应用程序容器停止的过程中，Kamal 具有动态反向代理 Traefik 保留请求。可与任何类型的可使用 Docker 容器化的 Web 应用程序配合使用。
+- [官方介绍视频：Kamal — Deploy web apps anywhere (kamal-deploy.org)](https://kamal-deploy.org/)
+- [MIT License](https://github.com/basecamp/kamal/blob/main/MIT-LICENSE)
 
 
 
