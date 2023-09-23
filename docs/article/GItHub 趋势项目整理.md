@@ -95,7 +95,14 @@
 - [在线体验 (palxp.cn)](https://design.palxp.cn/home)
 - ![](../assets/GItHub趋势项目整理09201330.png)
 
-### kamal: 零停机部署应用
+
+### Swiper: 移动端滑块
+[nolimits4web/swiper: Most modern mobile touch slider with hardware accelerated transitions (github.com)](https://github.com/nolimits4web/swiper)
+- 以超棒的体验和兼容性，在现代移动设备上实现滑动。
+- [官方网站/体验 Swiper - The Most Modern Mobile Touch Slider (swiperjs.com)](https://swiperjs.com/)
+- [MIT License](https://github.com/nolimits4web/swiper/blob/master/LICENSE)
+
+### Kamal: 零停机部署应用
 [basecamp/kamal: Deploy web apps anywhere. (github.com)](https://github.com/basecamp/kamal)
 - 实现零停机。在新的应用程序容器启动、旧的应用程序容器停止的过程中，Kamal 具有动态反向代理 Traefik 保留请求。可与任何类型的可使用 Docker 容器化的 Web 应用程序配合使用。
 - [官方介绍视频：Kamal — Deploy web apps anywhere (kamal-deploy.org)](https://kamal-deploy.org/)
