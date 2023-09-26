@@ -174,3 +174,13 @@
 ### Public Apis: 公共接口
 [public-apis/public-apis: A collective list of free APIs (github.com)](https://github.com/public-apis/public-apis)
 各式各样的公共接口，例如随机获取狗照片，获取各国的节假日，多个交易所的实时和历史数据等等。
+
+
+
+### changedetection.io: 监控网页变更
+[dgtlmoon/changedetection.io: The best and simplest free open source website change detection, restock monitor and notification service. Restock Monitor, change detection. Designed for simplicity - Simply monitor which websites had a text change for free. Free Open source web page change detection, Website defacement monitoring, Price change and Price Drop notification (github.com)](https://github.com/dgtlmoon/changedetection.io)
+- 网页监控、价格降价通知、补货监控、房地产价格、房租、招聘JD、接受 cookie 登录、输入日期和细化搜索。可以电子邮件、API 调用等。
+- - [Apache License 2.0](https://github.com/dgtlmoon/changedetection.io/blob/master/LICENSE)
+- ![](../assets/GItHub趋势项目整理0926.png)
+
+

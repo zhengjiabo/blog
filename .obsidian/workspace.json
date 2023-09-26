@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/books/TypeScript 教程/1 - x.md",
+                "file": "docs/article/GItHub 趋势项目整理.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/books/TypeScript 教程/1 - x.md",
+                "file": "docs/article/GItHub 趋势项目整理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/books/TypeScript 教程/1 - x.md",
+                "file": "docs/article/GItHub 趋势项目整理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/books/TypeScript 教程/1 - x.md"
+                "file": "docs/article/GItHub 趋势项目整理.md"
               }
             }
           }
@@ -156,8 +156,9 @@
   },
   "active": "be8085ea28c459ee",
   "lastOpenFiles": [
-    "docs/article/GItHub 趋势项目整理.md",
+    "docs/assets/GItHub趋势项目整理0926.png",
     "docs/books/TypeScript 教程/1 - x.md",
+    "docs/article/GItHub 趋势项目整理.md",
     "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
     "docs/assets/GItHub趋势项目整理09201517.png",
     "docs/assets/GItHub趋势项目整理09201447.png",
