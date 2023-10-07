@@ -192,3 +192,6 @@
 
 
 ### mwmbl: 无广告无追踪的搜索引擎
+[mwmbl/mwmbl: An open source, non-profit search engine implemented in python (github.com)](https://github.com/mwmbl/mwmbl)
+- 在线地址：[mwmbl.org]( https://mwmbl.org/ " https://mwmbl.org" )
+- 
