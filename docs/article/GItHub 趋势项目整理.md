@@ -9,6 +9,13 @@
 - 注重代码隐私的小型企业使用成为可能，支持主流 IDE
 - ![](../assets/GItHub趋势项目整理09201517.png)
 
+### DocsGPT: 文档助手
+[arc53/DocsGPT: GPT-powered chat for documentation, chat with your documents (github.com)](https://github.com/arc53/DocsGPT)
+-  投喂文档训练回答问题，可以私有化部署，比较契合企业内部使用。缺点就是需要的 GPU 还不是家庭级的设备（2023年10月09日），中小型企业落实使用有难度
+-  [MIT license](https://github.com/arc53/DocsGPT/blob/main/LICENSE)
+- ![](../assets/20231009-16-01-50.png)
+- ![](../assets/20231009-16-01-20.png)
+
 
 ### ChatDev: 自然语言创建软件
 [OpenBMB/ChatDev: Create Customized Software using Natural Language Idea (through Multi-Agent Collaboration) --- OpenBMB/ChatDev：使用自然语言理念创建自定义软件（通过多代理协作） (github.com)](https://github.com/OpenBMB/ChatDev)
@@ -44,8 +51,15 @@
 - ![](../assets/GItHub趋势项目整理2310091121.png)
 
 
+### AI 人物抠图: 上传后秒抠
+[AI抠图 - 只需上传图片，无需其他作即可自动去除图片背景 (aiwave.cc)](https://cutout.aiwave.cc/)
+- 抠图目前无需登录，不收费。（2023年10月09日）
+- 同时该网站还收录了很多 AI [AIGC工具导航 | 海量AI工具，总有一款是你需要的 (aiwave.cc)](https://nav.aiwave.cc/) 不过部分需要登录收费。
+
+
+
 ## 中后台系统
-### soybean-admin
+### soybean-admin: 中后台模板
 [honghuangdc/soybean-admin: A fresh and elegant admin template, based on Vue3,Vite3,TypeScript,NaiveUI and UnoCSS [一个基于Vue3、Vite3、TypeScript、NaiveUI 和 UnoCSS的清新优雅的中后台模版] (github.com)](https://github.com/honghuangdc/soybean-admin)
 - ![](../assets/GItHub趋势项目整理09201446.png)
 - ![](../assets/GItHub趋势项目整理09201447.png)
@@ -122,6 +136,12 @@
 - [官方介绍视频：Kamal — Deploy web apps anywhere (kamal-deploy.org)](https://kamal-deploy.org/)
 - [MIT License](https://github.com/basecamp/kamal/blob/main/MIT-LICENSE)
 
+### Nezha: 服务器监控、运维工具
+[naiba/nezha: :trollface: Self-hosted, lightweight server and website monitoring and O&M tool (github.com)](https://github.com/naiba/nezha)
+- 一键安装部署，安装简单、开箱即用，支持监控多个服务器的系统状态、SSL 证书状态、报警通知（支持多种通知方式 Telegram、邮件、微信等）、流量监控、设置定时任务等功能，适用于 Linux、Windows、macOS、OpenWRT 等主流系统。
+- 官方文档:  [哪吒监控 | 使用文档 (nezha.wiki)](https://nezha.wiki/)
+- ![](../assets/20231009-15-30-16.png)
+- ![](../assets/20231009-15-39-36.png)
 
 
 ## 书籍
@@ -201,7 +221,13 @@
 ### mwmbl: 无广告无追踪的搜索引擎
 [mwmbl/mwmbl: An open source, non-profit search engine implemented in python (github.com)](https://github.com/mwmbl/mwmbl)
 - 在线地址：[mwmbl.org]( https://mwmbl.org/ " https://mwmbl.org" )
-- 适合 IT 人员查技术文档和库
-- 无广、无追踪、无盈利的搜索引擎。注重搜索内容，没有广告影响排序，不会有其他内容占据主要视野，且速度更快。
+- 适合 IT 人员查技术文档和库，无广、无追踪、无盈利的搜索引擎。注重搜索内容，没有广告影响排序，不会有其他内容占据主要视野，且速度更快。
 - [AGPL-3.0 license](https://github.com/mwmbl/mwmbl/blob/main/LICENSE)
 - ![](../assets/GItHub趋势项目整理10071705.png)
+
+
+### TechStack: Github 显示技术栈
+[Get-Tech-Stack/TechStack: The extension will display the tech stack of the Repo when the user visit a GitHub Public Repo. The user can more easy get more info about the repo . 当用户访问 GitHub 公共存储库时，该扩展将显示存储库的技术栈。 用户可以更轻松地获取有关存储库的更多信息。](https://github.com/Get-Tech-Stack/TechStack)
+- 浏览器插件，逛 Github 时会在仓库旁边显示技术栈
+- [MIT license](https://github.com/Get-Tech-Stack/TechStack/blob/main/LICENSE)
+![](../assets/20231009-15-20-32.png)

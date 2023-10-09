@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e88ef58c5fdc4a6c",
+        "id": "7bb5ab4ea9d17d2c",
         "type": "tabs",
         "children": [
           {
-            "id": "64e4e791aac72054",
+            "id": "ad9ab403ac72488f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 214.5
   },
   "right": {
     "id": "cd013ef00a62e2ca",
@@ -154,23 +154,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "64e4e791aac72054",
+  "active": "ad9ab403ac72488f",
   "lastOpenFiles": [
-    "未命名 1.canvas",
+    "docs/assets/20231009-16-01-50.png",
+    "docs/assets/20231009-16-01-20.png",
+    "docs/assets/20231009-15-39-36.png",
+    "docs/assets/20231009-15-30-16.png",
+    "docs/assets/20231009-15-20-32.png",
     "docs/article/GItHub 趋势项目整理.md",
+    "docs/assets/20231009-03-20-09.png",
+    "docs/assets/-20231009-03-18-09.png",
+    "docs/assets/Pasted image 20231009151841.png",
+    "未命名 1.canvas",
     "docs/assets/GItHub趋势项目整理2310091121.png",
     "docs/assets/GItHub趋势项目整理10071705.png",
     "docs/books/TypeScript 教程/1 - x.md",
     "docs/assets/GItHub趋势项目整理09271509.png",
-    "docs/assets/GItHub趋势项目整理0926.png",
     "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
-    "docs/assets/GItHub趋势项目整理09201517.png",
-    "docs/assets/GItHub趋势项目整理09201447.png",
-    "docs/assets/GItHub趋势项目整理09201446.png",
     "docs/article/Remote.md",
-    "docs/assets/GItHub趋势项目整理09201330.png",
-    "docs/assets/GItHub趋势项目整理152351.png",
-    "docs/assets/GItHub趋势项目整理152335.png",
     "docs/books/TypeScript 教程",
     "未命名.canvas",
     "docs/unfiled/浏览器敲入 URL 过程.md",
