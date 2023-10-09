@@ -194,7 +194,7 @@
 ### mwmbl: 无广告无追踪的搜索引擎
 [mwmbl/mwmbl: An open source, non-profit search engine implemented in python (github.com)](https://github.com/mwmbl/mwmbl)
 - 在线地址：[mwmbl.org]( https://mwmbl.org/ " https://mwmbl.org" )
-- 推荐，挺好用的，适合 IT 人员。
+- 适合 IT 人员查技术文档和库
 - 无广、无追踪、无盈利的搜索引擎。注重搜索内容，没有广告影响排序，不会有其他内容占据主要视野，且速度更快。
 - [AGPL-3.0 license](https://github.com/mwmbl/mwmbl/blob/main/LICENSE)
 - ![](../assets/GItHub趋势项目整理10071705.png)
