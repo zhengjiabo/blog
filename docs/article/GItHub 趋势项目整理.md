@@ -64,6 +64,34 @@
 - ![](../assets/GItHub趋势项目整理09201446.png)
 - ![](../assets/GItHub趋势项目整理09201447.png)
 
+### Ruoyi -vue-pro
+[YunaiV/ruoyi-vue-pro: 🔥 官方推荐 🔥 RuoYi-Vue 全新 Pro 版本，优化重构所有功能。基于 Spring Boot + MyBatis Plus + Vue & Element 实现的后台管理系统 + 微信小程序，支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、三方登录、支付、短信、商城等功能。你的 ⭐️ Star ⭐️，是作者生发的动力！ (github.com)](https://github.com/YunaiV/ruoyi-vue-pro)
+- 基于 Spring Boot + MyBatis Plus + Vue & Element 实现的后台管理系统 + 微信小程序，支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、三方登录、支付、短信、商城等功能，PC 有两套 UI 可供选择，移动端使用 `uniapp`。基础模块比较全面的框架
+- 演示地址【element-plus】：[http://dashboard-vue3.yudao.iocoder.cn](http://dashboard-vue3.yudao.iocoder.cn/)
+- 演示地址【ant-design-vue】：[http://dashboard-vben.yudao.iocoder.cn](http://dashboard-vben.yudao.iocoder.cn/)
+- 官方文档： [ruoyi-vue-pro 开发指南 (iocoder.cn)](https://doc.iocoder.cn/)
+-  [MIT license](https://github.com/YunaiV/ruoyi-vue-pro/blob/master/LICENSE)
+- ![](../assets/20231009-17-53-14.png)
+- ![](../assets/20231009-17-53-26.png)
+
+
+### Vue-vben-admin: (Ant-Design)
+[vbenjs/vue-vben-admin: A modern vue admin. It is based on Vue3, vite and TypeScript. It's fast！ (github.com)](https://github.com/vbenjs/vue-vben-admin)
+- 技术栈： `Vue3`、`Vite4`、`TypeScript`、 `Ant-Design`，基础功能齐全，很推荐进入演示地址看看。也内嵌了表单设计器
+- 官方文档： [Home | Vben Admin (vvbin.cn)](https://doc.vvbin.cn/)
+- 演示地址： https://vben.vvbin.cn/#/
+- ![](../assets/20231009-17-18-52.png)
+- ![](../assets/20231009-17-17-23.png)
+
+### vue-pure-admin:  (Element-Plus)
+[pure-admin/vue-pure-admin: 🔥 ✨✨ ✨ Vue3+Vite4+Element-Plus+TypeScript编写的一款后台管理系统（兼容移动端） (github.com)](https://github.com/pure-admin/vue-pure-admin)
+- 技术栈： `Vue3`、`Vite`、`Element-Plus`、`TypeScript`、`Pinia`、`Tailwindcss` 。兼容移动端。基础功能齐全，很推荐进入演示地址看看。也内嵌了表单设计器。打包后体积小，打包后低于 `2.3MB`，开启 `brotli` 压缩和 `cdn` 替换本地库模式后，打包大小低于 `350kb`。
+- 官方文档： [Pure Admin 保姆级文档 (gitee.io)](https://yiming_chang.gitee.io/pure-admin-doc/)
+- 演示地址： [PureAdmin (gitee.io)](https://yiming_chang.gitee.io/vue-pure-admin/#/login)
+- ![](../assets/20231009-17-34-02.png)
+- ![](../assets/20231009-17-34-18.png)
+
+
 ## 前端
 ### Astro: 专为速度而设计的一体化 Web 框架
 [withastro/astro: The all-in-one web framework designed for speed. ⭐️ Star to support our work! --- withastro/astro：专为速度而设计的多合一Web框架。⭐️ 星星支持我们的工作！ (github.com)](https://github.com/withastro/astro)
