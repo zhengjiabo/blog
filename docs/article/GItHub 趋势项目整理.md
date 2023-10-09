@@ -37,6 +37,13 @@
 - [演示视频：Real-Time Voice Cloning Toolbox - YouTube](https://www.youtube.com/watch?v=-O_hYhToKoA)
 
 
+### hcaptcha-challenger: 自动过验证码
+- [QIN2DIM/hcaptcha-challenger: 🥂 Gracefully face hCaptcha challenge with MoE(ONNX) embedded solution. (github.com)](https://github.com/QIN2DIM/hcaptcha-challenger)
+- 过如 12306 的识图验证码，不依靠油猴，不依靠第三方验证码服务，而是使用 AI 识别
+-  [GPL-3.0 license](https://github.com/QIN2DIM/hcaptcha-challenger/blob/main/LICENSE)
+- ![](../assets/GItHub趋势项目整理2310091121.png)
+
+
 ## 中后台系统
 ### soybean-admin
 [honghuangdc/soybean-admin: A fresh and elegant admin template, based on Vue3,Vite3,TypeScript,NaiveUI and UnoCSS [一个基于Vue3、Vite3、TypeScript、NaiveUI 和 UnoCSS的清新优雅的中后台模版] (github.com)](https://github.com/honghuangdc/soybean-admin)
