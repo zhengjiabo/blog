@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/algorithm/二叉树.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/algorithm/二叉树.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/algorithm/二叉树.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md"
+                "file": "docs/algorithm/二叉树.md"
               }
             }
           }
@@ -156,6 +156,9 @@
   },
   "active": "ad9ab403ac72488f",
   "lastOpenFiles": [
+    "docs/algorithm/二分搜索算法-左右指针.md",
+    "docs/algorithm/二叉树.md",
+    "docs/article/GItHub 趋势项目整理.md",
     "docs/assets/20231009-17-53-26.png",
     "docs/assets/20231009-17-53-14.png",
     "docs/assets/20231009-17-34-18.png",
@@ -166,8 +169,6 @@
     "docs/assets/20231009-16-01-20.png",
     "docs/assets/20231009-15-39-36.png",
     "docs/assets/20231009-15-30-16.png",
-    "docs/assets/20231009-15-20-32.png",
-    "docs/article/GItHub 趋势项目整理.md",
     "未命名 1.canvas",
     "docs/books/TypeScript 教程/1 - x.md",
     "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
@@ -188,9 +189,7 @@
     "docs/books/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
     "docs/books/Vue.js 设计与实现/2 - 框架设计的核心要素.md",
     "docs/books/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
-    "docs/algorithm/二叉树-总.md",
     "docs/algorithm/BFS-DFS.md",
-    "docs/algorithm/二分搜索算法-左右指针.md",
     "docs/algorithm/双指针.md",
     "conflict-files-obsidian-git.md",
     "docs/books/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
