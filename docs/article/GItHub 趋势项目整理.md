@@ -199,7 +199,15 @@
 
 ### clean-code-javascript: 干净代码概念
 [ryanmcdermott/clean-code-javascript: :bathtub: Clean Code concepts adapted for JavaScript --- ryanmcdermott/clean-code-javascript： 适用于JavaScript的Clean Code概念 (github.com)](https://github.com/ryanmcdermott/clean-code-javascript)
-- 《Clean Code》一书，改编为JavaScript，作者从多年的集体经验中编纂出来。
+- 《Clean Code》一书，改编为 JavaScript，作者从多年的集体经验中编纂出来。
+
+
+### Startup CTO's Handbook: 初创公司 CTO 手册
+[ZachGoldberg/Startup-CTO-Handbook: The Startup CTO's Handbook, a book covering leadership, management and technical topics for leaders of software engineering teams (github.com)](https://github.com/ZachGoldberg/Startup-CTO-Handbook)
+- 一本涵盖领导力、管理和技术主题的书，适用于软件工程团队的领导者。
+- [在线文档](https://github.com/ZachGoldberg/Startup-CTO-Handbook/blob/main/StartupCTOHandbook.md)
+
+
 
 
 ## 其它
