@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/algorithm/链表.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/algorithm/链表.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/algorithm/链表.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md"
+                "file": "docs/algorithm/链表.md"
               }
             }
           }
@@ -156,9 +156,16 @@
   },
   "active": "ad9ab403ac72488f",
   "lastOpenFiles": [
+    "docs/algorithm/双指针.md",
+    "docs/algorithm/链表.md",
+    "docs/article/GItHub 趋势项目整理.md",
+    "docs/algorithm/0 - algorithm.md",
+    "docs/algorithm/动态规划.md",
+    "docs/algorithm/动态规划-买卖股票-121.md",
     "docs/algorithm/二叉树.md",
     "docs/algorithm/二分搜索算法-左右指针.md",
-    "docs/article/GItHub 趋势项目整理.md",
+    "docs/algorithm/轮转数组-189.md",
+    "docs/algorithm/BFS-DFS.md",
     "docs/assets/20231009-17-53-26.png",
     "docs/assets/20231009-17-53-14.png",
     "docs/assets/20231009-17-34-18.png",
@@ -180,21 +187,15 @@
     "[core",
     "未命名.md",
     "docs/article/Obsidian 为什么还需要知识库-外脑.md",
-    "docs/algorithm/动态规划-买卖股票-121.md",
-    "docs/algorithm/动态规划.md",
-    "docs/algorithm/轮转数组-189.md",
     "docs/docker/1 - Docker基础.md",
     "docs/books/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
     "docs/books/Vue.js 设计与实现/1 - 权衡的艺术.md",
     "docs/books/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
     "docs/books/Vue.js 设计与实现/2 - 框架设计的核心要素.md",
     "docs/books/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
-    "docs/algorithm/BFS-DFS.md",
-    "docs/algorithm/双指针.md",
     "conflict-files-obsidian-git.md",
     "docs/books/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
     "docs/docker/Untitled-1.md",
-    "docs/docker/4 - nginx 基础.md",
     "node_modules/shiki/dist/onig.wasm",
     "node_modules/shiki/dist/index.d.ts",
     "node_modules/shiki/samples/zenscript.sample",
