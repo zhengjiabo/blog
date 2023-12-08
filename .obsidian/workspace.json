@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7bb5ab4ea9d17d2c",
+        "id": "607afc447b22eb0e",
         "type": "tabs",
         "children": [
           {
-            "id": "ad9ab403ac72488f",
+            "id": "c1cf0ad7c9195c8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -154,9 +154,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ad9ab403ac72488f",
+  "active": "c1cf0ad7c9195c8f",
   "lastOpenFiles": [
     "docs/algorithm/双指针.md",
+    "docs/article/Obsidian 为什么还需要知识库-外脑.md",
+    "未命名 2.canvas",
     "docs/algorithm/链表.md",
     "docs/article/GItHub 趋势项目整理.md",
     "docs/algorithm/0 - algorithm.md",
@@ -186,7 +188,6 @@
     "[core/LICENSE.md",
     "[core",
     "未命名.md",
-    "docs/article/Obsidian 为什么还需要知识库-外脑.md",
     "docs/docker/1 - Docker基础.md",
     "docs/books/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
     "docs/books/Vue.js 设计与实现/1 - 权衡的艺术.md",
@@ -195,7 +196,6 @@
     "docs/books/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
     "conflict-files-obsidian-git.md",
     "docs/books/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
-    "docs/docker/Untitled-1.md",
     "node_modules/shiki/dist/onig.wasm",
     "node_modules/shiki/dist/index.d.ts",
     "node_modules/shiki/samples/zenscript.sample",
