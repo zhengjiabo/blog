@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f30d061c9c7ca32c",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -165,7 +154,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f30d061c9c7ca32c",
+  "active": "4e18ffac47ae142d",
   "lastOpenFiles": [
     "未命名 2.canvas",
     "未命名 1.canvas",
