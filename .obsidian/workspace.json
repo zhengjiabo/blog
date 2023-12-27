@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "2f7fda425f70087d",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.3"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -165,7 +154,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2f7fda425f70087d",
+  "active": "4e18ffac47ae142d",
   "lastOpenFiles": [
     "docs/assets/20231226-16-01-32.png",
     "docs/assets/20231226-16-00-22.png",
