@@ -156,6 +156,9 @@
   },
   "active": "4e18ffac47ae142d",
   "lastOpenFiles": [
+    "docs/algorithm/双指针.md",
+    "docs/algorithm/数组.md",
+    "docs/algorithm/二分搜索算法-左右指针.md",
     "docs/assets/20231226-16-01-32.png",
     "docs/assets/20231226-16-00-22.png",
     "docs/assets/20231226-15-58-00.png",
@@ -164,11 +167,9 @@
     "docs/assets/20231224-18-00-11.png",
     "docs/assets/20231224-17-59-55.png",
     "docs/algorithm/链表.md",
-    "docs/algorithm/数组.md",
     "docs/assets/20231223-16-35-22.png",
     "docs/assets/20231221-19-06-25.png",
     "docs/assets/20231221-16-14-47.png",
-    "docs/assets/20231221-15-09-42.png",
     "未命名 2.canvas",
     "未命名 1.canvas",
     "docs/article/Remote.md",
@@ -204,7 +205,6 @@
     "node_modules/shiki/README.md",
     "node_modules/vitepress-plugin-search/node_modules/vite/README.md",
     "node_modules/vitepress-plugin-search/node_modules/vite/LICENSE.md",
-    "node_modules/vite/README.md",
     "得到.canvas"
   ]
 }
