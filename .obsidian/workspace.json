@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.5
+    "width": 214.5,
+    "collapsed": true
   },
   "right": {
     "id": "cd013ef00a62e2ca",
@@ -156,6 +157,10 @@
   },
   "active": "c1cf0ad7c9195c8f",
   "lastOpenFiles": [
+    "docs/assets/20240104-15-54-11.png",
+    "docs/assets/20240104-15-18-20.png",
+    "docs/assets/20240104-15-15-37.png",
+    "docs/assets/20240104-14-44-28.png",
     "docs/assets/20240103-15-02-35.png",
     "docs/assets/20240102-19-34-38.png",
     "docs/assets/20231231-19-49-25.png",
@@ -163,10 +168,6 @@
     "docs/assets/20231230-21-12-20.png",
     "docs/assets/20231230-20-48-52.png",
     "docs/assets/20231230-20-46-04.png",
-    "docs/assets/20231226-16-01-32.png",
-    "docs/assets/20231226-16-00-22.png",
-    "docs/assets/20231226-15-58-00.png",
-    "docs/assets/20231224-20-27-14.png",
     "docs/unfiled/苹果更新app描述文件.md",
     "docs/algorithm/数组.md",
     "docs/algorithm/链表.md",
