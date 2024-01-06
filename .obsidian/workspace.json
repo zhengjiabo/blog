@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 279.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,6 +156,7 @@
   },
   "active": "4e18ffac47ae142d",
   "lastOpenFiles": [
+    "docs/assets/20240106-22-06-47.png",
     "docs/algorithm/二叉树1.md",
     "docs/algorithm/二叉树.md",
     "docs/assets/二叉树.md",
@@ -198,7 +199,6 @@
     "docs/vue/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
     "docs/linux/3 - 用户相关 whoami、id、who、w、last.md",
     "docs/unfiled/浏览器敲入 URL 过程.md",
-    "docs/docker/Untitled-1.md",
     "node_modules/shiki/dist/onig.wasm",
     "node_modules/shiki/dist/index.d.ts",
     "node_modules/shiki/samples/zenscript.sample",
