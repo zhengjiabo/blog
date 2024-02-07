@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/unfiled/苹果更新app描述文件.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "487090e56e7ac261",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.3"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/unfiled/苹果更新app描述文件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md",
+                "file": "docs/unfiled/苹果更新app描述文件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/article/GItHub 趋势项目整理.md"
+                "file": "docs/unfiled/苹果更新app描述文件.md"
               }
             }
           }
@@ -165,8 +154,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "487090e56e7ac261",
+  "active": "c1cf0ad7c9195c8f",
   "lastOpenFiles": [
+    "docs/unfiled/认知与优质信息.md",
+    "docs/article/GItHub 趋势项目整理.md",
     "docs/归档.zip",
     "docs/assets/20240114-22-02-47.png",
     "docs/assets/20240114-22-02-37.png",
@@ -187,7 +178,6 @@
     "docs/algorithm/链表.md",
     "docs/article/Obsidian 为什么还需要知识库-外脑.md",
     "未命名 2.canvas",
-    "docs/article/GItHub 趋势项目整理.md",
     "docs/algorithm/0 - algorithm.md",
     "docs/algorithm/动态规划.md",
     "docs/algorithm/动态规划-买卖股票-121.md",
@@ -215,7 +205,6 @@
     "node_modules/shiki/samples/wolfram.sample",
     "node_modules/shiki/samples/wgsl.sample",
     "node_modules/shiki/samples/v.sample",
-    "node_modules/shiki/samples/vyper.sample",
     "得到.canvas"
   ]
 }
