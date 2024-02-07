@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "487090e56e7ac261",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.3"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -154,7 +165,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e9b2ad56fb300a95",
+  "active": "487090e56e7ac261",
   "lastOpenFiles": [
     "docs/归档.zip",
     "docs/assets/20240114-22-02-47.png",
