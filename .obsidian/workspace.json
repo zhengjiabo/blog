@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/css/元素水平垂直居中的多种方案.md",
+                "file": "docs/interview/手写代码/Promise.all.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/interview/css/元素水平垂直居中的多种方案.md",
+                "file": "docs/interview/手写代码/Promise.all.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/interview/css/元素水平垂直居中的多种方案.md",
+                "file": "docs/interview/手写代码/Promise.all.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/css/元素水平垂直居中的多种方案.md"
+                "file": "docs/interview/手写代码/Promise.all.md"
               }
             }
           }
@@ -169,9 +169,23 @@
   },
   "active": "f8e5b0a827c9b88f",
   "lastOpenFiles": [
-    "docs/interview/css/z-index 的生效规则.md",
-    "docs/interview/css/元素水平垂直居中的多种方案.md",
+    "docs/interview/css/CSS 配置暗黑模式.md",
+    "docs/interview/手写代码/Promise.all.md",
+    "docs/interview/手写代码",
+    "docs/interview/css/左侧固定、右侧自适应.md",
+    "docs/interview/css/CSS 如何避免样式冲突.md",
+    "docs/interview/css/css variable 解决了什么.md",
     "docs/interview/css/CSS中样式的优先级顺序.md",
+    "docs/assets/20240302-18-57-36.png",
+    "docs/assets/20240302-18-44-00.png",
+    "docs/assets/20240302-18-43-10.png",
+    "docs/interview/css/如何画一个正方形 或 长宽固定的长方形.md",
+    "docs/interview/css/三栏均分布局.md",
+    "docs/interview/css/双飞翼布局和圣杯布局.md",
+    "docs/interview/css/元素水平垂直居中的多种方案.md",
+    "docs/assets/20210707104744904.png",
+    "docs/assets/20240302-18-11-00.png",
+    "docs/interview/css/z-index 的生效规则.md",
     "docs/assets/image (1).png",
     "docs/assets/image 1.png",
     "docs/assets/image.png",
@@ -193,22 +207,9 @@
     "docs/归档.zip",
     "docs/assets/20240114-22-02-47.png",
     "docs/assets/20240114-22-02-37.png",
-    "docs/assets/20240114-21-38-36.png",
-    "docs/assets/20240114-21-32-33.png",
-    "docs/assets/20240112-15-06-51.png",
-    "docs/assets/20240112-14-48-12.png",
-    "docs/assets/20240112-14-47-52.png",
     "docs/algorithm/二叉树.md",
     "归档.zip",
-    "docs/algorithm/数组.md",
-    "docs/assets/二叉树.md",
-    "docs/unfiled/苹果更新app描述文件.md",
-    "docs/algorithm/链表.md",
-    "docs/article/Obsidian 为什么还需要知识库-外脑.md",
     "未命名 2.canvas",
-    "docs/algorithm/0 - algorithm.md",
-    "docs/algorithm/动态规划.md",
-    "docs/algorithm/动态规划-买卖股票-121.md",
     "未命名 1.canvas",
     "docs/books/TypeScript 教程",
     "未命名.canvas",
@@ -217,7 +218,6 @@
     "node_modules/shiki/dist/index.d.ts",
     "node_modules/shiki/samples/zenscript.sample",
     "node_modules/shiki/samples/wolfram.sample",
-    "node_modules/shiki/samples/wgsl.sample",
     "得到.canvas"
   ]
 }
