@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/手写代码/Promise.all.md",
+                "file": "docs/interview/工程化/前端组件规范.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/interview/手写代码/Promise.all.md",
+                "file": "docs/interview/工程化/前端组件规范.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/interview/手写代码/Promise.all.md",
+                "file": "docs/interview/工程化/前端组件规范.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/手写代码/Promise.all.md"
+                "file": "docs/interview/工程化/前端组件规范.md"
               }
             }
           }
@@ -169,8 +169,16 @@
   },
   "active": "f8e5b0a827c9b88f",
   "lastOpenFiles": [
-    "docs/interview/css/CSS 配置暗黑模式.md",
+    "docs/interview/工程化/zx 的作用.md",
+    "docs/interview/工程化/前端组件规范.md",
+    "docs/interview/工程化/未命名",
+    "docs/interview/工程化/lint-staged 的作用.md",
+    "docs/interview/linux/glob.md",
     "docs/interview/手写代码/Promise.all.md",
+    "docs/interview/工程化/husky 的作用.md",
+    "docs/interview/linux",
+    "docs/interview/工程化",
+    "docs/interview/css/CSS 配置暗黑模式.md",
     "docs/interview/手写代码",
     "docs/interview/css/左侧固定、右侧自适应.md",
     "docs/interview/css/CSS 如何避免样式冲突.md",
@@ -200,14 +208,9 @@
     "docs/books/Vue.js 设计与实现/1 - 权衡的艺术.md",
     "docs/books/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
     "docs/algorithm/双指针.md",
-    "docs/algorithm/BFS-DFS.md",
-    "docs/article/0 - article.md",
-    "docs/unfiled/认知与优质信息.md",
-    "docs/article/GItHub 趋势项目整理.md",
     "docs/归档.zip",
     "docs/assets/20240114-22-02-47.png",
     "docs/assets/20240114-22-02-37.png",
-    "docs/algorithm/二叉树.md",
     "归档.zip",
     "未命名 2.canvas",
     "未命名 1.canvas",
@@ -215,9 +218,6 @@
     "未命名.canvas",
     "[core",
     "node_modules/shiki/dist/onig.wasm",
-    "node_modules/shiki/dist/index.d.ts",
-    "node_modules/shiki/samples/zenscript.sample",
-    "node_modules/shiki/samples/wolfram.sample",
     "得到.canvas"
   ]
 }
