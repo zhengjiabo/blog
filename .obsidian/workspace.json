@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f8e5b0a827c9b88f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/interview/css/元素水平垂直居中的多种方案.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/unfiled/苹果更新app描述文件.md",
+                "file": "docs/interview/css/元素水平垂直居中的多种方案.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/unfiled/苹果更新app描述文件.md",
+                "file": "docs/interview/css/元素水平垂直居中的多种方案.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/unfiled/苹果更新app描述文件.md"
+                "file": "docs/interview/css/元素水平垂直居中的多种方案.md"
               }
             }
           }
@@ -154,8 +167,27 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c1cf0ad7c9195c8f",
+  "active": "f8e5b0a827c9b88f",
   "lastOpenFiles": [
+    "docs/interview/css/z-index 的生效规则.md",
+    "docs/interview/css/元素水平垂直居中的多种方案.md",
+    "docs/interview/css/CSS中样式的优先级顺序.md",
+    "docs/assets/image (1).png",
+    "docs/assets/image 1.png",
+    "docs/assets/image.png",
+    "docs/demo/100.md",
+    "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
+    "docs/interview/css",
+    "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
+    "docs/interview/vue/0 - vue.md",
+    "docs/books/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
+    "docs/books/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
+    "docs/books/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
+    "docs/books/Vue.js 设计与实现/1 - 权衡的艺术.md",
+    "docs/books/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
+    "docs/algorithm/双指针.md",
+    "docs/algorithm/BFS-DFS.md",
+    "docs/article/0 - article.md",
     "docs/unfiled/认知与优质信息.md",
     "docs/article/GItHub 趋势项目整理.md",
     "docs/归档.zip",
@@ -166,12 +198,8 @@
     "docs/assets/20240112-15-06-51.png",
     "docs/assets/20240112-14-48-12.png",
     "docs/assets/20240112-14-47-52.png",
-    "docs/assets/20240111-20-01-22.png",
-    "docs/assets/20240111-16-43-15.png",
-    "docs/assets/20240111-13-56-09.png",
     "docs/algorithm/二叉树.md",
     "归档.zip",
-    "docs/algorithm/双指针.md",
     "docs/algorithm/数组.md",
     "docs/assets/二叉树.md",
     "docs/unfiled/苹果更新app描述文件.md",
@@ -181,30 +209,15 @@
     "docs/algorithm/0 - algorithm.md",
     "docs/algorithm/动态规划.md",
     "docs/algorithm/动态规划-买卖股票-121.md",
-    "docs/algorithm/二分搜索算法-左右指针.md",
-    "docs/algorithm/轮转数组-189.md",
-    "docs/algorithm/BFS-DFS.md",
     "未命名 1.canvas",
-    "docs/books/TypeScript 教程/1 - x.md",
-    "docs/article/Obsidian 如何实现 ios 和 pc 免费共享.md",
-    "docs/article/Remote.md",
     "docs/books/TypeScript 教程",
     "未命名.canvas",
-    "docs/unfiled/浏览器敲入 URL 过程.md",
-    "[core/LICENSE.md",
     "[core",
-    "未命名.md",
-    "docs/docker/1 - Docker基础.md",
-    "docs/books/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
-    "docs/books/Vue.js 设计与实现/1 - 权衡的艺术.md",
-    "docs/books/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
-    "docs/books/Vue.js 设计与实现/2 - 框架设计的核心要素.md",
     "node_modules/shiki/dist/onig.wasm",
     "node_modules/shiki/dist/index.d.ts",
     "node_modules/shiki/samples/zenscript.sample",
     "node_modules/shiki/samples/wolfram.sample",
     "node_modules/shiki/samples/wgsl.sample",
-    "node_modules/shiki/samples/v.sample",
     "得到.canvas"
   ]
 }
