@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/工程化/前端组件规范.md",
+                "file": "docs/interview/手写代码/Promise.all.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/interview/工程化/前端组件规范.md",
+                "file": "docs/interview/手写代码/Promise.all.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/interview/工程化/前端组件规范.md",
+                "file": "docs/interview/手写代码/Promise.all.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/工程化/前端组件规范.md"
+                "file": "docs/interview/手写代码/Promise.all.md"
               }
             }
           }
@@ -169,28 +169,31 @@
   },
   "active": "f8e5b0a827c9b88f",
   "lastOpenFiles": [
-    "docs/interview/工程化/zx 的作用.md",
+    "docs/interview/css/元素水平垂直居中的多种方案.md",
+    "docs/interview/css/左侧固定、右侧自适应.md",
+    "docs/interview/css/双飞翼布局和圣杯布局.md",
+    "docs/interview/css/三栏均分布局.md",
+    "docs/interview/css/如何画一个正方形 或 长宽固定的长方形.md",
     "docs/interview/工程化/前端组件规范.md",
-    "docs/interview/工程化/未命名",
-    "docs/interview/工程化/lint-staged 的作用.md",
-    "docs/interview/linux/glob.md",
     "docs/interview/手写代码/Promise.all.md",
+    "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
+    "docs/interview/工程化/zx 的作用.md",
     "docs/interview/工程化/husky 的作用.md",
+    "docs/interview/工程化/lint-staged 的作用.md",
+    "docs/docker/1 - Docker基础.md",
+    "docs/docker/0 - docker.md",
+    "docs/interview/工程化/未命名",
+    "docs/interview/linux/glob.md",
     "docs/interview/linux",
     "docs/interview/工程化",
     "docs/interview/css/CSS 配置暗黑模式.md",
     "docs/interview/手写代码",
-    "docs/interview/css/左侧固定、右侧自适应.md",
     "docs/interview/css/CSS 如何避免样式冲突.md",
     "docs/interview/css/css variable 解决了什么.md",
     "docs/interview/css/CSS中样式的优先级顺序.md",
     "docs/assets/20240302-18-57-36.png",
     "docs/assets/20240302-18-44-00.png",
     "docs/assets/20240302-18-43-10.png",
-    "docs/interview/css/如何画一个正方形 或 长宽固定的长方形.md",
-    "docs/interview/css/三栏均分布局.md",
-    "docs/interview/css/双飞翼布局和圣杯布局.md",
-    "docs/interview/css/元素水平垂直居中的多种方案.md",
     "docs/assets/20210707104744904.png",
     "docs/assets/20240302-18-11-00.png",
     "docs/interview/css/z-index 的生效规则.md",
@@ -200,14 +203,11 @@
     "docs/demo/100.md",
     "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
     "docs/interview/css",
-    "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
     "docs/interview/vue/0 - vue.md",
     "docs/books/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
     "docs/books/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
     "docs/books/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
     "docs/books/Vue.js 设计与实现/1 - 权衡的艺术.md",
-    "docs/books/Vue.js 设计与实现/21 - 简单 Diff 算法.md",
-    "docs/algorithm/双指针.md",
     "docs/归档.zip",
     "docs/assets/20240114-22-02-47.png",
     "docs/assets/20240114-22-02-37.png",
