@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/手写代码/Promise.all.md",
+                "file": "docs/interview/工程化/前端组件规范.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/interview/手写代码/Promise.all.md",
+                "file": "docs/interview/工程化/前端组件规范.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/interview/手写代码/Promise.all.md",
+                "file": "docs/interview/工程化/前端组件规范.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/手写代码/Promise.all.md"
+                "file": "docs/interview/工程化/前端组件规范.md"
               }
             }
           }
@@ -169,13 +169,13 @@
   },
   "active": "f8e5b0a827c9b88f",
   "lastOpenFiles": [
+    "docs/interview/手写代码/Promise.all.md",
     "docs/interview/css/元素水平垂直居中的多种方案.md",
     "docs/interview/css/左侧固定、右侧自适应.md",
     "docs/interview/css/双飞翼布局和圣杯布局.md",
     "docs/interview/css/三栏均分布局.md",
     "docs/interview/css/如何画一个正方形 或 长宽固定的长方形.md",
     "docs/interview/工程化/前端组件规范.md",
-    "docs/interview/手写代码/Promise.all.md",
     "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
     "docs/interview/工程化/zx 的作用.md",
     "docs/interview/工程化/husky 的作用.md",
