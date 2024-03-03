@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "607afc447b22eb0e",
+        "id": "56b81fe009b29142",
         "type": "tabs",
         "children": [
           {
-            "id": "c1cf0ad7c9195c8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/unfiled/苹果更新app描述文件.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f8e5b0a827c9b88f",
+            "id": "dbb5bd955568f57f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "免密",
+                "query": "硬链接",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,15 +154,18 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f8e5b0a827c9b88f",
+  "active": "dbb5bd955568f57f",
   "lastOpenFiles": [
+    "docs/linux/4 - 文件信息 stat.md",
+    "docs/unfiled/苹果更新app描述文件.md",
+    "docs/docker/3 - 极简项目的 docker 部署.md",
+    "docs/interview/工程化/前端组件规范.md",
     "docs/interview/手写代码/Promise.all.md",
     "docs/interview/css/元素水平垂直居中的多种方案.md",
     "docs/interview/css/左侧固定、右侧自适应.md",
     "docs/interview/css/双飞翼布局和圣杯布局.md",
     "docs/interview/css/三栏均分布局.md",
     "docs/interview/css/如何画一个正方形 或 长宽固定的长方形.md",
-    "docs/interview/工程化/前端组件规范.md",
     "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
     "docs/interview/工程化/zx 的作用.md",
     "docs/interview/工程化/husky 的作用.md",
@@ -205,9 +195,6 @@
     "docs/interview/css",
     "docs/interview/vue/0 - vue.md",
     "docs/books/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
-    "docs/books/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md",
-    "docs/books/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md",
-    "docs/books/Vue.js 设计与实现/1 - 权衡的艺术.md",
     "docs/归档.zip",
     "docs/assets/20240114-22-02-47.png",
     "docs/assets/20240114-22-02-37.png",
