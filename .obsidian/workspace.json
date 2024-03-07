@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/工程化/前端组件规范.md",
+                "file": "docs/web3/区块链.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/interview/工程化/前端组件规范.md",
+                "file": "docs/web3/区块链.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/interview/工程化/前端组件规范.md",
+                "file": "docs/web3/区块链.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/工程化/前端组件规范.md"
+                "file": "docs/web3/区块链.md"
               }
             }
           }
@@ -156,10 +156,12 @@
   },
   "active": "dbb5bd955568f57f",
   "lastOpenFiles": [
+    "docs/interview/工程化/前端组件规范.md",
+    "docs/web3/区块链.md",
+    "docs/web3",
     "docs/linux/4 - 文件信息 stat.md",
     "docs/unfiled/苹果更新app描述文件.md",
     "docs/docker/3 - 极简项目的 docker 部署.md",
-    "docs/interview/工程化/前端组件规范.md",
     "docs/interview/手写代码/Promise.all.md",
     "docs/interview/css/元素水平垂直居中的多种方案.md",
     "docs/interview/css/左侧固定、右侧自适应.md",
@@ -194,7 +196,6 @@
     "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
     "docs/interview/css",
     "docs/interview/vue/0 - vue.md",
-    "docs/books/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
     "docs/归档.zip",
     "docs/assets/20240114-22-02-47.png",
     "docs/assets/20240114-22-02-37.png",
@@ -204,7 +205,6 @@
     "docs/books/TypeScript 教程",
     "未命名.canvas",
     "[core",
-    "node_modules/shiki/dist/onig.wasm",
     "得到.canvas"
   ]
 }
