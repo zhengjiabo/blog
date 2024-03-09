@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.5
+    "width": 214.5,
+    "collapsed": true
   },
   "right": {
     "id": "cd013ef00a62e2ca",
@@ -154,8 +155,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "dbb5bd955568f57f",
+  "active": "e9b2ad56fb300a95",
   "lastOpenFiles": [
+    "docs/assets/20240309-13-08-53.png",
     "docs/interview/工程化/前端组件规范.md",
     "docs/web3/区块链.md",
     "docs/web3",
@@ -195,7 +197,6 @@
     "docs/demo/100.md",
     "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
     "docs/interview/css",
-    "docs/interview/vue/0 - vue.md",
     "docs/归档.zip",
     "docs/assets/20240114-22-02-47.png",
     "docs/assets/20240114-22-02-37.png",
