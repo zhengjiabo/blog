@@ -143,7 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 303.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -155,7 +155,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e9b2ad56fb300a95",
+  "active": "dbb5bd955568f57f",
   "lastOpenFiles": [
     "docs/assets/20240309-13-08-53.png",
     "docs/interview/工程化/前端组件规范.md",
