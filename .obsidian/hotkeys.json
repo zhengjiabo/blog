@@ -7,5 +7,14 @@
       ],
       "key": "`"
     }
+  ],
+  "obsidian-export-image:copy-as-image-zh": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": ","
+    }
   ]
 }

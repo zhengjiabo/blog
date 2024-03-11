@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "docs/web3/区块链.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.5,
-    "collapsed": true
+    "width": 214.5
   },
   "right": {
     "id": "cd013ef00a62e2ca",
@@ -157,9 +156,15 @@
   },
   "active": "dbb5bd955568f57f",
   "lastOpenFiles": [
+    "docs/index.md",
+    "docs/web3/区块链.md",
+    "output/attachment/625c6ae9b7818940eb7a3919a9197f02.png",
+    "output/区块链.html",
+    "output/attachment",
+    "output",
+    "output/区块链.md",
     "docs/assets/20240309-13-08-53.png",
     "docs/interview/工程化/前端组件规范.md",
-    "docs/web3/区块链.md",
     "docs/web3",
     "docs/linux/4 - 文件信息 stat.md",
     "docs/unfiled/苹果更新app描述文件.md",
@@ -195,17 +200,11 @@
     "docs/assets/image 1.png",
     "docs/assets/image.png",
     "docs/demo/100.md",
-    "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
     "docs/interview/css",
     "docs/归档.zip",
-    "docs/assets/20240114-22-02-47.png",
-    "docs/assets/20240114-22-02-37.png",
-    "归档.zip",
     "未命名 2.canvas",
     "未命名 1.canvas",
-    "docs/books/TypeScript 教程",
     "未命名.canvas",
-    "[core",
     "得到.canvas"
   ]
 }
