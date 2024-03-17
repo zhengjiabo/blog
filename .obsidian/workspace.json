@@ -4,28 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "73db587862e8bdfb",
-        "type": "tabs",
-        "dimension": 52.04262877442274,
-        "children": [
-          {
-            "id": "dbb5bd955568f57f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/web3/比特币.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "56b81fe009b29142",
         "type": "tabs",
-        "dimension": 47.95737122557727,
         "children": [
           {
             "id": "ba9d2595dd37910b",
@@ -33,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/web3/区块链.md",
+                "file": "docs/web3/比特币.md",
                 "mode": "source",
                 "source": false
               }
@@ -175,11 +155,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "dbb5bd955568f57f",
+  "active": "ba9d2595dd37910b",
   "lastOpenFiles": [
-    "docs/assets/20240317-12-38-11.png",
     "docs/web3/区块链.md",
     "docs/web3/比特币.md",
+    "docs/assets/20240317-12-38-11.png",
     "docs/assets/20240313-07-23-18.png",
     "docs/index.md",
     "output/attachment/625c6ae9b7818940eb7a3919a9197f02.png",
@@ -220,7 +200,6 @@
     "docs/assets/20210707104744904.png",
     "docs/assets/20240302-18-11-00.png",
     "docs/assets/image (1).png",
-    "docs/assets/image 1.png",
     "docs/interview/css",
     "docs/归档.zip",
     "未命名 2.canvas",
