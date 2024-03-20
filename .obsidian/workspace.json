@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "3d42c840025502bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b579b2c29a3e659f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/web3/区块链.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -77,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.5
+    "width": 214.5,
+    "collapsed": true
   },
   "right": {
     "id": "cd013ef00a62e2ca",
@@ -156,6 +175,10 @@
   },
   "active": "ba9d2595dd37910b",
   "lastOpenFiles": [
+    "docs/assets/20240320-07-59-39.png",
+    "docs/assets/20240320-07-35-17.png",
+    "docs/assets/20240320-07-22-46.png",
+    "docs/assets/20240320-07-09-33.png",
     "docs/web3/区块链.md",
     "docs/web3/比特币.md",
     "docs/assets/20240317-12-38-11.png",
@@ -196,9 +219,6 @@
     "docs/assets/20240302-18-57-36.png",
     "docs/assets/20240302-18-44-00.png",
     "docs/assets/20240302-18-43-10.png",
-    "docs/assets/20210707104744904.png",
-    "docs/assets/20240302-18-11-00.png",
-    "docs/assets/image (1).png",
     "docs/interview/css",
     "docs/归档.zip",
     "未命名 2.canvas",
