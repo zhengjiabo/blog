@@ -101,7 +101,7 @@ async function generateFilesAndDirs(rootDir, blacklist, filePath) {
 }
 const ROOT_DIR = './docs';
 const BLACKLIST = ['demo', '\.vitepress', 'assets', 'public'];
-const SORTLIST = ['docker', 'linux', 'http', 'webpack', 'vue']
+const SORTLIST = ['web3', 'docker', 'linux', 'http', 'webpack', 'vue']
 const FILE_PATH = './docs/.vitepress/generate/nav.json';
 
 generateFilesAndDirs(ROOT_DIR, BLACKLIST, FILE_PATH)
