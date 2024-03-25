@@ -6,7 +6,7 @@
       {
         "id": "56b81fe009b29142",
         "type": "tabs",
-        "dimension": 53.77107364685004,
+        "dimension": 60.460021905805036,
         "children": [
           {
             "id": "ba9d2595dd37910b",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/web3/比特币.md",
+                "file": "docs/web3/以太坊.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
       {
         "id": "3d42c840025502bc",
         "type": "tabs",
-        "dimension": 46.22892635314996,
+        "dimension": 39.539978094194964,
         "children": [
           {
             "id": "b579b2c29a3e659f",
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/web3/比特币.md",
+                "file": "docs/web3/以太坊.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/web3/比特币.md",
+                "file": "docs/web3/以太坊.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/web3/比特币.md"
+                "file": "docs/web3/以太坊.md"
               }
             }
           }
@@ -176,8 +176,13 @@
   },
   "active": "ba9d2595dd37910b",
   "lastOpenFiles": [
-    "docs/web3/区块链.md",
     "docs/web3/比特币.md",
+    "docs/web3/以太坊.md",
+    "docs/__rar_10876.49672",
+    "docs/__rar_10876.49317",
+    "docs/docs.rar",
+    "docs/assets/20240325-07-38-35.png",
+    "docs/web3/区块链.md",
     "docs/assets/20240324-15-20-11.png",
     "docs/assets/20240324-15-19-36.png",
     "docs/assets/20240324-15-14-31.png",
@@ -189,7 +194,6 @@
     "docs/index.md",
     "README.md",
     "docs/assets/20240323-12-42-12.png",
-    "docs/assets/20240323-09-40-07.png",
     "output/区块链.html",
     "output/attachment",
     "output",
@@ -216,11 +220,7 @@
     "docs/interview/linux",
     "docs/interview/工程化",
     "docs/interview/css/CSS 配置暗黑模式.md",
-    "docs/interview/手写代码",
     "docs/interview/css/CSS 如何避免样式冲突.md",
-    "docs/interview/css/css variable 解决了什么.md",
-    "docs/interview/css",
-    "docs/归档.zip",
     "未命名 2.canvas",
     "未命名 1.canvas",
     "未命名.canvas",
