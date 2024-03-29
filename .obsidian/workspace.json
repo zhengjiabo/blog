@@ -6,7 +6,7 @@
       {
         "id": "56b81fe009b29142",
         "type": "tabs",
-        "dimension": 56.955093099671416,
+        "dimension": 28.305235137533273,
         "children": [
           {
             "id": "ba9d2595dd37910b",
@@ -25,7 +25,7 @@
       {
         "id": "3d42c840025502bc",
         "type": "tabs",
-        "dimension": 43.044906900328584,
+        "dimension": 71.69476486246673,
         "children": [
           {
             "id": "b579b2c29a3e659f",
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/web3/比特币.md",
+                "file": "docs/web3/以太坊.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/web3/比特币.md",
+                "file": "docs/web3/以太坊.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/web3/比特币.md"
+                "file": "docs/web3/以太坊.md"
               }
             }
           }
@@ -175,10 +175,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ba9d2595dd37910b",
+  "active": "b579b2c29a3e659f",
   "lastOpenFiles": [
-    "docs/web3/以太坊.md",
     "docs/web3/比特币.md",
+    "docs/web3/以太坊.md",
     "docs/web3/区块链.md",
     "docs/__rar_10876.49672",
     "docs/__rar_10876.49317",
