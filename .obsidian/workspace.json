@@ -4,36 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "56b81fe009b29142",
+        "id": "607afc447b22eb0e",
         "type": "tabs",
-        "dimension": 35.84738243123336,
         "children": [
           {
-            "id": "ba9d2595dd37910b",
+            "id": "c1cf0ad7c9195c8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/web3/比特币.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "3d42c840025502bc",
-        "type": "tabs",
-        "dimension": 64.15261756876663,
-        "children": [
-          {
-            "id": "b579b2c29a3e659f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/web3/以太坊.md",
+                "file": "docs/web3/区块链.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "硬链接",
+                "query": "免密",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.5,
-    "collapsed": true
+    "width": 214.5
   },
   "right": {
     "id": "cd013ef00a62e2ca",
@@ -114,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/web3/以太坊.md",
+                "file": "docs/web3/区块链.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/web3/以太坊.md",
+                "file": "docs/web3/区块链.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/web3/以太坊.md"
+                "file": "docs/web3/区块链.md"
               }
             }
           }
@@ -163,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 303.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,57 +154,57 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b579b2c29a3e659f",
+  "active": "c1cf0ad7c9195c8f",
   "lastOpenFiles": [
-    "docs/assets/20240407-07-27-21.png",
-    "docs/web3/比特币.md",
     "docs/web3/以太坊.md",
+    "docs/web3/区块链.md",
+    "docs/unfiled/苹果更新app描述文件.md",
+    "docs/web3/比特币.md",
+    "docs/web3",
+    "docs/interview/手写代码/Promise.all.md",
+    "docs/interview/手写代码",
+    "docs/interview/工程化/前端组件规范.md",
+    "docs/interview/工程化/zx 的作用.md",
+    "docs/interview/工程化/lint-staged 的作用.md",
+    "docs/interview/工程化/husky 的作用.md",
+    "docs/interview/工程化",
+    "docs/interview/css/左侧固定、右侧自适应.md",
+    "docs/interview/css/元素水平垂直居中的多种方案.md",
+    "docs/interview/css/如何画一个正方形 或 长宽固定的长方形.md",
+    "docs/interview/css/双飞翼布局和圣杯布局.md",
+    "docs/interview/css/三栏均分布局.md",
+    "docs/interview/css/z-index 的生效规则.md",
+    "docs/interview/css/css variable 解决了什么.md",
+    "docs/interview/css/CSS中样式的优先级顺序.md",
+    "docs/interview/css/CSS 配置暗黑模式.md",
+    "docs/interview/css/CSS 如何避免样式冲突.md",
+    "docs/interview/css",
+    "docs/docs.rar",
+    "docs/assets/image.png",
+    "docs/assets/image 1.png",
+    "docs/assets/image (1).png",
+    "docs/assets/ff85b24ef185143695b485e01c5ffad.png",
+    "docs/assets/ff85b24ef185143695b485e01c5ffad 1.png",
+    "docs/assets/db31853be5cb90748f407179d7fafb9.png",
+    "docs/assets/20240407-07-27-21.png",
     "docs/assets/20240406-21-26-04.png",
     "docs/assets/20240406-21-21-09.png",
     "docs/assets/20240406-21-16-42.png",
-    "docs/assets/20240406-21-06-40.png",
-    "docs/assets/012CDD5C.png",
-    "docs/assets/20240406-12-26-49.png",
-    "docs/assets/20240406-12-26-07.png",
-    "docs/assets/20240406-12-11-09.png",
-    "docs/assets/20240405-22-23-17.png",
-    "docs/assets/20240405-22-11-09.png",
-    "docs/web3/区块链.md",
-    "docs/__rar_10876.49672",
-    "docs/__rar_10876.49317",
-    "docs/docs.rar",
-    "docs/index.md",
-    "README.md",
-    "output/区块链.html",
-    "output/attachment",
-    "output",
-    "output/区块链.md",
-    "docs/interview/工程化/前端组件规范.md",
-    "docs/web3",
-    "docs/linux/4 - 文件信息 stat.md",
-    "docs/unfiled/苹果更新app描述文件.md",
-    "docs/docker/3 - 极简项目的 docker 部署.md",
-    "docs/interview/手写代码/Promise.all.md",
-    "docs/interview/css/元素水平垂直居中的多种方案.md",
-    "docs/interview/css/左侧固定、右侧自适应.md",
-    "docs/interview/css/双飞翼布局和圣杯布局.md",
-    "docs/interview/css/三栏均分布局.md",
-    "docs/interview/css/如何画一个正方形 或 长宽固定的长方形.md",
-    "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
-    "docs/interview/工程化/zx 的作用.md",
-    "docs/interview/工程化/husky 的作用.md",
-    "docs/interview/工程化/lint-staged 的作用.md",
-    "docs/docker/1 - Docker基础.md",
-    "docs/docker/0 - docker.md",
-    "docs/interview/工程化/未命名",
-    "docs/interview/linux/glob.md",
-    "docs/interview/linux",
-    "docs/interview/工程化",
-    "docs/interview/css/CSS 配置暗黑模式.md",
-    "docs/interview/css/CSS 如何避免样式冲突.md",
+    "docs/unfiled/认知与优质信息.md",
+    "docs/article/GItHub 趋势项目整理.md",
+    "docs/归档.zip",
+    "docs/algorithm/二叉树.md",
+    "归档.zip",
+    "docs/algorithm/双指针.md",
+    "docs/algorithm/数组.md",
+    "docs/assets/二叉树.md",
+    "docs/algorithm/链表.md",
     "未命名 2.canvas",
     "未命名 1.canvas",
+    "docs/books/TypeScript 教程",
     "未命名.canvas",
+    "[core",
+    "node_modules/shiki/dist/onig.wasm",
     "得到.canvas"
   ]
 }
