@@ -13,6 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "docs/web3/QA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "61ab844f1de82372",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b8d030830a859c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "docs/web3/以太坊.md",
                 "mode": "source",
                 "source": false
@@ -154,12 +172,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c1cf0ad7c9195c8f",
+  "active": "5b8d030830a859c0",
   "lastOpenFiles": [
-    "docs/web3/区块链.md",
+    "docs/web3/QA.md",
     "docs/web3/以太坊.md",
-    "docs/unfiled/苹果更新app描述文件.md",
     "docs/web3/比特币.md",
+    "docs/web3/区块链.md",
+    "docs/web3/ethers.js.md",
+    "docs/unfiled/苹果更新app描述文件.md",
     "docs/web3",
     "docs/interview/手写代码/Promise.all.md",
     "docs/interview/手写代码",
@@ -197,8 +217,6 @@
     "归档.zip",
     "docs/algorithm/双指针.md",
     "docs/algorithm/数组.md",
-    "docs/assets/二叉树.md",
-    "docs/algorithm/链表.md",
     "未命名 2.canvas",
     "未命名 1.canvas",
     "docs/books/TypeScript 教程",
