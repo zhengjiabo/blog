@@ -49,7 +49,7 @@ vim /etc/ssh/sshd_config
 参考 vim 操作 [28 - vim mode 模式](../linux/28%20-%20vim%20mode%20模式.md)
 写上以下文本并保存退出
 
-```text
+```txt
 PermitRootLogin yes
 ```
 
@@ -61,37 +61,37 @@ rc-service sshd restart
 
 3. 在 iSH 中建立 obsidian 文件夹
 
-```text
+```txt
 cd ~ && mkdir obsidian
 ```
 
 4. 执行以下命令会打开手机文件管理器，之后需要选中本地的 obsidian 文件夹，进行关联
 
-```text
+```txt
 mount -t ios . obsidian
 ```
 
 5. 通过 cd 命令，进入 blog 文件夹内
 
-```text
+```txt
 cd ~/obsidian/blog
 ```
 
 6. 初始化git
 
-```text
+```txt
 git init
 ```
 
 7. 为了防止出错，要禁用安全名单
 
-```text
+```txt
 git config --global --add safe.directory /root/obsidian/blog
 ```
 
 8. 使iSH链接你的仓库地址（之前获取的ssh地址）
 
-```text
+```txt
 git remote add origin git@xxxx/blog.git
 ```
 

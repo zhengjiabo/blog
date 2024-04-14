@@ -1,4 +1,28 @@
 {
+  "/web3/": [
+    {
+      "text": "web3",
+      "link": "/web3/0 - web3.md",
+      "items": [
+        {
+          "text": "ethers.js.md",
+          "link": "/web3/ethers.js.md"
+        },
+        {
+          "text": "以太坊.md",
+          "link": "/web3/以太坊.md"
+        },
+        {
+          "text": "区块链.md",
+          "link": "/web3/区块链.md"
+        },
+        {
+          "text": "比特币.md",
+          "link": "/web3/比特币.md"
+        }
+      ]
+    }
+  ],
   "/docker/": [
     {
       "text": "docker",
@@ -7,6 +31,10 @@
         {
           "text": "1 - Docker基础.md",
           "link": "/docker/1 - Docker基础.md"
+        },
+        {
+          "text": "Untitled-1.md",
+          "link": "/docker/Untitled-1.md"
         },
         {
           "text": "2 - 静态资源服务器.md",
@@ -351,30 +379,6 @@
       ]
     }
   ],
-  "/vue/": [
-    {
-      "text": "Vue.js 设计与实现",
-      "link": "/vue/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
-      "items": [
-        {
-          "text": "1 - 权衡的艺术.md",
-          "link": "/vue/Vue.js 设计与实现/1 - 权衡的艺术.md"
-        },
-        {
-          "text": "2 - 框架设计的核心要素.md",
-          "link": "/vue/Vue.js 设计与实现/2 - 框架设计的核心要素.md"
-        },
-        {
-          "text": "3 - Vue.js 3 的设计思路.md",
-          "link": "/vue/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md"
-        },
-        {
-          "text": "4 - 响应式数据和副作用函数.md",
-          "link": "/vue/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md"
-        }
-      ]
-    }
-  ],
   "/algorithm/": [
     {
       "text": "algorithm",
@@ -385,12 +389,8 @@
           "link": "/algorithm/BFS-DFS.md"
         },
         {
-          "text": "二分搜索算法-左右指针.md",
-          "link": "/algorithm/二分搜索算法-左右指针.md"
-        },
-        {
-          "text": "二叉树-总.md",
-          "link": "/algorithm/二叉树-总.md"
+          "text": "二叉树.md",
+          "link": "/algorithm/二叉树.md"
         },
         {
           "text": "动态规划.md",
@@ -403,6 +403,22 @@
         {
           "text": "回溯算法.md",
           "link": "/algorithm/回溯算法.md"
+        },
+        {
+          "text": "数组.md",
+          "link": "/algorithm/数组.md"
+        },
+        {
+          "text": "链表.md",
+          "link": "/algorithm/链表.md"
+        },
+        {
+          "text": "动态规划-买卖股票-121.md",
+          "link": "/algorithm/动态规划-买卖股票-121.md"
+        },
+        {
+          "text": "轮转数组-189.md",
+          "link": "/algorithm/轮转数组-189.md"
         }
       ]
     }
@@ -413,17 +429,109 @@
       "link": "/article/0 - article.md",
       "items": [
         {
+          "text": "GItHub 趋势项目整理.md",
+          "link": "/article/GItHub 趋势项目整理.md"
+        },
+        {
           "text": "Obsidian 为什么还需要知识库-外脑.md",
           "link": "/article/Obsidian 为什么还需要知识库-外脑.md"
         },
         {
           "text": "Obsidian 如何实现 ios 和 pc 免费共享.md",
           "link": "/article/Obsidian 如何实现 ios 和 pc 免费共享.md"
+        },
+        {
+          "text": "Remote.md",
+          "link": "/article/Remote.md"
+        }
+      ]
+    }
+  ],
+  "/books/": [
+    {
+      "text": "TypeScript 教程",
+      "link": "/books/TypeScript 教程/0 - TypeScript 教程.md",
+      "items": [
+        {
+          "text": "1 - x.md",
+          "link": "/books/TypeScript 教程/1 - x.md"
+        }
+      ]
+    },
+    {
+      "text": "Vue.js 设计与实现",
+      "link": "/books/Vue.js 设计与实现/0 - Vue.js 设计与实现.md",
+      "items": [
+        {
+          "text": "1 - 权衡的艺术.md",
+          "link": "/books/Vue.js 设计与实现/1 - 权衡的艺术.md"
+        },
+        {
+          "text": "2 - 框架设计的核心要素.md",
+          "link": "/books/Vue.js 设计与实现/2 - 框架设计的核心要素.md"
+        },
+        {
+          "text": "3 - Vue.js 3 的设计思路.md",
+          "link": "/books/Vue.js 设计与实现/3 - Vue.js 3 的设计思路.md"
+        },
+        {
+          "text": "4 - 响应式数据和副作用函数.md",
+          "link": "/books/Vue.js 设计与实现/4 - 响应式数据和副作用函数.md"
+        },
+        {
+          "text": "21 - 简单 Diff 算法.md",
+          "link": "/books/Vue.js 设计与实现/21 - 简单 Diff 算法.md"
         }
       ]
     }
   ],
   "/interview/": [
+    {
+      "text": "css",
+      "link": "/interview/css/0 - css.md",
+      "items": [
+        {
+          "text": "css variable 解决了什么.md",
+          "link": "/interview/css/css variable 解决了什么.md"
+        },
+        {
+          "text": "CSS 如何避免样式冲突.md",
+          "link": "/interview/css/CSS 如何避免样式冲突.md"
+        },
+        {
+          "text": "CSS 配置暗黑模式.md",
+          "link": "/interview/css/CSS 配置暗黑模式.md"
+        },
+        {
+          "text": "CSS中样式的优先级顺序.md",
+          "link": "/interview/css/CSS中样式的优先级顺序.md"
+        },
+        {
+          "text": "z-index 的生效规则.md",
+          "link": "/interview/css/z-index 的生效规则.md"
+        },
+        {
+          "text": "三栏均分布局.md",
+          "link": "/interview/css/三栏均分布局.md"
+        },
+        {
+          "text": "元素水平垂直居中的多种方案.md",
+          "link": "/interview/css/元素水平垂直居中的多种方案.md"
+        },
+        {
+          "text": "双飞翼布局和圣杯布局.md",
+          "link": "/interview/css/双飞翼布局和圣杯布局.md"
+        },
+        {
+          "text": "如何画一个正方形 或 长宽固定的长方形.md",
+          "link": "/interview/css/如何画一个正方形 或 长宽固定的长方形.md"
+        },
+        {
+          "text": "左侧固定、右侧自适应.md",
+          "link": "/interview/css/左侧固定、右侧自适应.md"
+        }
+      ]
+    },
     {
       "text": "vue",
       "link": "/interview/vue/0 - vue.md",
@@ -435,6 +543,38 @@
         {
           "text": "Vue3 和 Vue2 代理的区别、优势.md",
           "link": "/interview/vue/Vue3 和 Vue2 代理的区别、优势.md"
+        }
+      ]
+    },
+    {
+      "text": "工程化",
+      "link": "/interview/工程化/0 - 工程化.md",
+      "items": [
+        {
+          "text": "husky 的作用.md",
+          "link": "/interview/工程化/husky 的作用.md"
+        },
+        {
+          "text": "lint-staged 的作用.md",
+          "link": "/interview/工程化/lint-staged 的作用.md"
+        },
+        {
+          "text": "zx 的作用.md",
+          "link": "/interview/工程化/zx 的作用.md"
+        },
+        {
+          "text": "前端组件规范.md",
+          "link": "/interview/工程化/前端组件规范.md"
+        }
+      ]
+    },
+    {
+      "text": "手写代码",
+      "link": "/interview/手写代码/0 - 手写代码.md",
+      "items": [
+        {
+          "text": "Promise.all.md",
+          "link": "/interview/手写代码/Promise.all.md"
         }
       ]
     }

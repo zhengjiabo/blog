@@ -1,2 +1,4 @@
+- [ Remote.md ]( Remote.md )
+- [ GItHub 趋势项目整理.md ]( GItHub%20趋势项目整理.md )
 - [ Obsidian 为什么还需要知识库-外脑.md ]( Obsidian%20为什么还需要知识库-外脑.md )
 - [ Obsidian 如何实现 ios 和 pc 免费共享.md ]( Obsidian%20如何实现%20ios%20和%20pc%20免费共享.md )
