@@ -4,28 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "607afc447b22eb0e",
-        "type": "tabs",
-        "dimension": 19.68503937007874,
-        "children": [
-          {
-            "id": "c1cf0ad7c9195c8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/web3/QA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "61ab844f1de82372",
         "type": "tabs",
-        "dimension": 80.31496062992126,
         "children": [
           {
             "id": "5b8d030830a859c0",
@@ -33,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/web3/以太坊.md",
+                "file": "docs/web3/ethers.js.md",
                 "mode": "source",
                 "source": false
               }
@@ -113,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/web3/以太坊.md",
+                "file": "docs/web3/ethers.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/web3/以太坊.md",
+                "file": "docs/web3/ethers.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/web3/以太坊.md"
+                "file": "docs/web3/ethers.js.md"
               }
             }
           }
@@ -176,11 +156,12 @@
   },
   "active": "5b8d030830a859c0",
   "lastOpenFiles": [
-    "docs/web3/QA.md",
-    "docs/web3/以太坊.md",
     "docs/web3/比特币.md",
-    "docs/web3/区块链.md",
     "docs/web3/ethers.js.md",
+    "docs/assets/20240414-07-12-53.png",
+    "docs/web3/以太坊.md",
+    "docs/web3/QA.md",
+    "docs/web3/区块链.md",
     "docs/unfiled/苹果更新app描述文件.md",
     "docs/web3",
     "docs/interview/手写代码/Promise.all.md",
@@ -211,14 +192,12 @@
     "docs/assets/20240407-07-27-21.png",
     "docs/assets/20240406-21-26-04.png",
     "docs/assets/20240406-21-21-09.png",
-    "docs/assets/20240406-21-16-42.png",
     "docs/unfiled/认知与优质信息.md",
     "docs/article/GItHub 趋势项目整理.md",
     "docs/归档.zip",
     "docs/algorithm/二叉树.md",
     "归档.zip",
     "docs/algorithm/双指针.md",
-    "docs/algorithm/数组.md",
     "未命名 2.canvas",
     "未命名 1.canvas",
     "docs/books/TypeScript 教程",
