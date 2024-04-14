@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/web3/以太坊.md",
+                "file": "docs/web3/ethers.js.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/web3/以太坊.md",
+                "file": "docs/web3/ethers.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/web3/以太坊.md",
+                "file": "docs/web3/ethers.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/web3/以太坊.md"
+                "file": "docs/web3/ethers.js.md"
               }
             }
           }
@@ -156,8 +156,9 @@
   },
   "active": "c1cf0ad7c9195c8f",
   "lastOpenFiles": [
-    "docs/web3/ethers.js.md",
+    "docs/assets/20240414-17-37-33.png",
     "docs/web3/以太坊.md",
+    "docs/web3/ethers.js.md",
     "docs/assets/20240414-07-12-53.png",
     "docs/web3/区块链.md",
     "docs/unfiled/苹果更新app描述文件.md",
@@ -198,7 +199,6 @@
     "归档.zip",
     "docs/algorithm/双指针.md",
     "docs/algorithm/数组.md",
-    "docs/assets/二叉树.md",
     "未命名 2.canvas",
     "未命名 1.canvas",
     "docs/books/TypeScript 教程",
