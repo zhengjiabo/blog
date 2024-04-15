@@ -4,8 +4,8 @@
 `ehters.js` 内置的公共 `RPC`、或者自己申请的 `RPC` 新建 `provider`
 ```js
 /* 个人 RPC */
-const ALCHEMY_MAINNET_URL = '...'
-const provider = new ethers.JsonRpcProvider (ALCHEMY_MAINNET_URL)
+const RPC_URL = '...'
+const provider = new ethers.JsonRpcProvider (RPC_URL)
 
 /* ethers 内置公共 RPC */
 const providerDefault = ethers.GetDefaultProvider ();
@@ -15,7 +15,7 @@ const providerDefault = ethers.GetDefaultProvider ();
 ```js
 /* 1. 查询链 */
 const network = await provider.getNetwork();
-console.log(`Current network: `, network.toJSON());
+console.log(`Current network: `, network.toJSON()); // 打印需要 toJSON，否则可能没法显示
 
 /* 2. 查询区块高度 */
 const blockNumber = await provider.getBlockNumber();
@@ -44,13 +44,16 @@ console.log(`Current suggested fee data: `, feeData);
 
 ### Signer 可写操作
 
-在非对称加密中，私钥不会公开，而是用来生成数字签名（`Signer`）。这个签名随信息一起发送，用来以证明信息的来源及其完整性。公钥则被公开，使任何人都可以验证这个签名，以确认信息确实是由私钥持有者发送的，并且内容未被篡改。
+私钥生成数字签名（`Signer`），签名随信息一起发送，用来证明信息的来源及其完整性。
+使任何人都可以使用公钥验证签名，确认信息是由私钥持有人发起，并且内容未被篡改。
 
+使用浏览器 `BrowserProvider` 获取 `Signer`。会触发小狐狸交互
 ```js
 const browserProvider = new BrowserProvider(ethereum: [Eip1193Provider], network?: [Networkish])
 // new ethers.BrowserProvider(window.ethereum)
 
-const signer = browserProvider.getSigner(address?: number | string)⇒ Promise< JsonRpcSigner>	  
+const signer = await browserProvider.getSigner(address?: number | string)⇒ Promise< JsonRpcSigner>
+// const signer = await browserProvider.getSigner()
 ```
 
 在 `ethers.js` 中，`Wallet` 类继承了 `Signer` 类，一般用 `Wallet` 对交易和消息进行签名。
