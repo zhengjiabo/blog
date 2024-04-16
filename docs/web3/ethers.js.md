@@ -243,6 +243,36 @@ contract.on(eventName | contractFilter, (...args) => {
 ```
 
 
+### 识别 ERC-721 合约
+`EIP` 包含 `ERC`
+-  `EIP`：`Ethereum Improvement Proposals` (以太坊改进建议)
+-  `ERC`：`Ethereum Request For Comment` (以太坊意见征求稿)
+
+
+[ERC-165](https://eips.ethereum.org/EIPS/eip-165)：每个合约都必须实现一个 `supportsInterface` 函数，该函数接受一个接口标识符（interface ID）作为参数，并返回一个布尔值，表示合约是否支持该接口，供其他合约检查。
+ERC-721：非同质化代币（NFT）标准，遵循了 ERC 165 标准。
+
+```js
+contract.supportsInterface(interfaceId)
+```
+
+
+```js
+const selectorERC721 = "0x80ac58cd" // 4 bytes
+const isERC721 = await contract.supportsInterface(selectorERC721)
+```
+
+
+### 识别 ERC-20 合约
+
+ERC-20：代币标准，用于【可替代 Token】的创建.
+合约包含 `transfer` 和 `balanceOf` 函数，这些函数的选择器分别是 `a9059cbb` 和 `18160ddd`
+
+```js
+// 合约的字节码
+const code = await contract.getDeployedCode()
+const isERC20 = code.includes('a9059cbb') && code.includes('18160ddd');
+```
 
 ## BigInt 
 ### 场景
