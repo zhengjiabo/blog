@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "61ab844f1de82372",
+        "id": "607afc447b22eb0e",
         "type": "tabs",
         "children": [
           {
-            "id": "5b8d030830a859c0",
+            "id": "c1cf0ad7c9195c8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 214.5
   },
   "right": {
     "id": "cd013ef00a62e2ca",
@@ -154,29 +154,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5b8d030830a859c0",
+  "active": "c1cf0ad7c9195c8f",
   "lastOpenFiles": [
-    "docs/web3/以太坊.md",
-    "docs/assets/fabcab2a5385927abc21.png",
-    "docs/web3/ethers.js.md",
-    "docs/web3/区块链.md",
-    "docs/assets/ff85b24ef185143695b485e01c5ffad1.png",
-    "docs/assets/image2.png",
-    "docs/assets/Pastedimage20231217204152.png",
-    "docs/assets/Pastedimage20231217175932.png",
-    "docs/assets/image1.png",
-    "docs/interview/css/z-index 的生效规则.md",
-    "docs/unfiled/部分 CSS 属性的使用场景.md",
     "docs/web3/0 - web3.md",
     "docs/interview/手写代码/0 - 手写代码.md",
     "docs/interview/工程化/0 - 工程化.md",
     "docs/interview/css/0 - css.md",
     "docs/books/TypeScript 教程/0 - TypeScript 教程.md",
+    "docs/assets/image2.png",
+    "docs/assets/image1.png",
+    "docs/assets/ff85b24ef185143695b485e01c5ffad1.png",
+    "docs/assets/fabcab2a5385927abc21.png",
+    "docs/assets/Pastedimage20231217204152.png",
+    "docs/assets/Pastedimage20231217175932.png",
     "docs/assets/20240414-17-37-33.png",
-    "docs/web3/比特币.md",
+    "docs/web3/以太坊.md",
+    "docs/web3/ethers.js.md",
     "docs/assets/20240414-07-12-53.png",
-    "docs/web3/QA.md",
+    "docs/web3/区块链.md",
     "docs/unfiled/苹果更新app描述文件.md",
+    "docs/web3/比特币.md",
     "docs/web3",
     "docs/interview/手写代码/Promise.all.md",
     "docs/interview/手写代码",
@@ -190,12 +187,16 @@
     "docs/interview/css/如何画一个正方形 或 长宽固定的长方形.md",
     "docs/interview/css/双飞翼布局和圣杯布局.md",
     "docs/interview/css/三栏均分布局.md",
+    "docs/interview/css/z-index 的生效规则.md",
     "docs/interview/css/css variable 解决了什么.md",
     "docs/interview/css/CSS中样式的优先级顺序.md",
+    "docs/interview/css/CSS 配置暗黑模式.md",
+    "docs/interview/css/CSS 如何避免样式冲突.md",
     "docs/interview/css",
     "docs/docs.rar",
     "docs/assets/image.png",
-    "docs/assets/ff85b24ef185143695b485e01c5ffad.png",
+    "docs/assets/image 1.png",
+    "docs/unfiled/认知与优质信息.md",
     "docs/归档.zip",
     "归档.zip",
     "未命名 2.canvas",

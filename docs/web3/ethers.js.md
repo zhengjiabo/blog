@@ -96,7 +96,7 @@ const receipt = await tx.wait() // 等待链上确认交易，获得收据
 
 
 ### 对消息进行签名，确认用户拥有某地址
-
+用于服务端校验客户是否拥有某账户所有权。
 ```js
 /* 客户端 */
 // Our signer; Signing(签署) messages does not require a Provider 
