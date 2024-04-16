@@ -75,6 +75,11 @@ wallet2.connect(provider) // connect 继承子 Signer
 ###  发起交易
 
 ```js
+const tx = await wallet.sendTransaction(tx)
+const receipt = await tx.wait() // 等待链上确认交易，获得收据
+```
+
+```js
 // 利用私钥和provider创建wallet对象
 const privateKey = '0x227dbb8586117d55284e26620bc76534dfbd2394be34cf4a09cb775d593b6f2b'
 const wallet = new ethers.Wallet(privateKey, provider)
@@ -201,14 +206,14 @@ console.log(tx)
 const transferEvents = await contract.queryFilter(eventName | contractFilter, fromBlock, toBlock)
 ```
 
-1. 查询某个事件名 `eventName`
+查询某个事件名 `eventName`
 ```js
 const block = await provider.getBlockNumber()
 const transferEvents = await contract.queryFilter('Transfer', block - 10, block)
 ```
 
 
-2. 根据事件过滤器查询事件 `contractFilter`
+根据事件过滤器查询事件 `contractFilter`
 ```js
 // 过滤器
 const filter = contract.filters.EVENT_NAME( ...args )
@@ -227,7 +232,7 @@ contract.on(eventName | contractFilter, (...args) => {
 })
 ```
 
-
+可以传某个事件名 `eventName` 也可以传事件过滤器 `contractFilter`
 ```js
  contractUSDT.once('Transfer', (from, to, value)=>{
     // 打印结果
@@ -242,13 +247,14 @@ contract.on(eventName | contractFilter, (...args) => {
 ## BigInt 
 ### 场景
 
-在 `ethers.js` 中，大多数需要值的操作需要使用 `BigInt`。
+在 `ethers.js` 中，接受链上数据赋值时需要使用 `BigInt`，js 安全值 `Number.MAX_SAFE_INTEGER`。
 
 ```js
 const oneGwei = ethers.getBigInt("1000000000")
 ```
 
-> 许多计算都对超出 `JavaScript` 整数的安全值（js 中最大安全整数为 `9007199254740991`）`Number.MAX_SAFE_INTEGER`。因此，` ethers.js ` 使用 JavaScript ES 2020 版本原生的 ` BigInt ` 类安全地对任何数量级的数字进行数学运算。
+
+> 许多计算都对超出 `JavaScript` 整数的安全值（js 中最大安全整数为 `9007199254740991`）。因此，` ethers.js ` 使用 JavaScript ES 2020 版本原生的 ` BigInt ` 类安全地对任何数量级的数字进行数学运算。
 
 
 
