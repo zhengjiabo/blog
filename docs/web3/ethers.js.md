@@ -116,6 +116,50 @@ verifyMessage(message, sig)
 // '0xC08B5542D177ac6686946920409741463a15dDdB'
 ```
 
+## HD Wallet
+### 基本概念
+Hierarchical Deterministic Wallet（多层确定性钱包）
+
+1. 早期，记录一堆的私钥、管理一堆钱包
+2. `BIP32`：一个随机种子衍生多个私钥，管理一堆钱包，钱包的地址由衍生路径决定：`m/0/0/1`
+3. `BIP44`：为 `BIP32` 的衍生路径提供了一套通用规范：`m/purpose'/coin_type'/account'/change/address_index`
+	- `m`：固定 `m`
+	- `purpose`：固定 `44'` 代表 `BIP44`
+	- `coin_type`：币类型
+	- `account`： 钱包中的第一个账户 `0'`
+	- `change`：外链 `0`，可用于接收资金
+	- `address_index`：这个账户的第一个地址 `0`
+1. `BIP39`：助记词的方式保管私钥，一个助记词管理多个钱包。
+
+### 生成批量钱包
+
+```js
+// 1. 生成随机助记词
+const mnemonic = ethers.Mnemonic.entropyToPhrase(randomBytes(32))
+
+// 2. 创建HD钱包
+const hdNode = ethers.HDNodeWallet.fromPhrase(mnemonic)
+
+// 3. 批量生成钱包
+// 派生路径：m/purpose'/coin_type'/account'/change/address_index
+// 我们只需要切换最后一位address_index，就可以从hdNode派生出新钱包
+// let basePath = "m/44'/60'/0'/0";
+let wallets = [];
+/* for (let i = 0; i < 20; i++) { 
+	let hdNodeNew = hdNode.derivePath(basePath + "/" + i);
+    let walletNew = new ethers.Wallet(hdNodeNew.privateKey);
+    console.log(`第${i+1}个钱包地址： ${walletNew.address}`)
+    wallets.push(walletNew);
+}*/
+
+const account = hdNode.derivePath("m/44'/60'/0'/0");
+for (let i = 0; i < 20; i++) { 
+	const hdNodeNew = account.derivePath("/" + i); 
+	const walletNew = new ethers.Wallet(hdNodeNew.privateKey);
+	console.log(`第${i+1}个钱包地址： ${walletNew.address}`)
+	wallets.push(walletNew);
+}
+```
 
 ## Contract 合约
 
@@ -310,3 +354,78 @@ ethers.parseUnits("1.0", "ether")
 ```
 
 ![](../assets/20240414-17-37-33.png)
+
+
+## Interface 接口类
+
+与**代理合约**交互时，需要编码参数、解码返回值。Interface 提供了编码解码的方法。
+
+### 构造
+```js
+// 利用abi生成
+const interface = ethers.Interface(abi)
+
+// 直接从contract中获取
+const interface2 = contract.interface
+```
+
+### 基本方法
+- `getSighash()`：获取函数选择器（function selector），参数为函数名或函数签名。
+```js
+interface.getSighash("balanceOf");
+// '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef'
+```
+
+- `encodeDeploy()`：编码构造器的参数，然后可以附在合约字节码的后面。
+```js
+interface.encodeDeploy("Wrapped ETH", "WETH");
+```
+
+- `encodeFunctionData()`：编码函数的`calldata`。
+    ```js
+interface.encodeFunctionData("balanceOf", ["0xc778417e063141139fce010982780140aa0cd5ab"]);
+    ```
+
+- `decodeFunctionResult()`：解码函数的返回值。
+```js
+interface.decodeFunctionResult("balanceOf", resultData)
+```
+### Demo
+
+```js
+// 编码 calldata
+const param = contractWETH.interface.encodeFunctionData(
+	"balanceOf",
+	[address]
+);
+// 创建交易
+const tx1 = {
+    to: addressWETH,
+    data: param // 传递编码后参数
+}
+// 发起交易，可读操作（view/pure）可以用 provider.call(tx)
+// 此时代理合约 data 包含了调用函数名和参数，要编码后的。
+const balanceWETH = await provider.call(tx1)
+console.log(`存款前WETH持仓: ${ethers.formatEther(balanceWETH)}\n`)
+```
+
+```js
+// 编码calldata
+const param2 = contractWETH.interface.encodeFunctionData(
+	"deposit"          
+);
+// 创建交易
+const tx2 = {
+    to: addressWETH,
+    data: param2,
+    value: ethers.parseEther("0.001")}
+// 发起交易，写入操作需要 wallet.sendTransaction(tx)
+// 此时代理合约 data 包含了调用函数名，要编码后的。
+const receipt1 = await wallet.sendTransaction(tx2)
+await receipt1.wait()
+```
+
+
+
+
+
