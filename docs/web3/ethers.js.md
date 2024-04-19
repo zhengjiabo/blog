@@ -132,34 +132,34 @@ Hierarchical Deterministic Wallet（多层确定性钱包）
 1. `BIP39`：助记词的方式保管私钥，一个助记词管理多个钱包。
 
 ### 生成批量钱包
+```js
+HDNodeWallet.deriveChild()
+```
 
 ```js
 // 1. 生成随机助记词
 const mnemonic = ethers.Mnemonic.entropyToPhrase(randomBytes(32))
 
 // 2. 创建HD钱包
-const hdNode = ethers.HDNodeWallet.fromPhrase(mnemonic)
+const basePath = "m/44'/60'/0'/0"
+const hdNode = ethers.HDNodeWallet.fromPhrase(mnemonic, null, basePath)
 
 // 3. 批量生成钱包
-// 派生路径：m/purpose'/coin_type'/account'/change/address_index
-// 我们只需要切换最后一位address_index，就可以从hdNode派生出新钱包
-// let basePath = "m/44'/60'/0'/0";
+// m/purpose'/coin_type'/account'/change/address_index
+// 我们只需要切换最后一位 address_index ，就可以从hdNode派生出新钱包
 let wallets = [];
-/* for (let i = 0; i < 20; i++) { 
-	let hdNodeNew = hdNode.derivePath(basePath + "/" + i);
-    let walletNew = new ethers.Wallet(hdNodeNew.privateKey);
-    console.log(`第${i+1}个钱包地址： ${walletNew.address}`)
-    wallets.push(walletNew);
-}*/
-
-const account = hdNode.derivePath("m/44'/60'/0'/0");
 for (let i = 0; i < 20; i++) { 
-	const hdNodeNew = account.derivePath("/" + i); 
+	const hdNodeNew = hdNode.deriveChild(i); 
 	const walletNew = new ethers.Wallet(hdNodeNew.privateKey);
 	console.log(`第${i+1}个钱包地址： ${walletNew.address}`)
 	wallets.push(walletNew);
 }
 ```
+以后只要凭助记词，就能依靠 `BIP 44` 规范找到大量钱包了。
+
+
+
+
 
 ## Contract 合约
 
