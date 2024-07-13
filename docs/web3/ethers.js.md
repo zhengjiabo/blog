@@ -358,7 +358,7 @@ ethers.parseUnits("1.0", "ether")
 
 ## Interface 接口类
 
-与**代理合约**交互时，需要编码参数、解码返回值。Interface 提供了编码解码的方法。
+与**代理合约**交互时，需要编码参数、解码返回值。Interface 提供了编码、解码的方法。
 
 ### 构造
 ```js
@@ -370,7 +370,7 @@ const interface2 = contract.interface
 ```
 
 ### 基本方法
-- `getSighash()`：获取函数选择器（function selector），参数为函数名或函数签名。
+- `getSighash()`：获取函数选择器，参数为函数名或函数签名。
 ```js
 interface.getSighash("balanceOf");
 // '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef'
