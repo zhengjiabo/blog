@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/web3/ethers.js.md",
+                "file": "docs/web3/以太坊.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/web3/ethers.js.md",
+                "file": "docs/web3/以太坊.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/web3/ethers.js.md",
+                "file": "docs/web3/以太坊.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/web3/ethers.js.md"
+                "file": "docs/web3/以太坊.md"
               }
             }
           }
@@ -156,6 +156,7 @@
   },
   "active": "c1cf0ad7c9195c8f",
   "lastOpenFiles": [
+    "docs/web3/区块链.md",
     "docs/web3/以太坊.md",
     "docs/web3/ethers.js.md",
     "docs/web3/0 - web3.md",
@@ -171,7 +172,6 @@
     "docs/assets/Pastedimage20231217175932.png",
     "docs/assets/20240414-17-37-33.png",
     "docs/assets/20240414-07-12-53.png",
-    "docs/web3/区块链.md",
     "docs/unfiled/苹果更新app描述文件.md",
     "docs/web3/比特币.md",
     "docs/web3",
