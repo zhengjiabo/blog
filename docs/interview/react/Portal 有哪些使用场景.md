@@ -1,4 +1,4 @@
-使用 `Portals` 提供了一种脱离 `#app` 的组件，适合脱离文档流(out of flow) 的组件，特别是 `position: absolute` 与 `position: fixed` 的组件。比如模态框，通知，警告，goTop 等。
+使用 `Portals` 提供了一种脱离 `#app` 的组件，适合脱离文档流(out of flow) 的组件，特别是 `position: absolute` 与 `position: fixed` 的组件。比如模态框，通知，警告，提示（Tooltips） 等。
 
 ```html
 <html>
