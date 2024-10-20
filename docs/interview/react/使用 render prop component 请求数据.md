@@ -1,4 +1,4 @@
-
+## Class
 ```js
 import React, { Component } from 'react';
 
@@ -78,3 +78,59 @@ export default App;
 
 ```
 
+## 函数组件 + Hooks
+```js
+import React, { useState, useEffect } from 'react';
+
+// 使用函数组件和Hooks改写的DataFetcher
+const DataFetcher = ({ render }) => {
+  const [data, setData] = useState(null); // 用于存储获取到的数据
+  const [isLoading, setIsLoading] = useState(true); // 标识是否正在获取数据
+  const [error, setError] = useState(null); // 存储错误信息（如果有）
+
+  // 使用useEffect替代componentDidMount进行数据获取
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://api.example.com/data'); // 模拟数据获取
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []); // 空依赖数组意味着这个effect仅在组件挂载时运行一次
+
+  // 使用render prop传递数据和状态
+  return render({ data, isLoading, error, refetch: fetchData });
+};
+
+// 使用DataFetcher的例子
+const App = () => (
+  <div>
+    <h1>使用Render Prop获取数据示例</h1>
+    <DataFetcher
+      render={({ data, isLoading, error, refetch }) => (
+        <div>
+          {isLoading ? (
+            <p>加载中...</p>
+          ) : error ? (
+            <p onClick={() => refetch()}>数据获取失败，点击重试</p>
+          ) : (
+            <div>
+              <p>{data.message}</p>
+            </div>
+          )}
+        </div>
+      )}
+    />
+  </div>
+);
+
+export default App;
+
+```
