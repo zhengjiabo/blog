@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/react/使用 render prop component 请求数据.md",
+                "file": "docs/interview/react/Portal 有哪些使用场景.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 511.5
+    "width": 274.5
   },
   "right": {
     "id": "cd013ef00a62e2ca",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/interview/react/使用 render prop component 请求数据.md",
+                "file": "docs/interview/react/Portal 有哪些使用场景.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/interview/react/使用 render prop component 请求数据.md",
+                "file": "docs/interview/react/Portal 有哪些使用场景.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/react/使用 render prop component 请求数据.md"
+                "file": "docs/interview/react/Portal 有哪些使用场景.md"
               }
             }
           }
@@ -154,10 +154,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c1cf0ad7c9195c8f",
+  "active": "8975263c8b3c4251",
   "lastOpenFiles": [
-    "docs/interview/react/react hooks 实现一个定时器的组件.md",
     "docs/interview/react/使用 render prop component 请求数据.md",
+    "docs/interview/react/Portal 有哪些使用场景.md",
+    "docs/interview/react/react hooks 实现一个定时器的组件.md",
     "docs/interview/react/react hooks 实现 useFetch 请求数据.md",
     "docs/interview/react/react hooks 带来了哪些便利.md",
     "docs/interview/react/React 1.md",
@@ -192,7 +193,6 @@
     "docs/interview/手写代码",
     "docs/interview/工程化/前端组件规范.md",
     "docs/interview/工程化/zx 的作用.md",
-    "docs/interview/工程化/lint-staged 的作用.md",
     "docs/interview/工程化",
     "docs/interview/css",
     "docs/docs.rar",
