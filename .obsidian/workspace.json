@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/react/react hooks 实现一个定时器的组件.md",
+                "file": "docs/interview/react/使用 render prop component 请求数据.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/interview/react/react hooks 实现一个定时器的组件.md",
+                "file": "docs/interview/react/使用 render prop component 请求数据.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/interview/react/react hooks 实现一个定时器的组件.md",
+                "file": "docs/interview/react/使用 render prop component 请求数据.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/react/react hooks 实现一个定时器的组件.md"
+                "file": "docs/interview/react/使用 render prop component 请求数据.md"
               }
             }
           }
@@ -154,15 +154,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e9b2ad56fb300a95",
+  "active": "c1cf0ad7c9195c8f",
   "lastOpenFiles": [
+    "docs/interview/react/react hooks 实现一个定时器的组件.md",
+    "docs/interview/react/使用 render prop component 请求数据.md",
     "docs/interview/react/react hooks 实现 useFetch 请求数据.md",
     "docs/interview/react/react hooks 带来了哪些便利.md",
     "docs/interview/react/React 1.md",
     "docs/interview/react/ErrorBoundary 有哪些使用场景.md",
     "docs/interview/react/cloneElement 与 createElement 各是什么，有什么区别.md",
     "docs/interview/react/使用 react 实现一个通用的 message 组件.md",
-    "docs/interview/react/react hooks 实现一个定时器的组件.md",
     "docs/interview/vue/Vue3 和 Vue2 代理的区别、优势.md",
     "docs/interview/vue/Vue 中 nextTick 的实现原理.md",
     "docs/interview/vue/0 - vue.md",
@@ -192,7 +193,6 @@
     "docs/interview/工程化/前端组件规范.md",
     "docs/interview/工程化/zx 的作用.md",
     "docs/interview/工程化/lint-staged 的作用.md",
-    "docs/interview/工程化/husky 的作用.md",
     "docs/interview/工程化",
     "docs/interview/css",
     "docs/docs.rar",
