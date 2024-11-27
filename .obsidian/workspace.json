@@ -39,12 +39,14 @@
             "id": "4bdc3ca80ce1f36e",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.7.7"
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.7"
+              "title": "未命名"
             }
           }
         ],
@@ -175,9 +177,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "未命名.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "未命名 的大纲"
             }
           }
         ],
@@ -199,6 +203,7 @@
   },
   "active": "4bdc3ca80ce1f36e",
   "lastOpenFiles": [
+    "README.md",
     "未命名.md",
     "docs/interview/react/使用 render prop component 请求数据.md",
     "docs/interview/react/Portal 有哪些使用场景.md",
@@ -235,7 +240,6 @@
     "docs/web3",
     "docs/interview/手写代码/Promise.all.md",
     "docs/interview/手写代码",
-    "docs/interview/工程化/前端组件规范.md",
     "docs/interview/工程化",
     "docs/interview/css",
     "docs/docs.rar",
