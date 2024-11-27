@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "未命名"
             }
+          },
+          {
+            "id": "4bdc3ca80ce1f36e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.7"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -163,11 +175,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "未命名.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -187,7 +197,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f5ab26e7050f810a",
+  "active": "4bdc3ca80ce1f36e",
   "lastOpenFiles": [
     "未命名.md",
     "docs/interview/react/使用 render prop component 请求数据.md",
