@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/AI/微信小程序 cursorrules.md",
+                "file": "docs/interview/AI/微信小程序(uniapp) cursorrules.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "微信小程序 cursorrules"
+              "title": "微信小程序(uniapp) cursorrules"
             }
           }
         ],
@@ -165,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/AI/微信小程序 cursorrules.md",
+                "file": "docs/interview/AI/微信小程序(uniapp) cursorrules.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "微信小程序 cursorrules 的大纲"
+              "title": "微信小程序(uniapp) cursorrules 的大纲"
             }
           }
         ],
@@ -193,10 +193,10 @@
   },
   "active": "4bdc3ca80ce1f36e",
   "lastOpenFiles": [
-    "docs/interview/AI/微信小程序(uniapp) cursorrules.md",
-    "docs/interview/AI/微信小程序 cursorrules.md",
     "docs/interview/AI/生成对应开发项目 cursorrules 的提示词.md",
     "docs/interview/AI/前端Web 开发 cursorrules.md",
+    "docs/interview/AI/微信小程序(uniapp) cursorrules.md",
+    "docs/interview/AI/微信小程序 cursorrules.md",
     "docs/interview/AI",
     "未命名.md",
     "README.md",
