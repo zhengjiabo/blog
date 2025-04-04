@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名 1.md",
+                "file": "docs/interview/AI/微信小程序 cursorrules.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名 1"
+              "title": "微信小程序 cursorrules"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "免密",
+                "query": "tag:#角色",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -165,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名 1.md",
+                "file": "docs/interview/AI/微信小程序 cursorrules.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 1 的大纲"
+              "title": "微信小程序 cursorrules 的大纲"
             }
           }
         ],
@@ -193,8 +193,12 @@
   },
   "active": "4bdc3ca80ce1f36e",
   "lastOpenFiles": [
+    "docs/interview/AI/微信小程序(uniapp) cursorrules.md",
+    "docs/interview/AI/微信小程序 cursorrules.md",
+    "docs/interview/AI/生成对应开发项目 cursorrules 的提示词.md",
+    "docs/interview/AI/前端Web 开发 cursorrules.md",
+    "docs/interview/AI",
     "未命名.md",
-    "未命名 1.md",
     "README.md",
     "docs/interview/react/使用 render prop component 请求数据.md",
     "docs/interview/react/Portal 有哪些使用场景.md",
@@ -217,7 +221,6 @@
     "docs/interview/手写代码/0 - 手写代码.md",
     "docs/interview/工程化/0 - 工程化.md",
     "docs/interview/css/0 - css.md",
-    "docs/books/TypeScript 教程/0 - TypeScript 教程.md",
     "docs/assets/image2.png",
     "docs/assets/image1.png",
     "docs/assets/ff85b24ef185143695b485e01c5ffad1.png",
@@ -226,8 +229,6 @@
     "docs/assets/Pastedimage20231217175932.png",
     "docs/assets/20240414-17-37-33.png",
     "docs/assets/20240414-07-12-53.png",
-    "docs/unfiled/苹果更新app描述文件.md",
-    "docs/web3/比特币.md",
     "docs/web3",
     "docs/interview/手写代码",
     "docs/interview/工程化",
@@ -241,7 +242,6 @@
     "未命名 1.canvas",
     "docs/books/TypeScript 教程",
     "未命名.canvas",
-    "[core",
     "得到.canvas"
   ]
 }
