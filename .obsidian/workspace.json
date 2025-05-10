@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "微信小程序(uniapp) cursorrules"
             }
+          },
+          {
+            "id": "d7d3a698b9278562",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -165,13 +177,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/AI/微信小程序(uniapp) cursorrules.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "微信小程序(uniapp) cursorrules 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -191,7 +202,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4bdc3ca80ce1f36e",
+  "active": "d7d3a698b9278562",
   "lastOpenFiles": [
     "docs/interview/AI/生成对应开发项目 cursorrules 的提示词.md",
     "docs/interview/AI/前端Web 开发 cursorrules.md",
